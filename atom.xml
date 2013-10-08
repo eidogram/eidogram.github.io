@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Riccardo Scalco, eidogram.com</title>
+ <link href="http://eidogram.com/atom.xml" rel="self"/>
+ <link href="http://eidogram.com/"/>
+ <updated>2013-10-08T12:51:07+02:00</updated>
+ <id>http://eidogram.com/</id>
+ <author>
+   <name>Riccardo Scalco</name>
+   <email>riccardo.scalco@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Entropy analysis to discover uncertainty in election results.</title>
+   <link href="http://eidogram.com/8giZMeKYT.html"/>
+   <updated>2013-07-19T00:00:00+02:00</updated>
+   <id>http://eidogram.com/8giZMeKYT</id>
+   <content type="html">A snap general election was held in Italy on 13–14 April 2008. The maps show the winner party and the uncertainty to win for basic administrative divisions.</content>
+ </entry>
+ 
+ <entry>
+   <title>Confidence intervals of simple linear regression.</title>
+   <link href="http://eidogram.com/XysLaJlFH.html"/>
+   <updated>2013-07-15T00:00:00+02:00</updated>
+   <id>http://eidogram.com/XysLaJlFH</id>
+   <content type="html">Simple linear regression and confidence intervals are derived from raw data with explicit formulas.</content>
+ </entry>
+  
+</feed>
