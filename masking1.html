@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Analytic Journalism, Data Driven Journalism,
+    Data Visualization, Data Analysis, Web Spidering, Data scientist, Data
+    artist, interactive things, web design, web developer">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <!--<link rel="stylesheet" type="text/css" href="normalize.css">-->
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  </head>
+  <style>
+    html, body {
+      height: 100%;
+    }
+  </style>
+  <body>
+
+
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 960 500">
+      <defs>
+        <radialGradient id = "gradient" cx = "50%" cy = "50%" r = "80%">
+          <stop stop-color = "white" offset = "0%"/>
+          <stop stop-color = "black" offset = "100%"/>
+        </radialGradient>
+        <mask id="Mask">
+          <circle cx="250" cy="250" r="200" fill="#fff"/>
+        </mask>
+      </defs>
+
+      <rect x="0" y="0" width="1000" height="1000" fill="red" mask="url(#Mask)" />
+    </svg>
+
+    <script type="text/javascript">
+      d3.select("circle").transition().duration(2000).delay(1000)
+        .attr("r","10");
+    </script>
+
+
+
+
+  </body>
+</html>
