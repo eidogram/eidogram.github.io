@@ -27,15 +27,18 @@
           <stop stop-color = "black" offset = "100%"/>
         </radialGradient>
         <mask id="Mask">
-          <circle cx="250" cy="250" r="200" fill="#fff"/>
+          <circle cx="150" cy="250" r="20" fill="#fff"/>
+          <circle cx="350" cy="250" r="20" fill="#fff"/>
         </mask>
       </defs>
 
-      <rect x="0" y="0" width="1000" height="1000" fill="red" mask="url(#Mask)" />
+      <!--<rect x="0" y="0" width="1000" height="1000" fill="red" mask="url(#Mask)" />-->
+      <circle cx="150" cy="250" r="200" fill="blue" mask="url(#Mask)">
+      <circle cx="350" cy="250" r="20" fill="#fff"/>
     </svg>
 
     <script type="text/javascript">
-      d3.select("circle").transition().duration(2000).delay(1000)
+      d3.selectAll("circle").transition().duration(2000).delay(1000)
         .attr("r","10");
     </script>
 
