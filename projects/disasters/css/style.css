@@ -1,0 +1,285 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color:#F4EDE5;
+  font-family: "Roboto", sans-serif;
+}
+
+#container {
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.empty {
+  font-size: 20px;
+  z-index: 10;
+  opacity: 0.7;
+  background-color: #fff;
+  position: relative;
+  color: #131313;
+}
+
+.empty h1 {
+  line-height: 1.2em;
+  margin-top: 0px;
+  font-size: 40px;
+  padding-left: 20px;
+}
+
+.col-1-2 {
+  padding: 0px 20px 0px 20px;
+}
+
+.grid {
+  line-height:1.5em;
+  padding: 200px 0px 200px 0px;
+  max-width: 80%;
+  margin: auto;
+}
+
+.box {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.chart {
+  z-index: 10;
+  height: 600px;
+  opacity: 0.93;
+  background-color: #65000B;
+  position: relative;
+}
+
+.last {
+  margin-bottom: 400px;
+  border-bottom: 5px solid #65000B;
+}
+
+.first {
+  margin-top: 400px;
+  border-top: 5px solid #65000B;
+}
+
+.title {
+  fill: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#credits {
+  position: relative;
+  z-index: 10;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 10px;
+  color: #000;
+  text-align: center;
+  margin-right: 10%;
+  width: 200px;
+  height: 140px;
+  float: right;
+}
+
+#credits ul {
+  padding: 0px 0px 30px 0px;
+}
+
+#credits a {
+  margin: 0px 14px 0px 14px;
+  color: #F4EDE5;
+}
+
+#credits i {
+  color: #131313;
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+}
+
+#credits span {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#credits span, #credits img {
+  display: block;
+  margin: auto;
+}
+
+#logotuxtax {
+  padding-bottom: 30px;
+  width: 120px; 
+}
+
+/* masked chart */
+
+#chart {
+  margin: auto;
+}
+
+.numb {
+  text-shadow: 1px 1px #F4EDE5;
+  opacity: 0;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  fill: #65000B;
+}
+
+.tot {
+  fill: #65000B;
+  opacity: 0;
+  font-size: 8px;
+}
+
+.info {
+  font-size: 8px;
+  fill: #65000B;
+  opacity: 0;
+}
+
+.maintitle {
+  fill: #65000B;
+  opacity: 0;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+a {
+  color: #131313;
+  text-decoration: underline;
+}
+
+#container_map, #container_type, #container_years {
+  border: 0px solid #000;
+  margin: auto;
+  position: relative;
+}
+
+#container_map {
+  width: 70%;
+  padding-top: 30px;
+}
+
+#container_type {
+  width: 90%;
+}
+
+#container_years {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+
+/* map */
+
+.map-rects {
+  fill: #65000b;
+  stroke-width: 2;
+  stroke: #fff;
+  opacity: 1;
+}
+
+.mapbartext {
+  fill: #fff;
+  stroke-width: 0;
+  cursor: default;
+  font-weight: normal;
+}
+
+.map-rects:hover {
+  stroke: #b20000;
+}
+
+#focuscircle {
+  fill: transparent;
+  opacity: 1;
+  stroke: #fff;
+  stroke-width: 4;
+}
+
+.circlemap {
+  /*fill: url(#gradient);*/
+  fill: #eee;
+  /*stroke: #616161;*/
+}
+
+.focustext {
+  opacity: 1;
+  fill: #fff;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* circles */
+
+.typetext {
+  fill: #fff;
+  opacity: 0.8;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.typetext1 {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.circletype {
+  fill: #b20000;
+  opacity: 0.8;
+  stroke: #fff;
+  stroke-width: 3px;
+}
+
+/* years */
+
+.text_year {
+  fill: #fff;
+  opacity: 1;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.text_year1 {
+  font-size: 22px;
+}
+
+.text_year2 {
+  fill: #fff;
+  font-weight: bold;
+}
+
+.text_year3 {
+  font-weight: normal;
+}
+
+.rect {
+  fill: #65000b;
+  opacity: 1;
+  stroke: #b20000;
+  stroke-width: 3px;
+}
+
+.rect-years:hover {
+  opacity: 0.5;
+}
+
+.rect1 {
+  fill: #b20000;
+  opacity: 0.5;
+  stroke-width: 0px;
+}
+
+/* Tablet */
+/*@media screen and (max-width: 1023px) {
+  #chart {
+    margin: auto;
+    width: 1440px !important;
+    height: 750px !important;
+  }
+}*/

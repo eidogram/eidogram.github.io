@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title></title>
+    <meta name="author" content="Riccardo Scalco">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Analytic Journalism, Data Driven Journalism,
+    Data Visualization, Data Analysis, Web Spidering, Data scientist, Data
+    artist, interactive things, web design, web developer">
+    <link href="http://fonts.googleapis.com/css?family=Lekton:400,700,400italic" rel="stylesheet" type="text/css">
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+    <script src="./js/jquery.min.js"></script>
+    <!--<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>-->
+    <script src="./js/d3.v3.min.js" charset="utf-8"></script>
+    <!--<script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/simplegrid.css">
+    <style type='text/css'>
+      body {
+        background-color: #e1e1e1;
+        font-family: "Lekton", monospace;
+      }
+
+      #container {
+        z-index: -1;
+        margin-top: 50px;
+        position: absolute;
+        border: 0px solid #000;
+        margin: 0 auto;
+        width: 90%;
+      }
+
+      #text-container {
+        margin-top: 50px;
+        padding-top:400px;
+      }
+      
+      .shadows {
+        fill: #ffffff;
+        opacity: 1;
+      }
+
+      circle {
+        /*stroke-width: .5px;
+        stroke: #fff;*/
+        opacity: 1;
+        fill: #131313;
+      }
+
+      .linreg {
+        stroke-width: 2px;
+        stroke: #00ff7f;
+        /*stroke: #e1e1e1;*/
+      }
+
+      .inter-line {
+        stroke: #00ff7f;
+        opacity: 0.2;
+      }
+
+      .shadow-rect {
+        stroke: #e1e1e1;
+      }
+      
+      .text {
+        font-size: 13px;
+        font-weight: bold;
+        fill: #111;
+      }
+      
+      .item-on {
+        fill: #00ff7f;
+      }
+
+      .item-off {
+        fill: #111;
+      }
+
+      .item {
+        cursor: pointer;
+      }
+
+      .item:hover {
+        fill: #00ff7f;
+      }
+
+      .list-title {
+        font-weight: bold;
+        cursor: text;
+        padding-bottom: 7px;
+      }
+
+      ::selection {
+        background: #e1e1e1;
+        color: #111;
+      }
+
+      ::-moz-selection {
+        background: #e1e1e1;
+        color: #111;       
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      li {
+        text-align: right;
+        cursor: pointer;
+        padding-bottom: 2px;
+      }
+
+      li:hover {
+        color: #00ff7f;
+      }
+
+    </style>
+    <!--
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-28849332-2', 'eidogram.com');
+      ga('send', 'pageview');
+    </script>
+    -->
+  </head>
+  <body>
+    <div id="container"></div>
+    <div id="text-container">
+      <div class="grid grid-pad">
+        <div class="col-4-12">
+          <div id="election">
+            <ul>
+              <li class="list-title">y-axes: Camera Elections</li>
+              <li id="y13">Feb 24th 2013</li>
+              <li id="y08">April 13th 2008</li>
+              <li id="y06">April 9th 2006</li>
+            </ul>
+          </div>
+          <div id="data">
+            <ul>
+              <li class="list-title">x-axies: data</li>
+              <li id="dens">density</li>
+              <li id="pop">size</li>
+            </ul>
+          </div>
+          <div id="regression">
+            <ul>
+              <li class="list-title">Linear Regression confidence</li>
+              <li id="incl">on inclination</li>
+              <li id="inter">on intersection</li>
+              <li id="error">on error</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-8-12">
+          Voter-tornout invreases with higher density of population.
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+  
+  var margin = {top: 20, right: 50, bottom: 30, left: 50};
+  var width = 960 - margin.left - margin.right,
+      height = 500 - margin.top - margin.bottom;
+
+  var svg = d3.select("#container").append("svg")
+      .attr("id", "chart")
+      .attr("viewBox", "0 0 960 500")          // make it
+      .attr("preserveAspectRatio", "xMidYMid") // responsive
+      .attr("width", width + margin.right + margin.left)
+      .attr("height", height + margin.top + margin.bottom);
+  
+  var img = svg.append("g")
+      //.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+      //.attr("transform","translate(" + width / 2 + "," + height / 2 + ")");
+      .attr("transform","translate(" + 0 + "," + height * 0 + ")");
+
+  var text = svg.append("g")
+    .attr("class","text")
+    .attr("transform","translate(" + 0 + "," + 0.9 * height + ")");
+
+  var colors = ["#111111", "#121212", "#131313", "#141414", "#151515", "#161616"];
+
+  d3.json("data.json", function(error, data) {
+    
+    data.sort(function (a, b) { return b.pop - a.pop; }); // higher evacuations are on the bottom
+    
+    // linear regression parameters (see ./script.py)
+    lr_log = {
+      "dens":{
+        'y13': {
+          's2': 0.0027017114910056154, 
+          'ds2a': 0.0024962384773704271,
+          'ds2b': 0.0029446469805571914, 
+          'b0': 0.65831086653909066, 
+          'b1': 0.022717575212475884, 
+          'db1a': 0.020320105514684297,
+          'db1b': 0.025115044910267472,
+          'db0a': 0.64744866413604207,
+          'db0b': 0.66917306894213924
+        },
+        'y08': {
+          's2': 0.001786039194332607,
+          'ds2a': 0.0016502057210132598,
+          'ds2b': 0.0019466382469990311,
+          'b0': 0.77294411555819065,
+          'b1': 0.0090229863083594909,
+          'db1a': 0.0070736842816121045,
+          'db1b': 0.010972288335106876,
+          'db0a': 0.7641124238881325,
+          'db0b': 0.7817758072282488
+        },
+        'y06': {
+          's2': 0.0011516638028308982,
+          'ds2a': 0.0010640764223685429,
+          'ds2b': 0.001255220385638123,
+          'b0': 0.79110304409444676,
+          'b1': 0.012696974441421397,
+          'db1a': 0.011131678351920712,
+          'db1b': 0.014262270530922083,
+          'db0a': 0.78401116595287168,
+          'db0b': 0.79819492223602184
+        }
+      },
+      "pop":{
+        'y13': {
+          's2': 0.0030583815060594016,
+          'ds2a': 0.0028257827008249291,
+          'ds2b': 0.0033333884455063211,
+          'b0': 0.64255158164973591,
+          'b1': 0.016390834623551127,
+          'db1a': 0.013952205833142512,
+          'db1b': 0.018829463413959743,
+          'db0a': 0.62520089460171535,
+          'db0b': 0.65990226869775648
+        },
+        'y08': {
+          's2': 0.0018903631358530948,
+          'ds2a': 0.0017465955234778644,
+          'ds2b': 0.0020603429043693066,
+          'b0': 0.78509683691262211,
+          'b1': 0.0038762238184332312,
+          'db1a': 0.0019590014509774482,
+          'db1b': 0.0057934461858890141,
+          'db0a': 0.77145592303920862,
+          'db0b': 0.79873775078603559
+        },
+        'y06': {
+          's2': 0.0013252973669047403,
+          'ds2a': 0.0012245046490859557,
+          'ds2b': 0.0014444669250541853,
+          'b0': 0.79764845516190974,
+          'b1': 0.0069645734023945334,
+          'db1a': 0.0053592721855382185,
+          'db1b': 0.0085698746192508484,
+          'db0a': 0.78622684021951683,
+          'db0b': 0.80907007010430265
+        }
+      }
+    };
+
+    var densScale = d3.scale.log()
+      .domain([d3.min(data, function(d) { return d.dens; }), d3.max(data, function(d) { return d.dens; })])
+      .range([0, width * 0.9]); 
+
+    var percScale = d3.scale.linear()
+      .domain([d3.min(data, function(d) { return d["y13"]["perc"]; }), d3.max(data, function(d) { return d["y13"]["perc"]; })])
+      .range([0, height]);
+    var popScale = d3.scale.log()
+      .domain([d3.min(data, function(d) { return d.pop; }), d3.max(data, function(d) { return d.pop; })])
+      //.domain([d3.min(data, function(d) { return d.pop; }), 2300000])
+      .range([0, width * 0.9]);
+
+    var rDensScale = d3.scale.sqrt()
+      .domain([d3.min(data, function(d) { return d.pop; }), d3.max(data, function(d) { return d.pop; })])
+      .range([0,70]);
+
+    var rPopScale = d3.scale.sqrt()
+      .domain([d3.min(data, function(d) { return d.dens; }), d3.max(data, function(d) { return d.dens; })])
+      .range([0,40]);
+
+    /*
+    var impression = img.append("g")
+        .attr("id","impression")
+      .selectAll("circles")
+        .data(data)
+        .enter()
+        .append("circle")
+          .attr("class", "shadows")
+          .attr("cx", function(d) { return densScale(d.dens); })
+          .attr("cy", function(d) { return height - percScale(d["y13"]["perc"]); })
+          .attr("r", function(d) { return rScale(d.pop); });
+    */
+
+    var circles = img.append("g")
+        .attr("id","circles")
+      .selectAll("circles")
+        .data(data)
+        .enter()
+        .append("circle")
+          .style("fill", function() { return colors[Math.floor(Math.random() * colors.length)]; })
+          .attr("cx", function(d) { return densScale(d.dens); })
+          .attr("cy", function(d) { return height - percScale(d["y13"]["perc"]); })
+          .attr("r", function(d) { return rDensScale(d.pop); });
+
+    var year = "y13";
+    var typedata = "dens";
+
+    var rect= function(b0, b1, x) {
+      return b0 + b1 * x;
+    };
+
+    var lrRect = function(year,xdata,b0,b1) {
+      var //x1 = d3.min(data, function(d) { return d.dens; }),
+          x1 = 5 * d3.min(data, function(d) {
+            var value = xdata == "pop" ? d.pop : d.dens;
+            return value; 
+          }),
+          x2 = 1.5 * d3.max(data, function(d) {
+            var value = xdata == "pop" ? d.pop : d.dens;
+            return value; 
+          }),
+          y1 = rect(lr_log[xdata][year][b0],lr_log[xdata][year][b1],Math.log(x1)),
+          y2 = rect(lr_log[xdata][year][b0],lr_log[xdata][year][b1],Math.log(x2));
+      return [x1,y1,x2,y2];
+    };
+
+    var lrCoords = {
+      "y13": lrRect("y13","dens","b0","b1"),
+      "y08": lrRect("y08","dens","b0","b1"),
+      "y06": lrRect("y06","dens","b0","b1")
+    };
+
+    var lrCoordsStart = {
+      "y13": lrRect("y13","dens","b0","db1b"),
+      "y08": lrRect("y08","dens","b0","db1b"),
+      "y06": lrRect("y06","dens","b0","db1b")
+    };
+
+    var lrCoordsEnd = {
+      "y13": lrRect("y13","dens","b0","db1a"),
+      "y08": lrRect("y08","dens","b0","db1a"),
+      "y06": lrRect("y06","dens","b0","db1a")
+    };
+
+    var arcObj = function(year,xdata) {
+      var lrCoords = {
+      "y13": lrRect("y13","dens","b0","b1"),
+      "y08": lrRect("y08","dens","b0","b1"),
+      "y06": lrRect("y06","dens","b0","b1")
+      };
+      var xdataScale = xdata == "pop" ? popScale : densScale;
+      var x1a = xdataScale(lrCoordsEnd[year][0]),
+          y1a = height - percScale(lrCoordsEnd[year][1]),
+          x2b = xdataScale(lrCoordsStart[year][2]),
+          y2b = height - percScale(lrCoordsStart[year][3]);
+      var innerR = Math.sqrt(Math.pow(x1a,2) + Math.pow(y1a,2)),
+          outerR = Math.sqrt(Math.pow(x2b,2) + Math.pow(y2b,2)),
+          startA = Math.atan(x2b/y2b),
+          endA = Math.atan(x1a/y1a);
+      return {"innerRadius":innerR, "outerRadius":outerR, "startAngle":startA, "endAngle":endA};
+    };
+
+    var clickShowdb0 = function(){
+      if (interLine.style("stroke-width") == "0px") {
+        var db0a = lr_log[typedata][year]['db0a'],
+            db0b = lr_log[typedata][year]['db0b'];
+
+        interLine.transition().style("stroke-width",function() { return percScale(db0b)-percScale(db0a); });
+      } else {
+        interLine.transition().style("stroke-width",0);
+      };
+    };
+
+    var changeYear = function(x) {
+      year = "y" + x;
+      var db0a = lr_log[typedata][year]['db0a'],
+          db0b = lr_log[typedata][year]['db0b'];
+
+      var db0s = interLine.style("stroke-width");
+      circles.transition().duration(2000)
+        .attr("cy", function(d) { return height - percScale(d[year]["perc"]); });
+      lrLine.transition().duration(2000)
+        .attr("y1",height - percScale(lrCoords[year][1]))
+        .attr("y2",height - percScale(lrCoords[year][3]));
+      interLine.transition().duration(2000)
+        .attr("y1",height - percScale(lrCoords[year][1]))
+        .attr("y2",height - percScale(lrCoords[year][3]))
+        .style("stroke-width",function() { 
+          return db0s == "0px"? 0 : percScale(db0b)-percScale(db0a); });
+      /*lrLineShadow.transition().duration(2000)
+        .attr("y1",height - percScale(lrCoords[year][1]))
+        .attr("y2",height - percScale(lrCoords[year][3]));*/
+      /*
+      impression.transition().duration(2000)
+        .style("opacity","0");
+      impression.transition().delay(2050).duration(200)
+        .attr("cy", function(d) { return height - percScale(d[year]["perc"]); })
+      impression.transition().delay(2300).duration(200)
+        .style("opacity","1");
+      */
+    };
+
+    var changeData = function(xdata) {
+      
+      typedata = xdata;
+
+      var xdataScale = xdata == "pop" ? popScale : densScale;
+      var rdataScale = xdata == "pop" ? rPopScale : rDensScale;
+      var db0a = lr_log[typedata][year]['db0a'],
+          db0b = lr_log[typedata][year]['db0b'];
+
+      var db0s = interLine.style("stroke-width");
+
+      circles.transition().duration(2000)
+        .attr("cx", function(d) {
+          var value = xdata == "pop" ? d.pop : d.dens;
+          return xdataScale(value); 
+        })
+        .attr("r", function(d) {
+          var value = xdata == "pop" ? d.dens : d.pop;
+          //return rdataScale(value);
+          return rDensScale(d.pop);
+        });
+
+      lrCoords = {
+        "y13": lrRect("y13",xdata,"b0","b1"),
+        "y08": lrRect("y08",xdata,"b0","b1"),
+        "y06": lrRect("y06",xdata,"b0","b1")
+      };
+
+      lrLine.transition().duration(2000)
+        .attr("x1",xdataScale(lrCoords[year][0]))
+        .attr("y1",height - percScale(lrCoords[year][1]))
+        .attr("x2",xdataScale(lrCoords[year][2]))
+        .attr("y2",height - percScale(lrCoords[year][3]));
+
+      interLine.transition().duration(2000)
+        .attr("x1",xdataScale(lrCoords[year][0]))
+        .attr("y1",height - percScale(lrCoords[year][1]))
+        .attr("x2",xdataScale(lrCoords[year][2]))
+        .attr("y2",height - percScale(lrCoords[year][3]))
+        .style("stroke-width",function() { return db0s == "0px"? 0 : percScale(db0b)-percScale(db0a); });
+    };
+
+
+    var ao = arcObj("y13","dens");
+    var arcPath = d3.svg.arc()
+        .innerRadius(ao.innerRadius)
+        .outerRadius(ao.outerRadius)
+        .startAngle(ao.startAngle)
+        .endAngle(ao.endAngle);
+    var inclArc = img.append("path")
+        .attr("d", arcPath)
+        .attr("transform","translate(0,300)");
+
+
+    var interLine = img.append("line")
+        .attr("x1",densScale(lrCoords["y13"][0]))
+        .attr("y1",height - percScale(lrCoords["y13"][1]))
+        .attr("x2",densScale(lrCoords["y13"][2]))
+        .attr("y2",height - percScale(lrCoords["y13"][3]))
+        .style("stroke-width","0")
+        .attr("class","inter-line");
+
+
+    var lrLine = img.append("line")
+        .attr("x1",densScale(lrCoords["y13"][0]))
+        .attr("y1",height - percScale(lrCoords["y13"][1]))
+        .attr("x2",densScale(lrCoords["y13"][2]))
+        .attr("y2",height - percScale(lrCoords["y13"][3]))
+        .style("stroke-dasharray","3,3")
+        .attr("class","linreg");
+   /*var lrLineShadow = img.append("line")
+        .attr("x1",densScale(lrCoords["y13"][0]))
+        .attr("y1",height - percScale(lrCoords["y13"][1]))
+        .attr("x2",densScale(lrCoords["y13"][2]))
+        .attr("y2",height - percScale(lrCoords["y13"][3]))
+        .style({"stroke-dasharray":"3,3"})
+        .attr("class","linreg shadow-rect");*/
+
+    // texts    
+
+    d3.select("#y13").on("click",function() { changeYear("13"); });
+    d3.select("#y08").on("click",function() { changeYear("08"); });
+    d3.select("#y06").on("click",function() { changeYear("06"); });
+
+    d3.select("#dens").on("click",function() { changeData("dens"); });
+    d3.select("#pop").on("click",function() { changeData("pop"); });
+
+    d3.select("#inter").on("click", function() { clickShowdb0(); });
+
+/*
+    var years = text.append("g")
+      .attr("transform","translate(0,0)");
+    years.append("text")
+      .text("Camera Elections")
+      .attr("class","list-title")
+      .attr("dy","-1.5em");
+    years.append("text")
+      .text("Feb 24th 2013")
+      .attr("class","item item-on")
+      .on("click",function() { changeYear("13"); });
+    years.append("text")
+      .text("April 13th 2008")
+      .attr("class","item")
+      .attr("dy","1.5em")
+      .on("click",function() { changeYear("08"); });
+    years.append("text")
+      .text("April 9th 2006")
+      .attr("class","item")
+      .attr("dy","3em")
+      .on("click",function() { changeYear("06"); });
+
+    var lrText = text.append("g")
+      .attr("transform","translate(250,0)");
+    lrText.append("text")
+      .attr("dy","-1.5em")
+      .attr("class","item")
+      .text("Linear Regression");
+    lrText.append("text")
+      .attr("class","item")
+      .attr("dy","0em")
+      .text("confidence on inclination");
+    lrText.append("text")
+      .attr("class","item")
+      .text("confidence on y-intersection")
+      .attr("dy","1.5em");
+    lrText.append("text")
+      .attr("class","item")
+      .text("confidence on gaussian noise")
+      .attr("dy","3em");
+
+    var dataText = text.append("g")
+      .attr("transform","translate(500,0)");
+    dataText.append("text")
+      .attr("class","item item-on")
+      .attr("dy","0em")
+      .text("population-density vs voter-turnout")
+      .on("click",function() { changeData("dens"); });
+    dataText.append("text")
+      .attr("class","item")
+      .text("population-size vs voter-turnout")
+      .attr("dy","1.5em")
+      .on("click",function() { changeData("pop"); });
+*/
+
+
+  });
+
+  
+  </script>
+
+  <!-- Make it responsive -->
+  <script>
+    var chart = $("#chart"),
+        aspect = chart.width() / chart.height(),
+        container = chart.parent();
+    var resize = function() {
+        var targetWidth = container.width();
+        chart.attr("width", targetWidth);
+        chart.attr("height", Math.round(targetWidth / aspect));
+        $("#text-container").css("padding-top", 0.6 * Math.round(targetWidth / aspect))
+    };
+    $(window).on("resize", resize).trigger("resize");
+  </script>
+
+</html>

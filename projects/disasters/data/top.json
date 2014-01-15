@@ -1,0 +1,201 @@
+[{
+    "event":"Monsoons floods (1st period)",
+    "location":"North-east: Assam state and Arunachal Pradesh state",
+    "date":"June/July",  
+    "lat": 26.70,
+    "country": "India",
+    "lng": 93.71,
+    "code": "IN",
+    "displaced": "6.900.000",
+    "id":"c1"
+}, {
+    "event":"Rainy season floods",
+    "location":"33 out of 36 states, including the Federal Capital Territory",
+    "date":"September/October",
+    "lat": 10.0,
+    "country": "Nigeria",
+    "lng": 8.0,
+    "code": "NG",
+    "displaced": "6.089.000",
+    "id":"c2"
+}, {
+    "event":"Typhoon Haikui floods",
+    "location":"Coastal, northern and southern provinces",
+    "date":"August",
+    "lat": 27.52,
+    "country": "China",
+    "lng": 120.92,
+    "code": "CN",
+    "displaced": "2.079.000",
+    "id":"c3"
+}, {
+    "event":"Monsoons floods (2nd period)",
+    "location":"North-east: Assam state and Arunachal Pradesh state",
+    "date":"August/September",
+    "lat": 28.21,
+    "country": "India",
+    "lng": 94.72,
+    "code": "IN",
+    "displaced": "2.000.000",
+    "id":"c4"
+}, {
+    "event":"Typhoon Pablo (Bopha)",
+    "location":"Mindanao",
+    "date":"December",
+    "lat": 8.50,
+    "country": "Philippines",
+    "lng": 123.30,
+    "code": "PH",
+    "displaced": "1.932.000",
+    "id":"c5"
+}, {
+    "event":"Monsoon floods",
+    "location":"Balochistan, Sindh, Punjab",
+    "date":"August/September",
+    "lat": 28.49,
+    "country": "Pakistan",
+    "lng": 65.10,
+    "code": "PK",
+    "displaced": "1.857.000",
+    "id":"c6"
+}, {
+    "event":"Floods, southwest monsoon and typhoon effects",
+    "location":"Luzon, including Metro Manila. Parts of Visayas and Mindanao",
+    "date":"June/August",
+    "lat": 16.56,
+    "country": "Philippines",
+    "lng": 121.26,
+    "code": "PH",
+    "displaced": "1.553.000",
+    "id":"c7"
+}, {
+    "event":"Monsoon floods (2nd period)",
+    "location":"12 provinces or areas of the east, central, south, south-west and north-west",
+    "date":"June/July",
+    "lat": 35.0,
+    "country": "China",
+    "lng": 105.0,
+    "code": "CN",
+    "displaced": "1.420.000",
+    "id":"c8"
+}, {
+    "event":"Twin typhoons Saola and Damrey / floods",
+    "location":"10 provinces – north-east to south-east",
+    "date":"August",
+    "lat": 31.44,
+    "country": "China",
+    "lng": 121.60,
+    "code": "CN",
+    "displaced": "867.000",
+    "id":"c9"
+}, {
+    "event":"Hurricane Sandy",
+    "location":"East Coast, Appalachians, Mid-West",
+    "date":"October",
+    "lat": 39.93,
+    "country": "United States",
+    "lng": -74.13,
+    "code": "US",
+    "displaced": "776.000",
+    "id":"c10"
+}, {
+    "event":"Monsoon floods",
+    "location":"South-east and north-east",
+    "date":"June",
+    "lat": 23.68,
+    "country": "Bangladesh",
+    "lng": 90.36,
+    "code": "",
+    "displaced": "600.000",
+    "id":"c11"
+}, {
+    "event":"Typhoon Kai-Tak",
+    "location":"East coast – Guangdong and Guangxi",
+    "date":"August",
+    "lat": 23.13,
+    "country": "China",
+    "lng": 113.27,
+    "code": "",
+    "displaced": "530.000",
+    "id":"c12"
+}, {
+    "event":"Rainy season floods",
+    "location":"Dosso (south-west), Tillabéri (west) and Niamey Region",
+    "date":"July/August",
+    "lat": 14.22,
+    "country": "Niger",
+    "lng": 1.45,
+    "code": "",
+    "displaced": "530.000",
+    "id":"c13"
+}, {
+    "event":"Rainy season floods",
+    "location":"N’Djamena, southern regions",
+    "date":"July/October",
+    "lat": 12.10,
+    "country": "Chad",
+    "lng": 15.04,
+    "code": "",
+    "displaced": "500.000",
+    "id":"c14"
+}, {
+    "event":"Monsoon floods (1st period)",
+    "location":"147 counties in 22 provinces, including Gansu, Hunan and Jiangxi provinces",
+    "date":"April/May",
+    "lat": 36.06,
+    "country": "China",
+    "lng": 103.83,
+    "code": "",
+    "displaced": "443.000",
+    "id":"c15"
+}, {
+    "event":"Hurricane Sandy",
+    "location":"East coast",
+    "date":"October",
+    "lat": 21.52,
+    "country": "Cuba",
+    "lng": -77.78,
+    "code": "",
+    "displaced": "343.000",
+    "id":"c16"
+}, {
+    "event":"Rainy season floods",
+    "location":"44 out of 47 counties in Jonglei, Upper Nile and Unity states",
+    "date":"June/July",
+    "lat": 7.18,
+    "country": "South Sudan",
+    "lng": 32.36,
+    "code": "",
+    "displaced": "340.000",
+    "id":"c17"
+}, {
+    "event":"Floods and landslides",
+    "location":"Kyushu",
+    "date":"July",
+    "lat": 33.00,
+    "country": "Japan",
+    "lng": 131.00,
+    "code": "",
+    "displaced": "250.000",
+    "id":"c18"
+}, {
+    "event":"Monsoon floods",
+    "location":"South Phyongan province",
+    "date":"June/July",
+    "lat": 39.35,
+    "country": "North Korea",
+    "lng": 126.17,
+    "code": "",
+    "displaced": "212.000",
+    "id":"c19"
+}, {
+    "event":"Cyclonic storm Nilam",
+    "location":"Andhra Pradesh state and Tamil Nadu state",
+    "date":"October",
+    "lat": 17.05,
+    "country": "India",
+    "lng": 80.10,
+    "code": "",
+    "displaced": "210.000",
+    "id":"c20"
+}]
