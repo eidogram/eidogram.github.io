@@ -1,0 +1,143 @@
+<!DOCTYPE html> <!-- Declaring that the document contains HTML5 mark-up with the HTML5 doctype -->
+<html>
+  <head>
+
+    <meta charset="utf-8"> <!-- Declaring the character set -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- defines the ratio between the device width and the viewport size  -->
+    
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/d3.v3.min.js" charset="utf-8"></script>
+    <script src="./js/topojson.v1.min.js"></script>
+
+    <style type='text/css'>
+
+      #container {
+        border: 1px solid #000;
+        width: 90%;
+        margin: auto;
+      }
+
+      svg {
+        border: 1px solid red;
+      }
+
+      .map {
+        fill: #636363;
+        stroke: #fff;
+        stroke-width: 0.5px;
+      }
+
+      circle {
+        fill: #d1d1d1;
+        opacity: 0;
+        stroke: #131313;
+      }
+
+    </style>
+
+  </head>
+  
+  <body>
+    <div id="container"></div>
+  </body>
+
+  <script>
+    var width = 960;
+    var height = 500;
+
+    var svg = d3.select("#container").append("svg")
+        .attr("id", "chart")
+        .attr("viewBox", "0 0 960 500")          // make it
+        .attr("preserveAspectRatio", "xMidYMid") // responsive
+        .attr("width", width)
+        .attr("height", height);
+
+    svg.append("circle")
+        .attr({"cx":"0", "cy":"0", "r":"10"})
+        .style("fill","red");
+        
+    svg.append("circle")
+        .attr({"cx":"960", "cy":"0", "r":"10"})
+        .style("fill","blue");
+        
+    svg.append("circle")
+        .attr({"cx":"960", "cy":"500", "r":"10"})
+        .style("fill","green");
+        
+    svg.append("circle")
+        .attr({"cx":"0", "cy":"500", "r":"10"})
+        .style("fill","yellow");
+
+    var map = svg.append("g")
+        .attr("class","map");
+
+    var projection = d3.geo.mercator()
+      .center([9.1815,45.4773])
+      .rotate([0,0,0])
+      .translate([480,250])
+      .scale(100);
+
+    var path = d3.geo.path()
+      .projection(projection);
+
+
+    d3.json("./map/world.json", function(error, topology) {
+        console.log(topology);
+
+        var data = topojson.feature(topology, topology.objects.countries);
+        
+        map.append("path")
+          .datum(data)
+          .attr("d", path);
+        
+        });
+
+    d3.json("./data/data.json", function(error, data) {
+        console.log(data);
+
+        var rScale = d3.scale.sqrt()
+          .domain([d3.min(data, function(d) { return d.displaced; }),
+                   d3.max(data, function(d) { return d.displaced; })
+                  ])
+          .range([10, 70]);
+
+        var timeScale = d3.scale.sqrt()
+          .domain([d3.min(data, function(d) { return d.displaced; }),
+                   d3.max(data, function(d) { return d.displaced; })
+                  ])
+          .range([10, 10000]);
+
+
+        var circles = map.append("g")
+          .selectAll("circle")
+            .data(data)
+          .enter()
+            .append("circle")
+              .attr("cx",function(d) { return projection([d.lng,d.lat])[0]; })
+              .attr("cy",function(d) { return projection([d.lng,d.lat])[1]; })
+              .attr("r",function(d) { return rScale(d.displaced); });
+
+        circles.transition()
+            .duration(1000)  // 1 sec
+            .delay(function(d) { return timeScale(d.displaced); })
+            .style("opacity","0.5");
+
+    });
+
+    // Responsive
+    var chart = $("#chart"),
+        aspect = chart.width() / chart.height(),
+        container = chart.parent();
+    var resize = function() {
+        var targetWidth = container.width();
+        chart.attr("width", targetWidth);
+        chart.attr("height", Math.round(targetWidth / aspect));
+    };
+    $(window).on("resize", resize).trigger("resize");
+    $(window).on("ready", resize).trigger("resize");
+
+  </script>
+
+
+
+</html>

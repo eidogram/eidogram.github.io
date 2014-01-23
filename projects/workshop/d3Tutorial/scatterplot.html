@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>scatterplot</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://stackedit.io/libs/MathJax/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body><div class="container"><p><strong>Tuxtax Workshop, January 25th 2014</strong></p>
+
+<hr>
+
+<h2 id="prerequisiti-software-suggeriti">Prerequisiti Software Suggeriti</h2>
+
+<ul>
+<li>Web browser <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Chrome</a> o <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Firefox</a></li>
+<li>editor testuale <a href="https://developer.mozilla.org/it/docs/JavaScript">Sublimetext</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Python2</a> o <a href="https://developer.mozilla.org/en-US/docs/DOM">Python3</a></li>
+</ul>
+
+<p>Se necessario, attivare un server locale mediante il seguente comando Python (2 o 3) internamente alla cartella di lavoro</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">python2 </span><span class="pun">-</span><span class="pln">m </span><span class="typ">SimpleHTTPServer</span><span class="pln"> </span><span class="lit">8008</span></code></pre>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">python3 </span><span class="pun">-</span><span class="pln">m http</span><span class="pun">.</span><span class="pln">server</span></code></pre>
+
+<p>oppure lanciando chrome con la flag</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">$ open </span><span class="pun">-</span><span class="pln">a </span><span class="typ">Google</span><span class="pln">\ </span><span class="typ">Chrome</span><span class="pln"> </span><span class="pun">--</span><span class="pln">args </span><span class="pun">--</span><span class="pln">disable</span><span class="pun">-</span><span class="pln">web</span><span class="pun">-</span><span class="pln">security </span><span class="pun">(</span><span class="pln">MAC</span><span class="pun">)</span><span class="pln">
+$ google</span><span class="pun">-</span><span class="pln">chrome </span><span class="pun">--</span><span class="pln">disable</span><span class="pun">-</span><span class="pln">web</span><span class="pun">-</span><span class="pln">security </span><span class="pun">(</span><span class="pln">LINUX</span><span class="pun">)</span><span class="pln">
+$ chrome</span><span class="pun">.</span><span class="pln">exe </span><span class="pun">--</span><span class="pln">disable</span><span class="pun">-</span><span class="pln">web</span><span class="pun">-</span><span class="pln">security </span><span class="pun">(</span><span class="pln">WINDOWS</span><span class="pun">)</span></code></pre>
+
+<h2 id="densità-abitativa-vs-affluenza-alle-urne">Densità abitativa <em>vs</em> Affluenza alle urne</h2>
+
+<h3 id="template-iniziale"><strong>#1 Template iniziale</strong></h3>
+
+<p>Creiamo il file <code>index.html</code> con il seguente contenuto:</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln"> </span><span class="com">&lt;!-- Declaring that the document contains HTML5 mark-up with the HTML5 doctype --&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+  </span><span class="tag">&lt;head&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="tag">&gt;</span><span class="pln"> </span><span class="com">&lt;!-- Declaring the character set --&gt;</span><span class="pln">
+
+    </span><span class="com">&lt;!-- defines the ratio between the device width and the viewport size  --&gt;</span><span class="pln">
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"viewport"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;style</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">'text/css'</span><span class="tag">&gt;&lt;/style&gt;</span><span class="pln">
+
+  </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+
+  </span><span class="tag">&lt;body&gt;&lt;/body&gt;</span><span class="pln">
+
+  </span><span class="tag">&lt;script&gt;&lt;/script&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;/html&gt;</span></code></pre>
+
+<p>Osserviamo la presenza di tre distinte sezioni</p>
+
+<ul>
+<li><code>&lt;style type='text/css'&gt;&lt;/style&gt;</code>per il codice <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+<li><code>&lt;body&gt;&lt;/body&gt;</code> per il codice <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+<li><code>&lt;script&gt;&lt;/script&gt;</code> per il codice <a href="https://developer.mozilla.org/it/docs/JavaScript">Javascript</a></li>
+</ul>
+
+<p>Richiamiamo le librerie javascript all’interno del <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">tag</a> <code>head</code>, queste si trovano nella sotto-cartella <code>./js</code></p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">  </span><span class="tag">&lt;head&gt;</span><span class="pln">
+    ...
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"viewport"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"./js/jquery.min.js"</span><span class="tag">&gt;&lt;/script&gt;</span><span class="pln">
+    </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"./js/d3.v3.min.js"</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="tag">&gt;&lt;/script&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;style</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">'text/css'</span><span class="tag">&gt;&lt;/style&gt;</span><span class="pln">
+
+  </span><span class="tag">&lt;/head&gt;</span></code></pre>
+
+<p>Creiamo un <code>div</code> con <code>id="container"</code> entro il tag <code>&lt;body&gt;</code>:</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">  </span><span class="tag">&lt;body&gt;</span><span class="pln">
+    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"container"</span><span class="tag">&gt;&lt;/div&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/body&gt;</span></code></pre>
+
+<p>ed osserviamo la presenza el nuovo elemento all’interno del <a href="https://developer.mozilla.org/en-US/docs/DOM">DOM</a> per mezzo della <a href="https://developers.google.com/chrome-developer-tools/docs/console?hl=it">console</a>.</p>
+
+<blockquote>
+  <p><i class="icon-cog"></i> Cos’è il <em>Document Object Model</em> (DOM)? <br>
+  Dalla Mozilla Developer Network: <em>The Document Object Model (DOM) is an API for manipulating HTML and XML documents. It provides a structural representation of the document, enabling you to modify its content and visual presentation by using a scripting language such as JavaScript.</em> <br>
+  Provare a rappresentare mediante una grafo ad albero il seguente documento html:</p>
+</blockquote>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="tag">&lt;body&gt;</span><span class="pln">
+  </span><span class="tag">&lt;section</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"s1"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;div&gt;</span><span class="pln">
+      </span><span class="tag">&lt;h1&gt;</span><span class="pln">
+        Titolo
+      </span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">
+        Paragrafo
+      </span><span class="tag">&lt;/p&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/section&gt;</span><span class="pln">
+  </span><span class="tag">&lt;section</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"s2"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;ul&gt;</span><span class="pln">
+      </span><span class="tag">&lt;li&gt;</span><span class="pln">
+        </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://www.tuxtax.ch"</span><span class="tag">&gt;</span><span class="pln">
+          tuxtax
+        </span><span class="tag">&lt;/a&gt;</span><span class="pln">
+      </span><span class="tag">&lt;/li&gt;</span><span class="pln">
+        item
+      </span><span class="tag">&lt;li&gt;</span><span class="pln">
+      </span><span class="tag">&lt;/li&gt;</span><span class="pln">
+        item
+    </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/section&gt;</span><span class="pln">
+</span><span class="tag">&lt;/body&gt;</span></code></pre>
+
+<hr>
+
+<h4 id="elemento-svg">Elemento SVG</h4>
+
+<p>Appendiamo un elemento <a href="https://developer.mozilla.org/en-US/docs/Web/SVG">SVG</a> al <code>div</code> appena creato:</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">  </span><span class="tag">&lt;script&gt;</span><span class="pln">
+
+    </span><span class="kwd">var</span><span class="pln"> width </span><span class="pun">=</span><span class="pln"> </span><span class="lit">960</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">var</span><span class="pln"> height </span><span class="pun">=</span><span class="pln"> </span><span class="lit">500</span><span class="pun">;</span><span class="pln">
+
+    </span><span class="kwd">var</span><span class="pln"> svg </span><span class="pun">=</span><span class="pln"> d3</span><span class="pun">.</span><span class="pln">select</span><span class="pun">(</span><span class="str">"#container"</span><span class="pun">).</span><span class="pln">append</span><span class="pun">(</span><span class="str">"svg"</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"id"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"chart"</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"width"</span><span class="pun">,</span><span class="pln"> width</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"height"</span><span class="pun">,</span><span class="pln"> height</span><span class="pun">);</span><span class="pln">
+
+  </span><span class="tag">&lt;/script&gt;</span></code></pre>
+
+<p>ed aggiungiamo del codice CSS al solo scopo di visualizzare gli elementi sinora inseriti:</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">    </span><span class="tag">&lt;style</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">'text/css'</span><span class="tag">&gt;</span><span class="pln">
+
+      </span><span class="com">#container {</span><span class="pln">
+        border</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1px</span><span class="pln"> solid </span><span class="com">#000;</span><span class="pln">
+      </span><span class="pun">}</span><span class="pln">
+
+      svg </span><span class="pun">{</span><span class="pln">
+        border</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1px</span><span class="pln"> solid red</span><span class="pun">;</span><span class="pln">
+      </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="tag">&lt;/style&gt;</span></code></pre>
+
+<p>Ora possiamo visualizzare il file <code>index.html</code> al browser.</p>
+
+<hr>
+
+<h4 id="aggiustamenti-finali">Aggiustamenti finali</h4>
+
+<p>Al fine di centrare il grafico e renderlo <em>responsive</em> definiamo gli attributi <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox"><code>viewBox</code></a> e <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio"><code>preserveAspectRatio</code></a> per l’elemento SVG precedentemente creato:</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">    </span><span class="kwd">var</span><span class="pln"> svg </span><span class="pun">=</span><span class="pln"> d3</span><span class="pun">.</span><span class="kwd">select</span><span class="pun">(</span><span class="str">"#container"</span><span class="pun">).</span><span class="pln">append</span><span class="pun">(</span><span class="str">"svg"</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"id"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"chart"</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"viewBox"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"0 0 960 500"</span><span class="pun">)</span><span class="pln">          </span><span class="com">// make it</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"preserveAspectRatio"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"xMidYMid"</span><span class="pun">)</span><span class="pln"> </span><span class="com">// responsive</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"width"</span><span class="pun">,</span><span class="pln"> width</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"height"</span><span class="pun">,</span><span class="pln"> height</span><span class="pun">);</span></code></pre>
+
+<p>e aggiungamo il seguente codice <a href="http://jquery.com/">jQuery</a> in coda allo script:</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">  </span><span class="tag">&lt;script&gt;</span><span class="pln">
+
+    </span><span class="pun">...</span><span class="pln">
+
+    </span><span class="com">// Responsive</span><span class="pln">
+    </span><span class="kwd">var</span><span class="pln"> chart </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="str">"#chart"</span><span class="pun">),</span><span class="pln">
+        aspect </span><span class="pun">=</span><span class="pln"> chart</span><span class="pun">.</span><span class="pln">width</span><span class="pun">()</span><span class="pln"> </span><span class="pun">/</span><span class="pln"> chart</span><span class="pun">.</span><span class="pln">height</span><span class="pun">(),</span><span class="pln">
+        container </span><span class="pun">=</span><span class="pln"> chart</span><span class="pun">.</span><span class="pln">parent</span><span class="pun">();</span><span class="pln">
+    </span><span class="kwd">var</span><span class="pln"> resize </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">var</span><span class="pln"> targetWidth </span><span class="pun">=</span><span class="pln"> container</span><span class="pun">.</span><span class="pln">width</span><span class="pun">();</span><span class="pln">
+        chart</span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"width"</span><span class="pun">,</span><span class="pln"> targetWidth</span><span class="pun">);</span><span class="pln">
+        chart</span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"height"</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">round</span><span class="pun">(</span><span class="pln">targetWidth </span><span class="pun">/</span><span class="pln"> aspect</span><span class="pun">));</span><span class="pln">
+    </span><span class="pun">};</span><span class="pln">
+    $</span><span class="pun">(</span><span class="pln">window</span><span class="pun">).</span><span class="pln">on</span><span class="pun">(</span><span class="str">"resize"</span><span class="pun">,</span><span class="pln"> resize</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">"resize"</span><span class="pun">);</span><span class="pln">
+    $</span><span class="pun">(</span><span class="pln">window</span><span class="pun">).</span><span class="pln">on</span><span class="pun">(</span><span class="str">"ready"</span><span class="pun">,</span><span class="pln"> resize</span><span class="pun">).</span><span class="pln">trigger</span><span class="pun">(</span><span class="str">"resize"</span><span class="pun">);</span><span class="pln">
+
+  </span><span class="tag">&lt;/script&gt;</span></code></pre>
+
+<blockquote>
+  <p><i class="icon-cog"></i> Qual è il significato del precedente codice?</p>
+</blockquote>
+
+<p>Infine aggiungiamo due righe CSS all’elemento <code>container</code>per definire larghezza e margini:</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">      </span><span class="com">#container {</span><span class="pln">
+        border</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1px</span><span class="pln"> solid </span><span class="com">#000;</span><span class="pln">
+        width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">90</span><span class="pun">%;</span><span class="pln">
+        margin</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">auto</span><span class="pun">;</span><span class="pln">
+      </span><span class="pun">}</span></code></pre>
+
+<p>Proviamo ora a ridimensionare la finestra del browser per vedere come cambia il box.</p>
+
+<hr>
+
+<h3 id="importare-i-dati"><strong>#2 Importare i dati</strong></h3>
+
+<p>Il file <code>data.json</code> contiene in formato <a href="https://developer.mozilla.org/en-US/docs/JSON">JSON</a> i dati che andremo a visualizzare:</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pun">[{</span><span class="pln">
+    </span><span class="str">"comune"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Lagnasco"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">"y06"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"elettori"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1041</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"perc"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.9241114313160422</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"nonvalide"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">38</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"votanti"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">962</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"bianche"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">19</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    </span><span class="str">"y13"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"elettori"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1006</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"perc"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.8687872763419483</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"nonvalide"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">50</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"votanti"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">874</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"bianche"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">22</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    </span><span class="str">"sup"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">17.7127</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">"dens"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">79.3216166931072</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">"y08"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"elettori"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1028</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"perc"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.8949416342412452</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"nonvalide"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">34</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"votanti"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">920</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"bianche"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">13</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    </span><span class="str">"pop"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1405</span><span class="pln">
+</span><span class="pun">},</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="str">"comune"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Levice"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">"y06"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="pun">...</span><span class="pln">
+
+</span><span class="pun">}]</span></code></pre>
+
+<p>Facciamo riferimento alle <a href="https://github.com/mbostock/d3/wiki/Requests#wiki-d3_json">API</a> di D3.js per importare il file json:</p>
+
+<blockquote>
+  <p><code>d3.json(url[, callback])</code> <br>
+  Creates a request for the JSON file at the specified url with the mime type “application/json”. If a callback is specified, the request is immediately issued with the GET method, and the callback will be invoked asynchronously when the file is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the parsed JSON. The parsed JSON is undefined if an error occurs.</p>
+</blockquote>
+
+<p>Inseriamo il codice per la richiesta del file json sotto la variabile <code>svg</code>:</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">    </span><span class="kwd">var</span><span class="pln"> svg </span><span class="pun">=</span><span class="pln"> d3</span><span class="pun">.</span><span class="kwd">select</span><span class="pun">(</span><span class="str">"#container"</span><span class="pun">).</span><span class="pln">append</span><span class="pun">(</span><span class="str">"svg"</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"id"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"chart"</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"viewBox"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"0 0 960 500"</span><span class="pun">)</span><span class="pln">          </span><span class="com">// make it</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"preserveAspectRatio"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"xMidYMid"</span><span class="pun">)</span><span class="pln"> </span><span class="com">// responsive</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"width"</span><span class="pun">,</span><span class="pln"> width</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"height"</span><span class="pun">,</span><span class="pln"> height</span><span class="pun">);</span><span class="pln">
+
+    d3</span><span class="pun">.</span><span class="pln">json</span><span class="pun">(</span><span class="str">"data.json"</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">error</span><span class="pun">,</span><span class="pln"> data</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+       console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">data</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">});</span><span class="pln">
+
+    </span><span class="pun">...</span></code></pre>
+
+<blockquote>
+  <p><i class="icon-cog"></i> Nella <a href="https://developers.google.com/chrome-developer-tools/docs/console?hl=it">console</a> di chrome dovrebbe apparire il contenuto di <code>data</code>.</p>
+</blockquote>
+
+<hr>
+
+<h3 id="data-join"><strong>#3 Data Join</strong></h3>
+
+<h4 id="definizione-delle-scale">Definizione delle scale</h4>
+
+<p>Qual è il significato dell’attributo <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox"><code>viewBox</code></a>? <br>
+Il seguente codice appende un cerchio a ciascun angolo del box:</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">    svg</span><span class="pun">.</span><span class="pln">append</span><span class="pun">(</span><span class="str">"circle"</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">attr</span><span class="pun">({</span><span class="str">"cx"</span><span class="pun">:</span><span class="str">"0"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"cy"</span><span class="pun">:</span><span class="str">"0"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"r"</span><span class="pun">:</span><span class="str">"10"</span><span class="pun">})</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">style</span><span class="pun">(</span><span class="str">"fill"</span><span class="pun">,</span><span class="str">"red"</span><span class="pun">);</span><span class="pln">
+
+    svg</span><span class="pun">.</span><span class="pln">append</span><span class="pun">(</span><span class="str">"circle"</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">attr</span><span class="pun">({</span><span class="str">"cx"</span><span class="pun">:</span><span class="str">"960"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"cy"</span><span class="pun">:</span><span class="str">"0"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"r"</span><span class="pun">:</span><span class="str">"10"</span><span class="pun">})</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">style</span><span class="pun">(</span><span class="str">"fill"</span><span class="pun">,</span><span class="str">"blue"</span><span class="pun">);</span><span class="pln">
+
+    svg</span><span class="pun">.</span><span class="pln">append</span><span class="pun">(</span><span class="str">"circle"</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">attr</span><span class="pun">({</span><span class="str">"cx"</span><span class="pun">:</span><span class="str">"960"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"cy"</span><span class="pun">:</span><span class="str">"500"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"r"</span><span class="pun">:</span><span class="str">"10"</span><span class="pun">})</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">style</span><span class="pun">(</span><span class="str">"fill"</span><span class="pun">,</span><span class="str">"green"</span><span class="pun">);</span><span class="pln">
+
+    svg</span><span class="pun">.</span><span class="pln">append</span><span class="pun">(</span><span class="str">"circle"</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">attr</span><span class="pun">({</span><span class="str">"cx"</span><span class="pun">:</span><span class="str">"0"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"cy"</span><span class="pun">:</span><span class="str">"500"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"r"</span><span class="pun">:</span><span class="str">"10"</span><span class="pun">})</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">style</span><span class="pun">(</span><span class="str">"fill"</span><span class="pun">,</span><span class="str">"yellow"</span><span class="pun">);</span><span class="pln">
+
+    d3</span><span class="pun">.</span><span class="pln">json</span><span class="pun">(</span><span class="str">"data.json"</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">error</span><span class="pun">,</span><span class="pln"> data</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+       </span><span class="pun">...</span></code></pre>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox"><code>viewBox</code></a> definisce l’intervallo entro il quale i punti <code>(x,y)</code> devono stare affinché vengano visualizzati, e se nei nostri dati abbiamo valori che cadono esternamente all’intervallo?</p>
+
+<p>La definizione di opportune scale di conversione ci permette di mappare i valori numerici dei dati (<code>domain</code>) nelle dimensioni del <code>viewBox</code> (<code>range</code>), questo ci assicura che tutti i dati saranno visualizzati a schermo (<code>linear</code> significa che si fa una proporzione).</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">    d3</span><span class="pun">.</span><span class="pln">json</span><span class="pun">(</span><span class="str">"data.json"</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">error</span><span class="pun">,</span><span class="pln"> data</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+      </span><span class="kwd">var</span><span class="pln"> densScale </span><span class="pun">=</span><span class="pln"> d3</span><span class="pun">.</span><span class="pln">scale</span><span class="pun">.</span><span class="pln">linear</span><span class="pun">()</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">domain</span><span class="pun">([</span><span class="pln">d3</span><span class="pun">.</span><span class="pln">min</span><span class="pun">(</span><span class="pln">data</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">d</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> d</span><span class="pun">.</span><span class="pln">dens</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}),</span><span class="pln">
+                 d3</span><span class="pun">.</span><span class="pln">max</span><span class="pun">(</span><span class="pln">data</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">d</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> d</span><span class="pun">.</span><span class="pln">dens</span><span class="pun">;</span><span class="pln"> </span><span class="pun">})</span><span class="pln">
+                </span><span class="pun">])</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">range</span><span class="pun">([</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> width</span><span class="pun">]);</span><span class="pln"> 
+
+      </span><span class="kwd">var</span><span class="pln"> percScale </span><span class="pun">=</span><span class="pln"> d3</span><span class="pun">.</span><span class="pln">scale</span><span class="pun">.</span><span class="pln">linear</span><span class="pun">()</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">domain</span><span class="pun">([</span><span class="pln">d3</span><span class="pun">.</span><span class="pln">min</span><span class="pun">(</span><span class="pln">data</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">d</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> d</span><span class="pun">[</span><span class="str">"y13"</span><span class="pun">][</span><span class="str">"perc"</span><span class="pun">];</span><span class="pln"> </span><span class="pun">}),</span><span class="pln">
+                 d3</span><span class="pun">.</span><span class="pln">max</span><span class="pun">(</span><span class="pln">data</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">d</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> d</span><span class="pun">[</span><span class="str">"y13"</span><span class="pun">][</span><span class="str">"perc"</span><span class="pun">];</span><span class="pln"> </span><span class="pun">})</span><span class="pln">
+                </span><span class="pun">])</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">range</span><span class="pun">([</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> height</span><span class="pun">]);</span><span class="pln">
+
+    </span><span class="pun">});</span></code></pre>
+
+<hr>
+
+<h4 id="visualizzazione-dei-dati">Visualizzazione dei dati</h4>
+
+<p>Visualizziamo ora mediante dei cerchi i comuni del Piemonte, ciascun cerchio ha come coordinate <code>(x,y)</code> la densità di popolazione e l’affluenza alle urne nelle Elezioni della Camera del 2013. L’area dei cerchi è per ora costante.</p>
+
+<pre class="prettyprint"><code>      var percScale = d3.scale.linear()
+        .domain([d3.min(data, function(d) { return d["y13"]["perc"]; }),
+                 d3.max(data, function(d) { return d["y13"]["perc"]; })
+                ])
+        .range([0, height]);
+
+      var img = svg.append("g");
+
+      var circles = img.append("g")
+          .attr("id","circle")
+        .selectAll("circles")
+          .data(data)
+          .enter()
+          .append("circle")
+            .attr("cx", function(d) { return densScale(d.dens); })
+            .attr("cy", function(d) { return height - percScale(d["y13"]["perc"]); })
+            .attr("r","10");</code></pre>
+
+<p>Notare come le scale precedentemente definite vengono chiamate con ingresso valori legati al dato <code>d</code> e restituiscono le posizioni del centro del cerchio all’interno del <code>viewBox</code>.</p>
+
+<hr>
+
+<h4 id="il-data-join">Il data join</h4>
+
+<p>L’operazione di <em>data join</em> è contenuta nel frammento di codice</p>
+
+<pre class="prettyprint"><code>        .selectAll("circle")
+          .data(data)
+          .enter()
+          .append("circle")</code></pre>
+
+<p>Il <em>data join</em> è una delle novità più importanti introdotte dalla libreria d3.js, a proposito Mike Bostock ha scritto:</p>
+
+<blockquote>
+  <p><i class="icon-quote-right"></i> Instead of telling D3 how to do something, tell D3 what you want. You <br>
+  want the circle elements to correspond to data. You want one circle <br>
+  per datum. Instead of instructing D3 to create circles, then, tell D3 <br>
+  that the selection “circle” should correspond to data. This concept is <br>
+  called the data join. Data points joined to existing elements produce <br>
+  the update selection. Leftover unbound data produce the enter <br>
+  selection, which represents missing elements. Likewise, any remaining <br>
+  unbound elements produce the exit selection, which represents elements <br>
+  to be removed.</p>
+</blockquote>
+
+<p>Con parole mie adesso. Il <em>data join</em> è un esempio di programmazione dichiarativa, grazie alla quale è sufficiente definire la <em>logica</em> della computazione, anziché descrivere l’intero <em>flusso</em> di lavoro come accade nella programmazione imperativa. <br>
+Nel caso del <em>data join</em> è sufficiente <em>dichiarare</em> a quale selezione di elementi presenti nel DOM associare i dati. C’è però una complicazione, va da sè infatti che il numero di elementi selezionati <code>(E)</code> possa essere minore, maggiore o uguale al numero di dati <code>(D)</code>, distinguimo allora i seguenti casi:</p>
+
+<ul>
+<li><code>E = D</code>: alla selezione viene fatto un <em>update</em> con i nuovi dati (si parla di <em>update selection</em>)</li>
+<li><code>E &gt; D</code>: solo ad una parte della selezione viene fatto un <em>update</em>, quella fino ad esaurimento dei dati. I rimanenti <code>E-D</code> elementi diventano la <em>exit selection</em> e generalmente vengono eliminati.</li>
+<li><code>D &gt; E</code>: alla selezione viene fatto un <em>update</em>, ma avanzano dati. A quest’ultimi vengono associati nuovi elementi, che vanno a formare la <em>enter selection</em>.</li>
+</ul>
+
+<p>Nel nostro caso, selezioniamo tutti gli elementi cerchio (<code>selectAll("circle")</code>) ed associamo i dati (<code>.data(data)</code>). <br>
+Non essendoci elementi cerchio nel DOM, solo la <em>enter selection</em> è popolata, perciò ha senso solo agire su di essa (<code>.enter()</code>) ed appendere dei cerchi (<code>.append(circle)</code>).</p>
+
+<hr>
+
+<h4 id="scala-logaritmica-ed-area-dei-cerchi">Scala logaritmica ed area dei cerchi</h4>
+
+<p>Due modifiche permettono di chiarire il contenuto informativo del grafico, che per ora è molto poco leggibile.</p>
+
+<p>La prima riguarda il tipo di scala sull’asse delle ascisse, è opportuno sostituire la scale lineare con quella logaritmica</p>
+
+<pre class="prettyprint"><code>      var densScale = d3.scale.log()
+        .domain([d3.min(data, function(d) { return d.dens; }),
+                 d3.max(data, function(d) { return d.dens; })
+                ])
+        .range([0, width]); </code></pre>
+
+<p>con questa modica il dominio è dato dal logaritmo dei valori associati ai dati, osservare come è modificato il grafico.</p>
+
+<p>La seconda modifica punta a dare un significato all’area dei singoli cerchi. Osservando i dati notiamo che, oltre alla densità, di ogni comune abbiamo anche la popolazione. E’ allora naturale pensare di raffigurare con aree maggiori i comuni più popolati. E’ necessario definire una scala per il raggio dei cerchi, che sarà dunque proporzionale alla radice quadrata della popolazione del comune associato.</p>
+
+<pre class="prettyprint"><code>      var rScale = d3.scale.sqrt()
+        .domain([d3.min(data, function(d) { return d.pop; }), d3.max(data, function(d) { return d.pop; })])
+        .range([0,70]);</code></pre>
+
+<p>il raggio dei cerchi non sarà più costante, bensì dipenderà dal dato:</p>
+
+<pre class="prettyprint"><code>      var circles = img.append("g")
+          .attr("id","circles")
+        .selectAll("circle")
+          .data(data)
+          .enter()
+          .append("circle")
+            .attr("cx", function(d) { return densScale(d.dens); })
+            .attr("cy", function(d) { return height - percScale(d["y13"]["perc"]); })
+            .attr("r",function(d) { return rScale(d.pop); });</code></pre>
+
+<p><i class="icon-bug"></i> Problema: come fare per non tagliare l’ultimo cerchio?</p>
+
+<hr>
+
+<h3 id="transizioni"><strong>#4 Transizioni</strong></h3>
+
+<p>Abbiamo dati non solo sulle elezioni del 2013, analoghe informazioni sono presenti anche per gli anni 2008 e 2006:</p>
+
+<pre class="prettyprint"><code>[{
+    "comune": "Lagnasco",
+    "y06": {
+        "elettori": 1041,
+        "perc": 0.9241114313160422,
+        "nonvalide": 38,
+        "votanti": 962,
+        "bianche": 19
+    },
+    "y13": {
+        "elettori": 1006,
+        "perc": 0.8687872763419483,
+        "nonvalide": 50,
+        "votanti": 874,
+        "bianche": 22
+    },
+    "sup": 17.7127,
+    "dens": 79.3216166931072,
+    "y08": {
+        "elettori": 1028,
+        "perc": 0.8949416342412452,
+        "nonvalide": 34,
+        "votanti": 920,
+        "bianche": 13
+    },
+    "pop": 1405
+}, {
+    "comune": "Levice",
+    "y06": {
+
+    ...
+
+}]</code></pre>
+
+<p>Inseriamo nel grafico la possibilità, su richiesta, di transire alla visualizzazione relativa ad un particoloare anno.</p>
+
+<p>Immaginiamo di voler transire ai dati relativi all’anno 2006, cominciamo inserendo un elemento che fungerà da bottone per il 2006:</p>
+
+<pre class="prettyprint"><code>      var buttons = img.append("g");
+
+      buttons.append("circle")
+          .attr({"cx":"0", "cy":"0", "r":"20"})
+          .attr("class","button");</code></pre>
+
+<p>ed un minimo di stile CSS</p>
+
+<pre class="prettyprint"><code>      .button {
+        fill: #f1f1f1;
+        stroke: #131313;
+      }</code></pre>
+
+<p>La variabile <code>buttons</code> definisce un elemento <em>gruppo</em> (<code>g</code>), al quale saranno appesi i tre bottoni relativi ai tre anni. <br>
+La posizione del bottone, trovandosi nell’angolo in alto a sinistra, è per ora scorretta. Anziché modificare gli attributi <code>cx</code> e <code>cy</code> del cerchio, applichiamo una <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">traslazione</a> al gruppo <code>buttons</code>:</p>
+
+<pre class="prettyprint"><code>      var buttons = img.append("g")
+          .attr("transform","translate(820,400)");</code></pre>
+
+<p>Potere cambiare i valori numerici (820 e 400) osservando il risultato a schermo, è importante però rimanere dentro i valori del <code>viewBox</code>.</p>
+
+<p>Associamo ora ad un <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event">evento</a> di click sul bottone la transizione (della durata di 2 secondi) ai dati relativi all’anno 2006:</p>
+
+<pre class="prettyprint"><code>      buttons.append("circle")
+          .attr({"cx":"0", "cy":"0", "r":"20"})
+          .attr("class","button")
+          .on("click",function(){
+            circles.transition().duration(2000)
+                .attr("cy", function(d) { return height - percScale(d["y06"]["perc"]); });
+          });</code></pre>
+
+<p>Aggiungiamo infine del testo per chiarire il significato del bottone:</p>
+
+<pre class="prettyprint"><code>      buttons.append("text")
+          .text("2006")
+          .attr({"x":"0","y":"0","dy":"4"})
+          .attr("class","button-text");</code></pre>
+
+<p>aggiustiamo lo stile con un po’ di CSS</p>
+
+<pre class="prettyprint"><code>      .button-text {
+        text-anchor: middle;
+        font-size: 10px;
+      }</code></pre>
+
+<p><i class="icon-bug"></i> Notate che il testo, sovrapponendosi al bottone, impedisce alla transizione di partire. Come possiamo risolvere questo problema?</p>
+
+<hr>
+
+<h3 id="continuate-voi"><strong>#5 Continuate voi</strong></h3>
+
+<ul>
+<li>inserire i bottoni relativi agli anni 2008 e 2013</li>
+<li>modificare lo stile</li>
+<li>inserire dei tooltip</li>
+<li>…</li>
+</ul>
+
+<hr>
+
+<h2 id="links-utili">Links utili</h2>
+
+<ul>
+<li><a href="https://github.com/mbostock/d3/wiki/API-Reference">d3.js API Reference</a></li>
+<li><a href="https://developer.mozilla.org/it/">Mozilla Developer Network</a></li>
+</ul>
+
+<hr>
+
+<p><strong>Tuxtax Workshop, January 25th 2014</strong></p></div></body>
+</html>

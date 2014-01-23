@@ -1,0 +1,156 @@
+<!DOCTYPE html> <!-- Declaring that the document contains HTML5 mark-up with the HTML5 doctype -->
+<html>
+  <head>
+
+    <meta charset="utf-8"> <!-- Declaring the character set -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- defines the ratio between the device width and the viewport size  -->
+    
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/d3.v3.min.js" charset="utf-8"></script>
+
+    <style type='text/css'>
+
+      #container {
+        border: 1px solid #000;
+        width: 90%;
+        margin: auto;
+      }
+
+      svg {
+        border: 1px solid red;
+      }
+
+      .button {
+        fill: #f1f1f1;
+        stroke: #131313;
+      }
+
+      .button-text {
+        text-anchor: middle;
+        font-size: 10px;
+      }
+
+    </style>
+
+  </head>
+  
+  <body>
+    <div id="container"></div>
+  </body>
+
+  <script>
+    var width = 960;
+    var height = 500;
+
+    var svg = d3.select("#container").append("svg")
+        .attr("id", "chart")
+        .attr("viewBox", "0 0 960 500")          // make it
+        .attr("preserveAspectRatio", "xMidYMid") // responsive
+        .attr("width", width)
+        .attr("height", height);
+
+    svg.append("circle")
+        .attr({"cx":"0", "cy":"0", "r":"10"})
+        .style("fill","red");
+    svg.append("circle")
+        .attr({"cx":"960", "cy":"0", "r":"10"})
+        .style("fill","blue");
+    svg.append("circle")
+        .attr({"cx":"960", "cy":"500", "r":"10"})
+        .style("fill","green");
+    svg.append("circle")
+        .attr({"cx":"0", "cy":"500", "r":"10"})
+        .style("fill","yellow");
+
+
+    d3.json("data.json", function(error, data) {
+
+      var densScale = d3.scale.log()
+        .domain([d3.min(data, function(d) { return d.dens; }),
+                 d3.max(data, function(d) { return d.dens; })
+                ])
+        .range([0, width]); 
+
+      var percScale = d3.scale.linear()
+        .domain([d3.min(data, function(d) { return d["y13"]["perc"]; }),
+                 d3.max(data, function(d) { return d["y13"]["perc"]; })
+                ])
+        .range([0, height]);
+
+      var rScale = d3.scale.sqrt()
+        .domain([d3.min(data, function(d) { return d.pop; }), d3.max(data, function(d) { return d.pop; })])
+        .range([0,70]);
+
+      var img = svg.append("g");
+
+      var circles = img.append("g")
+          .attr("id","circles")
+        .selectAll("circle")
+          .data(data)
+          .enter()
+          .append("circle")
+            .attr("cx", function(d) { return densScale(d.dens); })
+            .attr("cy", function(d) { return height - percScale(d["y13"]["perc"]); })
+            .attr("r",function(d) { return rScale(d.pop); });
+
+
+      var buttons = img.append("g")
+          .attr("transform","translate(820,400)");
+      buttons.append("circle")
+          .attr({"cx":"0", "cy":"0", "r":"20"})
+          .attr("class","button")
+          .on("click",function(){
+            circles.transition().duration(2000)
+                .attr("cy", function(d) { return height - percScale(d["y06"]["perc"]); });
+          });
+
+      buttons.append("text")
+          .text("2006")
+          .attr({"x":"0","y":"0","dy":"4"})
+          .attr("class","button-text");
+/*
+      buttons.append("circle")
+          .attr({"cx":"50", "cy":"0", "r":"20"})
+          .attr("class","button")
+          .on("click",function(){
+            circles.transition().duration(2000)
+                .attr("cy", function(d) { return height - percScale(d["y08"]["perc"]); });
+          });
+      buttons.append("text")
+          .text("2008")
+          .attr({"x":"50","y":"0","dy":"4"})
+          .attr("class","button-text");
+
+      buttons.append("circle")
+          .attr({"cx":"100", "cy":"0", "r":"20"})
+          .attr("class","button")
+          .on("click",function(){
+            circles.transition().duration(2000)
+                .attr("cy", function(d) { return height - percScale(d["y13"]["perc"]); });
+          });
+      buttons.append("text")
+          .text("2013")
+          .attr({"x":"100","y":"0","dy":"4"})
+          .attr("class","button-text");
+*/
+    });
+
+
+
+    // Responsive
+    var chart = $("#chart"),
+        aspect = chart.width() / chart.height(),
+        container = chart.parent();
+    var resize = function() {
+        var targetWidth = container.width();
+        chart.attr("width", targetWidth);
+        chart.attr("height", Math.round(targetWidth / aspect));
+    };
+    $(window).on("resize", resize).trigger("resize");
+    $(window).on("ready", resize).trigger("resize");
+
+  </script>
+
+
+
+</html>
