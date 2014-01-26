@@ -1,0 +1,56 @@
+<head>
+  <title>Where would you send your mother in law?</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="author" content="Riccardo Scalco">
+  <meta name="keywords" content="Meteor, Leaflet, Map, Dataviz">
+</head>
+
+<body>
+    {{> map}}
+    {{> info}}
+    {{> credits}}
+</body>
+
+<template name="map">
+  {{#constant}}
+    <div id="container" class="container">
+      <div id="map"></div>
+    </div>
+  {{/constant}}
+</template>
+
+<template name="info">
+  <div id="info">
+    <div class="info-container">
+      <div id="title" class="collapse in">
+        <h1>Segnala un problema ad una strada</h1>
+        <span>clicca sulla mappa</span>
+      </div>
+      {{> confirm}}
+    </div>
+  </div>
+</template>
+
+<template name="confirm">
+  <div id="content-confirm" class="collapse">
+        <h3>Segli la tipologia del problema</h3>
+        <button id="btn-yes">Buca</button>
+        <button id="btn-no">Frana</button>
+        <button id="btn-no">Segnaletica</button>
+  </div>
+  <div id="done" class="collapse">
+    <h2>
+      Your mother in law will be delivered as soon as possible.<br>
+      Thanks for saving the world.
+    </h2>
+    <a class="share-icon" target="_blank" href="https://twitter.com/intent/tweet?original_referer=http://eidogram.com&url=http://wwysymil.meteor.com&text=Where%20would%20you%20send%20your%20mother%20in%20law?%20A%20%23CollaborativeDataViz%20made%20with%20%23Meteor"))>
+      <i class="fa fa-twitter"></i> tweet
+    </a>
+  </div>
+</template>
+
+<template name="credits">
+  <div id="credits">
+    <span>Created by <a target="_blank" href="http://eidogram.com">eidogram</a></span>
+  </div>
+</template>
