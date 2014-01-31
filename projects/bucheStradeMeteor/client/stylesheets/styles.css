@@ -1,11 +1,6 @@
-#content-confirm h2, #done h2 {
-  font-size: 23px;
-  font-weight: normal;
-  font-family: "Pacifico", sans-serif;
-}
 
 #credits {
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 11px;
   font-style: italic;
   position: fixed;
@@ -19,81 +14,184 @@
   z-index: 99;
 }
 
+.descr {
+  max-width: 200px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.5em;
+}
+
 #credits a {
   color: #808080; 
 }
 
-#info {
-  font-family: sans-serif;
-  position: fixed;
-  color: #fff;
-  top: 0px;
-  right: 50px;
-  height: auto;
-  width: 220px;
-  /*background-color: #ff2d2d;*/
-  background-color: #c40000;
-  opacity: 0.9;
-  z-index: 100;
-  /*border: 1px solid #fff;*/
-  border-bottom: 2px solid #fff;
+ul {
+  list-style: none;
+  margin-left: 20px;
 }
 
-#info h1 {
-  font-family: "Pacifico", sans-serif;
-  font-size: 29px;
-  font-weight: normal;
+i.navicon {
+  padding: 0px 20px 0px 0px;
+  float: right;
+  color: #f1f1f1;
+  font-size: 20px;
+}
+
+#btn-1, #choice-1{
+  background-color: #fc596a;
+}
+#btn-2, #choice-2{
+  background-color: #94b7b9;
+}
+#btn-3, #choice-3{
+  background-color: #fdcd67;
+}
+#btn-4 {
+  background-color: #213264;
+}
+#btn-5 {
+  background-color: #222268;
+}
+#btn-6 {
+  background-color: #35226c;
+}
+
+
+#plus, #minus {
+  float: left;
+  padding-left: 0px;
+}
+
+#bar {
+  height: 35px;
+  top: 0px;
+  position: absolute;
+  background: rgba(174,158,159,0.8);
+}
+
+.big {
+  float: none;
+  font-size: 90px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.info {
+  font-family: "Lato", sans-serif;
+  position: absolute;
+  color: rgba(255,255,255,1);
+  right: 50px;
+  width: 280px;
+  /*background-color: #ff2d2d;*/
+  z-index: 100;
+  /*border: 1px solid #fff;*/
+}
+
+#info {
+  top: 37px;
+  height: auto;
+  border-bottom: 2px solid #fff;
+  background: rgba(174,158,159,0.8);
+}
+
+
+#info h1, button {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.2em;
 }
 
 #info span {
-  font-style: italic;
-  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  /*font-size: 14px;*/
+}
+
+.choiceIcon {
+  font-size: 22px;
+  float:left;
+  padding-right: 30px;
+  padding-left: 45px;
+  padding-bottom: 10px;
 }
 
 .info-container {
-  margin: 10px 20px 20px 20px;
+  margin: 0px;
   text-align: center;
 }
 
+img.choiceIcon {
+  width: 30px;
+}
+
+img.big {
+  width: 100px;
+}
+
+/*img {
+  width: 30px;
+  height: 30px;
+  margin-left:40px; 
+}*/
+
+button i {
+  padding-right: 10px;
+}
+
 button {
-  color: #fff;
-  font-style: italic;
-  width: 160px;
-  height: 40px;
-  margin-top: 10px;
-  background-color: #c40000;
-  border: 1px solid #fff;
-  font-size: 14px;
+  text-align: left;
+  color: rgba(255,255,255,1);
+  width: 100%;
+  height: 120px;
+  margin: 0px;
+  border: 0px solid #fff;
+  /*font-size: 14px;*/
 }
 
 button:hover {
-  background-color: #f50000;
 }
 
+.btn-confirm, .btn-change {
+  text-align: center;
+  width: 50%;
+  height: 50px;
+  margin: 30px 0px 0px 0px;
+  border-top: 3px solid #fff;
+  background: transparent;
+  float: left;
+}
+
+.btn-confirm {
+  border-left: 3px solid #fff;
+}
+
+
 body {
-  font-family: "Pacifico", sans-serif;
-  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
 }
 
 .leaflet-control-attribution a {
-  color: #c40000 !important;
+  color: #808080;
 }
 
 a.share-icon {
   color: #fff;
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: italic;
-  font-size: 14px;
 }
 
-i {
-  color: #fff;
-}
 
 a.leaflet-control-zoom-in, a.leaflet-control-zoom-out {
   text-decoration: none;
   color: #000;
 }
+
+
 
 #map {
   width: 100%;
@@ -124,11 +222,75 @@ a.leaflet-control-zoom-in, a.leaflet-control-zoom-out {
   text-align: center;
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 640px) {
+  /* styles for iPhone/Android landscape (and really narrow browser windows) */
+  .info {
+    right: 0px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 630px) and (max-width: 640px) {
   /* styles for iPhone/Android landscape (and really narrow browser windows) */
   .notice {
     font-size: 11px;
   }
+  .info {
+    right: 0px;
+    width: 100%;
+  }
+
+  #info h1 {
+    font-size: 13px;
+  }
+
+  #bar {
+    height: 55px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  #info {
+    top: 57px;
+  }
+
+  #info h1, button {
+    font-size: 18px;
+  }
+
+  button {
+    height: 160px;
+  }
+
+  .descr {
+    max-width: 240px;
+    margin-bottom: 100px;
+  }
+
+  .btn-confirm, .btn-change {
+    height: 100px;
+    margin-top: 100px;
+  }
+
+  .big {
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+
+  .choiceIcon {
+    font-size: 28px;
+    padding-left: 200px;
+  }
+
+  i.navicon {
+    padding: 5px 35px 0px 0px;
+    float: right;
+    color: #f1f1f1;
+    font-size: 27px;
+  }
+
 }
 
 @media all and (max-width: 320px) {
@@ -152,13 +314,43 @@ a.leaflet-control-zoom-in, a.leaflet-control-zoom-out {
   }
 }
 
-@font-face {
-    font-family: 'Pacifico';
-    src: url('/pacifico-webfont.eot');
-    src: url('/pacifico-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/pacifico-webfont.woff') format('woff'),
-         url('/pacifico-webfont.ttf') format('truetype'),
-         url('/pacifico-webfont.svg#pacificoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+.leaflet-popup-content-wrapper {
+  padding: 1px;
+  text-align: left;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: rgba(174,158,159,0.8);
+  opacity: 1;
+  color: rgba(255,255,255,1);
+  font-weight: bold;
+  max-width: 200px;
+  /*box-shadow: 0 3px 14px rgba(0,0,0,0.4);*/
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  position: absolute;
+  top: 5;
+  right: 0;
+  padding: 4px 5px 0 0;
+  text-align: center;
+  width: 18px;
+  height: 14px;
+  font: 16px/14px Tahoma, Verdana, sans-serif;
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.leaflet-container a.leaflet-popup-close-button:hover {
+  color: rgba(255,255,255,1);
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
 }

@@ -1,8 +1,8 @@
 <head>
-  <title>Where would you send your mother in law?</title>
+  <title>Segnalazioni Regione Piemonte</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="author" content="Riccardo Scalco">
-  <meta name="keywords" content="Meteor, Leaflet, Map, Dataviz">
+  <meta name="author" content="Tuxtax">
+  <meta name="keywords" content="Regione Piemonte, Segnalazioni, Mappa, Dataviz">
 </head>
 
 <body>
@@ -20,37 +20,102 @@
 </template>
 
 <template name="info">
-  <div id="info">
+  <div id="bar" class="info">
+    <nav>
+      <ul>
+        <li><i id="information" class="fa fa-info navicon"></i></li>
+        <li><i id="user" class="fa fa-user navicon"></i></li>
+        <li><i id="home" class="fa fa-map-marker navicon"></i></li>
+        <li><i id="plus" class="fa fa-plus navicon"></i></li>
+        <li><i id="minus" class="fa fa-minus navicon"></i></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="info" class="info">
     <div class="info-container">
       <div id="title" class="collapse in">
-        <h1>Segnala un problema ad una strada</h1>
-        <span>clicca sulla mappa</span>
+        <h1>Clicca sulla mappa</br>per lasciare una segnalazione</h1>
+        <!--<span>clicca sulla mappa</span>-->
       </div>
-      {{> confirm}}
+      <div id="informationDiv" class="collapse">
+        <i class="fa fa-info big"></i>
+        <p class="descr">Questa applicazione è stata sottoposta dal gruppo Tuxtax al Piemonte Visual Contest il 31 Gennaio 2014.</br>L'applicazione, per ora in versione alpha, offre ai cittadini la possibilità di segnalare manutenzioni ordinarie degli spazi pubblici.</p>
+      </div>
+
+      <div id="userDiv" class="collapse">
+        <i class="fa fa-user big"></i>
+        <p class="descr">Questa applicazione è un prototipo e non è ancora munita di un account manager.</p>
+      </div>
+      {{> choose}}
     </div>
+  </div>
+
+</template>
+
+<template name="choose">
+  <div id="content-choose" class="collapse">
+    <!--<h1>Di cosa si tratta?</h1>-->
+    <button id="btn-1"><img class="choiceIcon" src="images/choice1.svg"></img><span>Arredo Urbano<br>ed Aree verdi</span></button>
+    <button id="btn-2"><img class="choiceIcon" src="images/choice2.svg"></img><span>Manto stradale</br>e Segnaletica</span></button>
+    <button id="btn-3"><img class="choiceIcon" src="images/choice3.svg"></img><span>Relitti ed</br>Abbandoni</span></button>
+    <!--<button id="btn-4"><i class="fa fa-linux"></i><span>bott 4</span></button>
+    <button id="btn-5"><i class="fa fa-linux"></i><span>bott 5</span></button>
+    <button id="btn-6"><i class="fa fa-linux"></i><span>bott 6</span></button>-->
+  </div>
+
+  <div id="choice-1" class="collapse">
+    <!--<i class="fa fa-pagelines big"></i>-->
+    <img class="big" src="images/choice1.svg"></img>
+    <p class="descr">La tua segnalazione riguarda singole manutenzioni dell'arredo urbano e del verde esistente (fontane, giardini, giochi per bambini, alberi, etc...)</p>
+    <button class="btn-change"><i class="fa fa-arrow-left"></i>Cambia</button>
+    <button class="btn-confirm"><i class="fa fa-check"></i>Conferma</button>
+    <!--<button class="btn-cancel">Cancella</button>-->
+  </div>
+
+  <div id="choice-2" class="collapse">
+    <!--<i class="fa fa-road big"></i>-->
+    <img class="big" src="images/choice2.svg"></img>
+    <p class="descr">La tua segnalazione riguarda singoli interventi limitati al ripristino di segnaletica, marciapiedi e manto stradale (piccole buche e avvallamenti, ripristino di cartelli, tracciatura di attraversamenti pedonali, etc...)</p>
+    <button class="btn-change"><i class="fa fa-arrow-left"></i>Cambia</button>
+    <button class="btn-confirm"><i class="fa fa-check"></i>Conferma</button>
+    <!--<button class="btn-cancel">Cancella</button>-->
+  </div>
+
+  <div id="choice-3" class="collapse">
+    <!--<i class="fa fa-truck big"></i>-->
+    <img class="big" src="images/choice3.svg"></img>
+    <p class="descr">La tua segnalazione riguarda relitti di veicoli, igene pubblica, transenne abbandonate, etc...</p>
+    <!--<button class="btn-cancel">Cancella</button>-->
+    <button class="btn-change"><i class="fa fa-arrow-left"></i>Cambia</button>
+    <button class="btn-confirm"><i class="fa fa-check"></i>Conferma</button>
+  </div>
+
+  <div id="done" class="collapse">
+    <p class="descr">La tua segnalazione è stata registrata, grazie per la collaborazione.</p>
+    <!--<a class="share-icon" target="_blank" href="https://twitter.com/intent/tweet?original_referer=http://eidogram.com&url=http://wwysymil.meteor.com&text=Where%20would%20you%20send%20your%20mother%20in%20law?%20A%20%23CollaborativeDataViz%20made%20with%20%23Meteor"))>
+      <i class="fa fa-twitter"></i> tweet
+    </a>-->
   </div>
 </template>
 
-<template name="confirm">
-  <div id="content-confirm" class="collapse">
-        <h3>Segli la tipologia del problema</h3>
-        <button id="btn-yes">Buca</button>
-        <button id="btn-no">Frana</button>
-        <button id="btn-no">Segnaletica</button>
-  </div>
-  <div id="done" class="collapse">
-    <h2>
-      Your mother in law will be delivered as soon as possible.<br>
-      Thanks for saving the world.
-    </h2>
-    <a class="share-icon" target="_blank" href="https://twitter.com/intent/tweet?original_referer=http://eidogram.com&url=http://wwysymil.meteor.com&text=Where%20would%20you%20send%20your%20mother%20in%20law?%20A%20%23CollaborativeDataViz%20made%20with%20%23Meteor"))>
-      <i class="fa fa-twitter"></i> tweet
-    </a>
-  </div>
+<template name="commentSubmit">
+  <form name="comment" class="comment-form">
+    <div class="control-group">
+        <div class="controls">
+            <label for="body">Lascia un commento relativo alla segnalazione</label>
+            <textarea name="body"></textarea>
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <button type="submit" class="btn">Invia</button>
+        </div>
+    </div>
+  </form>
 </template>
 
 <template name="credits">
   <div id="credits">
-    <span>Created by <a target="_blank" href="http://eidogram.com">eidogram</a></span>
+    <!--<span>Created by <a target="_blank" href="http://www.tuxtax.ch">tuxtax</a></span>-->
   </div>
 </template>
