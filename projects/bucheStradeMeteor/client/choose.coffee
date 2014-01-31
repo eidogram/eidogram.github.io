@@ -41,7 +41,7 @@ Template.choose.events
     e.preventDefault()
     root.map.removeLayer(root.tmpMarker)
     $("#done").collapse('show')
-    $("#home").toggleClass("fa-map-marker fa-trash-o")
+    $("#home").toggleClass("fa-map-marker fa-undo")
     root.tmpMarker = undefined
     $(Session.get "choice").collapse('hide')
     $("#title").collapse('hide')

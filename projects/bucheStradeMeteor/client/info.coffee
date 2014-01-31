@@ -15,7 +15,7 @@ Template.info.events
     e.preventDefault()
     $(".in").collapse('toggle')
     if root.tmpMarker?
-      $("#home").toggleClass("fa-map-marker fa-trash-o")
+      $("#home").toggleClass("fa-map-marker fa-undo")
       root.map.removeLayer(root.tmpMarker)
       root.tmpMarker = undefined
     Meteor.setTimeout () ->

@@ -90,7 +90,7 @@ Template.map.rendered = ->
         Meteor.setTimeout () ->
           if clickCount <= 1 and not Session.get("clicked")?
             Session.set("clicked","true")
-            $("#home").toggleClass("fa-map-marker fa-trash-o")
+            $("#home").toggleClass("fa-map-marker fa-undo")
             Session.set("latlng",e.latlng)
             TmpMark.insert {latlng: e.latlng}
             #id = Markers.insert {latlng: e.latlng}
