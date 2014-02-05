@@ -1,0 +1,290 @@
+#content-confirm h2, #done h2 {
+  font-size: 23px;
+  font-weight: normal;
+  font-family: "Pacifico", sans-serif;
+}
+
+audio, #viz, #analyzer {
+  width: 180px;
+}
+
+#viz {
+  display: none;
+}
+
+
+
+
+#credits {
+  font-family: sans-serif;
+  font-size: 11px;
+  font-style: italic;
+  position: fixed;
+  color: #808080;
+  bottom: 0px;
+  left: 5px;
+  height: auto;
+  width: 200px;
+  /*background-color: #ff2d2d;*/
+  background-color: transparent;
+  z-index: 99;
+}
+
+#credits a {
+  color: #808080; 
+}
+
+#zoom-controls {
+  position: fixed;
+  bottom: 0px;
+  padding-bottom: 30px;
+  margin: auto;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  color: #131313;
+}
+
+#info {
+  font-family: sans-serif;
+  position: fixed;
+  color: #131313;
+  top: 0px;
+  right: 0px;
+  height: auto;
+  width: 100%;
+  /*background-color: #ff2d2d;*/
+  /*background-color: rgba(245,245,245,0.9);*/
+  background-color: rgba(250,240,230,0.9);
+  /*opacity: 0.9;*/
+  z-index: 100;
+  /*border: 1px solid #fff;*/
+  border-bottom: 2px solid #f5f5f5;
+}
+
+#info h1 {
+  font-family: "Pacifico", sans-serif;
+  font-size: 29px;
+  font-weight: normal;
+}
+
+#info span {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.info-container {
+  margin: 10px 20px 20px 20px;
+  text-align: center;
+}
+
+#containerCircles {
+  width: 250px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+button:focus {
+    outline: none !important;
+    color: #df6363 !important;
+}
+
+
+
+#controls button {
+  margin: 10px 10px 0px 10px;
+  /*color: #4a5973;*/
+  color: #63df9b;
+  font-style: normal;
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
+  background-color: rgba(250,240,230,1);
+  border: 0px solid #638cdf;
+  border-top: 0px solid #df6363;
+  border-bottom: 0px solid #df6363;
+  border-radius: 5px;
+}
+
+
+#zoom-controls button {
+  margin: 10px 10px 0px 10px;
+  /*color: #4a5973;*/
+  color: #df6363;
+  font-style: normal;
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
+  background-color: rgba(250,240,230,0.8);
+  border: 4px solid #df6363;
+  border-radius: 30px;
+}
+
+#open-menu {
+  margin-right: 20px !important;
+}
+
+body {
+  font-family: "Pacifico", sans-serif;
+  font-size: 16px;
+  background-color: rgba(250,240,230,0.7);
+}
+
+.leaflet-control-attribution a {
+  color: #c40000 !important;
+}
+
+a.share-icon {
+  color: #fff;
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 14px;
+}
+
+
+
+a.leaflet-control-zoom-in, a.leaflet-control-zoom-out {
+  text-decoration: none;
+  color: #000;
+}
+
+#controls {
+  margin-bottom: 70px;
+}
+
+#map {
+  opacity: 0;
+  width: 100%;
+  height: auto;
+}
+
+.first {
+  margin-top: 10px;
+}
+
+.second {
+  margin-top: 5px; 
+  margin-bottom: 5px;
+}
+
+.container {
+  width: 100%; 
+  margin: 0px 0px 0px 0px;
+}
+
+.title {
+  margin-top: 70px; 
+  margin-bottom: 10px; 
+  text-align: center;
+}
+
+.notice {
+  text-align: center;
+}
+
+circle {
+  stroke: #f5f5f5;
+}
+
+#circle1 {
+  fill: #df6363;
+}
+
+#circle2 {
+  fill: #dfd763;
+}
+
+#circle3 {
+  fill: #63df9b;
+}
+
+#circle4 {
+  fill: #638cdf;
+}
+
+#circle5 {
+  fill: #df6399;
+}
+
+#circle6 {
+  fill: #63dfdc;
+}
+
+
+@media all and (max-width: 480px) {
+  /* styles for iPhone/Android landscape (and really narrow browser windows) */
+  .notice {
+    font-size: 11px;
+  }
+
+  #info {
+    width: 100%;
+    right: 0px;
+  }
+
+  #containerCircles {
+    width: 150px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+
+  #zoom-controls button {
+    margin: 10px 10px 0px 10px;
+    /*color: #4a5973;*/
+    color: #df6363;
+    font-style: normal;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgba(250,240,230,0.8);
+    border: 4px solid #df6363;
+    border-radius: 20px;
+    outline:none !important;
+  }
+
+  #open-menu {
+    margin-right: 10px;
+  }
+ 
+}
+
+@media all and (max-width: 320px) {
+  /* styles for iPhone/Android portrait */
+  .notice {
+      font-size: 11px;
+  }
+
+  #containerCircles {
+    width: 120px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media all and (max-width: 240px) {
+  /* styles for smaller devices */
+  .notice{
+    font-size: 11px;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  body {
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('/pacifico-webfont.eot');
+    src: url('/pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/pacifico-webfont.woff') format('woff'),
+         url('/pacifico-webfont.ttf') format('truetype'),
+         url('/pacifico-webfont.svg#pacificoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

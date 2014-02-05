@@ -1,0 +1,64 @@
+<head>
+  <title>Work in progress app</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="author" content="Riccardo Scalco">
+  <meta name="keywords" content="Meteor, Leaflet, Map, Dataviz">
+</head>
+
+<body>
+    {{> map}}
+    {{> info}}
+    {{> zoom}}
+    {{> credits}}
+</body>
+
+<template name="map">
+  {{#constant}}
+    <div id="container" class="container">
+      <div id="map"></div>
+    </div>
+  {{/constant}}
+</template>
+
+<template name="info"> 
+  <div id="info" class="collapse in">
+    <div class="info-container">
+      <div id="title" class="collapse in">
+        <div id="viz">
+          <canvas id="analyser"></canvas>
+          <canvas id="wavedisplay"></canvas>
+        </div>
+        {{> circles}}
+        <div id="controls">
+          <button id="record"><i class="fa fa-microphone"></i></button>
+          <button id="play" onclick="document.getElementById('demo').play()"><i class="fa fa-play"></i></button>
+          <button id="save"><i class="fa fa-cloud-upload"></i></button>
+        </div>
+        <div>
+          <audio id="demo" src="">
+          <p>Your browser does not support the audio element</p>
+          </audio>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="zoom">
+  <div id="zoom-controls">
+    <button id="open-menu"><i class="fa fa-bars"></i></button>
+    <button id="zoom-in"><i class="fa fa-plus"></i></button>
+    <button id="zoom-out"><i class="fa fa-minus"></i></button>
+  </div>
+</template>
+
+<template name="credits">
+  <!--<div id="credits">
+    <span>Work in Progress - Created by <a target="_blank" href="http://www.tuxtax.ch">tuxtax</a></span>
+  </div>-->
+</template>
+
+<template name="circles">
+  <div id="containerCircles">
+  </div>
+</template>

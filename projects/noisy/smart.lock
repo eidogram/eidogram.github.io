@@ -1,0 +1,32 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "leaflet": {},
+      "font-awesome": {},
+      "collectionFS": {}
+    },
+    "packages": {
+      "leaflet": {
+        "git": "https://github.com/bevanhunt/meteor-leaflet.git",
+        "tag": "v0.3.4",
+        "commit": "2d2f15b1aafcec6bd6cf248ba0076fa05131cade"
+      },
+      "font-awesome": {
+        "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
+        "tag": "v4.0.3",
+        "commit": "61e9361384347547ae144f8228faa4deffda23db"
+      },
+      "collectionFS": {
+        "git": "https://github.com/raix/Meteor-CollectionFS.git",
+        "tag": "v0.3.7",
+        "commit": "34d9fb363472e44c6dba4a1473a9e106e107f5a9"
+      },
+      "cfs-public-folder": {
+        "git": "https://github.com/nooitaf/meteor-cfs-public-folder.git",
+        "tag": "v0.0.3",
+        "commit": "581c716424b374efb6f611110002621f9cc9212b"
+      }
+    }
+  }
+}
