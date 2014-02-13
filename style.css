@@ -1,6 +1,6 @@
 body {
     /*background-image:url('body.jpg');*/
-    background-color: #FFF5EE;
+    background-color: #f5f5f5;
     font-family: 'lekton', monospace;
     font-size:14px;
     line-height:1.5;
@@ -118,7 +118,7 @@ section img {
     margin-right:20px;
     width:454px;
     /*border:2px solid #fff;*/
-    background-color:#FAF0E6;
+    background-color:#eee;
 }
 section img:hover {
     opacity: 0.8;
