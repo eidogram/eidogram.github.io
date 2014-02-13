@@ -39,7 +39,7 @@ Template.map.rendered = ->
   ###
 
   # replace "toner" here with "terrain" or "watercolor"
-  layer = new L.StamenTileLayer "watercolor"
+  layer = new L.StamenTileLayer "toner"
   root.map = new L.Map "map", {
       center: new L.LatLng(4.80, 10.32)
       zoom: 8
@@ -97,6 +97,7 @@ Template.map.rendered = ->
 
   loadOnClick = (myid) ->
     Session.set("fileId",myid)
+    d3.select("#attesa").text("Download in corso..")
     M_f.toDown();
     if not $("#info").hasClass('in')
       $("#info").collapse('toggle')
@@ -107,6 +108,7 @@ Template.map.rendered = ->
             if fileItem.blob
                 Meteor.setTimeout( ->
                   console.log("scaricato blob")
+                  d3.select("#attesa").text("Finito, clicca Play")
                   Meteor.clearInterval(root.runDown)
                   M_f.toTria()
                   d3.select("#demo").attr("src", () -> URL.createObjectURL(fileItem.blob) )
@@ -115,6 +117,7 @@ Template.map.rendered = ->
             else if fileItem.file
                 Meteor.setTimeout( ->
                   console.log("scaricato file")
+                  d3.select("#attesa").text("Finito, clicca Play")
                   Meteor.clearInterval(root.runDown)
                   M_f.toTria()
                   d3.select("#demo").attr("src", () -> URL.createObjectURL(fileItem.file) )
@@ -136,3 +139,19 @@ Template.map.rendered = ->
       .addTo(root.map)
       root.newMarker.on 'click', (e) ->
         loadOnClick(mark.idSound)
+  
+
+  $("#record").hover(
+    () -> d3.select("#help").text("Registra 2 secondi di audio"),
+    () -> d3.select("#help").text("")
+  )
+
+  $("#play").hover(
+    () -> d3.select("#help").text("Riascolta l'audio registrato"),
+    () -> d3.select("#help").text("")
+  )
+
+  $("#save").hover(
+    () -> d3.select("#help").text("Salva l'audio sul server (attendere circa 30 secondi)"),
+    () -> d3.select("#help").text("")
+  )

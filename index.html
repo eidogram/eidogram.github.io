@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="normalize.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
+    <link rel="prefetch" href="http://eidogram.com/projects/piemVisCont/"/>
     <!--<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>-->
     <!--<script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>-->
     <!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
@@ -43,7 +44,7 @@
         </a>
         <aside>
         <p>
-        I am Riccardo Scalco, an italian freelancer in data driven visualizations.<br>
+        I am Riccardo Scalco, an italian information designer.<br>
         Eidogram is the place where I collect projects and experiments, please enjoy.<br><br>
         <!--For work enquiries, or simply to say hello, email me at riccardo.scalco[at]gmail.com.-->
         (I’m up for some collabs right now)
@@ -75,22 +76,21 @@
       </div>
 <div id="container">
     <section>
-  <a href="http://wwysymil.meteor.com/"><img src="img/lWafLIG.png" alt="Where would you send your mother in law?"></a>
-  <h2># Where would you send your mother-in-law?</h2>
+  <a href="http://eidogram.com/projects/piemVisCont/"><img src="img/p1fjrQJWW.png" alt="Piedmont municipalities: population density vs voter turnout"></a>
+  <h2># Piedmont municipalities: population density vs voter turnout</h2>
   <p>
-    This project is an hilarious example of collaborative dataviz: the user is asked to insert some data and, once inserted, the visualization will be synchronously updated all over the world.
-    In other words, the user interacts both with the visualization and the database.
+    The voter turnout, i.e. the percentage of eligible voters who cast a ballot in an election, has been related with the population density of the 1206 municipalities of the italian region Piedmont.
+    And the voter uncertainty is calculated by means of the Shannon entropy on the number of votes assigned to every delegate.
   </p>
-<div id="techdet">
+<div class="techdet">
   <b>data source:</b>
-  You, <a href="http://stamen.com/">Stamen Design</a> and <a href="http://www.openstreetmap.org/">Openstreetmap</a>.<br>
+  <a href="http://elezionistorico.interno.it">interno.it</a>, <a href="http://istat.it">istat.it</a>.<br>
   <b>tools:</b>
-  <a href="http://leafletjs.com/">Leaflet</a>, <a href="http://meteor.com">Meteor</a> and <a href="http://inkscape.org/">Inkscape</a>.
-  <br>Source code on <a href="https://github.com/riccardoscalco/eidogram.projects/tree/master/mother-in-law">github</a>.
+  <a href="http://d3js.org/">D3js</a>.</br>
+  <b class="tuxtax">BY THE <a href="http://tuxtax.it">TUXTAX</a> TEAM</b>
 </div>
 <div style="clear:both;"></div>
 </section>
-
 
 <section>
   <a href="./SZyMjZay"><img src="img/FZTwsLkTh.png" alt="Ruler and compass construction of a pentagon"></a>
@@ -99,7 +99,7 @@
     A proof of concept: visually describe the construction of a pentagon
     with the only use of ruler and compass.
   </p>
-<div id="techdet">
+<div class="techdet">
 <b>tools:</b>
 <a href="http://d3js.org/">D3js</a> and <a href="http://inkscape.org/">Inkscape</a>.
 </div>
@@ -108,14 +108,14 @@
 
 <section>
   <a href="http://seofon.co"><img src="img/vWQAMZMK9.png" alt="Seofon.co, seven sexy links on data visualization every week"></a>
-  <h2># Seofon: seven sexy links on data visualization every week</h2>
+  <h2># Seofon: seven sexy links on data visualization</h2>
   <p>
     <a href="http://seofon.co">Seofon</a> is a collaborative linkblog on Data Visualization,
     you have the opportunity to suggest links and to upvote links suggested by others.
     It is powered by <a href="http://meteor.com">Meteor</a>,
     an ultra-simple environment for building top-quality web apps.
   </p>
-<div id="techdet">
+<div class="techdet">
 <b>tools:</b>
 <a href="http://meteor.com">Meteor</a>,
 <a href="http://www.mongodb.org/">Mongodb</a>.
@@ -124,86 +124,14 @@
 </section>
 
 <section>
-  <a href="./yI40Cw5h"><img src="img/yWkk0q9.png" alt="Science, Technology and Innovation in Italy"></a>
-  <h2># Science, Technology and Innovation in Italy</h2>
-  <p>
-   The map shows the role, in terms of innovation, played by the italian administrative regions.
-   The statistics is presented by means of a cartogram, where the area of every region is proportional
-   to the corresponding innovation effort.
-  </p>
-<div id="techdet">
-<b>data source:</b>
-<a href="http://www.istat.it/">istat.it</a>.<br>
-<b>tools:</b>
-<a href="https://github.com/mbostock/topojson">topojson</a>,
-<a href="https://github.com/shawnbot/d3-cartogram/">d3-cartogram</a>,
-<a href="http://d3js.org/">D3js</a> and
-<a href="http://inkscape.org/">Inkscape</a>.
-</div>
-<div style="clear:both;"></div>
-</section>
-
-<section>
-  <a href="./O9pGqCW"><img src="img/in7vgTg.png" alt="the tangram game"></a>
-  <h2># A tangram tribute</h2>
-  <p>
-  This is just a tangram tribute powered by d3.js transitions.
-  Let be captivated by one of most ancient games on the world.
-  </p>
-<div id="techdet">
-<b>tools:</b>
-<a href="http://d3js.org/">D3js</a> and <a href="http://inkscape.org/">Inkscape</a>.
-</div>
-<div style="clear:both;"></div>
-</section>
-
-<section>
-  <a href="./FzSbKVh"><img src="img/P8D4w9E.png" alt="Latest Earthquakes In Italy"></a>
-  <h2># Latest earthquakes in Italy</h2>
-  <p>This is a continuously updated webpage showing the latest earthquakes in Italy and neighboring regions. Earthquakes are classified according their place, date, magnitude and depth.</p>
-<div id="techdet">
-<b>data source:</b>
-<a href="http://cnt.rm.ingv.it/index.html">INGV</a>.<br>
-<b>tools:</b>
-<a href="http://scrapy.org/">Scrapy</a>,
-<a href="http://www.python.org/">Python</a>
-and <a href="http://kartograph.org/">Kartograph</a>.
-</div>
-  <div style="clear:both;"></div>
-</section>
-
-<!--
-<section>
-  <a href="./0e7BMpR"><img src="img/Hihsrzx.png" alt="Italian Camera Composition"></a>
-  <h2># Discover the italian Parliament</h2>
-  <p>
-  The reader is guided smoothly to the subdivision of the set of members of parliament by party, gender, age and education.
-  The focus is to visualize the whole data complexity in a funny and interactive way.
-  </p>
-<div id="techdet">
-<b>data source:</b>
-<a href="http://www.camera.it/">camera.it</a>.<br>
-<b>tools:</b>
-<a href="http://scrapy.org/">Scrapy</a>,
-<a href="http://www.python.org/">Python</a>
-and <a href="http://d3js.org/">D3js</a>.<br>
-<a href="https://github.com/eidogram/eidogram.github.com/tree/master/0e7BMpR">Project source</a>
-
-
-</div>
-  <div style="clear:both;"></div>
-</section>
--->
-
-<section>
-   <a href="http://riccardoscalco.github.io/Rohmetric/index.html"><img src="img/f345z3n.png" alt="Influenza Virus Evolution"></a>
+   <a href="http://riccardoscalco.github.io/Rohmetric/JIRFlYJ2N.html"><img src="img/f345z3n.png" alt="Influenza Virus Evolution"></a>
   <h2># Rohmetric: investigate Influenza virus evolution with entropic metric measures</h2>
   <p>
-    <a href="http://riccardoscalco.github.io/Rohmetric/index.html">Rohmetric</a> is an initiative whose mission is to investigate and show the evolution of Influenza Virus by means of cutting edge mathematical methods. 
-    Different virus strains are identifying by horizontal colored lines, each point identifies the hemagglutinin segment of an isolate,
+    The <a href="http://riccardoscalco.github.io/Rohmetric/index.html">project</a> aims to investigate the evolution of Influenza Virus by means of cutting edge mathematical methods. 
+    Different virus strains are identifying by horizontal colored groups, each point identifies the hemagglutinin segment of an isolate,
     isolates are full lenght and come from all over the world.
   </p>
-<div id="techdet">
+<div class="techdet">
 <b>data source:</b>
 <a href="http://platform.gisaid.org/epi3/frontend#501af9">GISAID</a>.<br>
 <b>tools:</b>
@@ -219,6 +147,99 @@ and <a href="https://developers.google.com/chart/interactive/docs/gallery/bubble
 </section>
 
 <section>
+  <a href="./O9pGqCW"><img src="img/in7vgTg.png" alt="the tangram game"></a>
+  <h2># A tangram tribute</h2>
+  <p>
+  This is just a tangram tribute powered by d3.js transitions.
+  Let be captivated by one of most ancient games on the world.
+  </p>
+<div class="techdet">
+<b>tools:</b>
+<a href="http://d3js.org/">D3js</a> and <a href="http://inkscape.org/">Inkscape</a>.
+</div>
+<div style="clear:both;"></div>
+</section>
+
+<section>
+  <a href="./FzSbKVh"><img src="img/P8D4w9E.png" alt="Latest Earthquakes In Italy"></a>
+  <h2># Latest earthquakes in Italy</h2>
+  <p>This is a continuously updated webpage showing the latest earthquakes in Italy and neighboring regions. Earthquakes are classified according their place, date, magnitude and depth.</p>
+<div class="techdet">
+<b>data source:</b>
+<a href="http://cnt.rm.ingv.it/index.html">INGV</a>.<br>
+<b>tools:</b>
+<a href="http://scrapy.org/">Scrapy</a>,
+<a href="http://www.python.org/">Python</a>
+and <a href="http://kartograph.org/">Kartograph</a>.
+</div>
+  <div style="clear:both;"></div>
+</section>
+
+<section>
+  <a href="http://wwysymil.meteor.com/"><img src="img/lWafLIG.png" alt="Where would you send your mother in law?"></a>
+  <h2># Where would you send your mother-in-law?</h2>
+  <p>
+    This project is an hilarious example of collaborative dataviz: the user is asked to insert some data and, once inserted, the visualization will be synchronously updated all over the world.
+    In other words, the user interacts both with the visualization and the database.
+  </p>
+<div class="techdet">
+  <b>data source:</b>
+  You, <a href="http://stamen.com/">Stamen Design</a> and <a href="http://www.openstreetmap.org/">Openstreetmap</a>.<br>
+  <b>tools:</b>
+  <a href="http://leafletjs.com/">Leaflet</a>, <a href="http://meteor.com">Meteor</a> and <a href="http://inkscape.org/">Inkscape</a>.
+  <br>Source code on <a href="https://github.com/riccardoscalco/eidogram.projects/tree/master/mother-in-law">github</a>.
+</div>
+<div style="clear:both;"></div>
+</section>
+
+<section>
+  <a href="./yI40Cw5h"><img src="img/yWkk0q9.png" alt="Science, Technology and Innovation in Italy"></a>
+  <h2># Science, Technology and Innovation in Italy</h2>
+  <p>
+   The map shows the role, in terms of innovation, played by the italian administrative regions.
+   The statistics is presented by means of a cartogram, where the area of every region is proportional
+   to the corresponding innovation effort.
+  </p>
+<div class="techdet">
+<b>data source:</b>
+<a href="http://www.istat.it/">istat.it</a>.<br>
+<b>tools:</b>
+<a href="https://github.com/mbostock/topojson">topojson</a>,
+<a href="https://github.com/shawnbot/d3-cartogram/">d3-cartogram</a>,
+<a href="http://d3js.org/">D3js</a> and
+<a href="http://inkscape.org/">Inkscape</a>.
+</div>
+<div style="clear:both;"></div>
+</section>
+
+
+
+<!--
+<section>
+  <a href="./0e7BMpR"><img src="img/Hihsrzx.png" alt="Italian Camera Composition"></a>
+  <h2># Discover the italian Parliament</h2>
+  <p>
+  The reader is guided smoothly to the subdivision of the set of members of parliament by party, gender, age and education.
+  The focus is to visualize the whole data complexity in a funny and interactive way.
+  </p>
+<div class="techdet">
+<b>data source:</b>
+<a href="http://www.camera.it/">camera.it</a>.<br>
+<b>tools:</b>
+<a href="http://scrapy.org/">Scrapy</a>,
+<a href="http://www.python.org/">Python</a>
+and <a href="http://d3js.org/">D3js</a>.<br>
+<a href="https://github.com/eidogram/eidogram.github.com/tree/master/0e7BMpR">Project source</a>
+
+
+</div>
+  <div style="clear:both;"></div>
+</section>
+-->
+
+
+
+<section>
   <a href="./bQ9rSvt"><img src="img/7Fo4WzG.png" alt="Positive and negative emotions"></a>
   <h2># Positive and negative emotions on Twitter</h2>
   <p>
@@ -226,7 +247,7 @@ and <a href="https://developers.google.com/chart/interactive/docs/gallery/bubble
   have been tracked on the public Twitter streaming during an ordinary Friday.
   Not a news, but still it's amazing how people freely express the most private feelings on social media.
   </p>
-<div id="techdet">
+<div class="techdet">
 <b>tools:</b>
 <a href="http://d3js.org/">D3js</a>, <a href="https://github.com/ryanmcgrath/twython">Twython</a>
 and <a href="http://dataset.readthedocs.org/en/latest/">Dataset</a>.
@@ -240,7 +261,7 @@ and <a href="http://dataset.readthedocs.org/en/latest/">Dataset</a>.
   <p>
     <a href="http://riccardoscalco.github.io/Pykov/">Pykov</a> is versatile python module useful to manipulate Markov chains. It is able to calculate various kind of quantities, like steady state distribution, mean first passage times, random walks, absorbing times, and so on.
   </p>
-<div id="techdet">
+<div class="techdet">
 <b>tools:</b>
 <a href="http://www.python.org/">python</a>.
 </div>

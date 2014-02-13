@@ -246,12 +246,13 @@ function toggleRecording( e ) {
         if (!audioRecorder)
             return;
         console.log("start");
+        d3.select("#attesa").text("Sto registrando...");
         Session.set("rec","true");
         audioRecorder.clear();
         audioRecorder.record();
         //root.runLoad = Meteor.setInterval(loading,100);
         run = M_f.loading()
-        Meteor.setTimeout(stopRec,4000);
+        Meteor.setTimeout(stopRec,2000);
     }
 }
 
@@ -263,6 +264,7 @@ function doneEnco( blob ) {
 function stopRec() {
     // stop recording
     console.log("stop");
+    d3.select("#attesa").text("Registrazione terminata. Ascolta e/o crea una nuova registrazione. Poi puoi salvare la registrazione.");
     Meteor.clearInterval(run);
     audioRecorder.stop();
     //e.classList.remove("recording");
