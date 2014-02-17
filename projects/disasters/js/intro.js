@@ -100,7 +100,7 @@
     .attr("target","_blank")
     .append("text")
       .attr({"dx":"71", "dy":"37"})  
-      .style({"font-size":"8px", "text-decoration":"underline"})
+      .style({"font-size":"8px", "text-decoration":"underline", "fill":"#65000B"})
       .text("iDMC");
 
 
