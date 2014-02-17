@@ -4,14 +4,14 @@
  <title>Riccardo Scalco, eidogram.com</title>
  <link href="http://eidogram.com/atom.xml" rel="self"/>
  <link href="http://eidogram.com/"/>
- <updated>2014-02-15T22:01:21+01:00</updated>
+ <updated>2014-02-16T18:20:14+01:00</updated>
  <id>http://eidogram.com/</id>
  <author>
    <name>Riccardo Scalco</name>
    <email>riccardo.scalco@gmail.com</email>
  </author>
 
- 
+ <!--
  <entry>
    <title>Entropy analysis to discover uncertainty in election results.</title>
    <link href="http://eidogram.com/8giZMeKYT.html"/>
@@ -27,5 +27,42 @@
    <id>http://eidogram.com/XysLaJlFH</id>
    <content type="html">Simple linear regression and confidence intervals are derived from raw data with explicit formulas.</content>
  </entry>
-  
+ -->
+
+ <entry>
+   <title>Piedmont municipalities: population density vs voter turnout</title>
+   <link href="http://eidogram.com/projects/piemVisCont/"/>
+   <updated>2014-02-14T00:00:00+02:00</updated>
+   <id>http://eidogram.com/projects/piemVisCont/</id>
+   <content type="html">The voter turnout has been related with the population density of the 1206 municipalities of the italian region Piedmont.
+    Moreover, the voter uncertainty is calculated by means of the Shannon entropy on the number of votes assigned to every delegate.</content>
+ </entry>
+
+ <entry>
+   <title>People displaced by natural disasters during 2012</title>
+   <link href="http://eidogram.com/projects/disasters/"/>
+   <updated>2014-02-14T00:00:00+02:00</updated>
+   <id>http://eidogram.com/projects/disasters/</id>
+   <content type="html">In 2012, an estimated 32.4 million people in 82 countries were newly displaced by disasters, and the vast majority of displacement is triggered by climate and weather-related hazards in north-east India and Nigeria.</content>
+ </entry>
+
+ <entry>
+   <title>Ruler and compass construction of a pentagon</title>
+   <link href="http://eidogram.com/SZyMjZay"/>
+   <updated>2014-01-14T00:00:00+02:00</updated>
+   <id>http://eidogram.com/SZyMjZay</id>
+   <content type="html">A proof of concept: visually describe the construction of a pentagon
+    with the only use of ruler and compass.</content>
+ </entry>
+
+<!--
+  <entry>
+   <title></title>
+   <link href=""/>
+   <updated>2014-02-14T00:00:00+02:00</updated>
+   <id></id>
+   <content type="html"></content>
+ </entry>
+-->
+
 </feed>
