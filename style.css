@@ -85,6 +85,7 @@ img.logo {
 }
 
 .tuxtax {
+
 }
 
 
@@ -325,6 +326,11 @@ aside a, .a a, .a time, .b a, .c a, article a, section a {
 b {
 	font-weight: normal;
 	text-transform:uppercase;
+}
+
+b.tuxtax {
+  font-weight: normal;
+  text-transform:lowercase;
 }
 
 @font-face {
