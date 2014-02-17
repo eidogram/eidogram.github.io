@@ -74,6 +74,7 @@ img.logo {
 	color: #36454f;
 	font-size:13px;
 	padding-top:10px;
+  margin-top: 40px;
 }
 
 #mathdet, .techdet {
@@ -132,6 +133,13 @@ section h2 {
     /*font-family:'RokkittRegular', serif;*/
     line-height:1;
 }
+
+.news {
+  margin-top: 30px;
+  /*padding-right: 10px;
+  border-right: 2px solid #131313;*/
+}
+
 section p {
     color:#131313;
     margin-right:30px;
@@ -151,6 +159,7 @@ article img {
 }
 
 ul {
+  margin-bottom: 60px;
 	list-style: none;
 	padding-left: 0px;
 }
