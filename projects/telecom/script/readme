@@ -1,0 +1,20 @@
+Data:
+
+SMS_IN (sent from the nation identified by the Country code 39)
+November: all working days (monday to friday)
+December: all working day before the 24th
+
+total days: 37
+data in Gbytes:  about 12 Gbytes
+time: about 15 minutes (on x86_64 GNU/Linux machine with Intel Core i7-3770 CPU @ 3.40GHz and 16 Gbytes of random access memory)
+
+--------------
+
+Model check:
+
+10000
+
+mean:
+std:
+
+

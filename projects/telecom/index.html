@@ -1,0 +1,306 @@
+<html>
+  <head>
+    <title>My first Three.js app</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+      canvas {
+        width: 100%;
+        height: 100%
+        background-color: #f5f5f5;
+      }
+
+      .back-grid {
+        fill: #f5f5f5;
+      }
+
+      .linreg {
+        stroke: #000;
+        stroke-width: 0.1px;
+        /*stroke: #e1e1e1;*/
+      }
+
+      .on-cell-A {
+        fill: #434343;
+      }
+
+      .on-cell-D {
+        fill: #131313;
+      }
+
+      .off-cell {
+        fill: #f5f5f5;
+      }     
+
+      #container {
+        margin-bottom: 20px;
+      }
+
+      #box3D {
+        background-color: #fff;
+      }
+
+
+
+    
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <div id="box3D"></div>
+    <script src="./js/d3.v3.min.js" charset="utf-8"></script>
+    <script src="./js/three.min.js"></script>
+    <script src="./js/OrbitControls.js"></script>
+    <script src="./js/Detector.js"></script>
+    <script type="text/javascript">
+
+      // D3js chart
+      var width = 800;
+      var height = 800;
+
+      var svg = d3.select("#container").append("svg")
+          .attr("id", "chart")
+          .attr("viewBox", "0 0 100 100")          // make it
+          .attr("preserveAspectRatio", "xMidYMid") // responsive
+          .attr("width", width)
+          .attr("height", height)
+        .append("g");
+
+      /// background grid  
+
+      var grid = svg.append("g")
+        .attr("transform","scale(1)");
+
+      var mkCell = function(i) {
+        var path = drawPath(i,"A");
+        return grid.append("path")
+                .attr("class", "back-grid")
+                .attr("d", path);
+      };
+
+      for (var i = 0; i < 10000; i++) {
+        mkCell(i);
+      }
+
+      ///
+
+      var gridA = svg.append("g")
+        .attr("transform","scale(1)");
+      var gridD = svg.append("g")
+        .attr("transform","scale(1)");
+
+      function drawPath(cell, mat) {
+        var x = cell % 100,
+            y = 99 - Math.floor(cell / 100),
+            e = 0.1;
+        if (mat == "A") {
+          var path = "M " + (x+e) + " " + (y+e) +
+                     " L " + (x+1-e) + " " + (y+e) +
+                     " L " + (x+1-e) + " " + (y+1-e) +
+                     " L " + (x+e) + " " + (y+1-e) + " Z";
+        } else {
+          var path = "M " + (x+e) + " " + (y+e) +
+                     " L " + (x+1-e) + " " + (y+e) +
+                     " L " + (x+1-e) + " " + (y+1-e) +
+                     " L " + (x+e) + " " + (y+1-e) + " Z";
+        }
+        return path;
+      }
+
+      function styleCell(mat) {
+        if (mat == "A") {
+          var res = "on-cell-A"
+        } else {
+          var res = "on-cell-D"
+        };
+        return res
+      }
+      
+      d3.json("data.json", function(error, data) {
+        
+        // D3js chart
+        function update(dtdata,grid,mat) {
+
+          var cells = grid.selectAll("path")
+              .data(dtdata, function(d) { return d; });
+
+          cells
+              .attr("class",styleCell(mat) );
+
+          cells.enter().append("path")
+              .attr("class", styleCell(mat))
+              .attr("d", function(d) {
+                return drawPath(d,mat);
+              });
+
+          cells.exit()
+              .attr("class","off-cell");
+
+        }
+
+        var snapshot = 0;
+        update(data["D"][40], gridD, "D")
+        /*
+        var run = setInterval(function() {
+          update(data["A"][snapshot], gridA, "A")
+          //update(data["D"][snapshot], gridD, "D")
+          snapshot += 1;
+          if (snapshot === 144) {
+            snapshot = 0;
+            //clearInterval(run);
+          }
+        }, 300);
+        */
+
+        // Threejs box
+        // code from http://codepen.io/nireno/pen/cAoGI
+
+        
+
+        if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+        
+        var box3D, stats;
+
+        var camera, controls, scene, renderer;
+
+        var cross;
+
+        init();
+        animate();
+
+        function init() {
+
+          camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 1000 );
+          camera.position.z = 300;
+
+          controls = new THREE.OrbitControls( camera );
+          controls.maxDistance = 400;
+          controls.minDistance = 400;
+          controls.addEventListener( 'change', render );
+
+          scene = new THREE.Scene();
+          /*scene.fog = new THREE.FogExp2( 0xcccccc, 0.002 );*/
+
+          // world
+
+          var geometry = new THREE.CubeGeometry(1,1,1);
+          var material = new THREE.MeshBasicMaterial({color: 0xa1a1a1});
+
+          /*var nOnes = function(l) {
+            var a, d, _fn, _i, _len;
+            a = 0;
+            _fn = function(d) {
+              return a += d.filter(function(value) {
+                return value !== 0;
+              }).length;
+            };
+            for (_i = 0, _len = l.length; _i < _len; _i++) {
+              d = l[_i];
+              _fn(d);
+            }
+            return a;
+          };
+          
+          nA = nOnes(data["A"]);
+
+          nD = nOnes(data["D"]);
+          console.log(nD);
+
+          var geometry = new THREE.BufferGeometry();
+          geometry.addAttribute( 'position', Float32Array, nA, 3 );
+          geometry.addAttribute( 'color', Float32Array, nA, 3 );
+          var positions = geometry.attributes.position.array;
+          var colors = geometry.attributes.color.array;
+          var color = new THREE.Color();*/
+          
+
+          var dt, k, kk, _fn, _i, _len;
+          var npart = 0;
+
+          _fn = function(k, dt) {
+            var cell, i, j, _j, _len1, _results;
+            kk = dt;
+            _results = [];
+            for (_j = 0, _len1 = k.length; _j < _len1; _j++) {
+              cell = k[_j];
+              i = Math.floor(cell / 100);
+              j = cell % 100;
+              _results.push((function(i, j, kk) {
+
+
+                var cube;
+                cube = new THREE.Mesh(geometry, material);
+                cube.position.x = i;
+                cube.position.y = j;
+                cube.position.z = dt;
+                
+                return scene.add(cube);
+              })(i, j, dt));
+            }
+            return _results;
+          };
+
+          for (dt = _i = 0, _len = data["A"].length; _i < _len; dt = ++_i) {
+            k = data["A"][dt];
+            _fn(k, dt);
+          }
+
+          /*var material = new THREE.ParticleSystemMaterial( { size: 1, vertexColors: true } );
+          particleSystem = new THREE.ParticleSystem( geometry, material );
+          scene.add( particleSystem );*/
+
+          // lights
+
+          light = new THREE.DirectionalLight( 0xffffff );
+          light.position.set( 1, 1, 1 );
+          scene.add( light );
+
+          light = new THREE.DirectionalLight( 0x002288 );
+          light.position.set( -1, -1, -1 );
+          scene.add( light );
+
+          light = new THREE.AmbientLight( 0x222222 );
+          scene.add( light );
+
+
+          // renderer
+
+          renderer = new THREE.WebGLRenderer( { antialias: false, alpha: true } );
+          /*renderer.setClearColor( scene.fog.color, 1 );*/
+          renderer.setSize( window.innerWidth, window.innerHeight );
+
+          box3D = document.getElementById( 'box3D' );
+          box3D.appendChild( renderer.domElement );
+
+          window.addEventListener( 'resize', onWindowResize, false );
+
+        }
+
+        function onWindowResize() {
+
+          camera.aspect = window.innerWidth / window.innerHeight;
+          camera.updateProjectionMatrix();
+
+          renderer.setSize( window.innerWidth, window.innerHeight );
+
+          render();
+
+        }
+
+        function animate() {
+
+          requestAnimationFrame( animate );
+          controls.update();
+
+        }
+
+        function render() {
+          renderer.render( scene, camera );
+        }
+      });
+
+    </script>
+
+  </body>
+</html>
