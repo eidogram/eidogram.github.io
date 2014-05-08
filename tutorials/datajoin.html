@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DataJoin</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://stackedit.io/libs/MathJax/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body><div class="container"><p><strong>Tutorial introduttivo a D3 preparato in occasione del DrupalDay</strong> <br>
+<em>( <a href="http://eidogram.com/">Riccardo Scalco</a> | Milano, 9 Maggio 2014 )</em></p>
+
+<hr>
+
+<blockquote>
+  <p><strong>Nota:</strong> Questo tutorial lavora con la console Javascript di <em>Chrome</em>, ma non dovrebbero esserci grosse differenze con altri browser. </p>
+</blockquote>
+
+<hr>
+
+<p>Creare il seguente file <code>index.html</code>:</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+  </span><span class="tag">&lt;head&gt;</span><span class="pln">
+
+    </span><span class="com">&lt;!-- character encoding --&gt;</span><span class="pln">
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="tag">&gt;</span><span class="pln">
+
+    </span><span class="com">&lt;!-- ratio between the device width and the viewport size  --&gt;</span><span class="pln">
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"viewport"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span><span class="pln">
+
+    </span><span class="com">&lt;!-- latest d3 release --&gt;</span><span class="pln">
+    </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://d3js.org/d3.v3.min.js"</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="tag">&gt;&lt;/script&gt;</span><span class="pln">
+
+    </span><span class="com">&lt;!-- CSS rules --&gt;</span><span class="pln">
+    </span><span class="tag">&lt;style</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/style&gt;</span><span class="pln">
+
+  </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+
+  </span><span class="tag">&lt;body&gt;</span><span class="pln">
+
+    </span><span class="com">&lt;!-- graph container --&gt;</span><span class="pln">
+    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"graph"</span><span class="tag">&gt;&lt;/div&gt;</span><span class="pln">
+
+  </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+
+  </span><span class="com">&lt;!-- javascript code --&gt;</span><span class="pln">
+  </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="tag">&gt;</span><span class="pln">
+    console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">"Hello World"</span><span class="pun">);</span><span class="pln">
+  </span><span class="tag">&lt;/script&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;/html&gt;</span></code></pre>
+
+<p>Visualizzare a browser il file <code>index.html</code> ed ispezionare il DOM mediante gli strumenti per sviluppatori.</p>
+
+<hr>
+
+<h4 id="selettori-css">Selettori CSS</h4>
+
+<p>D3 offre la possibilità di selezionare elementi specifici del DOM mediante i <em>selettori CSS</em>.</p>
+
+<p>Per esempio, digitare nella console javascript il seguente comando per selezionare il nodo con <code>id="graph"</code> presente nel DOM</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">d3</span><span class="pun">.</span><span class="kwd">select</span><span class="pun">(</span><span class="str">"#graph"</span><span class="pun">)</span></code></pre>
+
+<p>Aggiungere ora due elementi <code>&lt;span&gt;</code> dentro il nodo con <code>id="graph"</code></p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">    </span><span class="com">&lt;!-- graph container --&gt;</span><span class="pln">
+    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"graph"</span><span class="tag">&gt;</span><span class="pln">
+      </span><span class="tag">&lt;span&gt;</span><span class="pln">Drupal</span><span class="tag">&lt;/span&gt;</span><span class="pln">
+      </span><span class="tag">&lt;span&gt;</span><span class="pln">Day</span><span class="tag">&lt;/span&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span></code></pre>
+
+<p>e selezionare a console i due elementi</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">d3</span><span class="pun">.</span><span class="kwd">select</span><span class="pun">(</span><span class="str">"span"</span><span class="pun">)</span></code></pre>
+
+<p>Notare che <code>d3.select</code> ritorna solo il primo dei due, per selezionarli entrambi digitare</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">d3</span><span class="pun">.</span><span class="pln">selectAll</span><span class="pun">(</span><span class="str">"span"</span><span class="pun">)</span></code></pre>
+
+<p>Per ora abbiamo selezionato elementi del DOM mediante <em>id selectors</em> e <em>type selectors</em>, ma possiamo selezionare anche in base alla classe (<em>class selectors</em>). Aggiungiamo dello style al documento:</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">    </span><span class="com">&lt;!-- CSS rules --&gt;</span><span class="pln">
+    </span><span class="tag">&lt;style</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="tag">&gt;</span><span class="pln">
+      </span><span class="pun">.</span><span class="pln">drupal </span><span class="pun">{</span><span class="pln">
+        color</span><span class="pun">:</span><span class="pln"> </span><span class="com">#0072ba;</span><span class="pln">
+      </span><span class="pun">}</span><span class="pln">
+    </span><span class="tag">&lt;/style&gt;</span></code></pre>
+
+<p>ed associamo la classe <code>.drupal</code> al primo elemento <code>span</code></p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">    </span><span class="com">&lt;!-- graph container --&gt;</span><span class="pln">
+    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"graph"</span><span class="tag">&gt;</span><span class="pln">
+      </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"drupal"</span><span class="tag">&gt;</span><span class="pln">Drupal</span><span class="tag">&lt;/span&gt;</span><span class="pln">
+      </span><span class="tag">&lt;span&gt;</span><span class="pln">Day</span><span class="tag">&lt;/span&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span></code></pre>
+
+<p>Come prima, usiamo la console per selezionare il nodo</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">d3</span><span class="pun">.</span><span class="kwd">select</span><span class="pun">(</span><span class="str">".drupal"</span><span class="pun">)</span></code></pre>
+
+<hr>
+
+<h4 id="le-selezioni-hanno-metodi">Le selezioni hanno metodi</h4>
+
+<p>D3 offre numerosi metodi per gli elementi selezionati, vediamo alcuni esempi direttamente nella console</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="kwd">var</span><span class="pln"> el </span><span class="pun">=</span><span class="pln"> d3</span><span class="pun">.</span><span class="kwd">select</span><span class="pun">(</span><span class="str">".drupal"</span><span class="pun">)</span><span class="pln">
+
+el</span><span class="pun">.</span><span class="pln">text</span><span class="pun">()</span><span class="pln">
+el</span><span class="pun">.</span><span class="pln">text</span><span class="pun">(</span><span class="str">"D3"</span><span class="pun">)</span><span class="pln">
+el</span><span class="pun">.</span><span class="pln">style</span><span class="pun">(</span><span class="str">"font-size"</span><span class="pun">,</span><span class="str">"40px"</span><span class="pun">)</span><span class="pln">
+el</span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"id"</span><span class="pun">,</span><span class="str">"title"</span><span class="pun">)</span></code></pre>
+
+<p>Possiamo creare anche nuovi nodi, per esempio potremmo aggiungere un link</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="kwd">var</span><span class="pln"> x </span><span class="pun">=</span><span class="pln"> d3</span><span class="pun">.</span><span class="kwd">select</span><span class="pun">(</span><span class="str">"#graph"</span><span class="pun">)</span><span class="pln">
+x</span><span class="pun">.</span><span class="pln">append</span><span class="pun">(</span><span class="str">"a"</span><span class="pun">).</span><span class="pln">text</span><span class="pun">(</span><span class="str">"link"</span><span class="pun">).</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"href"</span><span class="pun">,</span><span class="str">"https://drupal.org/"</span><span class="pun">).</span><span class="pln">style</span><span class="pun">(</span><span class="str">"color"</span><span class="pun">,</span><span class="str">"red"</span><span class="pun">)</span></code></pre>
+
+<p>E’ anche possibile transire con fluidità tra due valori, iniziale e finale, associati ad attributi o stili </p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">d3</span><span class="pun">.</span><span class="kwd">select</span><span class="pun">(</span><span class="str">".drupal"</span><span class="pun">).</span><span class="pln">transition</span><span class="pun">().</span><span class="pln">duration</span><span class="pun">(</span><span class="lit">2000</span><span class="pun">).</span><span class="pln">style</span><span class="pun">(</span><span class="str">"padding-left"</span><span class="pun">,</span><span class="str">"500px"</span><span class="pun">)</span></code></pre>
+
+<hr>
+
+<h4 id="il-data-join">Il data-join</h4>
+
+<p>Fin qui D3 non è molto diverso da JQuery, ciò che lo rende uno strumento diverso è il <em>data-join</em>. D3 offre infatti un meccanismo per legare un dato (cioè un oggetto javascript) ad un nodo del DOM. Fatto questo, diventa facile modificare il DOM in funzione dei dati ad esso associati, non per nulla “D3” sta per <em>Data Drive Documents</em>.</p>
+
+<p>Mettiamo mano alla console, cominciamo con selezionare qualcosa che non esiste :P</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="kwd">var</span><span class="pln"> p </span><span class="pun">=</span><span class="pln"> d3</span><span class="pun">.</span><span class="pln">selectAll</span><span class="pun">(</span><span class="str">"p"</span><span class="pun">)</span><span class="pln">
+p</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code></pre>
+
+<p>Ovviamente ritorna un array di 0 elementi.</p>
+
+<blockquote>
+  <p>Nota: più esattamente ritorna un array di un elemento, il quale è un array di zero elementi.</p>
+</blockquote>
+
+<p>Detto questo, definiamo ora la variabile che contiene i dati, cominciamo con un array di interi</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="kwd">var</span><span class="pln"> data </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span><span class="lit">3</span><span class="pun">,</span><span class="lit">2</span><span class="pun">,</span><span class="lit">1</span><span class="pun">]</span></code></pre>
+
+<p>Applichiamo il <em>data-join</em> associando i dati ad una selezione, così</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="kwd">var</span><span class="pln"> p </span><span class="pun">=</span><span class="pln"> d3</span><span class="pun">.</span><span class="pln">selectAll</span><span class="pun">(</span><span class="str">"p"</span><span class="pun">).</span><span class="pln">data</span><span class="pun">(</span><span class="pln">data</span><span class="pun">)</span></code></pre>
+
+<p>Abbiamo associato i dati una selezione di zero elementi, ma così definita la variabile <code>p</code> contiene ora tre elementi che scopriamo essere non definiti</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">p
+p</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></code></pre>
+
+<p>In javascript, avere array con elementi non definiti non è una grossa novità, provate questo per esempio</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="kwd">var</span><span class="pln"> v </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[]</span><span class="pln">
+v</span><span class="pun">[</span><span class="lit">10</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"hey"</span><span class="pln">
+v
+v</span><span class="pun">.</span><span class="pln">length
+v</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span><span class="pln">
+v</span><span class="pun">[</span><span class="lit">100</span><span class="pun">]</span></code></pre>
+
+<p>E a volte javascript sa essere <a href="https://www.destroyallsoftware.com/talks/wat">ben più strambo</a>.</p>
+
+<p><em>Dove sono finiti i dati?</em> <br>
+Facciamo un passo indietro e ragioniamo sui possibili scenari che possono emergere nell’unione di una lista di dati ad una lista di elementi del DOM. Mettiamo che le due liste hanno lunghezze diverse, sia <code>n</code> la lunghezza della lista di dati e <code>m</code> la lunghezza della lista di nodi, abbiamo così tre possibilità:</p>
+
+<ul>
+<li><code>n = m</code>: dati e nodi sono in numero uguale, abbiamo una unica selezione che è definita <em>update</em></li>
+<li><code>n &lt; m</code>: i dati sono meno dei nodi, abbiamo due selezioni differenti. La selezione <em>update</em> contiene i nodi a cui sono associati dei dati, la selezione <em>exit</em> invece contiene i nodi non associati a dei dati.</li>
+<li><code>n &gt; m</code>: i dati sono più dei nodi, ancora abbiamo due selezioni differenti. La selezione <em>update</em> contiene i nodi a cui sono associati dei dati, la selezione <em>enter</em> contiene invece nuovi nodi, per ora indefiniti, associati ai dati in eccessi.</li>
+</ul>
+
+<p>Nel nostro caso <code>n = 3</code> e <code>m = 0</code>, dunque abbiamo una <em>enter selection</em></p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">p
+p</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span><span class="pln">
+
+p</span><span class="pun">.</span><span class="pln">enter</span><span class="pun">()</span><span class="pln">
+p</span><span class="pun">.</span><span class="pln">enter</span><span class="pun">()[</span><span class="lit">0</span><span class="pun">]</span><span class="pln">
+
+p</span><span class="pun">.</span><span class="kwd">exit</span><span class="pun">()</span><span class="pln">
+p</span><span class="pun">.</span><span class="kwd">exit</span><span class="pun">()[</span><span class="lit">0</span><span class="pun">]</span></code></pre>
+
+<p>Appendiamo ai nodi presenti nella enter selection dei paragrafi <code>p</code> il cui testo è il dato associato:</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">p</span><span class="pun">.</span><span class="pln">enter</span><span class="pun">().</span><span class="pln">append</span><span class="pun">(</span><span class="str">"p"</span><span class="pun">).</span><span class="pln">text</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(</span><span class="pln">d</span><span class="pun">){</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> d</span><span class="pun">;</span><span class="pln"> </span><span class="pun">})</span></code></pre>
+
+<p>ed osserviamo nuovamente le selezioni</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">p
+p</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span><span class="pln">
+
+p</span><span class="pun">.</span><span class="pln">enter</span><span class="pun">()</span><span class="pln">
+p</span><span class="pun">.</span><span class="pln">enter</span><span class="pun">()[</span><span class="lit">0</span><span class="pun">]</span><span class="pln">
+
+p</span><span class="pun">.</span><span class="kwd">exit</span><span class="pun">()</span><span class="pln">
+p</span><span class="pun">.</span><span class="kwd">exit</span><span class="pun">()[</span><span class="lit">0</span><span class="pun">]</span></code></pre>
+
+<p>Notare che ora la variabile <code>p</code> contiene i tre paragrafi, ciascuno dei quali è associato ad un dato.</p>
+
+<p>Facciamo una nuova selezione e un nuovo data-join e come prima osserviamo le selezioni</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="kwd">var</span><span class="pln"> q </span><span class="pun">=</span><span class="pln"> d3</span><span class="pun">.</span><span class="pln">selectAll</span><span class="pun">(</span><span class="str">"p"</span><span class="pun">).</span><span class="pln">data</span><span class="pun">([</span><span class="str">"a"</span><span class="pun">,</span><span class="str">"b"</span><span class="pun">,</span><span class="str">"c"</span><span class="pun">])</span><span class="pln">
+
+q
+q</span><span class="pun">.</span><span class="pln">enter</span><span class="pun">()</span><span class="pln">
+q</span><span class="pun">.</span><span class="kwd">exit</span><span class="pun">()</span></code></pre>
+
+<p>Le selezioni enter ed exit sono vuote, la update invece contiene i tre paragrafi e ciscuno di essi è associato al nuovo dato. <br>
+Aggiorniamo i nodi cin base ai nuovi dati con il seguente comando</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">q</span><span class="pun">.</span><span class="pln">text</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(</span><span class="pln">d</span><span class="pun">){</span><span class="kwd">return</span><span class="pln"> d</span><span class="pun">;})</span></code></pre>
+
+<p>Possiamo usare i dati anche per modificare lo stile, per esempio la dimenzione del font</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">d3</span><span class="pun">.</span><span class="pln">selectAll</span><span class="pun">(</span><span class="str">"p"</span><span class="pun">).</span><span class="pln">data</span><span class="pun">([</span><span class="lit">10</span><span class="pun">,</span><span class="lit">40</span><span class="pun">,</span><span class="lit">70</span><span class="pun">]).</span><span class="pln">style</span><span class="pun">(</span><span class="str">"font-size"</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">d</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> d </span><span class="pun">+</span><span class="pln"> </span><span class="str">"px"</span><span class="pun">;</span><span class="pln"> </span><span class="pun">})</span></code></pre>
+
+<p>Sperimentiamo ancora, selezioniamo nuovamente i paragrafi ed associamo ad essi una lista di soli due dati, che in questo esempio sono due oggetti</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">z </span><span class="pun">=</span><span class="pln"> d3</span><span class="pun">.</span><span class="pln">selectAll</span><span class="pun">(</span><span class="str">"p"</span><span class="pun">).</span><span class="pln">data</span><span class="pun">([{</span><span class="str">"pl"</span><span class="pun">:</span><span class="lit">10</span><span class="pun">,</span><span class="pln"> </span><span class="str">"col"</span><span class="pun">:</span><span class="str">"red"</span><span class="pun">},{</span><span class="str">"pl"</span><span class="pun">:</span><span class="lit">20</span><span class="pun">,</span><span class="pln"> </span><span class="str">"col"</span><span class="pun">:</span><span class="str">"blue"</span><span class="pun">}])</span></code></pre>
+
+<p>Osserviamo le selezioni</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">z
+z</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span><span class="pln">
+
+z</span><span class="pun">.</span><span class="pln">enter</span><span class="pun">()</span><span class="pln">
+z</span><span class="pun">.</span><span class="pln">enter</span><span class="pun">()[</span><span class="lit">0</span><span class="pun">]</span><span class="pln">
+
+z</span><span class="pun">.</span><span class="kwd">exit</span><span class="pun">()</span><span class="pln">
+z</span><span class="pun">.</span><span class="kwd">exit</span><span class="pun">()[</span><span class="lit">0</span><span class="pun">]</span></code></pre>
+
+<p>La selezione update contiene due nodi, la enter nessun nodo e la exit un nodo. Usualmente la update si aggiorna e la exit si butta</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="pln">z</span><span class="pun">.</span><span class="pln">style</span><span class="pun">(</span><span class="str">"padding-left"</span><span class="pun">,</span><span class="kwd">function</span><span class="pun">(</span><span class="pln">d</span><span class="pun">){</span><span class="kwd">return</span><span class="pln"> d</span><span class="pun">.</span><span class="pln">pl </span><span class="pun">+</span><span class="pln"> </span><span class="str">"px"</span><span class="pun">;}).</span><span class="pln">style</span><span class="pun">(</span><span class="str">"color"</span><span class="pun">,</span><span class="kwd">function</span><span class="pun">(</span><span class="pln">d</span><span class="pun">){</span><span class="kwd">return</span><span class="pln"> d</span><span class="pun">.</span><span class="pln">col</span><span class="pun">;})</span><span class="pln">
+z</span><span class="pun">.</span><span class="kwd">exit</span><span class="pun">().</span><span class="pln">remove</span><span class="pun">()</span></code></pre>
+
+<hr>
+
+<h4 id="d3-ed-i-web-standards">D3 ed i web standards</h4>
+
+<p>Avrete notato che il vocabolario di D3 proviene direttamente dagli Standard Web <em>HTML</em>, <em>CSS</em> ed <em>SVG</em>. Questo significa che è possibile trasmettere la propria conoscenza degli Standards nell’uso di D3 e che, vicersa, l’uso disinvolto di D3 necessita di conoscenze solide degli Standards.</p>
+
+<p>Facciamo un esempio, prima abbiamo usato i comandi</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="kwd">var</span><span class="pln"> p </span><span class="pun">=</span><span class="pln"> d3</span><span class="pun">.</span><span class="pln">selectAll</span><span class="pun">(</span><span class="str">"p"</span><span class="pun">).</span><span class="pln">data</span><span class="pun">([</span><span class="lit">1</span><span class="pun">,</span><span class="lit">2</span><span class="pun">,</span><span class="lit">3</span><span class="pun">])</span><span class="pln">
+p</span><span class="pun">.</span><span class="pln">enter</span><span class="pun">().</span><span class="pln">append</span><span class="pun">(</span><span class="str">"p"</span><span class="pun">).</span><span class="pln">text</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(</span><span class="pln">d</span><span class="pun">){</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> d</span><span class="pun">;</span><span class="pln"> </span><span class="pun">})</span></code></pre>
+
+<p>ora, per ottenere elementi grafici, utilizziamo il linguaggio SVG e gli stessi comandi D3</p>
+
+<pre class="prettyprint prettyprinted" style=""><code><span class="kwd">var</span><span class="pln"> graph </span><span class="pun">=</span><span class="pln"> d3</span><span class="pun">.</span><span class="kwd">select</span><span class="pun">(</span><span class="str">"#graph"</span><span class="pun">).</span><span class="pln">append</span><span class="pun">(</span><span class="str">"svg"</span><span class="pun">)</span><span class="pln">
+
+</span><span class="kwd">var</span><span class="pln"> p </span><span class="pun">=</span><span class="pln"> graph</span><span class="pun">.</span><span class="pln">selectAll</span><span class="pun">(</span><span class="str">"circle"</span><span class="pun">).</span><span class="pln">data</span><span class="pun">([</span><span class="lit">1</span><span class="pun">,</span><span class="lit">2</span><span class="pun">,</span><span class="lit">3</span><span class="pun">])</span><span class="pln">
+p</span><span class="pun">.</span><span class="pln">enter</span><span class="pun">().</span><span class="pln">append</span><span class="pun">(</span><span class="str">"circle"</span><span class="pun">).</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"r"</span><span class="pun">,</span><span class="kwd">function</span><span class="pun">(</span><span class="pln">d</span><span class="pun">){</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> d</span><span class="pun">*</span><span class="lit">10</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}).</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"cx"</span><span class="pun">,</span><span class="kwd">function</span><span class="pun">(</span><span class="pln">d</span><span class="pun">){</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> d</span><span class="pun">*</span><span class="lit">100</span><span class="pun">;}).</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"cy"</span><span class="pun">,</span><span class="str">"500"</span><span class="pun">).</span><span class="pln">style</span><span class="pun">(</span><span class="str">"fill"</span><span class="pun">,</span><span class="str">"green"</span><span class="pun">)</span></code></pre>
+
+<p>Notate che non c’è nulla di speciale nei nomi degli attrinuti <code>r</code>, <code>cx</code> e <code>cy</code>, questi sono infatti gli attributi dell’elemento <code>circle</code> come definito dal <a href="http://www.w3.org/TR/SVG/shapes.html#CircleElement">W3C</a>.</p>
+
+<hr>
+
+<p><strong>Tutorial introduttivo a D3 preparato in occasione del DrupalDay</strong> <br>
+<em>( <a href="http://eidogram.com/">Riccardo Scalco</a> | Milano, 9 Maggio 2014 )</em></p></div></body>
+</html>
