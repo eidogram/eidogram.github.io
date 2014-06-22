@@ -64,6 +64,18 @@ img.logo {
     padding: 20px 30px 20px 0px;
 }
 
+img.client {
+    background-color: #eee;
+    margin-right:0px;
+    margin-bottom: 20px;
+    padding: 20px 20px 20px 20px;
+    width: 150px;
+}
+
+img.client:hover {
+  background-color: #e3e3e3;
+}
+
 #info {
     width:220px;
     float:left;
