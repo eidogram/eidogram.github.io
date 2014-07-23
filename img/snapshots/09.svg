@@ -1,0 +1,4080 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:xhtml="http://www.w3.org/1999/xhtml"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="dailyChart"
+   viewBox="0 0 1000 1000.4415"
+   preserveAspectRatio="xMidYMid"
+   width="1133"
+   height="1133"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="09.svg"
+   inkscape:export-filename="/home/riccardo/Git/eidogram/eidogram.jekyll/img/snapshots/09.png"
+   inkscape:export-xdpi="199.9297"
+   inkscape:export-ydpi="199.9297">
+  <metadata
+     id="metadata653">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs651" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1058"
+     id="namedview649"
+     showgrid="false"
+     inkscape:zoom="0.72727273"
+     inkscape:cx="739.19579"
+     inkscape:cy="517.55774"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="dailyChart" />
+  <xhtml:defs>
+    <xhtml:style
+       type="text/css">
+#nprogress { pointer-events: none; }
+#nprogress .bar { position: fixed; z-index: 100; top: 0px; left: 0px; width: 100%; height: 2px; background: rgb(34, 153, 221); }
+#nprogress .peg { display: block; position: absolute; right: 0px; width: 100px; height: 100%; box-shadow: rgb(34, 153, 221) 0px 0px 10px, rgb(34, 153, 221) 0px 0px 5px; opacity: 1; -webkit-transform: rotate(3deg) translate(0px, -4px); }
+#nprogress .spinner { display: block; position: fixed; z-index: 100; top: 15px; right: 15px; }
+#nprogress .spinner-icon { width: 14px; height: 14px; border-style: solid; border-width: 2px; border-color: rgb(34, 153, 221) transparent transparent rgb(34, 153, 221); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; -webkit-animation: nprogress-spinner 400ms linear infinite; }
+body { font-family: Lato, sans-serif; font-size: 18px; color: rgb(102, 102, 102); }
+svg { border: 1px solid black; }
+#daily { width: 60%; }
+.daily-ticks { fill: rgb(102, 102, 102); text-anchor: end; font-size: 14px; font-family: Lato, sans-serif; }
+.daily-x-axis { }
+.daily-axis path, .daily-axis line { fill: none; stroke: rgb(51, 51, 51); }
+.daily-label { text-anchor: end; font-size: 14px; text-transform: uppercase; font-family: Lato, sans-serif; }
+.daily-y1axis path { display: none; }
+.daily-y1axis line { display: none; }
+.daily-y1axis line { fill: none; stroke: rgb(238, 238, 238); }
+.daily-line { fill: none; stroke: rgb(253, 113, 2); stroke-width: 5px; }
+.daily-bars { fill: rgb(76, 168, 252); }
+.daily-dots { fill: rgb(253, 113, 2); }
+#gender_repartition { width: 30%; }
+.genderrep-text { text-anchor: middle; fill: rgb(238, 238, 238); font-weight: bold; font-size: 18px; font-family: Lato, sans-serif; }
+#devices { width: 30%; }
+.devices-perc { text-anchor: middle; fill: rgb(238, 238, 238); font-weight: bold; font-size: 15px; font-family: Lato, sans-serif; }
+#device { width: 30%; }
+li { opacity: 0; }
+.slice { }
+.title { font-weight: normal; fill: rgb(102, 102, 102); font-size: 26px; }
+.box { stroke: rgb(102, 102, 102); stroke-width: 0.15px; fill: rgb(255, 255, 255); opacity: 0.75; }
+.icon, .iconTitle { fill: rgb(102, 102, 102); }
+.perc { fill: rgb(102, 102, 102); }
+#mobile-icon { fill: rgb(253, 113, 2); }
+#tablet-icon { fill: rgb(253, 210, 89); }
+#desktop-icon { fill: rgb(76, 168, 252); }
+#gender { width: 60%; }
+.other { fill: rgb(238, 238, 238); }
+.male { fill: rgb(76, 168, 252); }
+.female { fill: rgb(253, 113, 2); }
+.gender-type { font-size: 13px; text-anchor: middle; text-transform: uppercase; fill: rgb(204, 204, 204); }
+.gender-rate { font-size: 18px; text-anchor: middle; fill: rgb(102, 102, 102); }
+.gender-bar { stroke: rgb(238, 238, 238); stroke-linecap: round; stroke-width: 11px; }
+#weekly { width: 60%; }
+#hourly { width: 60%; }
+.axis path, .axis line { fill: none; stroke: rgb(0, 0, 0); }
+.y.axis path { display: none; }
+.y.axis line { stroke: rgb(238, 238, 238); stroke-width: 1px; }
+.x.axis path { stroke-width: 2px; stroke: rgb(238, 238, 238); fill: none; }
+.x.axis line { stroke-width: 1px; stroke: rgb(238, 238, 238); fill: rgb(238, 238, 238); }
+.line { stroke-width: 5px; stroke: rgb(0, 0, 0); fill: none; stroke-linecap: round; }
+.mobile-line { stroke: rgb(253, 113, 2); }
+.tablet-line { stroke: rgb(253, 210, 89); }
+.desktop-line { stroke: rgb(76, 168, 252); }
+.axis-text { fill: rgb(102, 102, 102); font-size: 15px; }
+.mobile-spots { fill: rgb(253, 113, 2); }
+.tablet-spots { fill: rgb(253, 210, 89); }
+.desktop-spots { fill: rgb(76, 168, 252); }
+.hourly-tooltip { stroke: rgb(102, 102, 102); stroke-width: 0.15px; fill: rgb(255, 255, 255); opacity: 0.75; }
+.hourly-tooltip-text { fill: rgb(102, 102, 102); font-size: 17px; font-weight: bold; text-anchor: middle; }
+.hourly-device-type { font-size: 18px; text-anchor: middle; text-transform: uppercase; fill: rgb(204, 204, 204); }
+.hourly-vlines { fill: none; stroke: rgb(238, 238, 238); stroke-width: 1px; }
+.bar { fill: rgb(204, 204, 204); }
+.bar-back, .rect-back-text { fill: rgb(238, 238, 238); opacity: 1; }
+#browser, #age, #isp { width: 20%; float: left; margin-right: 30px; }
+.bar-axis { font-weight: bold; fill: rgb(102, 102, 102); }
+.bar-axis path, .bar-axis line { display: none; fill: none; stroke: rgb(0, 0, 0); shape-rendering: crispedges; }
+.bar-value, .bar-percs { fill: rgb(102, 102, 102); }
+.YlGn .q0-3 { fill: rgb(247, 252, 185); }
+.YlGn .q1-3 { fill: rgb(173, 221, 142); }
+.YlGn .q2-3 { fill: rgb(49, 163, 84); }
+.YlGn .q0-4 { fill: rgb(255, 255, 204); }
+.YlGn .q1-4 { fill: rgb(194, 230, 153); }
+.YlGn .q2-4 { fill: rgb(120, 198, 121); }
+.YlGn .q3-4 { fill: rgb(35, 132, 67); }
+.YlGn .q0-5 { fill: rgb(255, 255, 204); }
+.YlGn .q1-5 { fill: rgb(194, 230, 153); }
+.YlGn .q2-5 { fill: rgb(120, 198, 121); }
+.YlGn .q3-5 { fill: rgb(49, 163, 84); }
+.YlGn .q4-5 { fill: rgb(0, 104, 55); }
+.YlGn .q0-6 { fill: rgb(255, 255, 204); }
+.YlGn .q1-6 { fill: rgb(217, 240, 163); }
+.YlGn .q2-6 { fill: rgb(173, 221, 142); }
+.YlGn .q3-6 { fill: rgb(120, 198, 121); }
+.YlGn .q4-6 { fill: rgb(49, 163, 84); }
+.YlGn .q5-6 { fill: rgb(0, 104, 55); }
+.YlGn .q0-7 { fill: rgb(255, 255, 204); }
+.YlGn .q1-7 { fill: rgb(217, 240, 163); }
+.YlGn .q2-7 { fill: rgb(173, 221, 142); }
+.YlGn .q3-7 { fill: rgb(120, 198, 121); }
+.YlGn .q4-7 { fill: rgb(65, 171, 93); }
+.YlGn .q5-7 { fill: rgb(35, 132, 67); }
+.YlGn .q6-7 { fill: rgb(0, 90, 50); }
+.YlGn .q0-8 { fill: rgb(255, 255, 229); }
+.YlGn .q1-8 { fill: rgb(247, 252, 185); }
+.YlGn .q2-8 { fill: rgb(217, 240, 163); }
+.YlGn .q3-8 { fill: rgb(173, 221, 142); }
+.YlGn .q4-8 { fill: rgb(120, 198, 121); }
+.YlGn .q5-8 { fill: rgb(65, 171, 93); }
+.YlGn .q6-8 { fill: rgb(35, 132, 67); }
+.YlGn .q7-8 { fill: rgb(0, 90, 50); }
+.YlGn .q0-9 { fill: rgb(255, 255, 229); }
+.YlGn .q1-9 { fill: rgb(247, 252, 185); }
+.YlGn .q2-9 { fill: rgb(217, 240, 163); }
+.YlGn .q3-9 { fill: rgb(173, 221, 142); }
+.YlGn .q4-9 { fill: rgb(120, 198, 121); }
+.YlGn .q5-9 { fill: rgb(65, 171, 93); }
+.YlGn .q6-9 { fill: rgb(35, 132, 67); }
+.YlGn .q7-9 { fill: rgb(0, 104, 55); }
+.YlGn .q8-9 { fill: rgb(0, 69, 41); }
+.YlGnBu .q0-3 { fill: rgb(237, 248, 177); }
+.YlGnBu .q1-3 { fill: rgb(127, 205, 187); }
+.YlGnBu .q2-3 { fill: rgb(44, 127, 184); }
+.YlGnBu .q0-4 { fill: rgb(255, 255, 204); }
+.YlGnBu .q1-4 { fill: rgb(161, 218, 180); }
+.YlGnBu .q2-4 { fill: rgb(65, 182, 196); }
+.YlGnBu .q3-4 { fill: rgb(34, 94, 168); }
+.YlGnBu .q0-5 { fill: rgb(255, 255, 204); }
+.YlGnBu .q1-5 { fill: rgb(161, 218, 180); }
+.YlGnBu .q2-5 { fill: rgb(65, 182, 196); }
+.YlGnBu .q3-5 { fill: rgb(44, 127, 184); }
+.YlGnBu .q4-5 { fill: rgb(37, 52, 148); }
+.YlGnBu .q0-6 { fill: rgb(255, 255, 204); }
+.YlGnBu .q1-6 { fill: rgb(199, 233, 180); }
+.YlGnBu .q2-6 { fill: rgb(127, 205, 187); }
+.YlGnBu .q3-6 { fill: rgb(65, 182, 196); }
+.YlGnBu .q4-6 { fill: rgb(44, 127, 184); }
+.YlGnBu .q5-6 { fill: rgb(37, 52, 148); }
+.YlGnBu .q0-7 { fill: rgb(255, 255, 204); }
+.YlGnBu .q1-7 { fill: rgb(199, 233, 180); }
+.YlGnBu .q2-7 { fill: rgb(127, 205, 187); }
+.YlGnBu .q3-7 { fill: rgb(65, 182, 196); }
+.YlGnBu .q4-7 { fill: rgb(29, 145, 192); }
+.YlGnBu .q5-7 { fill: rgb(34, 94, 168); }
+.YlGnBu .q6-7 { fill: rgb(12, 44, 132); }
+.YlGnBu .q0-8 { fill: rgb(255, 255, 217); }
+.YlGnBu .q1-8 { fill: rgb(237, 248, 177); }
+.YlGnBu .q2-8 { fill: rgb(199, 233, 180); }
+.YlGnBu .q3-8 { fill: rgb(127, 205, 187); }
+.YlGnBu .q4-8 { fill: rgb(65, 182, 196); }
+.YlGnBu .q5-8 { fill: rgb(29, 145, 192); }
+.YlGnBu .q6-8 { fill: rgb(34, 94, 168); }
+.YlGnBu .q7-8 { fill: rgb(12, 44, 132); }
+.YlGnBu .q0-9 { fill: rgb(255, 255, 217); }
+.YlGnBu .q1-9 { fill: rgb(237, 248, 177); }
+.YlGnBu .q2-9 { fill: rgb(199, 233, 180); }
+.YlGnBu .q3-9 { fill: rgb(127, 205, 187); }
+.YlGnBu .q4-9 { fill: rgb(65, 182, 196); }
+.YlGnBu .q5-9 { fill: rgb(29, 145, 192); }
+.YlGnBu .q6-9 { fill: rgb(34, 94, 168); }
+.YlGnBu .q7-9 { fill: rgb(37, 52, 148); }
+.YlGnBu .q8-9 { fill: rgb(8, 29, 88); }
+.GnBu .q0-3 { fill: rgb(224, 243, 219); }
+.GnBu .q1-3 { fill: rgb(168, 221, 181); }
+.GnBu .q2-3 { fill: rgb(67, 162, 202); }
+.GnBu .q0-4 { fill: rgb(240, 249, 232); }
+.GnBu .q1-4 { fill: rgb(186, 228, 188); }
+.GnBu .q2-4 { fill: rgb(123, 204, 196); }
+.GnBu .q3-4 { fill: rgb(43, 140, 190); }
+.GnBu .q0-5 { fill: rgb(240, 249, 232); }
+.GnBu .q1-5 { fill: rgb(186, 228, 188); }
+.GnBu .q2-5 { fill: rgb(123, 204, 196); }
+.GnBu .q3-5 { fill: rgb(67, 162, 202); }
+.GnBu .q4-5 { fill: rgb(8, 104, 172); }
+.GnBu .q0-6 { fill: rgb(240, 249, 232); }
+.GnBu .q1-6 { fill: rgb(204, 235, 197); }
+.GnBu .q2-6 { fill: rgb(168, 221, 181); }
+.GnBu .q3-6 { fill: rgb(123, 204, 196); }
+.GnBu .q4-6 { fill: rgb(67, 162, 202); }
+.GnBu .q5-6 { fill: rgb(8, 104, 172); }
+.GnBu .q0-7 { fill: rgb(240, 249, 232); }
+.GnBu .q1-7 { fill: rgb(204, 235, 197); }
+.GnBu .q2-7 { fill: rgb(168, 221, 181); }
+.GnBu .q3-7 { fill: rgb(123, 204, 196); }
+.GnBu .q4-7 { fill: rgb(78, 179, 211); }
+.GnBu .q5-7 { fill: rgb(43, 140, 190); }
+.GnBu .q6-7 { fill: rgb(8, 88, 158); }
+.GnBu .q0-8 { fill: rgb(247, 252, 240); }
+.GnBu .q1-8 { fill: rgb(224, 243, 219); }
+.GnBu .q2-8 { fill: rgb(204, 235, 197); }
+.GnBu .q3-8 { fill: rgb(168, 221, 181); }
+.GnBu .q4-8 { fill: rgb(123, 204, 196); }
+.GnBu .q5-8 { fill: rgb(78, 179, 211); }
+.GnBu .q6-8 { fill: rgb(43, 140, 190); }
+.GnBu .q7-8 { fill: rgb(8, 88, 158); }
+.GnBu .q0-9 { fill: rgb(247, 252, 240); }
+.GnBu .q1-9 { fill: rgb(224, 243, 219); }
+.GnBu .q2-9 { fill: rgb(204, 235, 197); }
+.GnBu .q3-9 { fill: rgb(168, 221, 181); }
+.GnBu .q4-9 { fill: rgb(123, 204, 196); }
+.GnBu .q5-9 { fill: rgb(78, 179, 211); }
+.GnBu .q6-9 { fill: rgb(43, 140, 190); }
+.GnBu .q7-9 { fill: rgb(8, 104, 172); }
+.GnBu .q8-9 { fill: rgb(8, 64, 129); }
+.BuGn .q0-3 { fill: rgb(229, 245, 249); }
+.BuGn .q1-3 { fill: rgb(153, 216, 201); }
+.BuGn .q2-3 { fill: rgb(44, 162, 95); }
+.BuGn .q0-4 { fill: rgb(237, 248, 251); }
+.BuGn .q1-4 { fill: rgb(178, 226, 226); }
+.BuGn .q2-4 { fill: rgb(102, 194, 164); }
+.BuGn .q3-4 { fill: rgb(35, 139, 69); }
+.BuGn .q0-5 { fill: rgb(237, 248, 251); }
+.BuGn .q1-5 { fill: rgb(178, 226, 226); }
+.BuGn .q2-5 { fill: rgb(102, 194, 164); }
+.BuGn .q3-5 { fill: rgb(44, 162, 95); }
+.BuGn .q4-5 { fill: rgb(0, 109, 44); }
+.BuGn .q0-6 { fill: rgb(237, 248, 251); }
+.BuGn .q1-6 { fill: rgb(204, 236, 230); }
+.BuGn .q2-6 { fill: rgb(153, 216, 201); }
+.BuGn .q3-6 { fill: rgb(102, 194, 164); }
+.BuGn .q4-6 { fill: rgb(44, 162, 95); }
+.BuGn .q5-6 { fill: rgb(0, 109, 44); }
+.BuGn .q0-7 { fill: rgb(237, 248, 251); }
+.BuGn .q1-7 { fill: rgb(204, 236, 230); }
+.BuGn .q2-7 { fill: rgb(153, 216, 201); }
+.BuGn .q3-7 { fill: rgb(102, 194, 164); }
+.BuGn .q4-7 { fill: rgb(65, 174, 118); }
+.BuGn .q5-7 { fill: rgb(35, 139, 69); }
+.BuGn .q6-7 { fill: rgb(0, 88, 36); }
+.BuGn .q0-8 { fill: rgb(247, 252, 253); }
+.BuGn .q1-8 { fill: rgb(229, 245, 249); }
+.BuGn .q2-8 { fill: rgb(204, 236, 230); }
+.BuGn .q3-8 { fill: rgb(153, 216, 201); }
+.BuGn .q4-8 { fill: rgb(102, 194, 164); }
+.BuGn .q5-8 { fill: rgb(65, 174, 118); }
+.BuGn .q6-8 { fill: rgb(35, 139, 69); }
+.BuGn .q7-8 { fill: rgb(0, 88, 36); }
+.BuGn .q0-9 { fill: rgb(247, 252, 253); }
+.BuGn .q1-9 { fill: rgb(229, 245, 249); }
+.BuGn .q2-9 { fill: rgb(204, 236, 230); }
+.BuGn .q3-9 { fill: rgb(153, 216, 201); }
+.BuGn .q4-9 { fill: rgb(102, 194, 164); }
+.BuGn .q5-9 { fill: rgb(65, 174, 118); }
+.BuGn .q6-9 { fill: rgb(35, 139, 69); }
+.BuGn .q7-9 { fill: rgb(0, 109, 44); }
+.BuGn .q8-9 { fill: rgb(0, 68, 27); }
+.PuBuGn .q0-3 { fill: rgb(236, 226, 240); }
+.PuBuGn .q1-3 { fill: rgb(166, 189, 219); }
+.PuBuGn .q2-3 { fill: rgb(28, 144, 153); }
+.PuBuGn .q0-4 { fill: rgb(246, 239, 247); }
+.PuBuGn .q1-4 { fill: rgb(189, 201, 225); }
+.PuBuGn .q2-4 { fill: rgb(103, 169, 207); }
+.PuBuGn .q3-4 { fill: rgb(2, 129, 138); }
+.PuBuGn .q0-5 { fill: rgb(246, 239, 247); }
+.PuBuGn .q1-5 { fill: rgb(189, 201, 225); }
+.PuBuGn .q2-5 { fill: rgb(103, 169, 207); }
+.PuBuGn .q3-5 { fill: rgb(28, 144, 153); }
+.PuBuGn .q4-5 { fill: rgb(1, 108, 89); }
+.PuBuGn .q0-6 { fill: rgb(246, 239, 247); }
+.PuBuGn .q1-6 { fill: rgb(208, 209, 230); }
+.PuBuGn .q2-6 { fill: rgb(166, 189, 219); }
+.PuBuGn .q3-6 { fill: rgb(103, 169, 207); }
+.PuBuGn .q4-6 { fill: rgb(28, 144, 153); }
+.PuBuGn .q5-6 { fill: rgb(1, 108, 89); }
+.PuBuGn .q0-7 { fill: rgb(246, 239, 247); }
+.PuBuGn .q1-7 { fill: rgb(208, 209, 230); }
+.PuBuGn .q2-7 { fill: rgb(166, 189, 219); }
+.PuBuGn .q3-7 { fill: rgb(103, 169, 207); }
+.PuBuGn .q4-7 { fill: rgb(54, 144, 192); }
+.PuBuGn .q5-7 { fill: rgb(2, 129, 138); }
+.PuBuGn .q6-7 { fill: rgb(1, 100, 80); }
+.PuBuGn .q0-8 { fill: rgb(255, 247, 251); }
+.PuBuGn .q1-8 { fill: rgb(236, 226, 240); }
+.PuBuGn .q2-8 { fill: rgb(208, 209, 230); }
+.PuBuGn .q3-8 { fill: rgb(166, 189, 219); }
+.PuBuGn .q4-8 { fill: rgb(103, 169, 207); }
+.PuBuGn .q5-8 { fill: rgb(54, 144, 192); }
+.PuBuGn .q6-8 { fill: rgb(2, 129, 138); }
+.PuBuGn .q7-8 { fill: rgb(1, 100, 80); }
+.PuBuGn .q0-9 { fill: rgb(255, 247, 251); }
+.PuBuGn .q1-9 { fill: rgb(236, 226, 240); }
+.PuBuGn .q2-9 { fill: rgb(208, 209, 230); }
+.PuBuGn .q3-9 { fill: rgb(166, 189, 219); }
+.PuBuGn .q4-9 { fill: rgb(103, 169, 207); }
+.PuBuGn .q5-9 { fill: rgb(54, 144, 192); }
+.PuBuGn .q6-9 { fill: rgb(2, 129, 138); }
+.PuBuGn .q7-9 { fill: rgb(1, 108, 89); }
+.PuBuGn .q8-9 { fill: rgb(1, 70, 54); }
+.PuBu .q0-3 { fill: rgb(236, 231, 242); }
+.PuBu .q1-3 { fill: rgb(166, 189, 219); }
+.PuBu .q2-3 { fill: rgb(43, 140, 190); }
+.PuBu .q0-4 { fill: rgb(241, 238, 246); }
+.PuBu .q1-4 { fill: rgb(189, 201, 225); }
+.PuBu .q2-4 { fill: rgb(116, 169, 207); }
+.PuBu .q3-4 { fill: rgb(5, 112, 176); }
+.PuBu .q0-5 { fill: rgb(241, 238, 246); }
+.PuBu .q1-5 { fill: rgb(189, 201, 225); }
+.PuBu .q2-5 { fill: rgb(116, 169, 207); }
+.PuBu .q3-5 { fill: rgb(43, 140, 190); }
+.PuBu .q4-5 { fill: rgb(4, 90, 141); }
+.PuBu .q0-6 { fill: rgb(241, 238, 246); }
+.PuBu .q1-6 { fill: rgb(208, 209, 230); }
+.PuBu .q2-6 { fill: rgb(166, 189, 219); }
+.PuBu .q3-6 { fill: rgb(116, 169, 207); }
+.PuBu .q4-6 { fill: rgb(43, 140, 190); }
+.PuBu .q5-6 { fill: rgb(4, 90, 141); }
+.PuBu .q0-7 { fill: rgb(241, 238, 246); }
+.PuBu .q1-7 { fill: rgb(208, 209, 230); }
+.PuBu .q2-7 { fill: rgb(166, 189, 219); }
+.PuBu .q3-7 { fill: rgb(116, 169, 207); }
+.PuBu .q4-7 { fill: rgb(54, 144, 192); }
+.PuBu .q5-7 { fill: rgb(5, 112, 176); }
+.PuBu .q6-7 { fill: rgb(3, 78, 123); }
+.PuBu .q0-8 { fill: rgb(255, 247, 251); }
+.PuBu .q1-8 { fill: rgb(236, 231, 242); }
+.PuBu .q2-8 { fill: rgb(208, 209, 230); }
+.PuBu .q3-8 { fill: rgb(166, 189, 219); }
+.PuBu .q4-8 { fill: rgb(116, 169, 207); }
+.PuBu .q5-8 { fill: rgb(54, 144, 192); }
+.PuBu .q6-8 { fill: rgb(5, 112, 176); }
+.PuBu .q7-8 { fill: rgb(3, 78, 123); }
+.PuBu .q0-9 { fill: rgb(255, 247, 251); }
+.PuBu .q1-9 { fill: rgb(236, 231, 242); }
+.PuBu .q2-9 { fill: rgb(208, 209, 230); }
+.PuBu .q3-9 { fill: rgb(166, 189, 219); }
+.PuBu .q4-9 { fill: rgb(116, 169, 207); }
+.PuBu .q5-9 { fill: rgb(54, 144, 192); }
+.PuBu .q6-9 { fill: rgb(5, 112, 176); }
+.PuBu .q7-9 { fill: rgb(4, 90, 141); }
+.PuBu .q8-9 { fill: rgb(2, 56, 88); }
+.BuPu .q0-3 { fill: rgb(224, 236, 244); }
+.BuPu .q1-3 { fill: rgb(158, 188, 218); }
+.BuPu .q2-3 { fill: rgb(136, 86, 167); }
+.BuPu .q0-4 { fill: rgb(237, 248, 251); }
+.BuPu .q1-4 { fill: rgb(179, 205, 227); }
+.BuPu .q2-4 { fill: rgb(140, 150, 198); }
+.BuPu .q3-4 { fill: rgb(136, 65, 157); }
+.BuPu .q0-5 { fill: rgb(237, 248, 251); }
+.BuPu .q1-5 { fill: rgb(179, 205, 227); }
+.BuPu .q2-5 { fill: rgb(140, 150, 198); }
+.BuPu .q3-5 { fill: rgb(136, 86, 167); }
+.BuPu .q4-5 { fill: rgb(129, 15, 124); }
+.BuPu .q0-6 { fill: rgb(237, 248, 251); }
+.BuPu .q1-6 { fill: rgb(191, 211, 230); }
+.BuPu .q2-6 { fill: rgb(158, 188, 218); }
+.BuPu .q3-6 { fill: rgb(140, 150, 198); }
+.BuPu .q4-6 { fill: rgb(136, 86, 167); }
+.BuPu .q5-6 { fill: rgb(129, 15, 124); }
+.BuPu .q0-7 { fill: rgb(237, 248, 251); }
+.BuPu .q1-7 { fill: rgb(191, 211, 230); }
+.BuPu .q2-7 { fill: rgb(158, 188, 218); }
+.BuPu .q3-7 { fill: rgb(140, 150, 198); }
+.BuPu .q4-7 { fill: rgb(140, 107, 177); }
+.BuPu .q5-7 { fill: rgb(136, 65, 157); }
+.BuPu .q6-7 { fill: rgb(110, 1, 107); }
+.BuPu .q0-8 { fill: rgb(247, 252, 253); }
+.BuPu .q1-8 { fill: rgb(224, 236, 244); }
+.BuPu .q2-8 { fill: rgb(191, 211, 230); }
+.BuPu .q3-8 { fill: rgb(158, 188, 218); }
+.BuPu .q4-8 { fill: rgb(140, 150, 198); }
+.BuPu .q5-8 { fill: rgb(140, 107, 177); }
+.BuPu .q6-8 { fill: rgb(136, 65, 157); }
+.BuPu .q7-8 { fill: rgb(110, 1, 107); }
+.BuPu .q0-9 { fill: rgb(247, 252, 253); }
+.BuPu .q1-9 { fill: rgb(224, 236, 244); }
+.BuPu .q2-9 { fill: rgb(191, 211, 230); }
+.BuPu .q3-9 { fill: rgb(158, 188, 218); }
+.BuPu .q4-9 { fill: rgb(140, 150, 198); }
+.BuPu .q5-9 { fill: rgb(140, 107, 177); }
+.BuPu .q6-9 { fill: rgb(136, 65, 157); }
+.BuPu .q7-9 { fill: rgb(129, 15, 124); }
+.BuPu .q8-9 { fill: rgb(77, 0, 75); }
+.RdPu .q0-3 { fill: rgb(253, 224, 221); }
+.RdPu .q1-3 { fill: rgb(250, 159, 181); }
+.RdPu .q2-3 { fill: rgb(197, 27, 138); }
+.RdPu .q0-4 { fill: rgb(254, 235, 226); }
+.RdPu .q1-4 { fill: rgb(251, 180, 185); }
+.RdPu .q2-4 { fill: rgb(247, 104, 161); }
+.RdPu .q3-4 { fill: rgb(174, 1, 126); }
+.RdPu .q0-5 { fill: rgb(254, 235, 226); }
+.RdPu .q1-5 { fill: rgb(251, 180, 185); }
+.RdPu .q2-5 { fill: rgb(247, 104, 161); }
+.RdPu .q3-5 { fill: rgb(197, 27, 138); }
+.RdPu .q4-5 { fill: rgb(122, 1, 119); }
+.RdPu .q0-6 { fill: rgb(254, 235, 226); }
+.RdPu .q1-6 { fill: rgb(252, 197, 192); }
+.RdPu .q2-6 { fill: rgb(250, 159, 181); }
+.RdPu .q3-6 { fill: rgb(247, 104, 161); }
+.RdPu .q4-6 { fill: rgb(197, 27, 138); }
+.RdPu .q5-6 { fill: rgb(122, 1, 119); }
+.RdPu .q0-7 { fill: rgb(254, 235, 226); }
+.RdPu .q1-7 { fill: rgb(252, 197, 192); }
+.RdPu .q2-7 { fill: rgb(250, 159, 181); }
+.RdPu .q3-7 { fill: rgb(247, 104, 161); }
+.RdPu .q4-7 { fill: rgb(221, 52, 151); }
+.RdPu .q5-7 { fill: rgb(174, 1, 126); }
+.RdPu .q6-7 { fill: rgb(122, 1, 119); }
+.RdPu .q0-8 { fill: rgb(255, 247, 243); }
+.RdPu .q1-8 { fill: rgb(253, 224, 221); }
+.RdPu .q2-8 { fill: rgb(252, 197, 192); }
+.RdPu .q3-8 { fill: rgb(250, 159, 181); }
+.RdPu .q4-8 { fill: rgb(247, 104, 161); }
+.RdPu .q5-8 { fill: rgb(221, 52, 151); }
+.RdPu .q6-8 { fill: rgb(174, 1, 126); }
+.RdPu .q7-8 { fill: rgb(122, 1, 119); }
+.RdPu .q0-9 { fill: rgb(255, 247, 243); }
+.RdPu .q1-9 { fill: rgb(253, 224, 221); }
+.RdPu .q2-9 { fill: rgb(252, 197, 192); }
+.RdPu .q3-9 { fill: rgb(250, 159, 181); }
+.RdPu .q4-9 { fill: rgb(247, 104, 161); }
+.RdPu .q5-9 { fill: rgb(221, 52, 151); }
+.RdPu .q6-9 { fill: rgb(174, 1, 126); }
+.RdPu .q7-9 { fill: rgb(122, 1, 119); }
+.RdPu .q8-9 { fill: rgb(73, 0, 106); }
+.PuRd .q0-3 { fill: rgb(231, 225, 239); }
+.PuRd .q1-3 { fill: rgb(201, 148, 199); }
+.PuRd .q2-3 { fill: rgb(221, 28, 119); }
+.PuRd .q0-4 { fill: rgb(241, 238, 246); }
+.PuRd .q1-4 { fill: rgb(215, 181, 216); }
+.PuRd .q2-4 { fill: rgb(223, 101, 176); }
+.PuRd .q3-4 { fill: rgb(206, 18, 86); }
+.PuRd .q0-5 { fill: rgb(241, 238, 246); }
+.PuRd .q1-5 { fill: rgb(215, 181, 216); }
+.PuRd .q2-5 { fill: rgb(223, 101, 176); }
+.PuRd .q3-5 { fill: rgb(221, 28, 119); }
+.PuRd .q4-5 { fill: rgb(152, 0, 67); }
+.PuRd .q0-6 { fill: rgb(241, 238, 246); }
+.PuRd .q1-6 { fill: rgb(212, 185, 218); }
+.PuRd .q2-6 { fill: rgb(201, 148, 199); }
+.PuRd .q3-6 { fill: rgb(223, 101, 176); }
+.PuRd .q4-6 { fill: rgb(221, 28, 119); }
+.PuRd .q5-6 { fill: rgb(152, 0, 67); }
+.PuRd .q0-7 { fill: rgb(241, 238, 246); }
+.PuRd .q1-7 { fill: rgb(212, 185, 218); }
+.PuRd .q2-7 { fill: rgb(201, 148, 199); }
+.PuRd .q3-7 { fill: rgb(223, 101, 176); }
+.PuRd .q4-7 { fill: rgb(231, 41, 138); }
+.PuRd .q5-7 { fill: rgb(206, 18, 86); }
+.PuRd .q6-7 { fill: rgb(145, 0, 63); }
+.PuRd .q0-8 { fill: rgb(247, 244, 249); }
+.PuRd .q1-8 { fill: rgb(231, 225, 239); }
+.PuRd .q2-8 { fill: rgb(212, 185, 218); }
+.PuRd .q3-8 { fill: rgb(201, 148, 199); }
+.PuRd .q4-8 { fill: rgb(223, 101, 176); }
+.PuRd .q5-8 { fill: rgb(231, 41, 138); }
+.PuRd .q6-8 { fill: rgb(206, 18, 86); }
+.PuRd .q7-8 { fill: rgb(145, 0, 63); }
+.PuRd .q0-9 { fill: rgb(247, 244, 249); }
+.PuRd .q1-9 { fill: rgb(231, 225, 239); }
+.PuRd .q2-9 { fill: rgb(212, 185, 218); }
+.PuRd .q3-9 { fill: rgb(201, 148, 199); }
+.PuRd .q4-9 { fill: rgb(223, 101, 176); }
+.PuRd .q5-9 { fill: rgb(231, 41, 138); }
+.PuRd .q6-9 { fill: rgb(206, 18, 86); }
+.PuRd .q7-9 { fill: rgb(152, 0, 67); }
+.PuRd .q8-9 { fill: rgb(103, 0, 31); }
+.OrRd .q0-3 { fill: rgb(254, 232, 200); }
+.OrRd .q1-3 { fill: rgb(253, 187, 132); }
+.OrRd .q2-3 { fill: rgb(227, 74, 51); }
+.OrRd .q0-4 { fill: rgb(254, 240, 217); }
+.OrRd .q1-4 { fill: rgb(253, 204, 138); }
+.OrRd .q2-4 { fill: rgb(252, 141, 89); }
+.OrRd .q3-4 { fill: rgb(215, 48, 31); }
+.OrRd .q0-5 { fill: rgb(254, 240, 217); }
+.OrRd .q1-5 { fill: rgb(253, 204, 138); }
+.OrRd .q2-5 { fill: rgb(252, 141, 89); }
+.OrRd .q3-5 { fill: rgb(227, 74, 51); }
+.OrRd .q4-5 { fill: rgb(179, 0, 0); }
+.OrRd .q0-6 { fill: rgb(254, 240, 217); }
+.OrRd .q1-6 { fill: rgb(253, 212, 158); }
+.OrRd .q2-6 { fill: rgb(253, 187, 132); }
+.OrRd .q3-6 { fill: rgb(252, 141, 89); }
+.OrRd .q4-6 { fill: rgb(227, 74, 51); }
+.OrRd .q5-6 { fill: rgb(179, 0, 0); }
+.OrRd .q0-7 { fill: rgb(254, 240, 217); }
+.OrRd .q1-7 { fill: rgb(253, 212, 158); }
+.OrRd .q2-7 { fill: rgb(253, 187, 132); }
+.OrRd .q3-7 { fill: rgb(252, 141, 89); }
+.OrRd .q4-7 { fill: rgb(239, 101, 72); }
+.OrRd .q5-7 { fill: rgb(215, 48, 31); }
+.OrRd .q6-7 { fill: rgb(153, 0, 0); }
+.OrRd .q0-8 { fill: rgb(255, 247, 236); }
+.OrRd .q1-8 { fill: rgb(254, 232, 200); }
+.OrRd .q2-8 { fill: rgb(253, 212, 158); }
+.OrRd .q3-8 { fill: rgb(253, 187, 132); }
+.OrRd .q4-8 { fill: rgb(252, 141, 89); }
+.OrRd .q5-8 { fill: rgb(239, 101, 72); }
+.OrRd .q6-8 { fill: rgb(215, 48, 31); }
+.OrRd .q7-8 { fill: rgb(153, 0, 0); }
+.OrRd .q0-9 { fill: rgb(255, 247, 236); }
+.OrRd .q1-9 { fill: rgb(254, 232, 200); }
+.OrRd .q2-9 { fill: rgb(253, 212, 158); }
+.OrRd .q3-9 { fill: rgb(253, 187, 132); }
+.OrRd .q4-9 { fill: rgb(252, 141, 89); }
+.OrRd .q5-9 { fill: rgb(239, 101, 72); }
+.OrRd .q6-9 { fill: rgb(215, 48, 31); }
+.OrRd .q7-9 { fill: rgb(179, 0, 0); }
+.OrRd .q8-9 { fill: rgb(127, 0, 0); }
+.YlOrRd .q0-3 { fill: rgb(255, 237, 160); }
+.YlOrRd .q1-3 { fill: rgb(254, 178, 76); }
+.YlOrRd .q2-3 { fill: rgb(240, 59, 32); }
+.YlOrRd .q0-4 { fill: rgb(255, 255, 178); }
+.YlOrRd .q1-4 { fill: rgb(254, 204, 92); }
+.YlOrRd .q2-4 { fill: rgb(253, 141, 60); }
+.YlOrRd .q3-4 { fill: rgb(227, 26, 28); }
+.YlOrRd .q0-5 { fill: rgb(255, 255, 178); }
+.YlOrRd .q1-5 { fill: rgb(254, 204, 92); }
+.YlOrRd .q2-5 { fill: rgb(253, 141, 60); }
+.YlOrRd .q3-5 { fill: rgb(240, 59, 32); }
+.YlOrRd .q4-5 { fill: rgb(189, 0, 38); }
+.YlOrRd .q0-6 { fill: rgb(255, 255, 178); }
+.YlOrRd .q1-6 { fill: rgb(254, 217, 118); }
+.YlOrRd .q2-6 { fill: rgb(254, 178, 76); }
+.YlOrRd .q3-6 { fill: rgb(253, 141, 60); }
+.YlOrRd .q4-6 { fill: rgb(240, 59, 32); }
+.YlOrRd .q5-6 { fill: rgb(189, 0, 38); }
+.YlOrRd .q0-7 { fill: rgb(255, 255, 178); }
+.YlOrRd .q1-7 { fill: rgb(254, 217, 118); }
+.YlOrRd .q2-7 { fill: rgb(254, 178, 76); }
+.YlOrRd .q3-7 { fill: rgb(253, 141, 60); }
+.YlOrRd .q4-7 { fill: rgb(252, 78, 42); }
+.YlOrRd .q5-7 { fill: rgb(227, 26, 28); }
+.YlOrRd .q6-7 { fill: rgb(177, 0, 38); }
+.YlOrRd .q0-8 { fill: rgb(255, 255, 204); }
+.YlOrRd .q1-8 { fill: rgb(255, 237, 160); }
+.YlOrRd .q2-8 { fill: rgb(254, 217, 118); }
+.YlOrRd .q3-8 { fill: rgb(254, 178, 76); }
+.YlOrRd .q4-8 { fill: rgb(253, 141, 60); }
+.YlOrRd .q5-8 { fill: rgb(252, 78, 42); }
+.YlOrRd .q6-8 { fill: rgb(227, 26, 28); }
+.YlOrRd .q7-8 { fill: rgb(177, 0, 38); }
+.YlOrRd .q0-9 { fill: rgb(255, 255, 204); }
+.YlOrRd .q1-9 { fill: rgb(255, 237, 160); }
+.YlOrRd .q2-9 { fill: rgb(254, 217, 118); }
+.YlOrRd .q3-9 { fill: rgb(254, 178, 76); }
+.YlOrRd .q4-9 { fill: rgb(253, 141, 60); }
+.YlOrRd .q5-9 { fill: rgb(252, 78, 42); }
+.YlOrRd .q6-9 { fill: rgb(227, 26, 28); }
+.YlOrRd .q7-9 { fill: rgb(189, 0, 38); }
+.YlOrRd .q8-9 { fill: rgb(128, 0, 38); }
+.YlOrBr .q0-3 { fill: rgb(255, 247, 188); }
+.YlOrBr .q1-3 { fill: rgb(254, 196, 79); }
+.YlOrBr .q2-3 { fill: rgb(217, 95, 14); }
+.YlOrBr .q0-4 { fill: rgb(255, 255, 212); }
+.YlOrBr .q1-4 { fill: rgb(254, 217, 142); }
+.YlOrBr .q2-4 { fill: rgb(254, 153, 41); }
+.YlOrBr .q3-4 { fill: rgb(204, 76, 2); }
+.YlOrBr .q0-5 { fill: rgb(255, 255, 212); }
+.YlOrBr .q1-5 { fill: rgb(254, 217, 142); }
+.YlOrBr .q2-5 { fill: rgb(254, 153, 41); }
+.YlOrBr .q3-5 { fill: rgb(217, 95, 14); }
+.YlOrBr .q4-5 { fill: rgb(153, 52, 4); }
+.YlOrBr .q0-6 { fill: rgb(255, 255, 212); }
+.YlOrBr .q1-6 { fill: rgb(254, 227, 145); }
+.YlOrBr .q2-6 { fill: rgb(254, 196, 79); }
+.YlOrBr .q3-6 { fill: rgb(254, 153, 41); }
+.YlOrBr .q4-6 { fill: rgb(217, 95, 14); }
+.YlOrBr .q5-6 { fill: rgb(153, 52, 4); }
+.YlOrBr .q0-7 { fill: rgb(255, 255, 212); }
+.YlOrBr .q1-7 { fill: rgb(254, 227, 145); }
+.YlOrBr .q2-7 { fill: rgb(254, 196, 79); }
+.YlOrBr .q3-7 { fill: rgb(254, 153, 41); }
+.YlOrBr .q4-7 { fill: rgb(236, 112, 20); }
+.YlOrBr .q5-7 { fill: rgb(204, 76, 2); }
+.YlOrBr .q6-7 { fill: rgb(140, 45, 4); }
+.YlOrBr .q0-8 { fill: rgb(255, 255, 229); }
+.YlOrBr .q1-8 { fill: rgb(255, 247, 188); }
+.YlOrBr .q2-8 { fill: rgb(254, 227, 145); }
+.YlOrBr .q3-8 { fill: rgb(254, 196, 79); }
+.YlOrBr .q4-8 { fill: rgb(254, 153, 41); }
+.YlOrBr .q5-8 { fill: rgb(236, 112, 20); }
+.YlOrBr .q6-8 { fill: rgb(204, 76, 2); }
+.YlOrBr .q7-8 { fill: rgb(140, 45, 4); }
+.YlOrBr .q0-9 { fill: rgb(255, 255, 229); }
+.YlOrBr .q1-9 { fill: rgb(255, 247, 188); }
+.YlOrBr .q2-9 { fill: rgb(254, 227, 145); }
+.YlOrBr .q3-9 { fill: rgb(254, 196, 79); }
+.YlOrBr .q4-9 { fill: rgb(254, 153, 41); }
+.YlOrBr .q5-9 { fill: rgb(236, 112, 20); }
+.YlOrBr .q6-9 { fill: rgb(204, 76, 2); }
+.YlOrBr .q7-9 { fill: rgb(153, 52, 4); }
+.YlOrBr .q8-9 { fill: rgb(102, 37, 6); }
+.Purples .q0-3 { fill: rgb(239, 237, 245); }
+.Purples .q1-3 { fill: rgb(188, 189, 220); }
+.Purples .q2-3 { fill: rgb(117, 107, 177); }
+.Purples .q0-4 { fill: rgb(242, 240, 247); }
+.Purples .q1-4 { fill: rgb(203, 201, 226); }
+.Purples .q2-4 { fill: rgb(158, 154, 200); }
+.Purples .q3-4 { fill: rgb(106, 81, 163); }
+.Purples .q0-5 { fill: rgb(242, 240, 247); }
+.Purples .q1-5 { fill: rgb(203, 201, 226); }
+.Purples .q2-5 { fill: rgb(158, 154, 200); }
+.Purples .q3-5 { fill: rgb(117, 107, 177); }
+.Purples .q4-5 { fill: rgb(84, 39, 143); }
+.Purples .q0-6 { fill: rgb(242, 240, 247); }
+.Purples .q1-6 { fill: rgb(218, 218, 235); }
+.Purples .q2-6 { fill: rgb(188, 189, 220); }
+.Purples .q3-6 { fill: rgb(158, 154, 200); }
+.Purples .q4-6 { fill: rgb(117, 107, 177); }
+.Purples .q5-6 { fill: rgb(84, 39, 143); }
+.Purples .q0-7 { fill: rgb(242, 240, 247); }
+.Purples .q1-7 { fill: rgb(218, 218, 235); }
+.Purples .q2-7 { fill: rgb(188, 189, 220); }
+.Purples .q3-7 { fill: rgb(158, 154, 200); }
+.Purples .q4-7 { fill: rgb(128, 125, 186); }
+.Purples .q5-7 { fill: rgb(106, 81, 163); }
+.Purples .q6-7 { fill: rgb(74, 20, 134); }
+.Purples .q0-8 { fill: rgb(252, 251, 253); }
+.Purples .q1-8 { fill: rgb(239, 237, 245); }
+.Purples .q2-8 { fill: rgb(218, 218, 235); }
+.Purples .q3-8 { fill: rgb(188, 189, 220); }
+.Purples .q4-8 { fill: rgb(158, 154, 200); }
+.Purples .q5-8 { fill: rgb(128, 125, 186); }
+.Purples .q6-8 { fill: rgb(106, 81, 163); }
+.Purples .q7-8 { fill: rgb(74, 20, 134); }
+.Purples .q0-9 { fill: rgb(252, 251, 253); }
+.Purples .q1-9 { fill: rgb(239, 237, 245); }
+.Purples .q2-9 { fill: rgb(218, 218, 235); }
+.Purples .q3-9 { fill: rgb(188, 189, 220); }
+.Purples .q4-9 { fill: rgb(158, 154, 200); }
+.Purples .q5-9 { fill: rgb(128, 125, 186); }
+.Purples .q6-9 { fill: rgb(106, 81, 163); }
+.Purples .q7-9 { fill: rgb(84, 39, 143); }
+.Purples .q8-9 { fill: rgb(63, 0, 125); }
+.Blues .q0-3 { fill: rgb(222, 235, 247); }
+.Blues .q1-3 { fill: rgb(158, 202, 225); }
+.Blues .q2-3 { fill: rgb(49, 130, 189); }
+.Blues .q0-4 { fill: rgb(239, 243, 255); }
+.Blues .q1-4 { fill: rgb(189, 215, 231); }
+.Blues .q2-4 { fill: rgb(107, 174, 214); }
+.Blues .q3-4 { fill: rgb(33, 113, 181); }
+.Blues .q0-5 { fill: rgb(239, 243, 255); }
+.Blues .q1-5 { fill: rgb(189, 215, 231); }
+.Blues .q2-5 { fill: rgb(107, 174, 214); }
+.Blues .q3-5 { fill: rgb(49, 130, 189); }
+.Blues .q4-5 { fill: rgb(8, 81, 156); }
+.Blues .q0-6 { fill: rgb(239, 243, 255); }
+.Blues .q1-6 { fill: rgb(198, 219, 239); }
+.Blues .q2-6 { fill: rgb(158, 202, 225); }
+.Blues .q3-6 { fill: rgb(107, 174, 214); }
+.Blues .q4-6 { fill: rgb(49, 130, 189); }
+.Blues .q5-6 { fill: rgb(8, 81, 156); }
+.Blues .q0-7 { fill: rgb(239, 243, 255); }
+.Blues .q1-7 { fill: rgb(198, 219, 239); }
+.Blues .q2-7 { fill: rgb(158, 202, 225); }
+.Blues .q3-7 { fill: rgb(107, 174, 214); }
+.Blues .q4-7 { fill: rgb(66, 146, 198); }
+.Blues .q5-7 { fill: rgb(33, 113, 181); }
+.Blues .q6-7 { fill: rgb(8, 69, 148); }
+.Blues .q0-8 { fill: rgb(247, 251, 255); }
+.Blues .q1-8 { fill: rgb(222, 235, 247); }
+.Blues .q2-8 { fill: rgb(198, 219, 239); }
+.Blues .q3-8 { fill: rgb(158, 202, 225); }
+.Blues .q4-8 { fill: rgb(107, 174, 214); }
+.Blues .q5-8 { fill: rgb(66, 146, 198); }
+.Blues .q6-8 { fill: rgb(33, 113, 181); }
+.Blues .q7-8 { fill: rgb(8, 69, 148); }
+.Blues .q0-9 { fill: rgb(247, 251, 255); }
+.Blues .q1-9 { fill: rgb(222, 235, 247); }
+.Blues .q2-9 { fill: rgb(198, 219, 239); }
+.Blues .q3-9 { fill: rgb(158, 202, 225); }
+.Blues .q4-9 { fill: rgb(107, 174, 214); }
+.Blues .q5-9 { fill: rgb(66, 146, 198); }
+.Blues .q6-9 { fill: rgb(33, 113, 181); }
+.Blues .q7-9 { fill: rgb(8, 81, 156); }
+.Blues .q8-9 { fill: rgb(8, 48, 107); }
+.Greens .q0-3 { fill: rgb(229, 245, 224); }
+.Greens .q1-3 { fill: rgb(161, 217, 155); }
+.Greens .q2-3 { fill: rgb(49, 163, 84); }
+.Greens .q0-4 { fill: rgb(237, 248, 233); }
+.Greens .q1-4 { fill: rgb(186, 228, 179); }
+.Greens .q2-4 { fill: rgb(116, 196, 118); }
+.Greens .q3-4 { fill: rgb(35, 139, 69); }
+.Greens .q0-5 { fill: rgb(237, 248, 233); }
+.Greens .q1-5 { fill: rgb(186, 228, 179); }
+.Greens .q2-5 { fill: rgb(116, 196, 118); }
+.Greens .q3-5 { fill: rgb(49, 163, 84); }
+.Greens .q4-5 { fill: rgb(0, 109, 44); }
+.Greens .q0-6 { fill: rgb(237, 248, 233); }
+.Greens .q1-6 { fill: rgb(199, 233, 192); }
+.Greens .q2-6 { fill: rgb(161, 217, 155); }
+.Greens .q3-6 { fill: rgb(116, 196, 118); }
+.Greens .q4-6 { fill: rgb(49, 163, 84); }
+.Greens .q5-6 { fill: rgb(0, 109, 44); }
+.Greens .q0-7 { fill: rgb(237, 248, 233); }
+.Greens .q1-7 { fill: rgb(199, 233, 192); }
+.Greens .q2-7 { fill: rgb(161, 217, 155); }
+.Greens .q3-7 { fill: rgb(116, 196, 118); }
+.Greens .q4-7 { fill: rgb(65, 171, 93); }
+.Greens .q5-7 { fill: rgb(35, 139, 69); }
+.Greens .q6-7 { fill: rgb(0, 90, 50); }
+.Greens .q0-8 { fill: rgb(247, 252, 245); }
+.Greens .q1-8 { fill: rgb(229, 245, 224); }
+.Greens .q2-8 { fill: rgb(199, 233, 192); }
+.Greens .q3-8 { fill: rgb(161, 217, 155); }
+.Greens .q4-8 { fill: rgb(116, 196, 118); }
+.Greens .q5-8 { fill: rgb(65, 171, 93); }
+.Greens .q6-8 { fill: rgb(35, 139, 69); }
+.Greens .q7-8 { fill: rgb(0, 90, 50); }
+.Greens .q0-9 { fill: rgb(247, 252, 245); }
+.Greens .q1-9 { fill: rgb(229, 245, 224); }
+.Greens .q2-9 { fill: rgb(199, 233, 192); }
+.Greens .q3-9 { fill: rgb(161, 217, 155); }
+.Greens .q4-9 { fill: rgb(116, 196, 118); }
+.Greens .q5-9 { fill: rgb(65, 171, 93); }
+.Greens .q6-9 { fill: rgb(35, 139, 69); }
+.Greens .q7-9 { fill: rgb(0, 109, 44); }
+.Greens .q8-9 { fill: rgb(0, 68, 27); }
+.Oranges .q0-3 { fill: rgb(254, 230, 206); }
+.Oranges .q1-3 { fill: rgb(253, 174, 107); }
+.Oranges .q2-3 { fill: rgb(230, 85, 13); }
+.Oranges .q0-4 { fill: rgb(254, 237, 222); }
+.Oranges .q1-4 { fill: rgb(253, 190, 133); }
+.Oranges .q2-4 { fill: rgb(253, 141, 60); }
+.Oranges .q3-4 { fill: rgb(217, 71, 1); }
+.Oranges .q0-5 { fill: rgb(254, 237, 222); }
+.Oranges .q1-5 { fill: rgb(253, 190, 133); }
+.Oranges .q2-5 { fill: rgb(253, 141, 60); }
+.Oranges .q3-5 { fill: rgb(230, 85, 13); }
+.Oranges .q4-5 { fill: rgb(166, 54, 3); }
+.Oranges .q0-6 { fill: rgb(254, 237, 222); }
+.Oranges .q1-6 { fill: rgb(253, 208, 162); }
+.Oranges .q2-6 { fill: rgb(253, 174, 107); }
+.Oranges .q3-6 { fill: rgb(253, 141, 60); }
+.Oranges .q4-6 { fill: rgb(230, 85, 13); }
+.Oranges .q5-6 { fill: rgb(166, 54, 3); }
+.Oranges .q0-7 { fill: rgb(254, 237, 222); }
+.Oranges .q1-7 { fill: rgb(253, 208, 162); }
+.Oranges .q2-7 { fill: rgb(253, 174, 107); }
+.Oranges .q3-7 { fill: rgb(253, 141, 60); }
+.Oranges .q4-7 { fill: rgb(241, 105, 19); }
+.Oranges .q5-7 { fill: rgb(217, 72, 1); }
+.Oranges .q6-7 { fill: rgb(140, 45, 4); }
+.Oranges .q0-8 { fill: rgb(255, 245, 235); }
+.Oranges .q1-8 { fill: rgb(254, 230, 206); }
+.Oranges .q2-8 { fill: rgb(253, 208, 162); }
+.Oranges .q3-8 { fill: rgb(253, 174, 107); }
+.Oranges .q4-8 { fill: rgb(253, 141, 60); }
+.Oranges .q5-8 { fill: rgb(241, 105, 19); }
+.Oranges .q6-8 { fill: rgb(217, 72, 1); }
+.Oranges .q7-8 { fill: rgb(140, 45, 4); }
+.Oranges .q0-9 { fill: rgb(255, 245, 235); }
+.Oranges .q1-9 { fill: rgb(254, 230, 206); }
+.Oranges .q2-9 { fill: rgb(253, 208, 162); }
+.Oranges .q3-9 { fill: rgb(253, 174, 107); }
+.Oranges .q4-9 { fill: rgb(253, 141, 60); }
+.Oranges .q5-9 { fill: rgb(241, 105, 19); }
+.Oranges .q6-9 { fill: rgb(217, 72, 1); }
+.Oranges .q7-9 { fill: rgb(166, 54, 3); }
+.Oranges .q8-9 { fill: rgb(127, 39, 4); }
+.Reds .q0-3 { fill: rgb(254, 224, 210); }
+.Reds .q1-3 { fill: rgb(252, 146, 114); }
+.Reds .q2-3 { fill: rgb(222, 45, 38); }
+.Reds .q0-4 { fill: rgb(254, 229, 217); }
+.Reds .q1-4 { fill: rgb(252, 174, 145); }
+.Reds .q2-4 { fill: rgb(251, 106, 74); }
+.Reds .q3-4 { fill: rgb(203, 24, 29); }
+.Reds .q0-5 { fill: rgb(254, 229, 217); }
+.Reds .q1-5 { fill: rgb(252, 174, 145); }
+.Reds .q2-5 { fill: rgb(251, 106, 74); }
+.Reds .q3-5 { fill: rgb(222, 45, 38); }
+.Reds .q4-5 { fill: rgb(165, 15, 21); }
+.Reds .q0-6 { fill: rgb(254, 229, 217); }
+.Reds .q1-6 { fill: rgb(252, 187, 161); }
+.Reds .q2-6 { fill: rgb(252, 146, 114); }
+.Reds .q3-6 { fill: rgb(251, 106, 74); }
+.Reds .q4-6 { fill: rgb(222, 45, 38); }
+.Reds .q5-6 { fill: rgb(165, 15, 21); }
+.Reds .q0-7 { fill: rgb(254, 229, 217); }
+.Reds .q1-7 { fill: rgb(252, 187, 161); }
+.Reds .q2-7 { fill: rgb(252, 146, 114); }
+.Reds .q3-7 { fill: rgb(251, 106, 74); }
+.Reds .q4-7 { fill: rgb(239, 59, 44); }
+.Reds .q5-7 { fill: rgb(203, 24, 29); }
+.Reds .q6-7 { fill: rgb(153, 0, 13); }
+.Reds .q0-8 { fill: rgb(255, 245, 240); }
+.Reds .q1-8 { fill: rgb(254, 224, 210); }
+.Reds .q2-8 { fill: rgb(252, 187, 161); }
+.Reds .q3-8 { fill: rgb(252, 146, 114); }
+.Reds .q4-8 { fill: rgb(251, 106, 74); }
+.Reds .q5-8 { fill: rgb(239, 59, 44); }
+.Reds .q6-8 { fill: rgb(203, 24, 29); }
+.Reds .q7-8 { fill: rgb(153, 0, 13); }
+.Reds .q0-9 { fill: rgb(255, 245, 240); }
+.Reds .q1-9 { fill: rgb(254, 224, 210); }
+.Reds .q2-9 { fill: rgb(252, 187, 161); }
+.Reds .q3-9 { fill: rgb(252, 146, 114); }
+.Reds .q4-9 { fill: rgb(251, 106, 74); }
+.Reds .q5-9 { fill: rgb(239, 59, 44); }
+.Reds .q6-9 { fill: rgb(203, 24, 29); }
+.Reds .q7-9 { fill: rgb(165, 15, 21); }
+.Reds .q8-9 { fill: rgb(103, 0, 13); }
+.Greys .q0-3 { fill: rgb(240, 240, 240); }
+.Greys .q1-3 { fill: rgb(189, 189, 189); }
+.Greys .q2-3 { fill: rgb(99, 99, 99); }
+.Greys .q0-4 { fill: rgb(247, 247, 247); }
+.Greys .q1-4 { fill: rgb(204, 204, 204); }
+.Greys .q2-4 { fill: rgb(150, 150, 150); }
+.Greys .q3-4 { fill: rgb(82, 82, 82); }
+.Greys .q0-5 { fill: rgb(247, 247, 247); }
+.Greys .q1-5 { fill: rgb(204, 204, 204); }
+.Greys .q2-5 { fill: rgb(150, 150, 150); }
+.Greys .q3-5 { fill: rgb(99, 99, 99); }
+.Greys .q4-5 { fill: rgb(37, 37, 37); }
+.Greys .q0-6 { fill: rgb(247, 247, 247); }
+.Greys .q1-6 { fill: rgb(217, 217, 217); }
+.Greys .q2-6 { fill: rgb(189, 189, 189); }
+.Greys .q3-6 { fill: rgb(150, 150, 150); }
+.Greys .q4-6 { fill: rgb(99, 99, 99); }
+.Greys .q5-6 { fill: rgb(37, 37, 37); }
+.Greys .q0-7 { fill: rgb(247, 247, 247); }
+.Greys .q1-7 { fill: rgb(217, 217, 217); }
+.Greys .q2-7 { fill: rgb(189, 189, 189); }
+.Greys .q3-7 { fill: rgb(150, 150, 150); }
+.Greys .q4-7 { fill: rgb(115, 115, 115); }
+.Greys .q5-7 { fill: rgb(82, 82, 82); }
+.Greys .q6-7 { fill: rgb(37, 37, 37); }
+.Greys .q0-8 { fill: rgb(255, 255, 255); }
+.Greys .q1-8 { fill: rgb(240, 240, 240); }
+.Greys .q2-8 { fill: rgb(217, 217, 217); }
+.Greys .q3-8 { fill: rgb(189, 189, 189); }
+.Greys .q4-8 { fill: rgb(150, 150, 150); }
+.Greys .q5-8 { fill: rgb(115, 115, 115); }
+.Greys .q6-8 { fill: rgb(82, 82, 82); }
+.Greys .q7-8 { fill: rgb(37, 37, 37); }
+.Greys .q0-9 { fill: rgb(255, 255, 255); }
+.Greys .q1-9 { fill: rgb(240, 240, 240); }
+.Greys .q2-9 { fill: rgb(217, 217, 217); }
+.Greys .q3-9 { fill: rgb(189, 189, 189); }
+.Greys .q4-9 { fill: rgb(150, 150, 150); }
+.Greys .q5-9 { fill: rgb(115, 115, 115); }
+.Greys .q6-9 { fill: rgb(82, 82, 82); }
+.Greys .q7-9 { fill: rgb(37, 37, 37); }
+.Greys .q8-9 { fill: rgb(0, 0, 0); }
+.PuOr .q0-3 { fill: rgb(241, 163, 64); }
+.PuOr .q1-3 { fill: rgb(247, 247, 247); }
+.PuOr .q2-3 { fill: rgb(153, 142, 195); }
+.PuOr .q0-4 { fill: rgb(230, 97, 1); }
+.PuOr .q1-4 { fill: rgb(253, 184, 99); }
+.PuOr .q2-4 { fill: rgb(178, 171, 210); }
+.PuOr .q3-4 { fill: rgb(94, 60, 153); }
+.PuOr .q0-5 { fill: rgb(230, 97, 1); }
+.PuOr .q1-5 { fill: rgb(253, 184, 99); }
+.PuOr .q2-5 { fill: rgb(247, 247, 247); }
+.PuOr .q3-5 { fill: rgb(178, 171, 210); }
+.PuOr .q4-5 { fill: rgb(94, 60, 153); }
+.PuOr .q0-6 { fill: rgb(179, 88, 6); }
+.PuOr .q1-6 { fill: rgb(241, 163, 64); }
+.PuOr .q2-6 { fill: rgb(254, 224, 182); }
+.PuOr .q3-6 { fill: rgb(216, 218, 235); }
+.PuOr .q4-6 { fill: rgb(153, 142, 195); }
+.PuOr .q5-6 { fill: rgb(84, 39, 136); }
+.PuOr .q0-7 { fill: rgb(179, 88, 6); }
+.PuOr .q1-7 { fill: rgb(241, 163, 64); }
+.PuOr .q2-7 { fill: rgb(254, 224, 182); }
+.PuOr .q3-7 { fill: rgb(247, 247, 247); }
+.PuOr .q4-7 { fill: rgb(216, 218, 235); }
+.PuOr .q5-7 { fill: rgb(153, 142, 195); }
+.PuOr .q6-7 { fill: rgb(84, 39, 136); }
+.PuOr .q0-8 { fill: rgb(179, 88, 6); }
+.PuOr .q1-8 { fill: rgb(224, 130, 20); }
+.PuOr .q2-8 { fill: rgb(253, 184, 99); }
+.PuOr .q3-8 { fill: rgb(254, 224, 182); }
+.PuOr .q4-8 { fill: rgb(216, 218, 235); }
+.PuOr .q5-8 { fill: rgb(178, 171, 210); }
+.PuOr .q6-8 { fill: rgb(128, 115, 172); }
+.PuOr .q7-8 { fill: rgb(84, 39, 136); }
+.PuOr .q0-9 { fill: rgb(179, 88, 6); }
+.PuOr .q1-9 { fill: rgb(224, 130, 20); }
+.PuOr .q2-9 { fill: rgb(253, 184, 99); }
+.PuOr .q3-9 { fill: rgb(254, 224, 182); }
+.PuOr .q4-9 { fill: rgb(247, 247, 247); }
+.PuOr .q5-9 { fill: rgb(216, 218, 235); }
+.PuOr .q6-9 { fill: rgb(178, 171, 210); }
+.PuOr .q7-9 { fill: rgb(128, 115, 172); }
+.PuOr .q8-9 { fill: rgb(84, 39, 136); }
+.PuOr .q0-10 { fill: rgb(127, 59, 8); }
+.PuOr .q1-10 { fill: rgb(179, 88, 6); }
+.PuOr .q2-10 { fill: rgb(224, 130, 20); }
+.PuOr .q3-10 { fill: rgb(253, 184, 99); }
+.PuOr .q4-10 { fill: rgb(254, 224, 182); }
+.PuOr .q5-10 { fill: rgb(216, 218, 235); }
+.PuOr .q6-10 { fill: rgb(178, 171, 210); }
+.PuOr .q7-10 { fill: rgb(128, 115, 172); }
+.PuOr .q8-10 { fill: rgb(84, 39, 136); }
+.PuOr .q9-10 { fill: rgb(45, 0, 75); }
+.PuOr .q0-11 { fill: rgb(127, 59, 8); }
+.PuOr .q1-11 { fill: rgb(179, 88, 6); }
+.PuOr .q2-11 { fill: rgb(224, 130, 20); }
+.PuOr .q3-11 { fill: rgb(253, 184, 99); }
+.PuOr .q4-11 { fill: rgb(254, 224, 182); }
+.PuOr .q5-11 { fill: rgb(247, 247, 247); }
+.PuOr .q6-11 { fill: rgb(216, 218, 235); }
+.PuOr .q7-11 { fill: rgb(178, 171, 210); }
+.PuOr .q8-11 { fill: rgb(128, 115, 172); }
+.PuOr .q9-11 { fill: rgb(84, 39, 136); }
+.PuOr .q10-11 { fill: rgb(45, 0, 75); }
+.BrBG .q0-3 { fill: rgb(216, 179, 101); }
+.BrBG .q1-3 { fill: rgb(245, 245, 245); }
+.BrBG .q2-3 { fill: rgb(90, 180, 172); }
+.BrBG .q0-4 { fill: rgb(166, 97, 26); }
+.BrBG .q1-4 { fill: rgb(223, 194, 125); }
+.BrBG .q2-4 { fill: rgb(128, 205, 193); }
+.BrBG .q3-4 { fill: rgb(1, 133, 113); }
+.BrBG .q0-5 { fill: rgb(166, 97, 26); }
+.BrBG .q1-5 { fill: rgb(223, 194, 125); }
+.BrBG .q2-5 { fill: rgb(245, 245, 245); }
+.BrBG .q3-5 { fill: rgb(128, 205, 193); }
+.BrBG .q4-5 { fill: rgb(1, 133, 113); }
+.BrBG .q0-6 { fill: rgb(140, 81, 10); }
+.BrBG .q1-6 { fill: rgb(216, 179, 101); }
+.BrBG .q2-6 { fill: rgb(246, 232, 195); }
+.BrBG .q3-6 { fill: rgb(199, 234, 229); }
+.BrBG .q4-6 { fill: rgb(90, 180, 172); }
+.BrBG .q5-6 { fill: rgb(1, 102, 94); }
+.BrBG .q0-7 { fill: rgb(140, 81, 10); }
+.BrBG .q1-7 { fill: rgb(216, 179, 101); }
+.BrBG .q2-7 { fill: rgb(246, 232, 195); }
+.BrBG .q3-7 { fill: rgb(245, 245, 245); }
+.BrBG .q4-7 { fill: rgb(199, 234, 229); }
+.BrBG .q5-7 { fill: rgb(90, 180, 172); }
+.BrBG .q6-7 { fill: rgb(1, 102, 94); }
+.BrBG .q0-8 { fill: rgb(140, 81, 10); }
+.BrBG .q1-8 { fill: rgb(191, 129, 45); }
+.BrBG .q2-8 { fill: rgb(223, 194, 125); }
+.BrBG .q3-8 { fill: rgb(246, 232, 195); }
+.BrBG .q4-8 { fill: rgb(199, 234, 229); }
+.BrBG .q5-8 { fill: rgb(128, 205, 193); }
+.BrBG .q6-8 { fill: rgb(53, 151, 143); }
+.BrBG .q7-8 { fill: rgb(1, 102, 94); }
+.BrBG .q0-9 { fill: rgb(140, 81, 10); }
+.BrBG .q1-9 { fill: rgb(191, 129, 45); }
+.BrBG .q2-9 { fill: rgb(223, 194, 125); }
+.BrBG .q3-9 { fill: rgb(246, 232, 195); }
+.BrBG .q4-9 { fill: rgb(245, 245, 245); }
+.BrBG .q5-9 { fill: rgb(199, 234, 229); }
+.BrBG .q6-9 { fill: rgb(128, 205, 193); }
+.BrBG .q7-9 { fill: rgb(53, 151, 143); }
+.BrBG .q8-9 { fill: rgb(1, 102, 94); }
+.BrBG .q0-10 { fill: rgb(84, 48, 5); }
+.BrBG .q1-10 { fill: rgb(140, 81, 10); }
+.BrBG .q2-10 { fill: rgb(191, 129, 45); }
+.BrBG .q3-10 { fill: rgb(223, 194, 125); }
+.BrBG .q4-10 { fill: rgb(246, 232, 195); }
+.BrBG .q5-10 { fill: rgb(199, 234, 229); }
+.BrBG .q6-10 { fill: rgb(128, 205, 193); }
+.BrBG .q7-10 { fill: rgb(53, 151, 143); }
+.BrBG .q8-10 { fill: rgb(1, 102, 94); }
+.BrBG .q9-10 { fill: rgb(0, 60, 48); }
+.BrBG .q0-11 { fill: rgb(84, 48, 5); }
+.BrBG .q1-11 { fill: rgb(140, 81, 10); }
+.BrBG .q2-11 { fill: rgb(191, 129, 45); }
+.BrBG .q3-11 { fill: rgb(223, 194, 125); }
+.BrBG .q4-11 { fill: rgb(246, 232, 195); }
+.BrBG .q5-11 { fill: rgb(245, 245, 245); }
+.BrBG .q6-11 { fill: rgb(199, 234, 229); }
+.BrBG .q7-11 { fill: rgb(128, 205, 193); }
+.BrBG .q8-11 { fill: rgb(53, 151, 143); }
+.BrBG .q9-11 { fill: rgb(1, 102, 94); }
+.BrBG .q10-11 { fill: rgb(0, 60, 48); }
+.PRGn .q0-3 { fill: rgb(175, 141, 195); }
+.PRGn .q1-3 { fill: rgb(247, 247, 247); }
+.PRGn .q2-3 { fill: rgb(127, 191, 123); }
+.PRGn .q0-4 { fill: rgb(123, 50, 148); }
+.PRGn .q1-4 { fill: rgb(194, 165, 207); }
+.PRGn .q2-4 { fill: rgb(166, 219, 160); }
+.PRGn .q3-4 { fill: rgb(0, 136, 55); }
+.PRGn .q0-5 { fill: rgb(123, 50, 148); }
+.PRGn .q1-5 { fill: rgb(194, 165, 207); }
+.PRGn .q2-5 { fill: rgb(247, 247, 247); }
+.PRGn .q3-5 { fill: rgb(166, 219, 160); }
+.PRGn .q4-5 { fill: rgb(0, 136, 55); }
+.PRGn .q0-6 { fill: rgb(118, 42, 131); }
+.PRGn .q1-6 { fill: rgb(175, 141, 195); }
+.PRGn .q2-6 { fill: rgb(231, 212, 232); }
+.PRGn .q3-6 { fill: rgb(217, 240, 211); }
+.PRGn .q4-6 { fill: rgb(127, 191, 123); }
+.PRGn .q5-6 { fill: rgb(27, 120, 55); }
+.PRGn .q0-7 { fill: rgb(118, 42, 131); }
+.PRGn .q1-7 { fill: rgb(175, 141, 195); }
+.PRGn .q2-7 { fill: rgb(231, 212, 232); }
+.PRGn .q3-7 { fill: rgb(247, 247, 247); }
+.PRGn .q4-7 { fill: rgb(217, 240, 211); }
+.PRGn .q5-7 { fill: rgb(127, 191, 123); }
+.PRGn .q6-7 { fill: rgb(27, 120, 55); }
+.PRGn .q0-8 { fill: rgb(118, 42, 131); }
+.PRGn .q1-8 { fill: rgb(153, 112, 171); }
+.PRGn .q2-8 { fill: rgb(194, 165, 207); }
+.PRGn .q3-8 { fill: rgb(231, 212, 232); }
+.PRGn .q4-8 { fill: rgb(217, 240, 211); }
+.PRGn .q5-8 { fill: rgb(166, 219, 160); }
+.PRGn .q6-8 { fill: rgb(90, 174, 97); }
+.PRGn .q7-8 { fill: rgb(27, 120, 55); }
+.PRGn .q0-9 { fill: rgb(118, 42, 131); }
+.PRGn .q1-9 { fill: rgb(153, 112, 171); }
+.PRGn .q2-9 { fill: rgb(194, 165, 207); }
+.PRGn .q3-9 { fill: rgb(231, 212, 232); }
+.PRGn .q4-9 { fill: rgb(247, 247, 247); }
+.PRGn .q5-9 { fill: rgb(217, 240, 211); }
+.PRGn .q6-9 { fill: rgb(166, 219, 160); }
+.PRGn .q7-9 { fill: rgb(90, 174, 97); }
+.PRGn .q8-9 { fill: rgb(27, 120, 55); }
+.PRGn .q0-10 { fill: rgb(64, 0, 75); }
+.PRGn .q1-10 { fill: rgb(118, 42, 131); }
+.PRGn .q2-10 { fill: rgb(153, 112, 171); }
+.PRGn .q3-10 { fill: rgb(194, 165, 207); }
+.PRGn .q4-10 { fill: rgb(231, 212, 232); }
+.PRGn .q5-10 { fill: rgb(217, 240, 211); }
+.PRGn .q6-10 { fill: rgb(166, 219, 160); }
+.PRGn .q7-10 { fill: rgb(90, 174, 97); }
+.PRGn .q8-10 { fill: rgb(27, 120, 55); }
+.PRGn .q9-10 { fill: rgb(0, 68, 27); }
+.PRGn .q0-11 { fill: rgb(64, 0, 75); }
+.PRGn .q1-11 { fill: rgb(118, 42, 131); }
+.PRGn .q2-11 { fill: rgb(153, 112, 171); }
+.PRGn .q3-11 { fill: rgb(194, 165, 207); }
+.PRGn .q4-11 { fill: rgb(231, 212, 232); }
+.PRGn .q5-11 { fill: rgb(247, 247, 247); }
+.PRGn .q6-11 { fill: rgb(217, 240, 211); }
+.PRGn .q7-11 { fill: rgb(166, 219, 160); }
+.PRGn .q8-11 { fill: rgb(90, 174, 97); }
+.PRGn .q9-11 { fill: rgb(27, 120, 55); }
+.PRGn .q10-11 { fill: rgb(0, 68, 27); }
+.PiYG .q0-3 { fill: rgb(233, 163, 201); }
+.PiYG .q1-3 { fill: rgb(247, 247, 247); }
+.PiYG .q2-3 { fill: rgb(161, 215, 106); }
+.PiYG .q0-4 { fill: rgb(208, 28, 139); }
+.PiYG .q1-4 { fill: rgb(241, 182, 218); }
+.PiYG .q2-4 { fill: rgb(184, 225, 134); }
+.PiYG .q3-4 { fill: rgb(77, 172, 38); }
+.PiYG .q0-5 { fill: rgb(208, 28, 139); }
+.PiYG .q1-5 { fill: rgb(241, 182, 218); }
+.PiYG .q2-5 { fill: rgb(247, 247, 247); }
+.PiYG .q3-5 { fill: rgb(184, 225, 134); }
+.PiYG .q4-5 { fill: rgb(77, 172, 38); }
+.PiYG .q0-6 { fill: rgb(197, 27, 125); }
+.PiYG .q1-6 { fill: rgb(233, 163, 201); }
+.PiYG .q2-6 { fill: rgb(253, 224, 239); }
+.PiYG .q3-6 { fill: rgb(230, 245, 208); }
+.PiYG .q4-6 { fill: rgb(161, 215, 106); }
+.PiYG .q5-6 { fill: rgb(77, 146, 33); }
+.PiYG .q0-7 { fill: rgb(197, 27, 125); }
+.PiYG .q1-7 { fill: rgb(233, 163, 201); }
+.PiYG .q2-7 { fill: rgb(253, 224, 239); }
+.PiYG .q3-7 { fill: rgb(247, 247, 247); }
+.PiYG .q4-7 { fill: rgb(230, 245, 208); }
+.PiYG .q5-7 { fill: rgb(161, 215, 106); }
+.PiYG .q6-7 { fill: rgb(77, 146, 33); }
+.PiYG .q0-8 { fill: rgb(197, 27, 125); }
+.PiYG .q1-8 { fill: rgb(222, 119, 174); }
+.PiYG .q2-8 { fill: rgb(241, 182, 218); }
+.PiYG .q3-8 { fill: rgb(253, 224, 239); }
+.PiYG .q4-8 { fill: rgb(230, 245, 208); }
+.PiYG .q5-8 { fill: rgb(184, 225, 134); }
+.PiYG .q6-8 { fill: rgb(127, 188, 65); }
+.PiYG .q7-8 { fill: rgb(77, 146, 33); }
+.PiYG .q0-9 { fill: rgb(197, 27, 125); }
+.PiYG .q1-9 { fill: rgb(222, 119, 174); }
+.PiYG .q2-9 { fill: rgb(241, 182, 218); }
+.PiYG .q3-9 { fill: rgb(253, 224, 239); }
+.PiYG .q4-9 { fill: rgb(247, 247, 247); }
+.PiYG .q5-9 { fill: rgb(230, 245, 208); }
+.PiYG .q6-9 { fill: rgb(184, 225, 134); }
+.PiYG .q7-9 { fill: rgb(127, 188, 65); }
+.PiYG .q8-9 { fill: rgb(77, 146, 33); }
+.PiYG .q0-10 { fill: rgb(142, 1, 82); }
+.PiYG .q1-10 { fill: rgb(197, 27, 125); }
+.PiYG .q2-10 { fill: rgb(222, 119, 174); }
+.PiYG .q3-10 { fill: rgb(241, 182, 218); }
+.PiYG .q4-10 { fill: rgb(253, 224, 239); }
+.PiYG .q5-10 { fill: rgb(230, 245, 208); }
+.PiYG .q6-10 { fill: rgb(184, 225, 134); }
+.PiYG .q7-10 { fill: rgb(127, 188, 65); }
+.PiYG .q8-10 { fill: rgb(77, 146, 33); }
+.PiYG .q9-10 { fill: rgb(39, 100, 25); }
+.PiYG .q0-11 { fill: rgb(142, 1, 82); }
+.PiYG .q1-11 { fill: rgb(197, 27, 125); }
+.PiYG .q2-11 { fill: rgb(222, 119, 174); }
+.PiYG .q3-11 { fill: rgb(241, 182, 218); }
+.PiYG .q4-11 { fill: rgb(253, 224, 239); }
+.PiYG .q5-11 { fill: rgb(247, 247, 247); }
+.PiYG .q6-11 { fill: rgb(230, 245, 208); }
+.PiYG .q7-11 { fill: rgb(184, 225, 134); }
+.PiYG .q8-11 { fill: rgb(127, 188, 65); }
+.PiYG .q9-11 { fill: rgb(77, 146, 33); }
+.PiYG .q10-11 { fill: rgb(39, 100, 25); }
+.RdBu .q0-3 { fill: rgb(239, 138, 98); }
+.RdBu .q1-3 { fill: rgb(247, 247, 247); }
+.RdBu .q2-3 { fill: rgb(103, 169, 207); }
+.RdBu .q0-4 { fill: rgb(202, 0, 32); }
+.RdBu .q1-4 { fill: rgb(244, 165, 130); }
+.RdBu .q2-4 { fill: rgb(146, 197, 222); }
+.RdBu .q3-4 { fill: rgb(5, 113, 176); }
+.RdBu .q0-5 { fill: rgb(202, 0, 32); }
+.RdBu .q1-5 { fill: rgb(244, 165, 130); }
+.RdBu .q2-5 { fill: rgb(247, 247, 247); }
+.RdBu .q3-5 { fill: rgb(146, 197, 222); }
+.RdBu .q4-5 { fill: rgb(5, 113, 176); }
+.RdBu .q0-6 { fill: rgb(178, 24, 43); }
+.RdBu .q1-6 { fill: rgb(239, 138, 98); }
+.RdBu .q2-6 { fill: rgb(253, 219, 199); }
+.RdBu .q3-6 { fill: rgb(209, 229, 240); }
+.RdBu .q4-6 { fill: rgb(103, 169, 207); }
+.RdBu .q5-6 { fill: rgb(33, 102, 172); }
+.RdBu .q0-7 { fill: rgb(178, 24, 43); }
+.RdBu .q1-7 { fill: rgb(239, 138, 98); }
+.RdBu .q2-7 { fill: rgb(253, 219, 199); }
+.RdBu .q3-7 { fill: rgb(247, 247, 247); }
+.RdBu .q4-7 { fill: rgb(209, 229, 240); }
+.RdBu .q5-7 { fill: rgb(103, 169, 207); }
+.RdBu .q6-7 { fill: rgb(33, 102, 172); }
+.RdBu .q0-8 { fill: rgb(178, 24, 43); }
+.RdBu .q1-8 { fill: rgb(214, 96, 77); }
+.RdBu .q2-8 { fill: rgb(244, 165, 130); }
+.RdBu .q3-8 { fill: rgb(253, 219, 199); }
+.RdBu .q4-8 { fill: rgb(209, 229, 240); }
+.RdBu .q5-8 { fill: rgb(146, 197, 222); }
+.RdBu .q6-8 { fill: rgb(67, 147, 195); }
+.RdBu .q7-8 { fill: rgb(33, 102, 172); }
+.RdBu .q0-9 { fill: rgb(178, 24, 43); }
+.RdBu .q1-9 { fill: rgb(214, 96, 77); }
+.RdBu .q2-9 { fill: rgb(244, 165, 130); }
+.RdBu .q3-9 { fill: rgb(253, 219, 199); }
+.RdBu .q4-9 { fill: rgb(247, 247, 247); }
+.RdBu .q5-9 { fill: rgb(209, 229, 240); }
+.RdBu .q6-9 { fill: rgb(146, 197, 222); }
+.RdBu .q7-9 { fill: rgb(67, 147, 195); }
+.RdBu .q8-9 { fill: rgb(33, 102, 172); }
+.RdBu .q0-10 { fill: rgb(103, 0, 31); }
+.RdBu .q1-10 { fill: rgb(178, 24, 43); }
+.RdBu .q2-10 { fill: rgb(214, 96, 77); }
+.RdBu .q3-10 { fill: rgb(244, 165, 130); }
+.RdBu .q4-10 { fill: rgb(253, 219, 199); }
+.RdBu .q5-10 { fill: rgb(209, 229, 240); }
+.RdBu .q6-10 { fill: rgb(146, 197, 222); }
+.RdBu .q7-10 { fill: rgb(67, 147, 195); }
+.RdBu .q8-10 { fill: rgb(33, 102, 172); }
+.RdBu .q9-10 { fill: rgb(5, 48, 97); }
+.RdBu .q0-11 { fill: rgb(103, 0, 31); }
+.RdBu .q1-11 { fill: rgb(178, 24, 43); }
+.RdBu .q2-11 { fill: rgb(214, 96, 77); }
+.RdBu .q3-11 { fill: rgb(244, 165, 130); }
+.RdBu .q4-11 { fill: rgb(253, 219, 199); }
+.RdBu .q5-11 { fill: rgb(247, 247, 247); }
+.RdBu .q6-11 { fill: rgb(209, 229, 240); }
+.RdBu .q7-11 { fill: rgb(146, 197, 222); }
+.RdBu .q8-11 { fill: rgb(67, 147, 195); }
+.RdBu .q9-11 { fill: rgb(33, 102, 172); }
+.RdBu .q10-11 { fill: rgb(5, 48, 97); }
+.RdGy .q0-3 { fill: rgb(239, 138, 98); }
+.RdGy .q1-3 { fill: rgb(255, 255, 255); }
+.RdGy .q2-3 { fill: rgb(153, 153, 153); }
+.RdGy .q0-4 { fill: rgb(202, 0, 32); }
+.RdGy .q1-4 { fill: rgb(244, 165, 130); }
+.RdGy .q2-4 { fill: rgb(186, 186, 186); }
+.RdGy .q3-4 { fill: rgb(64, 64, 64); }
+.RdGy .q0-5 { fill: rgb(202, 0, 32); }
+.RdGy .q1-5 { fill: rgb(244, 165, 130); }
+.RdGy .q2-5 { fill: rgb(255, 255, 255); }
+.RdGy .q3-5 { fill: rgb(186, 186, 186); }
+.RdGy .q4-5 { fill: rgb(64, 64, 64); }
+.RdGy .q0-6 { fill: rgb(178, 24, 43); }
+.RdGy .q1-6 { fill: rgb(239, 138, 98); }
+.RdGy .q2-6 { fill: rgb(253, 219, 199); }
+.RdGy .q3-6 { fill: rgb(224, 224, 224); }
+.RdGy .q4-6 { fill: rgb(153, 153, 153); }
+.RdGy .q5-6 { fill: rgb(77, 77, 77); }
+.RdGy .q0-7 { fill: rgb(178, 24, 43); }
+.RdGy .q1-7 { fill: rgb(239, 138, 98); }
+.RdGy .q2-7 { fill: rgb(253, 219, 199); }
+.RdGy .q3-7 { fill: rgb(255, 255, 255); }
+.RdGy .q4-7 { fill: rgb(224, 224, 224); }
+.RdGy .q5-7 { fill: rgb(153, 153, 153); }
+.RdGy .q6-7 { fill: rgb(77, 77, 77); }
+.RdGy .q0-8 { fill: rgb(178, 24, 43); }
+.RdGy .q1-8 { fill: rgb(214, 96, 77); }
+.RdGy .q2-8 { fill: rgb(244, 165, 130); }
+.RdGy .q3-8 { fill: rgb(253, 219, 199); }
+.RdGy .q4-8 { fill: rgb(224, 224, 224); }
+.RdGy .q5-8 { fill: rgb(186, 186, 186); }
+.RdGy .q6-8 { fill: rgb(135, 135, 135); }
+.RdGy .q7-8 { fill: rgb(77, 77, 77); }
+.RdGy .q0-9 { fill: rgb(178, 24, 43); }
+.RdGy .q1-9 { fill: rgb(214, 96, 77); }
+.RdGy .q2-9 { fill: rgb(244, 165, 130); }
+.RdGy .q3-9 { fill: rgb(253, 219, 199); }
+.RdGy .q4-9 { fill: rgb(255, 255, 255); }
+.RdGy .q5-9 { fill: rgb(224, 224, 224); }
+.RdGy .q6-9 { fill: rgb(186, 186, 186); }
+.RdGy .q7-9 { fill: rgb(135, 135, 135); }
+.RdGy .q8-9 { fill: rgb(77, 77, 77); }
+.RdGy .q0-10 { fill: rgb(103, 0, 31); }
+.RdGy .q1-10 { fill: rgb(178, 24, 43); }
+.RdGy .q2-10 { fill: rgb(214, 96, 77); }
+.RdGy .q3-10 { fill: rgb(244, 165, 130); }
+.RdGy .q4-10 { fill: rgb(253, 219, 199); }
+.RdGy .q5-10 { fill: rgb(224, 224, 224); }
+.RdGy .q6-10 { fill: rgb(186, 186, 186); }
+.RdGy .q7-10 { fill: rgb(135, 135, 135); }
+.RdGy .q8-10 { fill: rgb(77, 77, 77); }
+.RdGy .q9-10 { fill: rgb(26, 26, 26); }
+.RdGy .q0-11 { fill: rgb(103, 0, 31); }
+.RdGy .q1-11 { fill: rgb(178, 24, 43); }
+.RdGy .q2-11 { fill: rgb(214, 96, 77); }
+.RdGy .q3-11 { fill: rgb(244, 165, 130); }
+.RdGy .q4-11 { fill: rgb(253, 219, 199); }
+.RdGy .q5-11 { fill: rgb(255, 255, 255); }
+.RdGy .q6-11 { fill: rgb(224, 224, 224); }
+.RdGy .q7-11 { fill: rgb(186, 186, 186); }
+.RdGy .q8-11 { fill: rgb(135, 135, 135); }
+.RdGy .q9-11 { fill: rgb(77, 77, 77); }
+.RdGy .q10-11 { fill: rgb(26, 26, 26); }
+.RdYlBu .q0-3 { fill: rgb(252, 141, 89); }
+.RdYlBu .q1-3 { fill: rgb(255, 255, 191); }
+.RdYlBu .q2-3 { fill: rgb(145, 191, 219); }
+.RdYlBu .q0-4 { fill: rgb(215, 25, 28); }
+.RdYlBu .q1-4 { fill: rgb(253, 174, 97); }
+.RdYlBu .q2-4 { fill: rgb(171, 217, 233); }
+.RdYlBu .q3-4 { fill: rgb(44, 123, 182); }
+.RdYlBu .q0-5 { fill: rgb(215, 25, 28); }
+.RdYlBu .q1-5 { fill: rgb(253, 174, 97); }
+.RdYlBu .q2-5 { fill: rgb(255, 255, 191); }
+.RdYlBu .q3-5 { fill: rgb(171, 217, 233); }
+.RdYlBu .q4-5 { fill: rgb(44, 123, 182); }
+.RdYlBu .q0-6 { fill: rgb(215, 48, 39); }
+.RdYlBu .q1-6 { fill: rgb(252, 141, 89); }
+.RdYlBu .q2-6 { fill: rgb(254, 224, 144); }
+.RdYlBu .q3-6 { fill: rgb(224, 243, 248); }
+.RdYlBu .q4-6 { fill: rgb(145, 191, 219); }
+.RdYlBu .q5-6 { fill: rgb(69, 117, 180); }
+.RdYlBu .q0-7 { fill: rgb(215, 48, 39); }
+.RdYlBu .q1-7 { fill: rgb(252, 141, 89); }
+.RdYlBu .q2-7 { fill: rgb(254, 224, 144); }
+.RdYlBu .q3-7 { fill: rgb(255, 255, 191); }
+.RdYlBu .q4-7 { fill: rgb(224, 243, 248); }
+.RdYlBu .q5-7 { fill: rgb(145, 191, 219); }
+.RdYlBu .q6-7 { fill: rgb(69, 117, 180); }
+.RdYlBu .q0-8 { fill: rgb(215, 48, 39); }
+.RdYlBu .q1-8 { fill: rgb(244, 109, 67); }
+.RdYlBu .q2-8 { fill: rgb(253, 174, 97); }
+.RdYlBu .q3-8 { fill: rgb(254, 224, 144); }
+.RdYlBu .q4-8 { fill: rgb(224, 243, 248); }
+.RdYlBu .q5-8 { fill: rgb(171, 217, 233); }
+.RdYlBu .q6-8 { fill: rgb(116, 173, 209); }
+.RdYlBu .q7-8 { fill: rgb(69, 117, 180); }
+.RdYlBu .q0-9 { fill: rgb(215, 48, 39); }
+.RdYlBu .q1-9 { fill: rgb(244, 109, 67); }
+.RdYlBu .q2-9 { fill: rgb(253, 174, 97); }
+.RdYlBu .q3-9 { fill: rgb(254, 224, 144); }
+.RdYlBu .q4-9 { fill: rgb(255, 255, 191); }
+.RdYlBu .q5-9 { fill: rgb(224, 243, 248); }
+.RdYlBu .q6-9 { fill: rgb(171, 217, 233); }
+.RdYlBu .q7-9 { fill: rgb(116, 173, 209); }
+.RdYlBu .q8-9 { fill: rgb(69, 117, 180); }
+.RdYlBu .q0-10 { fill: rgb(165, 0, 38); }
+.RdYlBu .q1-10 { fill: rgb(215, 48, 39); }
+.RdYlBu .q2-10 { fill: rgb(244, 109, 67); }
+.RdYlBu .q3-10 { fill: rgb(253, 174, 97); }
+.RdYlBu .q4-10 { fill: rgb(254, 224, 144); }
+.RdYlBu .q5-10 { fill: rgb(224, 243, 248); }
+.RdYlBu .q6-10 { fill: rgb(171, 217, 233); }
+.RdYlBu .q7-10 { fill: rgb(116, 173, 209); }
+.RdYlBu .q8-10 { fill: rgb(69, 117, 180); }
+.RdYlBu .q9-10 { fill: rgb(49, 54, 149); }
+.RdYlBu .q0-11 { fill: rgb(165, 0, 38); }
+.RdYlBu .q1-11 { fill: rgb(215, 48, 39); }
+.RdYlBu .q2-11 { fill: rgb(244, 109, 67); }
+.RdYlBu .q3-11 { fill: rgb(253, 174, 97); }
+.RdYlBu .q4-11 { fill: rgb(254, 224, 144); }
+.RdYlBu .q5-11 { fill: rgb(255, 255, 191); }
+.RdYlBu .q6-11 { fill: rgb(224, 243, 248); }
+.RdYlBu .q7-11 { fill: rgb(171, 217, 233); }
+.RdYlBu .q8-11 { fill: rgb(116, 173, 209); }
+.RdYlBu .q9-11 { fill: rgb(69, 117, 180); }
+.RdYlBu .q10-11 { fill: rgb(49, 54, 149); }
+.Spectral .q0-3 { fill: rgb(252, 141, 89); }
+.Spectral .q1-3 { fill: rgb(255, 255, 191); }
+.Spectral .q2-3 { fill: rgb(153, 213, 148); }
+.Spectral .q0-4 { fill: rgb(215, 25, 28); }
+.Spectral .q1-4 { fill: rgb(253, 174, 97); }
+.Spectral .q2-4 { fill: rgb(171, 221, 164); }
+.Spectral .q3-4 { fill: rgb(43, 131, 186); }
+.Spectral .q0-5 { fill: rgb(215, 25, 28); }
+.Spectral .q1-5 { fill: rgb(253, 174, 97); }
+.Spectral .q2-5 { fill: rgb(255, 255, 191); }
+.Spectral .q3-5 { fill: rgb(171, 221, 164); }
+.Spectral .q4-5 { fill: rgb(43, 131, 186); }
+.Spectral .q0-6 { fill: rgb(213, 62, 79); }
+.Spectral .q1-6 { fill: rgb(252, 141, 89); }
+.Spectral .q2-6 { fill: rgb(254, 224, 139); }
+.Spectral .q3-6 { fill: rgb(230, 245, 152); }
+.Spectral .q4-6 { fill: rgb(153, 213, 148); }
+.Spectral .q5-6 { fill: rgb(50, 136, 189); }
+.Spectral .q0-7 { fill: rgb(213, 62, 79); }
+.Spectral .q1-7 { fill: rgb(252, 141, 89); }
+.Spectral .q2-7 { fill: rgb(254, 224, 139); }
+.Spectral .q3-7 { fill: rgb(255, 255, 191); }
+.Spectral .q4-7 { fill: rgb(230, 245, 152); }
+.Spectral .q5-7 { fill: rgb(153, 213, 148); }
+.Spectral .q6-7 { fill: rgb(50, 136, 189); }
+.Spectral .q0-8 { fill: rgb(213, 62, 79); }
+.Spectral .q1-8 { fill: rgb(244, 109, 67); }
+.Spectral .q2-8 { fill: rgb(253, 174, 97); }
+.Spectral .q3-8 { fill: rgb(254, 224, 139); }
+.Spectral .q4-8 { fill: rgb(230, 245, 152); }
+.Spectral .q5-8 { fill: rgb(171, 221, 164); }
+.Spectral .q6-8 { fill: rgb(102, 194, 165); }
+.Spectral .q7-8 { fill: rgb(50, 136, 189); }
+.Spectral .q0-9 { fill: rgb(213, 62, 79); }
+.Spectral .q1-9 { fill: rgb(244, 109, 67); }
+.Spectral .q2-9 { fill: rgb(253, 174, 97); }
+.Spectral .q3-9 { fill: rgb(254, 224, 139); }
+.Spectral .q4-9 { fill: rgb(255, 255, 191); }
+.Spectral .q5-9 { fill: rgb(230, 245, 152); }
+.Spectral .q6-9 { fill: rgb(171, 221, 164); }
+.Spectral .q7-9 { fill: rgb(102, 194, 165); }
+.Spectral .q8-9 { fill: rgb(50, 136, 189); }
+.Spectral .q0-10 { fill: rgb(158, 1, 66); }
+.Spectral .q1-10 { fill: rgb(213, 62, 79); }
+.Spectral .q2-10 { fill: rgb(244, 109, 67); }
+.Spectral .q3-10 { fill: rgb(253, 174, 97); }
+.Spectral .q4-10 { fill: rgb(254, 224, 139); }
+.Spectral .q5-10 { fill: rgb(230, 245, 152); }
+.Spectral .q6-10 { fill: rgb(171, 221, 164); }
+.Spectral .q7-10 { fill: rgb(102, 194, 165); }
+.Spectral .q8-10 { fill: rgb(50, 136, 189); }
+.Spectral .q9-10 { fill: rgb(94, 79, 162); }
+.Spectral .q0-11 { fill: rgb(158, 1, 66); }
+.Spectral .q1-11 { fill: rgb(213, 62, 79); }
+.Spectral .q2-11 { fill: rgb(244, 109, 67); }
+.Spectral .q3-11 { fill: rgb(253, 174, 97); }
+.Spectral .q4-11 { fill: rgb(254, 224, 139); }
+.Spectral .q5-11 { fill: rgb(255, 255, 191); }
+.Spectral .q6-11 { fill: rgb(230, 245, 152); }
+.Spectral .q7-11 { fill: rgb(171, 221, 164); }
+.Spectral .q8-11 { fill: rgb(102, 194, 165); }
+.Spectral .q9-11 { fill: rgb(50, 136, 189); }
+.Spectral .q10-11 { fill: rgb(94, 79, 162); }
+.RdYlGn .q0-3 { fill: rgb(252, 141, 89); }
+.RdYlGn .q1-3 { fill: rgb(255, 255, 191); }
+.RdYlGn .q2-3 { fill: rgb(145, 207, 96); }
+.RdYlGn .q0-4 { fill: rgb(215, 25, 28); }
+.RdYlGn .q1-4 { fill: rgb(253, 174, 97); }
+.RdYlGn .q2-4 { fill: rgb(166, 217, 106); }
+.RdYlGn .q3-4 { fill: rgb(26, 150, 65); }
+.RdYlGn .q0-5 { fill: rgb(215, 25, 28); }
+.RdYlGn .q1-5 { fill: rgb(253, 174, 97); }
+.RdYlGn .q2-5 { fill: rgb(255, 255, 191); }
+.RdYlGn .q3-5 { fill: rgb(166, 217, 106); }
+.RdYlGn .q4-5 { fill: rgb(26, 150, 65); }
+.RdYlGn .q0-6 { fill: rgb(215, 48, 39); }
+.RdYlGn .q1-6 { fill: rgb(252, 141, 89); }
+.RdYlGn .q2-6 { fill: rgb(254, 224, 139); }
+.RdYlGn .q3-6 { fill: rgb(217, 239, 139); }
+.RdYlGn .q4-6 { fill: rgb(145, 207, 96); }
+.RdYlGn .q5-6 { fill: rgb(26, 152, 80); }
+.RdYlGn .q0-7 { fill: rgb(215, 48, 39); }
+.RdYlGn .q1-7 { fill: rgb(252, 141, 89); }
+.RdYlGn .q2-7 { fill: rgb(254, 224, 139); }
+.RdYlGn .q3-7 { fill: rgb(255, 255, 191); }
+.RdYlGn .q4-7 { fill: rgb(217, 239, 139); }
+.RdYlGn .q5-7 { fill: rgb(145, 207, 96); }
+.RdYlGn .q6-7 { fill: rgb(26, 152, 80); }
+.RdYlGn .q0-8 { fill: rgb(215, 48, 39); }
+.RdYlGn .q1-8 { fill: rgb(244, 109, 67); }
+.RdYlGn .q2-8 { fill: rgb(253, 174, 97); }
+.RdYlGn .q3-8 { fill: rgb(254, 224, 139); }
+.RdYlGn .q4-8 { fill: rgb(217, 239, 139); }
+.RdYlGn .q5-8 { fill: rgb(166, 217, 106); }
+.RdYlGn .q6-8 { fill: rgb(102, 189, 99); }
+.RdYlGn .q7-8 { fill: rgb(26, 152, 80); }
+.RdYlGn .q0-9 { fill: rgb(215, 48, 39); }
+.RdYlGn .q1-9 { fill: rgb(244, 109, 67); }
+.RdYlGn .q2-9 { fill: rgb(253, 174, 97); }
+.RdYlGn .q3-9 { fill: rgb(254, 224, 139); }
+.RdYlGn .q4-9 { fill: rgb(255, 255, 191); }
+.RdYlGn .q5-9 { fill: rgb(217, 239, 139); }
+.RdYlGn .q6-9 { fill: rgb(166, 217, 106); }
+.RdYlGn .q7-9 { fill: rgb(102, 189, 99); }
+.RdYlGn .q8-9 { fill: rgb(26, 152, 80); }
+.RdYlGn .q0-10 { fill: rgb(165, 0, 38); }
+.RdYlGn .q1-10 { fill: rgb(215, 48, 39); }
+.RdYlGn .q2-10 { fill: rgb(244, 109, 67); }
+.RdYlGn .q3-10 { fill: rgb(253, 174, 97); }
+.RdYlGn .q4-10 { fill: rgb(254, 224, 139); }
+.RdYlGn .q5-10 { fill: rgb(217, 239, 139); }
+.RdYlGn .q6-10 { fill: rgb(166, 217, 106); }
+.RdYlGn .q7-10 { fill: rgb(102, 189, 99); }
+.RdYlGn .q8-10 { fill: rgb(26, 152, 80); }
+.RdYlGn .q9-10 { fill: rgb(0, 104, 55); }
+.RdYlGn .q0-11 { fill: rgb(165, 0, 38); }
+.RdYlGn .q1-11 { fill: rgb(215, 48, 39); }
+.RdYlGn .q2-11 { fill: rgb(244, 109, 67); }
+.RdYlGn .q3-11 { fill: rgb(253, 174, 97); }
+.RdYlGn .q4-11 { fill: rgb(254, 224, 139); }
+.RdYlGn .q5-11 { fill: rgb(255, 255, 191); }
+.RdYlGn .q6-11 { fill: rgb(217, 239, 139); }
+.RdYlGn .q7-11 { fill: rgb(166, 217, 106); }
+.RdYlGn .q8-11 { fill: rgb(102, 189, 99); }
+.RdYlGn .q9-11 { fill: rgb(26, 152, 80); }
+.RdYlGn .q10-11 { fill: rgb(0, 104, 55); }</xhtml:style>
+  </xhtml:defs>
+  <g
+     id="g13"
+     transform="matrix(1.0170179,0,0,1.0466062,62.781682,611.18392)"
+     class="daily-axis"
+     style="fill:#535353;fill-opacity:1">
+    <g
+       id="g15"
+       transform="translate(40,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line17"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text19"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4857">2014-06-08</tspan>
+      </text>
+    </g>
+    <g
+       id="g21"
+       transform="translate(80,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line23"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text25"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4859">2014-06-09</tspan>
+      </text>
+    </g>
+    <g
+       id="g27"
+       transform="translate(120,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line29"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text31"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4861">2014-06-10</tspan>
+      </text>
+    </g>
+    <g
+       id="g33"
+       transform="translate(160,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line35"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text37"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4863">2014-06-11</tspan>
+      </text>
+    </g>
+    <g
+       id="g39"
+       transform="translate(200,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line41"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text43"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4865">2014-06-12</tspan>
+      </text>
+    </g>
+    <g
+       id="g45"
+       transform="translate(240,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line47"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text49"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4867">2014-06-13</tspan>
+      </text>
+    </g>
+    <g
+       id="g51"
+       transform="translate(280,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line53"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text55"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4869">2014-06-14</tspan>
+      </text>
+    </g>
+    <g
+       id="g57"
+       transform="translate(320,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line59"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text61"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4871">2014-06-15</tspan>
+      </text>
+    </g>
+    <g
+       id="g63"
+       transform="translate(360,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line65"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text67"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4873">2014-06-16</tspan>
+      </text>
+    </g>
+    <g
+       id="g69"
+       transform="translate(400,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line71"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text73"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4875">2014-06-17</tspan>
+      </text>
+    </g>
+    <g
+       id="g75"
+       transform="translate(440,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line77"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text79"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4877">2014-06-18</tspan>
+      </text>
+    </g>
+    <g
+       id="g81"
+       transform="translate(480,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line83"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text85"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4879">2014-06-19</tspan>
+      </text>
+    </g>
+    <g
+       id="g87"
+       transform="translate(520,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line89"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text91"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4881">2014-06-20</tspan>
+      </text>
+    </g>
+    <g
+       id="g93"
+       transform="translate(560,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line95"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text97"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4883">2014-06-21</tspan>
+      </text>
+    </g>
+    <g
+       id="g99"
+       transform="translate(600,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line101"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text103"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4885">2014-06-22</tspan>
+      </text>
+    </g>
+    <g
+       id="g105"
+       transform="translate(640,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line107"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text109"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4887">2014-06-23</tspan>
+      </text>
+    </g>
+    <g
+       id="g111"
+       transform="translate(680,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line113"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text115"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4889">2014-06-24</tspan>
+      </text>
+    </g>
+    <g
+       id="g117"
+       transform="translate(720,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line119"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text121"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4891">2014-06-25</tspan>
+      </text>
+    </g>
+    <g
+       id="g123"
+       transform="translate(760,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line125"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text127"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4893">2014-06-26</tspan>
+      </text>
+    </g>
+    <g
+       id="g129"
+       transform="translate(800,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line131"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text133"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4895">2014-06-27</tspan>
+      </text>
+    </g>
+    <g
+       id="g135"
+       transform="translate(840,0)"
+       class="tick"
+       style="fill:#535353;fill-opacity:1">
+      <line
+         y1="0"
+         x1="0"
+         id="line137"
+         x2="0"
+         y2="6"
+         style="fill:#535353;fill-opacity:1" />
+      <text
+         id="text139"
+         style="text-anchor:end;fill:#535353;fill-opacity:1"
+         class="daily-ticks"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-20.952381,10)"
+         dx="9"
+         dy="9"
+         x="0"
+         y="9">
+        <tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+           id="tspan4897">2014-06-28</tspan>
+      </text>
+    </g>
+  </g>
+  <line
+     id="line9"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.13874841;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     y2="622.30267"
+     x2="919.39197"
+     y1="622.30267"
+     x1="65.096909" />
+  <g
+     style="fill:#535353;fill-opacity:1;stroke-dasharray:3"
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,77.648133,622.30266)"
+     id="g185">
+    <line
+       x2="840"
+       y2="0"
+       id="line187"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="-15"
+       y="0"
+       dy="-4"
+       class="axis-text"
+       style="text-anchor:end;fill:#535353;fill-opacity:1"
+       id="text189">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4917">0</tspan>
+    </text>
+  </g>
+  <text
+     id="text5"
+     style="font-size:12.38047218px;fill:#fd7102"
+     class="daily-label"
+     transform="matrix(0,-1.0144423,0.98576332,0,0,0)"
+     dy="-41.268238"
+     y="86.206985"
+     dx="10.31706"
+     x="-314.29807">
+    <tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Lato;-inkscape-font-specification:Lato Bold"
+       id="tspan4945">clicks</tspan>
+  </text>
+  <line
+     id="line11"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="628.58228"
+     x2="65.096909"
+     y1="622.30267"
+     x1="65.096909" />
+  <rect
+     id="rect141"
+     y="496.25977"
+     height="126.04289"
+     x="70.521011"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <rect
+     id="rect143"
+     y="535.87329"
+     height="86.429413"
+     x="111.20172"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <rect
+     id="rect145"
+     y="503.46222"
+     height="118.84045"
+     x="151.88243"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <rect
+     id="rect147"
+     y="352.21072"
+     height="270.09192"
+     x="192.56317"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <rect
+     id="rect149"
+     y="359.41318"
+     height="262.88947"
+     x="233.24387"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <rect
+     id="rect151"
+     y="499.86099"
+     height="122.44167"
+     x="273.92459"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <rect
+     id="rect153"
+     y="355.81195"
+     height="266.49069"
+     x="314.60532"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <rect
+     id="rect155"
+     y="399.0267"
+     height="223.27597"
+     x="355.28604"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <rect
+     id="rect157"
+     y="388.22302"
+     height="234.07965"
+     x="395.96674"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <rect
+     id="rect159"
+     y="920.44153"
+     height="0"
+     x="358.26666"
+     width="23.466667"
+     class="daily-bars" />
+  <rect
+     id="rect161"
+     y="327.00217"
+     height="295.30048"
+     x="477.32819"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <rect
+     id="rect163"
+     y="920.44153"
+     height="0"
+     x="422.26666"
+     width="23.466667"
+     class="daily-bars" />
+  <rect
+     id="rect165"
+     y="287.38873"
+     height="334.91397"
+     x="558.68964"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <rect
+     id="rect167"
+     y="546.67694"
+     height="75.625732"
+     x="599.37036"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <rect
+     id="rect169"
+     y="427.83646"
+     height="194.46619"
+     x="640.05103"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <rect
+     id="rect171"
+     y="920.44153"
+     height="0"
+     x="550.26666"
+     width="23.466667"
+     class="daily-bars" />
+  <rect
+     id="rect173"
+     y="287.38873"
+     height="334.91397"
+     x="721.41248"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <rect
+     id="rect175"
+     y="471.05121"
+     height="151.25146"
+     x="762.09314"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <rect
+     id="rect177"
+     y="503.46222"
+     height="118.84045"
+     x="802.77386"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <rect
+     id="rect179"
+     y="499.86099"
+     height="122.44167"
+     x="843.45459"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <rect
+     id="rect181"
+     y="514.26587"
+     height="108.03676"
+     x="884.13531"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <g
+     style="fill:#535353;fill-opacity:1;stroke-dasharray:3"
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,77.648133,585.49893)"
+     id="g191">
+    <line
+       x2="840"
+       y2="0"
+       id="line193"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="-15"
+       dy="-4"
+       class="axis-text"
+       y="0"
+       style="text-anchor:end;fill:#535353;fill-opacity:1"
+       id="text195">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4915">10</tspan>
+    </text>
+  </g>
+  <g
+     style="fill:#535353;fill-opacity:1;stroke-dasharray:3"
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,77.648133,548.69518)"
+     id="g197">
+    <line
+       x2="840"
+       y2="0"
+       id="line199"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="-15"
+       dy="-4"
+       class="axis-text"
+       y="0"
+       style="text-anchor:end;fill:#535353;fill-opacity:1"
+       id="text201">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4913">20</tspan>
+    </text>
+  </g>
+  <g
+     style="fill:#535353;fill-opacity:1;stroke-dasharray:3"
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,77.648133,511.89145)"
+     id="g203">
+    <line
+       x2="840"
+       y2="0"
+       id="line205"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="-15"
+       dy="-4"
+       class="axis-text"
+       y="0"
+       style="text-anchor:end;fill:#535353;fill-opacity:1"
+       id="text207">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4911">30</tspan>
+    </text>
+  </g>
+  <g
+     style="fill:#535353;fill-opacity:1;stroke-dasharray:3"
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,77.648133,475.08771)"
+     id="g209">
+    <line
+       x2="840"
+       y2="0"
+       id="line211"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="-15"
+       dy="-4"
+       class="axis-text"
+       y="0"
+       style="text-anchor:end;fill:#535353;fill-opacity:1"
+       id="text213">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4909">40</tspan>
+    </text>
+  </g>
+  <g
+     style="fill:#535353;fill-opacity:1;stroke-dasharray:3"
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,77.648133,438.28399)"
+     id="g215">
+    <line
+       x2="840"
+       y2="0"
+       id="line217"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="-15"
+       dy="-4"
+       class="axis-text"
+       y="0"
+       style="text-anchor:end;fill:#535353;fill-opacity:1"
+       id="text219">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4907">50</tspan>
+    </text>
+  </g>
+  <g
+     style="fill:#535353;fill-opacity:1;stroke-dasharray:3"
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,77.648133,401.48026)"
+     id="g221">
+    <line
+       x2="840"
+       y2="0"
+       id="line223"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="-15"
+       dy="-4"
+       class="axis-text"
+       y="0"
+       style="text-anchor:end;fill:#535353;fill-opacity:1"
+       id="text225">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4905">60</tspan>
+    </text>
+  </g>
+  <g
+     style="fill:#535353;fill-opacity:1;stroke-dasharray:3"
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,77.648133,364.67652)"
+     id="g227">
+    <line
+       x2="840"
+       y2="0"
+       id="line229"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="-15"
+       dy="-4"
+       class="axis-text"
+       y="0"
+       style="text-anchor:end;fill:#535353;fill-opacity:1"
+       id="text231">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4903">70</tspan>
+    </text>
+  </g>
+  <g
+     style="fill:#535353;fill-opacity:1;stroke-dasharray:3"
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,77.648133,327.8728)"
+     id="g233">
+    <line
+       x2="840"
+       y2="0"
+       id="line235"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="-15"
+       dy="-4"
+       class="axis-text"
+       y="0"
+       style="text-anchor:end;fill:#535353;fill-opacity:1"
+       id="text237">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4901">80</tspan>
+    </text>
+  </g>
+  <g
+     style="fill:#535353;fill-opacity:1;stroke-dasharray:3"
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,77.648133,291.06906)"
+     id="g239">
+    <line
+       x2="840"
+       y2="0"
+       id="line241"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="-15"
+       dy="-4"
+       class="axis-text"
+       y="0"
+       style="text-anchor:end;fill:#535353;fill-opacity:1"
+       id="text243">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4899">90</tspan>
+    </text>
+  </g>
+  <g
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,950.79572,622.30266)"
+     id="g249"
+     style="fill:#535353;fill-opacity:1">
+    <line
+       x2="6"
+       y2="0"
+       id="line251"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="9"
+       y="0"
+       dy="-4"
+       class="axis-text"
+       dx="-35"
+       style="text-anchor:start;fill:#535353;fill-opacity:1"
+       id="text253">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4937">0</tspan>
+    </text>
+  </g>
+  <g
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,950.79572,586.2904)"
+     id="g255"
+     style="fill:#535353;fill-opacity:1">
+    <line
+       x2="6"
+       y2="0"
+       id="line257"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="9"
+       dy="-4"
+       class="axis-text"
+       dx="-35"
+       y="0"
+       style="text-anchor:start;fill:#535353;fill-opacity:1"
+       id="text259">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4935">10</tspan>
+    </text>
+  </g>
+  <g
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,950.79572,550.27815)"
+     id="g261"
+     style="fill:#535353;fill-opacity:1">
+    <line
+       x2="6"
+       y2="0"
+       id="line263"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="9"
+       dy="-4"
+       class="axis-text"
+       dx="-35"
+       y="0"
+       style="text-anchor:start;fill:#535353;fill-opacity:1"
+       id="text265">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4933">20</tspan>
+    </text>
+  </g>
+  <g
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,950.79572,514.2659)"
+     id="g267"
+     style="fill:#535353;fill-opacity:1">
+    <line
+       x2="6"
+       y2="0"
+       id="line269"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="9"
+       dy="-4"
+       class="axis-text"
+       dx="-35"
+       y="0"
+       style="text-anchor:start;fill:#535353;fill-opacity:1"
+       id="text271">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4931">30</tspan>
+    </text>
+  </g>
+  <g
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,950.79572,478.25363)"
+     id="g273"
+     style="fill:#535353;fill-opacity:1">
+    <line
+       x2="6"
+       y2="0"
+       id="line275"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="9"
+       dy="-4"
+       class="axis-text"
+       dx="-35"
+       y="0"
+       style="text-anchor:start;fill:#535353;fill-opacity:1"
+       id="text277">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4929">40</tspan>
+    </text>
+  </g>
+  <g
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,950.79572,442.24138)"
+     id="g279"
+     style="fill:#535353;fill-opacity:1">
+    <line
+       x2="6"
+       y2="0"
+       id="line281"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="9"
+       dy="-4"
+       class="axis-text"
+       dx="-35"
+       y="0"
+       style="text-anchor:start;fill:#535353;fill-opacity:1"
+       id="text283">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4927">50</tspan>
+    </text>
+  </g>
+  <g
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,950.79572,406.22913)"
+     id="g285"
+     style="fill:#535353;fill-opacity:1">
+    <line
+       x2="6"
+       y2="0"
+       id="line287"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="9"
+       dy="-4"
+       class="axis-text"
+       dx="-35"
+       y="0"
+       style="text-anchor:start;fill:#535353;fill-opacity:1"
+       id="text289">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4925">60</tspan>
+    </text>
+  </g>
+  <g
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,950.79572,370.21687)"
+     id="g291"
+     style="fill:#535353;fill-opacity:1">
+    <line
+       x2="6"
+       y2="0"
+       id="line293"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="9"
+       dy="-4"
+       class="axis-text"
+       dx="-35"
+       y="0"
+       style="text-anchor:start;fill:#535353;fill-opacity:1"
+       id="text295">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4923">70</tspan>
+    </text>
+  </g>
+  <g
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,950.79572,334.20462)"
+     id="g297"
+     style="fill:#535353;fill-opacity:1">
+    <line
+       x2="6"
+       y2="0"
+       id="line299"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="9"
+       dy="-4"
+       class="axis-text"
+       dx="-35"
+       y="0"
+       style="text-anchor:start;fill:#535353;fill-opacity:1"
+       id="text301">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4921">80</tspan>
+    </text>
+  </g>
+  <g
+     class="tick"
+     transform="matrix(1.0170179,0,0,1.0466062,950.79572,298.19237)"
+     id="g303"
+     style="fill:#535353;fill-opacity:1">
+    <line
+       x2="6"
+       y2="0"
+       id="line305"
+       x1="0"
+       y1="0"
+       style="fill:#535353;fill-opacity:1" />
+    <text
+       x="9"
+       dy="-4"
+       class="axis-text"
+       dx="-35"
+       y="0"
+       style="text-anchor:start;fill:#535353;fill-opacity:1"
+       id="text307">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato"
+         id="tspan4919">90</tspan>
+    </text>
+  </g>
+  <path
+     class="domain"
+     d="M 956.89782,287.38868 H 950.79572 V 622.30266 H 956.89782"
+     id="path309"
+     inkscape:connector-curvature="0"
+     style="fill:none" />
+  <rect
+     id="rect155-1"
+     y="445.09903"
+     height="177.22627"
+     x="436.76373"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <rect
+     id="rect147-7"
+     y="493.1442"
+     height="129.13495"
+     x="681.38245"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path311"
+     d="M 85.437271,416.20175 126.11799,438.28399 166.79871,537.65407 207.47942,600.22042 248.16014,504.53071 288.84086,320.51204 329.52158,467.72697 370.20229,427.24287 410.88301,497.16997 451.56373,467.72697 492.24445,430.92325 532.92516,287.38868 573.60588,471.40735 614.2866,427.24287 654.96732,497.16997 695.64803,607.58117 736.32875,622.30266 777.00947,607.58117 817.69019,611.26154 858.3709,338.91392 899.05162,548.69518"
+     class="daily-line"
+     style="fill:none;stroke:#fd7102;stroke-width:5.27582073;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="123.07692"
+     sodipodi:cx="20"
+     d="M 27,123.07692 C 27,126.94291 23.865993,130.07692 20,130.07692 16.134007,130.07692 13,126.94291 13,123.07692 13,119.21093 16.134007,116.07692 20,116.07692 23.865993,116.07692 27,119.21093 27,123.07692 z"
+     id="circle313"
+     cy="123.07692"
+     class="daily-dots"
+     r="7"
+     cx="20"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="144.17583"
+     sodipodi:cx="60"
+     d="M 67,144.17583 C 67,148.04182 63.865993,151.17583 60,151.17583 56.134007,151.17583 53,148.04182 53,144.17583 53,140.30983 56.134007,137.17583 60,137.17583 63.865993,137.17583 67,140.30983 67,144.17583 z"
+     id="circle315"
+     cy="144.17583"
+     class="daily-dots"
+     r="7"
+     cx="60"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="239.12088"
+     sodipodi:cx="100"
+     d="M 107,239.12088 C 107,242.98687 103.86599,246.12088 100,246.12088 96.134007,246.12088 93,242.98687 93,239.12088 93,235.25489 96.134007,232.12088 100,232.12088 103.86599,232.12088 107,235.25489 107,239.12088 z"
+     id="circle317"
+     cy="239.12088"
+     class="daily-dots"
+     r="7"
+     cx="100"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="298.90109"
+     sodipodi:cx="140"
+     d="M 147,298.90109 C 147,302.76709 143.86599,305.90109 140,305.90109 136.13401,305.90109 133,302.76709 133,298.90109 133,295.0351 136.13401,291.90109 140,291.90109 143.86599,291.90109 147,295.0351 147,298.90109 z"
+     id="circle319"
+     cy="298.90109"
+     class="daily-dots"
+     r="7"
+     cx="140"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="207.47253"
+     sodipodi:cx="180"
+     d="M 187,207.47253 C 187,211.33853 183.86599,214.47253 180,214.47253 176.13401,214.47253 173,211.33853 173,207.47253 173,203.60654 176.13401,200.47253 180,200.47253 183.86599,200.47253 187,203.60654 187,207.47253 z"
+     id="circle321"
+     cy="207.47253"
+     class="daily-dots"
+     r="7"
+     cx="180"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="31.648352"
+     sodipodi:cx="220"
+     d="M 227,31.648352 C 227,35.514345 223.86599,38.648352 220,38.648352 216.13401,38.648352 213,35.514345 213,31.648352 213,27.782358 216.13401,24.648352 220,24.648352 223.86599,24.648352 227,27.782358 227,31.648352 z"
+     id="circle323"
+     cy="31.648352"
+     class="daily-dots"
+     r="7"
+     cx="220"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="172.30769"
+     sodipodi:cx="260"
+     d="M 267,172.30769 C 267,176.17369 263.86599,179.30769 260,179.30769 256.13401,179.30769 253,176.17369 253,172.30769 253,168.4417 256.13401,165.30769 260,165.30769 263.86599,165.30769 267,168.4417 267,172.30769 z"
+     id="circle325"
+     cy="172.30769"
+     class="daily-dots"
+     r="7"
+     cx="260"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="133.62637"
+     sodipodi:cx="300"
+     d="M 307,133.62637 C 307,137.49237 303.86599,140.62637 300,140.62637 296.13401,140.62637 293,137.49237 293,133.62637 293,129.76038 296.13401,126.62637 300,126.62637 303.86599,126.62637 307,129.76038 307,133.62637 z"
+     id="circle327"
+     cy="133.62637"
+     class="daily-dots"
+     r="7"
+     cx="300"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="200.43956"
+     sodipodi:cx="340"
+     d="M 347,200.43956 C 347,204.30555 343.86599,207.43956 340,207.43956 336.13401,207.43956 333,204.30555 333,200.43956 333,196.57357 336.13401,193.43956 340,193.43956 343.86599,193.43956 347,196.57357 347,200.43956 z"
+     id="circle329"
+     cy="200.43956"
+     class="daily-dots"
+     r="7"
+     cx="340"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="172.30769"
+     sodipodi:cx="380"
+     d="M 387,172.30769 C 387,176.17369 383.86599,179.30769 380,179.30769 376.13401,179.30769 373,176.17369 373,172.30769 373,168.4417 376.13401,165.30769 380,165.30769 383.86599,165.30769 387,168.4417 387,172.30769 z"
+     id="circle331"
+     cy="172.30769"
+     class="daily-dots"
+     r="7"
+     cx="380"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="137.14285"
+     sodipodi:cx="420"
+     d="M 427,137.14285 C 427,141.00885 423.86599,144.14285 420,144.14285 416.13401,144.14285 413,141.00885 413,137.14285 413,133.27686 416.13401,130.14285 420,130.14285 423.86599,130.14285 427,133.27686 427,137.14285 z"
+     id="circle333"
+     cy="137.14285"
+     class="daily-dots"
+     r="7"
+     cx="420"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="0"
+     sodipodi:cx="460"
+     d="M 467,0 C 467,3.8659932 463.86599,7 460,7 456.13401,7 453,3.8659932 453,0 453,-3.8659932 456.13401,-7 460,-7 463.86599,-7 467,-3.8659932 467,0 z"
+     id="circle335"
+     cy="0"
+     class="daily-dots"
+     r="7"
+     cx="460"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,282.89604)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="175.82417"
+     sodipodi:cx="500"
+     d="M 507,175.82417 C 507,179.69017 503.86599,182.82417 500,182.82417 496.13401,182.82417 493,179.69017 493,175.82417 493,171.95818 496.13401,168.82417 500,168.82417 503.86599,168.82417 507,171.95818 507,175.82417 z"
+     id="circle337"
+     cy="175.82417"
+     class="daily-dots"
+     r="7"
+     cx="500"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="133.62637"
+     sodipodi:cx="540"
+     d="M 547,133.62637 C 547,137.49237 543.86599,140.62637 540,140.62637 536.13401,140.62637 533,137.49237 533,133.62637 533,129.76038 536.13401,126.62637 540,126.62637 543.86599,126.62637 547,129.76038 547,133.62637 z"
+     id="circle339"
+     cy="133.62637"
+     class="daily-dots"
+     r="7"
+     cx="540"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="200.43956"
+     sodipodi:cx="580"
+     d="M 587,200.43956 C 587,204.30555 583.86599,207.43956 580,207.43956 576.13401,207.43956 573,204.30555 573,200.43956 573,196.57357 576.13401,193.43956 580,193.43956 583.86599,193.43956 587,196.57357 587,200.43956 z"
+     id="circle341"
+     cy="200.43956"
+     class="daily-dots"
+     r="7"
+     cx="580"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="305.93405"
+     sodipodi:cx="620"
+     d="M 627,305.93405 C 627,309.80004 623.86599,312.93405 620,312.93405 616.13401,312.93405 613,309.80004 613,305.93405 613,302.06806 616.13401,298.93405 620,298.93405 623.86599,298.93405 627,302.06806 627,305.93405 z"
+     id="circle343"
+     cy="305.93405"
+     class="daily-dots"
+     r="7"
+     cx="620"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="305.93405"
+     sodipodi:cx="700"
+     d="M 707,305.93405 C 707,309.80004 703.86599,312.93405 700,312.93405 696.13401,312.93405 693,309.80004 693,305.93405 693,302.06806 696.13401,298.93405 700,298.93405 703.86599,298.93405 707,302.06806 707,305.93405 z"
+     id="circle347"
+     cy="305.93405"
+     class="daily-dots"
+     r="7"
+     cx="700"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="309.45056"
+     sodipodi:cx="740"
+     d="M 747,309.45056 C 747,313.31655 743.86599,316.45056 740,316.45056 736.13401,316.45056 733,313.31655 733,309.45056 733,305.58457 736.13401,302.45056 740,302.45056 743.86599,302.45056 747,305.58457 747,309.45056 z"
+     id="circle349"
+     cy="309.45056"
+     class="daily-dots"
+     r="7"
+     cx="740"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="49.23077"
+     sodipodi:cx="780"
+     d="M 787,49.23077 C 787,53.096763 783.86599,56.23077 780,56.23077 776.13401,56.23077 773,53.096763 773,49.23077 773,45.364777 776.13401,42.23077 780,42.23077 783.86599,42.23077 787,45.364777 787,49.23077 z"
+     id="circle351"
+     cy="49.23077"
+     class="daily-dots"
+     r="7"
+     cx="780"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="249.67033"
+     sodipodi:cx="820"
+     d="M 827,249.67033 C 827,253.53633 823.86599,256.67033 820,256.67033 816.13401,256.67033 813,253.53633 813,249.67033 813,245.80434 816.13401,242.67033 820,242.67033 823.86599,242.67033 827,245.80434 827,249.67033 z"
+     id="circle353"
+     cy="249.67033"
+     class="daily-dots"
+     r="7"
+     cx="820"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1" />
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,90,762.90304)"
+     id="dltt0">
+    <path
+       inkscape:connector-curvature="0"
+       id="path356"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text358"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">56 clicks</text>
+    <text
+       id="text360"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Sun Jun 08</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,122,779.78216)"
+     id="dltt1">
+    <path
+       inkscape:connector-curvature="0"
+       id="path363"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text365"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">50 clicks</text>
+    <text
+       id="text367"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Mon Jun 09</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,154,855.7382)"
+     id="dltt2">
+    <path
+       inkscape:connector-curvature="0"
+       id="path370"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text372"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">23 clicks</text>
+    <text
+       id="text374"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Tue Jun 10</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,186,903.56238)"
+     id="dltt3">
+    <path
+       inkscape:connector-curvature="0"
+       id="path377"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text379"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">6 clicks</text>
+    <text
+       id="text381"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Wed Jun 11</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,218,830.41952)"
+     id="dltt4">
+    <path
+       inkscape:connector-curvature="0"
+       id="path384"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text386"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">32 clicks</text>
+    <text
+       id="text388"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Thu Jun 12</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,250,689.76018)"
+     id="dltt5">
+    <path
+       inkscape:connector-curvature="0"
+       id="path391"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text393"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">82 clicks</text>
+    <text
+       id="text395"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Fri Jun 13</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,282,802.28765)"
+     id="dltt6">
+    <path
+       inkscape:connector-curvature="0"
+       id="path398"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text400"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">42 clicks</text>
+    <text
+       id="text402"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Sat Jun 14</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,314,771.3426)"
+     id="dltt7">
+    <path
+       inkscape:connector-curvature="0"
+       id="path405"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text407"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">53 clicks</text>
+    <text
+       id="text409"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Sun Jun 15</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,346,824.79315)"
+     id="dltt8">
+    <path
+       inkscape:connector-curvature="0"
+       id="path412"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text414"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">34 clicks</text>
+    <text
+       id="text416"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Mon Jun 16</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,378,802.28765)"
+     id="dltt9">
+    <path
+       inkscape:connector-curvature="0"
+       id="path419"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text421"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">42 clicks</text>
+    <text
+       id="text423"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Tue Jun 17</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,410,774.15579)"
+     id="dltt10">
+    <path
+       inkscape:connector-curvature="0"
+       id="path426"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text428"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">52 clicks</text>
+    <text
+       id="text430"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Wed Jun 18</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,442,664.4415)"
+     id="dltt11">
+    <path
+       inkscape:connector-curvature="0"
+       id="path433"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text435"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">91 clicks</text>
+    <text
+       id="text437"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Thu Jun 19</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,474,805.10084)"
+     id="dltt12">
+    <path
+       inkscape:connector-curvature="0"
+       id="path440"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text442"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">41 clicks</text>
+    <text
+       id="text444"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Fri Jun 20</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,506,771.3426)"
+     id="dltt13">
+    <path
+       inkscape:connector-curvature="0"
+       id="path447"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text449"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">53 clicks</text>
+    <text
+       id="text451"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Sat Jun 21</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,538,824.79315)"
+     id="dltt14">
+    <path
+       inkscape:connector-curvature="0"
+       id="path454"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text456"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">34 clicks</text>
+    <text
+       id="text458"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Sun Jun 22</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,570,909.18876)"
+     id="dltt15">
+    <path
+       inkscape:connector-curvature="0"
+       id="path461"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text463"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">4 clicks</text>
+    <text
+       id="text465"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Mon Jun 23</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,602,920.4415)"
+     id="dltt16">
+    <path
+       inkscape:connector-curvature="0"
+       id="path468"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text470"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">0 clicks</text>
+    <text
+       id="text472"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Tue Jun 24</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,634,909.18876)"
+     id="dltt17">
+    <path
+       inkscape:connector-curvature="0"
+       id="path475"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text477"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">4 clicks</text>
+    <text
+       id="text479"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Wed Jun 25</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,666,912.00194)"
+     id="dltt18">
+    <path
+       inkscape:connector-curvature="0"
+       id="path482"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text484"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">3 clicks</text>
+    <text
+       id="text486"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Thu Jun 26</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,698,703.82612)"
+     id="dltt19">
+    <path
+       inkscape:connector-curvature="0"
+       id="path489"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text491"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">77 clicks</text>
+    <text
+       id="text493"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Fri Jun 27</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,730,864.17776)"
+     id="dltt20">
+    <path
+       inkscape:connector-curvature="0"
+       id="path496"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text498"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">20 clicks</text>
+    <text
+       id="text500"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Sat Jun 28</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,96.133334,824.09741)"
+     id="dbtt0">
+    <path
+       inkscape:connector-curvature="0"
+       id="path503"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text505"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">35 leads</text>
+    <text
+       id="text507"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Sun Jun 08</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,128.13333,854.37698)"
+     id="dbtt1">
+    <path
+       inkscape:connector-curvature="0"
+       id="path510"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text512"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">24 leads</text>
+    <text
+       id="text514"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Mon Jun 09</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,160.13334,829.60279)"
+     id="dbtt2">
+    <path
+       inkscape:connector-curvature="0"
+       id="path517"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text519"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">33 leads</text>
+    <text
+       id="text521"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Tue Jun 10</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,192.13334,713.98989)"
+     id="dbtt3">
+    <path
+       inkscape:connector-curvature="0"
+       id="path524"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text526"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">75 leads</text>
+    <text
+       id="text528"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Wed Jun 11</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,224.13334,719.49526)"
+     id="dbtt4">
+    <path
+       inkscape:connector-curvature="0"
+       id="path531"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text533"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">73 leads</text>
+    <text
+       id="text535"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Thu Jun 12</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,256.13334,826.8501)"
+     id="dbtt5">
+    <path
+       inkscape:connector-curvature="0"
+       id="path538"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text540"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">34 leads</text>
+    <text
+       id="text542"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Fri Jun 13</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,288.13334,716.74258)"
+     id="dbtt6">
+    <path
+       inkscape:connector-curvature="0"
+       id="path545"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text547"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">74 leads</text>
+    <text
+       id="text549"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Sat Jun 14</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,320.13334,749.77484)"
+     id="dbtt7">
+    <path
+       inkscape:connector-curvature="0"
+       id="path552"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text554"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">62 leads</text>
+    <text
+       id="text556"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Sun Jun 15</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,352.13334,741.51677)"
+     id="dbtt8">
+    <path
+       inkscape:connector-curvature="0"
+       id="path559"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text561"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">65 leads</text>
+    <text
+       id="text563"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Mon Jun 16</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,384.13334,920.4415)"
+     id="dbtt9">
+    <path
+       inkscape:connector-curvature="0"
+       id="path566"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text568"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">0 leads</text>
+    <text
+       id="text570"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Tue Jun 17</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,416.13334,694.72107)"
+     id="dbtt10">
+    <path
+       inkscape:connector-curvature="0"
+       id="path573"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text575"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">82 leads</text>
+    <text
+       id="text577"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Wed Jun 18</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,448.13334,920.4415)"
+     id="dbtt11">
+    <path
+       inkscape:connector-curvature="0"
+       id="path580"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text582"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">0 leads</text>
+    <text
+       id="text584"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Thu Jun 19</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,480.13334,664.4415)"
+     id="dbtt12">
+    <path
+       inkscape:connector-curvature="0"
+       id="path587"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text589"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">93 leads</text>
+    <text
+       id="text591"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Fri Jun 20</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,512.13334,862.63505)"
+     id="dbtt13">
+    <path
+       inkscape:connector-curvature="0"
+       id="path594"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text596"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">21 leads</text>
+    <text
+       id="text598"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Sat Jun 21</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,544.13334,771.79634)"
+     id="dbtt14">
+    <path
+       inkscape:connector-curvature="0"
+       id="path601"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text603"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">54 leads</text>
+    <text
+       id="text605"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Sun Jun 22</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,576.13334,920.4415)"
+     id="dbtt15">
+    <path
+       inkscape:connector-curvature="0"
+       id="path608"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text610"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">0 leads</text>
+    <text
+       id="text612"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Mon Jun 23</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,608.13334,664.4415)"
+     id="dbtt16">
+    <path
+       inkscape:connector-curvature="0"
+       id="path615"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text617"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">93 leads</text>
+    <text
+       id="text619"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Tue Jun 24</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,640.13334,804.8286)"
+     id="dbtt17">
+    <path
+       inkscape:connector-curvature="0"
+       id="path622"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text624"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">42 leads</text>
+    <text
+       id="text626"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Wed Jun 25</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,672.13334,829.60279)"
+     id="dbtt18">
+    <path
+       inkscape:connector-curvature="0"
+       id="path629"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text631"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">33 leads</text>
+    <text
+       id="text633"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Thu Jun 26</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,704.13334,826.8501)"
+     id="dbtt19">
+    <path
+       inkscape:connector-curvature="0"
+       id="path636"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text638"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">34 leads</text>
+    <text
+       id="text640"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Fri Jun 27</text>
+  </g>
+  <g
+     style="display:none"
+     transform="matrix(0.8,0,0,0.8,736.13334,837.86085)"
+     id="dbtt20">
+    <path
+       inkscape:connector-curvature="0"
+       id="path643"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       transform="scale(13,13)"
+       class="hourly-tooltip" />
+    <text
+       id="text645"
+       class="hourly-tooltip-text"
+       dy="18"
+       dx="65">30 leads</text>
+    <text
+       id="text647"
+       class="hourly-tooltip-text"
+       dy="-8"
+       dx="65">Sat Jun 28</text>
+  </g>
+  <rect
+     id="rect167-9"
+     y="522.84839"
+     height="99.451622"
+     x="517.73712"
+     width="29.832527"
+     class="daily-bars"
+     style="fill:#4ca8fc;fill-opacity:1" />
+  <circle
+     sodipodi:ry="7"
+     sodipodi:rx="7"
+     sodipodi:cy="320"
+     sodipodi:cx="660"
+     d="M 667,320 C 667,323.86599 663.86599,327 660,327 656.13401,327 653,323.86599 653,320 653,316.13401 656.13401,313 660,313 663.86599,313 667,316.13401 667,320 z"
+     id="circle345"
+     cy="320"
+     class="daily-dots"
+     r="7"
+     cx="660"
+     transform="matrix(1.0170179,0,0,1.0466062,65.096913,287.38868)"
+     style="fill:#fd7102;fill-opacity:1;stroke:none" />
+  <text
+     id="text5-5"
+     style="font-size:12.38047218px;fill:#4ca8fc;fill-opacity:1"
+     class="daily-label"
+     transform="matrix(0,-1.0144423,0.98576332,0,0,0)"
+     y="965.71582"
+     x="-306.39954">
+    <tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#4ca8fc;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato Bold"
+       id="tspan4945-4">leads</tspan>
+  </text>
+  <line
+     id="line11-5"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="628.94232"
+     x2="105.64537"
+     y1="622.66272"
+     x1="105.64537" />
+  <line
+     id="line11-1"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="628.74384"
+     x2="146.45132"
+     y1="622.46417"
+     x1="146.45132" />
+  <line
+     id="line11-4"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="628.94232"
+     x2="186.8714"
+     y1="622.66272"
+     x1="186.8714" />
+  <line
+     id="line11-45"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="629.10577"
+     x2="227.87614"
+     y1="622.82617"
+     x1="227.87614" />
+  <line
+     id="line11-6"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="629.01837"
+     x2="268.80591"
+     y1="622.73871"
+     x1="268.80591" />
+  <line
+     id="line11-11"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="629.01843"
+     x2="309.18814"
+     y1="622.73883"
+     x1="309.18814" />
+  <line
+     id="line11-8"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.0248735;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     y2="629.08862"
+     x2="349.97955"
+     y1="622.80896"
+     x1="349.97955" />
+  <line
+     id="line11-7"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="628.98328"
+     x2="390.53229"
+     y1="622.70367"
+     x1="390.53229" />
+  <line
+     id="line11-3"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="628.91309"
+     x2="431.28967"
+     y1="622.63348"
+     x1="431.28967" />
+  <line
+     id="line11-2"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="628.94818"
+     x2="471.9447"
+     y1="622.66852"
+     x1="471.9447" />
+  <line
+     id="line11-46"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="628.73761"
+     x2="512.29279"
+     y1="622.45795"
+     x1="512.29279" />
+  <line
+     id="line11-9"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="628.91309"
+     x2="552.98193"
+     y1="622.63348"
+     x1="552.98193" />
+  <line
+     id="line11-62"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="628.84308"
+     x2="593.94214"
+     y1="622.56348"
+     x1="593.94214" />
+  <line
+     id="line11-49"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="628.89264"
+     x2="634.69977"
+     y1="622.61304"
+     x1="634.69977" />
+  <line
+     id="line11-95"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="628.91748"
+     x2="675.67456"
+     y1="622.63788"
+     x1="675.67456" />
+  <line
+     id="line11-33"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="628.84308"
+     x2="716.16705"
+     y1="622.56348"
+     x1="716.16705" />
+  <line
+     id="line11-68"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="628.84308"
+     x2="756.61121"
+     y1="622.56348"
+     x1="756.61121" />
+  <line
+     id="line11-60"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="628.69415"
+     x2="797.17596"
+     y1="622.41455"
+     x1="797.17596" />
+  <line
+     id="line11-37"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="629.01672"
+     x2="838.03021"
+     y1="622.73712"
+     x1="838.03021" />
+  <line
+     id="line11-79"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="628.74371"
+     x2="878.45026"
+     y1="622.46411"
+     x1="878.45026" />
+  <line
+     id="line11-40"
+     style="fill:#535353;fill-opacity:1;stroke:#535353;stroke-width:1.03170598px;stroke-opacity:1"
+     y2="628.70294"
+     x2="918.88739"
+     y1="622.42334"
+     x1="918.88739" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#535353;stroke-width:1.70812249000000005;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:connector-curvature="0"
+     id="path42"
+     d="M 728.53147,302.25134 715.80191,289.15143 715.80191,249.85172 613.96541,249.85172 613.96541,354.65096 715.80191,354.65096 715.80191,315.35124 z"
+     class="box" />
+  <text
+     id="text31-6"
+     class="perc"
+     x="646.36749"
+     y="314.48254"
+     style="font-size:15.49608707px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato Bold"
+     transform="scale(0.98576332,1.0144423)">
+    <tspan
+       style="font-size:15.94247627px"
+       id="tspan3871-5">87 leads</tspan>
+  </text>
+  <text
+     id="text31-6-0"
+     class="perc"
+     x="516.46179"
+     y="689.23706"
+     style="font-size:12.01589394px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato Bold">
+    <tspan
+       style="font-size:12.36203098px"
+       id="tspan3871-5-8" />
+  </text>
+  <text
+     xml:space="preserve"
+     style="font-size:15.94247627px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#535353;stroke-width:1.13874841;stroke-opacity:1;font-family:Armata;-inkscape-font-specification:Lato"
+     x="639.05823"
+     y="284.63919"
+     id="text5262"
+     sodipodi:linespacing="125%"
+     transform="scale(0.98576332,1.0144423)"><tspan
+       sodipodi:role="line"
+       id="tspan5264"
+       x="639.05823"
+       y="284.63919"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#535353;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato Bold">Tue Jun 24</tspan></text>
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:#535353;fill-opacity:1;fill-rule:evenodd;stroke:none;display:inline"
+     id="rect1430"
+     d="M 729.61645,318.64946 729.61645,332.14587 730.38803,332.14587 730.38803,331.35182 731.15962,331.35182 731.15962,330.55851 730.38803,330.55851 730.38803,320.23682 731.15962,320.23682 731.15962,319.44348 730.38803,319.44348 730.38803,318.64946 729.61645,318.64946 z M 731.15962,320.23682 731.15962,321.03084 731.93052,321.03084 731.93052,320.23682 731.15962,320.23682 z M 731.93052,321.03084 731.93052,321.82488 732.7021,321.82488 732.7021,321.03084 731.93052,321.03084 z M 732.7021,321.82488 732.7021,322.6189 733.47368,322.6189 733.47368,321.82488 732.7021,321.82488 z M 733.47368,322.6189 733.47368,323.41293 734.24526,323.41293 734.24526,322.6189 733.47368,322.6189 z M 734.24526,323.41293 734.24526,324.20698 735.01686,324.20698 735.01686,323.41293 734.24526,323.41293 z M 735.01686,324.20698 735.01686,325.001 735.78844,325.001 735.78844,324.20698 735.01686,324.20698 z M 735.78844,325.001 735.78844,325.79433 736.56002,325.79433 736.56002,325.001 735.78844,325.001 z M 736.56002,325.79433 736.56002,326.58836 737.33091,326.58836 737.33091,325.79433 736.56002,325.79433 z M 737.33091,326.58836 737.33091,327.38238 735.01686,327.38238 735.01686,328.17643 735.01686,329.76449 735.78844,329.76449 735.78844,328.17643 738.87408,328.17643 738.87408,327.38238 738.10249,327.38238 738.10249,326.58836 737.33091,326.58836 z M 735.78844,329.76449 735.78844,331.35182 736.56002,331.35182 736.56002,329.76449 735.78844,329.76449 z M 736.56002,331.35182 736.56002,332.93989 737.33091,332.93989 737.33091,331.35182 736.56002,331.35182 z M 737.33091,332.93989 737.33091,334.52796 738.10249,334.52796 738.10249,332.93989 737.33091,332.93989 z M 737.33091,334.52796 735.78844,334.52796 735.78844,335.32199 737.33091,335.32199 737.33091,334.52796 z M 735.78844,334.52796 735.78844,332.93989 735.01686,332.93989 735.01686,334.52796 735.78844,334.52796 z M 735.01686,332.93989 735.01686,331.35182 734.24526,331.35182 734.24526,332.93989 735.01686,332.93989 z M 734.24526,331.35182 734.24526,329.76449 733.47368,329.76449 733.47368,331.35182 734.24526,331.35182 z M 733.47368,329.76449 733.47368,328.17643 732.7021,328.17643 732.7021,328.97045 731.93052,328.97045 731.93052,329.76449 732.7021,329.76449 733.47368,329.76449 z M 731.93052,329.76449 731.15962,329.76449 731.15962,330.55851 731.93052,330.55851 731.93052,329.76449 z" />
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;fill-opacity:1;stroke:none;display:inline"
+     id="rect3779"
+     d="M 730.38803,320.23682 730.38803,330.55851 731.15962,330.55851 731.15962,329.76449 731.93052,329.76449 731.93052,328.97045 732.7021,328.97045 732.7021,328.17643 733.47368,328.17643 733.47368,329.76449 734.24526,329.76449 734.24526,331.35182 735.01686,331.35182 735.01686,332.93989 735.78844,332.93989 735.78844,334.52796 736.56002,334.52796 737.33091,334.52796 737.33091,332.93989 736.56002,332.93989 736.56002,331.35182 735.78844,331.35182 735.78844,329.76449 735.01686,329.76449 735.01686,327.38238 735.78844,327.38238 736.56002,327.38238 737.33091,327.38238 737.33091,326.58836 736.56002,326.58836 736.56002,325.79433 735.78844,325.79433 735.78844,325.001 735.01686,325.001 735.01686,324.20698 734.24526,324.20698 734.24526,323.41293 733.47368,323.41293 733.47368,322.6189 732.7021,322.6189 732.7021,321.82488 731.93052,321.82488 731.93052,321.03084 731.15962,321.03084 731.15962,320.23682 730.38803,320.23682 z" />
+</svg>

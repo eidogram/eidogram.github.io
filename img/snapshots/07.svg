@@ -1,0 +1,1614 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:xhtml="http://www.w3.org/1999/xhtml"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="deviceChart"
+   viewBox="0 0 500 500"
+   preserveAspectRatio="xMidYMid"
+   width="567"
+   height="567"
+   version="1.1"
+   style="opacity: 1;"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="07.svg"
+   inkscape:export-filename="/home/riccardo/Git/eidogram/eidogram.jekyll/img/snapshots/07.png"
+   inkscape:export-xdpi="199.9297"
+   inkscape:export-ydpi="199.9297">
+  <metadata
+     id="metadata58">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs56" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1058"
+     id="namedview54"
+     showgrid="false"
+     inkscape:zoom="0.8324515"
+     inkscape:cx="-330.46757"
+     inkscape:cy="226.80146"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="deviceChart" />
+  <xhtml:defs>
+    <xhtml:style
+       type="text/css">
+#nprogress { pointer-events: none; }
+#nprogress .bar { position: fixed; z-index: 100; top: 0px; left: 0px; width: 100%; height: 2px; background: rgb(34, 153, 221); }
+#nprogress .peg { display: block; position: absolute; right: 0px; width: 100px; height: 100%; box-shadow: rgb(34, 153, 221) 0px 0px 10px, rgb(34, 153, 221) 0px 0px 5px; opacity: 1; -webkit-transform: rotate(3deg) translate(0px, -4px); }
+#nprogress .spinner { display: block; position: fixed; z-index: 100; top: 15px; right: 15px; }
+#nprogress .spinner-icon { width: 14px; height: 14px; border-style: solid; border-width: 2px; border-color: rgb(34, 153, 221) transparent transparent rgb(34, 153, 221); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; -webkit-animation: nprogress-spinner 400ms linear infinite; }
+body { font-family: Lato, sans-serif; font-size: 18px; color: rgb(102, 102, 102); }
+svg { border: 1px solid black; }
+#daily { width: 60%; }
+.daily-ticks { fill: rgb(102, 102, 102); text-anchor: end; font-size: 14px; font-family: Lato, sans-serif; }
+.daily-x-axis { }
+.daily-axis path, .daily-axis line { fill: none; stroke: rgb(51, 51, 51); }
+.daily-label { text-anchor: end; font-size: 14px; text-transform: uppercase; font-family: Lato, sans-serif; }
+.daily-y1axis path { display: none; }
+.daily-y1axis line { display: none; }
+.daily-y1axis line { fill: none; stroke: rgb(238, 238, 238); }
+.daily-line { fill: none; stroke: rgb(253, 113, 2); stroke-width: 5px; }
+.daily-bars { fill: rgb(76, 168, 252); }
+.daily-dots { fill: rgb(253, 113, 2); }
+#gender_repartition { width: 30%; }
+.genderrep-text { text-anchor: middle; fill: rgb(238, 238, 238); font-weight: bold; font-size: 18px; font-family: Lato, sans-serif; }
+#devices { width: 30%; }
+.devices-perc { text-anchor: middle; fill: rgb(238, 238, 238); font-weight: bold; font-size: 15px; font-family: Lato, sans-serif; }
+#device { width: 30%; }
+li { opacity: 0; }
+.slice { }
+.title { font-weight: normal; fill: rgb(102, 102, 102); font-size: 26px; }
+.box { stroke: rgb(102, 102, 102); stroke-width: 0.15px; fill: rgb(255, 255, 255); opacity: 0.75; }
+.icon, .iconTitle { fill: rgb(102, 102, 102); }
+.perc { fill: rgb(102, 102, 102); }
+#mobile-icon { fill: rgb(253, 113, 2); }
+#tablet-icon { fill: rgb(253, 210, 89); }
+#desktop-icon { fill: rgb(76, 168, 252); }
+#gender { width: 60%; }
+.other { fill: rgb(238, 238, 238); }
+.male { fill: rgb(76, 168, 252); }
+.female { fill: rgb(253, 113, 2); }
+.gender-type { font-size: 13px; text-anchor: middle; text-transform: uppercase; fill: rgb(204, 204, 204); }
+.gender-rate { font-size: 18px; text-anchor: middle; fill: rgb(102, 102, 102); }
+.gender-bar { stroke: rgb(238, 238, 238); stroke-linecap: round; stroke-width: 11px; }
+#weekly { width: 60%; }
+#hourly { width: 60%; }
+.axis path, .axis line { fill: none; stroke: rgb(0, 0, 0); }
+.y.axis path { display: none; }
+.y.axis line { stroke: rgb(238, 238, 238); stroke-width: 1px; }
+.x.axis path { stroke-width: 2px; stroke: rgb(238, 238, 238); fill: none; }
+.x.axis line { stroke-width: 1px; stroke: rgb(238, 238, 238); fill: rgb(238, 238, 238); }
+.line { stroke-width: 5px; stroke: rgb(0, 0, 0); fill: none; stroke-linecap: round; }
+.mobile-line { stroke: rgb(253, 113, 2); }
+.tablet-line { stroke: rgb(253, 210, 89); }
+.desktop-line { stroke: rgb(76, 168, 252); }
+.axis-text { fill: rgb(102, 102, 102); font-size: 15px; }
+.mobile-spots { fill: rgb(253, 113, 2); }
+.tablet-spots { fill: rgb(253, 210, 89); }
+.desktop-spots { fill: rgb(76, 168, 252); }
+.hourly-tooltip { stroke: rgb(102, 102, 102); stroke-width: 0.15px; fill: rgb(255, 255, 255); opacity: 0.75; }
+.hourly-tooltip-text { fill: rgb(102, 102, 102); font-size: 17px; font-weight: bold; text-anchor: middle; }
+.hourly-device-type { font-size: 18px; text-anchor: middle; text-transform: uppercase; fill: rgb(204, 204, 204); }
+.hourly-vlines { fill: none; stroke: rgb(238, 238, 238); stroke-width: 1px; }
+.bar { fill: rgb(204, 204, 204); }
+.bar-back, .rect-back-text { fill: rgb(238, 238, 238); opacity: 1; }
+#browser, #age, #isp { width: 20%; float: left; margin-right: 30px; }
+.bar-axis { font-weight: bold; fill: rgb(102, 102, 102); }
+.bar-axis path, .bar-axis line { display: none; fill: none; stroke: rgb(0, 0, 0); shape-rendering: crispedges; }
+.bar-value, .bar-percs { fill: rgb(102, 102, 102); }
+.YlGn .q0-3 { fill: rgb(247, 252, 185); }
+.YlGn .q1-3 { fill: rgb(173, 221, 142); }
+.YlGn .q2-3 { fill: rgb(49, 163, 84); }
+.YlGn .q0-4 { fill: rgb(255, 255, 204); }
+.YlGn .q1-4 { fill: rgb(194, 230, 153); }
+.YlGn .q2-4 { fill: rgb(120, 198, 121); }
+.YlGn .q3-4 { fill: rgb(35, 132, 67); }
+.YlGn .q0-5 { fill: rgb(255, 255, 204); }
+.YlGn .q1-5 { fill: rgb(194, 230, 153); }
+.YlGn .q2-5 { fill: rgb(120, 198, 121); }
+.YlGn .q3-5 { fill: rgb(49, 163, 84); }
+.YlGn .q4-5 { fill: rgb(0, 104, 55); }
+.YlGn .q0-6 { fill: rgb(255, 255, 204); }
+.YlGn .q1-6 { fill: rgb(217, 240, 163); }
+.YlGn .q2-6 { fill: rgb(173, 221, 142); }
+.YlGn .q3-6 { fill: rgb(120, 198, 121); }
+.YlGn .q4-6 { fill: rgb(49, 163, 84); }
+.YlGn .q5-6 { fill: rgb(0, 104, 55); }
+.YlGn .q0-7 { fill: rgb(255, 255, 204); }
+.YlGn .q1-7 { fill: rgb(217, 240, 163); }
+.YlGn .q2-7 { fill: rgb(173, 221, 142); }
+.YlGn .q3-7 { fill: rgb(120, 198, 121); }
+.YlGn .q4-7 { fill: rgb(65, 171, 93); }
+.YlGn .q5-7 { fill: rgb(35, 132, 67); }
+.YlGn .q6-7 { fill: rgb(0, 90, 50); }
+.YlGn .q0-8 { fill: rgb(255, 255, 229); }
+.YlGn .q1-8 { fill: rgb(247, 252, 185); }
+.YlGn .q2-8 { fill: rgb(217, 240, 163); }
+.YlGn .q3-8 { fill: rgb(173, 221, 142); }
+.YlGn .q4-8 { fill: rgb(120, 198, 121); }
+.YlGn .q5-8 { fill: rgb(65, 171, 93); }
+.YlGn .q6-8 { fill: rgb(35, 132, 67); }
+.YlGn .q7-8 { fill: rgb(0, 90, 50); }
+.YlGn .q0-9 { fill: rgb(255, 255, 229); }
+.YlGn .q1-9 { fill: rgb(247, 252, 185); }
+.YlGn .q2-9 { fill: rgb(217, 240, 163); }
+.YlGn .q3-9 { fill: rgb(173, 221, 142); }
+.YlGn .q4-9 { fill: rgb(120, 198, 121); }
+.YlGn .q5-9 { fill: rgb(65, 171, 93); }
+.YlGn .q6-9 { fill: rgb(35, 132, 67); }
+.YlGn .q7-9 { fill: rgb(0, 104, 55); }
+.YlGn .q8-9 { fill: rgb(0, 69, 41); }
+.YlGnBu .q0-3 { fill: rgb(237, 248, 177); }
+.YlGnBu .q1-3 { fill: rgb(127, 205, 187); }
+.YlGnBu .q2-3 { fill: rgb(44, 127, 184); }
+.YlGnBu .q0-4 { fill: rgb(255, 255, 204); }
+.YlGnBu .q1-4 { fill: rgb(161, 218, 180); }
+.YlGnBu .q2-4 { fill: rgb(65, 182, 196); }
+.YlGnBu .q3-4 { fill: rgb(34, 94, 168); }
+.YlGnBu .q0-5 { fill: rgb(255, 255, 204); }
+.YlGnBu .q1-5 { fill: rgb(161, 218, 180); }
+.YlGnBu .q2-5 { fill: rgb(65, 182, 196); }
+.YlGnBu .q3-5 { fill: rgb(44, 127, 184); }
+.YlGnBu .q4-5 { fill: rgb(37, 52, 148); }
+.YlGnBu .q0-6 { fill: rgb(255, 255, 204); }
+.YlGnBu .q1-6 { fill: rgb(199, 233, 180); }
+.YlGnBu .q2-6 { fill: rgb(127, 205, 187); }
+.YlGnBu .q3-6 { fill: rgb(65, 182, 196); }
+.YlGnBu .q4-6 { fill: rgb(44, 127, 184); }
+.YlGnBu .q5-6 { fill: rgb(37, 52, 148); }
+.YlGnBu .q0-7 { fill: rgb(255, 255, 204); }
+.YlGnBu .q1-7 { fill: rgb(199, 233, 180); }
+.YlGnBu .q2-7 { fill: rgb(127, 205, 187); }
+.YlGnBu .q3-7 { fill: rgb(65, 182, 196); }
+.YlGnBu .q4-7 { fill: rgb(29, 145, 192); }
+.YlGnBu .q5-7 { fill: rgb(34, 94, 168); }
+.YlGnBu .q6-7 { fill: rgb(12, 44, 132); }
+.YlGnBu .q0-8 { fill: rgb(255, 255, 217); }
+.YlGnBu .q1-8 { fill: rgb(237, 248, 177); }
+.YlGnBu .q2-8 { fill: rgb(199, 233, 180); }
+.YlGnBu .q3-8 { fill: rgb(127, 205, 187); }
+.YlGnBu .q4-8 { fill: rgb(65, 182, 196); }
+.YlGnBu .q5-8 { fill: rgb(29, 145, 192); }
+.YlGnBu .q6-8 { fill: rgb(34, 94, 168); }
+.YlGnBu .q7-8 { fill: rgb(12, 44, 132); }
+.YlGnBu .q0-9 { fill: rgb(255, 255, 217); }
+.YlGnBu .q1-9 { fill: rgb(237, 248, 177); }
+.YlGnBu .q2-9 { fill: rgb(199, 233, 180); }
+.YlGnBu .q3-9 { fill: rgb(127, 205, 187); }
+.YlGnBu .q4-9 { fill: rgb(65, 182, 196); }
+.YlGnBu .q5-9 { fill: rgb(29, 145, 192); }
+.YlGnBu .q6-9 { fill: rgb(34, 94, 168); }
+.YlGnBu .q7-9 { fill: rgb(37, 52, 148); }
+.YlGnBu .q8-9 { fill: rgb(8, 29, 88); }
+.GnBu .q0-3 { fill: rgb(224, 243, 219); }
+.GnBu .q1-3 { fill: rgb(168, 221, 181); }
+.GnBu .q2-3 { fill: rgb(67, 162, 202); }
+.GnBu .q0-4 { fill: rgb(240, 249, 232); }
+.GnBu .q1-4 { fill: rgb(186, 228, 188); }
+.GnBu .q2-4 { fill: rgb(123, 204, 196); }
+.GnBu .q3-4 { fill: rgb(43, 140, 190); }
+.GnBu .q0-5 { fill: rgb(240, 249, 232); }
+.GnBu .q1-5 { fill: rgb(186, 228, 188); }
+.GnBu .q2-5 { fill: rgb(123, 204, 196); }
+.GnBu .q3-5 { fill: rgb(67, 162, 202); }
+.GnBu .q4-5 { fill: rgb(8, 104, 172); }
+.GnBu .q0-6 { fill: rgb(240, 249, 232); }
+.GnBu .q1-6 { fill: rgb(204, 235, 197); }
+.GnBu .q2-6 { fill: rgb(168, 221, 181); }
+.GnBu .q3-6 { fill: rgb(123, 204, 196); }
+.GnBu .q4-6 { fill: rgb(67, 162, 202); }
+.GnBu .q5-6 { fill: rgb(8, 104, 172); }
+.GnBu .q0-7 { fill: rgb(240, 249, 232); }
+.GnBu .q1-7 { fill: rgb(204, 235, 197); }
+.GnBu .q2-7 { fill: rgb(168, 221, 181); }
+.GnBu .q3-7 { fill: rgb(123, 204, 196); }
+.GnBu .q4-7 { fill: rgb(78, 179, 211); }
+.GnBu .q5-7 { fill: rgb(43, 140, 190); }
+.GnBu .q6-7 { fill: rgb(8, 88, 158); }
+.GnBu .q0-8 { fill: rgb(247, 252, 240); }
+.GnBu .q1-8 { fill: rgb(224, 243, 219); }
+.GnBu .q2-8 { fill: rgb(204, 235, 197); }
+.GnBu .q3-8 { fill: rgb(168, 221, 181); }
+.GnBu .q4-8 { fill: rgb(123, 204, 196); }
+.GnBu .q5-8 { fill: rgb(78, 179, 211); }
+.GnBu .q6-8 { fill: rgb(43, 140, 190); }
+.GnBu .q7-8 { fill: rgb(8, 88, 158); }
+.GnBu .q0-9 { fill: rgb(247, 252, 240); }
+.GnBu .q1-9 { fill: rgb(224, 243, 219); }
+.GnBu .q2-9 { fill: rgb(204, 235, 197); }
+.GnBu .q3-9 { fill: rgb(168, 221, 181); }
+.GnBu .q4-9 { fill: rgb(123, 204, 196); }
+.GnBu .q5-9 { fill: rgb(78, 179, 211); }
+.GnBu .q6-9 { fill: rgb(43, 140, 190); }
+.GnBu .q7-9 { fill: rgb(8, 104, 172); }
+.GnBu .q8-9 { fill: rgb(8, 64, 129); }
+.BuGn .q0-3 { fill: rgb(229, 245, 249); }
+.BuGn .q1-3 { fill: rgb(153, 216, 201); }
+.BuGn .q2-3 { fill: rgb(44, 162, 95); }
+.BuGn .q0-4 { fill: rgb(237, 248, 251); }
+.BuGn .q1-4 { fill: rgb(178, 226, 226); }
+.BuGn .q2-4 { fill: rgb(102, 194, 164); }
+.BuGn .q3-4 { fill: rgb(35, 139, 69); }
+.BuGn .q0-5 { fill: rgb(237, 248, 251); }
+.BuGn .q1-5 { fill: rgb(178, 226, 226); }
+.BuGn .q2-5 { fill: rgb(102, 194, 164); }
+.BuGn .q3-5 { fill: rgb(44, 162, 95); }
+.BuGn .q4-5 { fill: rgb(0, 109, 44); }
+.BuGn .q0-6 { fill: rgb(237, 248, 251); }
+.BuGn .q1-6 { fill: rgb(204, 236, 230); }
+.BuGn .q2-6 { fill: rgb(153, 216, 201); }
+.BuGn .q3-6 { fill: rgb(102, 194, 164); }
+.BuGn .q4-6 { fill: rgb(44, 162, 95); }
+.BuGn .q5-6 { fill: rgb(0, 109, 44); }
+.BuGn .q0-7 { fill: rgb(237, 248, 251); }
+.BuGn .q1-7 { fill: rgb(204, 236, 230); }
+.BuGn .q2-7 { fill: rgb(153, 216, 201); }
+.BuGn .q3-7 { fill: rgb(102, 194, 164); }
+.BuGn .q4-7 { fill: rgb(65, 174, 118); }
+.BuGn .q5-7 { fill: rgb(35, 139, 69); }
+.BuGn .q6-7 { fill: rgb(0, 88, 36); }
+.BuGn .q0-8 { fill: rgb(247, 252, 253); }
+.BuGn .q1-8 { fill: rgb(229, 245, 249); }
+.BuGn .q2-8 { fill: rgb(204, 236, 230); }
+.BuGn .q3-8 { fill: rgb(153, 216, 201); }
+.BuGn .q4-8 { fill: rgb(102, 194, 164); }
+.BuGn .q5-8 { fill: rgb(65, 174, 118); }
+.BuGn .q6-8 { fill: rgb(35, 139, 69); }
+.BuGn .q7-8 { fill: rgb(0, 88, 36); }
+.BuGn .q0-9 { fill: rgb(247, 252, 253); }
+.BuGn .q1-9 { fill: rgb(229, 245, 249); }
+.BuGn .q2-9 { fill: rgb(204, 236, 230); }
+.BuGn .q3-9 { fill: rgb(153, 216, 201); }
+.BuGn .q4-9 { fill: rgb(102, 194, 164); }
+.BuGn .q5-9 { fill: rgb(65, 174, 118); }
+.BuGn .q6-9 { fill: rgb(35, 139, 69); }
+.BuGn .q7-9 { fill: rgb(0, 109, 44); }
+.BuGn .q8-9 { fill: rgb(0, 68, 27); }
+.PuBuGn .q0-3 { fill: rgb(236, 226, 240); }
+.PuBuGn .q1-3 { fill: rgb(166, 189, 219); }
+.PuBuGn .q2-3 { fill: rgb(28, 144, 153); }
+.PuBuGn .q0-4 { fill: rgb(246, 239, 247); }
+.PuBuGn .q1-4 { fill: rgb(189, 201, 225); }
+.PuBuGn .q2-4 { fill: rgb(103, 169, 207); }
+.PuBuGn .q3-4 { fill: rgb(2, 129, 138); }
+.PuBuGn .q0-5 { fill: rgb(246, 239, 247); }
+.PuBuGn .q1-5 { fill: rgb(189, 201, 225); }
+.PuBuGn .q2-5 { fill: rgb(103, 169, 207); }
+.PuBuGn .q3-5 { fill: rgb(28, 144, 153); }
+.PuBuGn .q4-5 { fill: rgb(1, 108, 89); }
+.PuBuGn .q0-6 { fill: rgb(246, 239, 247); }
+.PuBuGn .q1-6 { fill: rgb(208, 209, 230); }
+.PuBuGn .q2-6 { fill: rgb(166, 189, 219); }
+.PuBuGn .q3-6 { fill: rgb(103, 169, 207); }
+.PuBuGn .q4-6 { fill: rgb(28, 144, 153); }
+.PuBuGn .q5-6 { fill: rgb(1, 108, 89); }
+.PuBuGn .q0-7 { fill: rgb(246, 239, 247); }
+.PuBuGn .q1-7 { fill: rgb(208, 209, 230); }
+.PuBuGn .q2-7 { fill: rgb(166, 189, 219); }
+.PuBuGn .q3-7 { fill: rgb(103, 169, 207); }
+.PuBuGn .q4-7 { fill: rgb(54, 144, 192); }
+.PuBuGn .q5-7 { fill: rgb(2, 129, 138); }
+.PuBuGn .q6-7 { fill: rgb(1, 100, 80); }
+.PuBuGn .q0-8 { fill: rgb(255, 247, 251); }
+.PuBuGn .q1-8 { fill: rgb(236, 226, 240); }
+.PuBuGn .q2-8 { fill: rgb(208, 209, 230); }
+.PuBuGn .q3-8 { fill: rgb(166, 189, 219); }
+.PuBuGn .q4-8 { fill: rgb(103, 169, 207); }
+.PuBuGn .q5-8 { fill: rgb(54, 144, 192); }
+.PuBuGn .q6-8 { fill: rgb(2, 129, 138); }
+.PuBuGn .q7-8 { fill: rgb(1, 100, 80); }
+.PuBuGn .q0-9 { fill: rgb(255, 247, 251); }
+.PuBuGn .q1-9 { fill: rgb(236, 226, 240); }
+.PuBuGn .q2-9 { fill: rgb(208, 209, 230); }
+.PuBuGn .q3-9 { fill: rgb(166, 189, 219); }
+.PuBuGn .q4-9 { fill: rgb(103, 169, 207); }
+.PuBuGn .q5-9 { fill: rgb(54, 144, 192); }
+.PuBuGn .q6-9 { fill: rgb(2, 129, 138); }
+.PuBuGn .q7-9 { fill: rgb(1, 108, 89); }
+.PuBuGn .q8-9 { fill: rgb(1, 70, 54); }
+.PuBu .q0-3 { fill: rgb(236, 231, 242); }
+.PuBu .q1-3 { fill: rgb(166, 189, 219); }
+.PuBu .q2-3 { fill: rgb(43, 140, 190); }
+.PuBu .q0-4 { fill: rgb(241, 238, 246); }
+.PuBu .q1-4 { fill: rgb(189, 201, 225); }
+.PuBu .q2-4 { fill: rgb(116, 169, 207); }
+.PuBu .q3-4 { fill: rgb(5, 112, 176); }
+.PuBu .q0-5 { fill: rgb(241, 238, 246); }
+.PuBu .q1-5 { fill: rgb(189, 201, 225); }
+.PuBu .q2-5 { fill: rgb(116, 169, 207); }
+.PuBu .q3-5 { fill: rgb(43, 140, 190); }
+.PuBu .q4-5 { fill: rgb(4, 90, 141); }
+.PuBu .q0-6 { fill: rgb(241, 238, 246); }
+.PuBu .q1-6 { fill: rgb(208, 209, 230); }
+.PuBu .q2-6 { fill: rgb(166, 189, 219); }
+.PuBu .q3-6 { fill: rgb(116, 169, 207); }
+.PuBu .q4-6 { fill: rgb(43, 140, 190); }
+.PuBu .q5-6 { fill: rgb(4, 90, 141); }
+.PuBu .q0-7 { fill: rgb(241, 238, 246); }
+.PuBu .q1-7 { fill: rgb(208, 209, 230); }
+.PuBu .q2-7 { fill: rgb(166, 189, 219); }
+.PuBu .q3-7 { fill: rgb(116, 169, 207); }
+.PuBu .q4-7 { fill: rgb(54, 144, 192); }
+.PuBu .q5-7 { fill: rgb(5, 112, 176); }
+.PuBu .q6-7 { fill: rgb(3, 78, 123); }
+.PuBu .q0-8 { fill: rgb(255, 247, 251); }
+.PuBu .q1-8 { fill: rgb(236, 231, 242); }
+.PuBu .q2-8 { fill: rgb(208, 209, 230); }
+.PuBu .q3-8 { fill: rgb(166, 189, 219); }
+.PuBu .q4-8 { fill: rgb(116, 169, 207); }
+.PuBu .q5-8 { fill: rgb(54, 144, 192); }
+.PuBu .q6-8 { fill: rgb(5, 112, 176); }
+.PuBu .q7-8 { fill: rgb(3, 78, 123); }
+.PuBu .q0-9 { fill: rgb(255, 247, 251); }
+.PuBu .q1-9 { fill: rgb(236, 231, 242); }
+.PuBu .q2-9 { fill: rgb(208, 209, 230); }
+.PuBu .q3-9 { fill: rgb(166, 189, 219); }
+.PuBu .q4-9 { fill: rgb(116, 169, 207); }
+.PuBu .q5-9 { fill: rgb(54, 144, 192); }
+.PuBu .q6-9 { fill: rgb(5, 112, 176); }
+.PuBu .q7-9 { fill: rgb(4, 90, 141); }
+.PuBu .q8-9 { fill: rgb(2, 56, 88); }
+.BuPu .q0-3 { fill: rgb(224, 236, 244); }
+.BuPu .q1-3 { fill: rgb(158, 188, 218); }
+.BuPu .q2-3 { fill: rgb(136, 86, 167); }
+.BuPu .q0-4 { fill: rgb(237, 248, 251); }
+.BuPu .q1-4 { fill: rgb(179, 205, 227); }
+.BuPu .q2-4 { fill: rgb(140, 150, 198); }
+.BuPu .q3-4 { fill: rgb(136, 65, 157); }
+.BuPu .q0-5 { fill: rgb(237, 248, 251); }
+.BuPu .q1-5 { fill: rgb(179, 205, 227); }
+.BuPu .q2-5 { fill: rgb(140, 150, 198); }
+.BuPu .q3-5 { fill: rgb(136, 86, 167); }
+.BuPu .q4-5 { fill: rgb(129, 15, 124); }
+.BuPu .q0-6 { fill: rgb(237, 248, 251); }
+.BuPu .q1-6 { fill: rgb(191, 211, 230); }
+.BuPu .q2-6 { fill: rgb(158, 188, 218); }
+.BuPu .q3-6 { fill: rgb(140, 150, 198); }
+.BuPu .q4-6 { fill: rgb(136, 86, 167); }
+.BuPu .q5-6 { fill: rgb(129, 15, 124); }
+.BuPu .q0-7 { fill: rgb(237, 248, 251); }
+.BuPu .q1-7 { fill: rgb(191, 211, 230); }
+.BuPu .q2-7 { fill: rgb(158, 188, 218); }
+.BuPu .q3-7 { fill: rgb(140, 150, 198); }
+.BuPu .q4-7 { fill: rgb(140, 107, 177); }
+.BuPu .q5-7 { fill: rgb(136, 65, 157); }
+.BuPu .q6-7 { fill: rgb(110, 1, 107); }
+.BuPu .q0-8 { fill: rgb(247, 252, 253); }
+.BuPu .q1-8 { fill: rgb(224, 236, 244); }
+.BuPu .q2-8 { fill: rgb(191, 211, 230); }
+.BuPu .q3-8 { fill: rgb(158, 188, 218); }
+.BuPu .q4-8 { fill: rgb(140, 150, 198); }
+.BuPu .q5-8 { fill: rgb(140, 107, 177); }
+.BuPu .q6-8 { fill: rgb(136, 65, 157); }
+.BuPu .q7-8 { fill: rgb(110, 1, 107); }
+.BuPu .q0-9 { fill: rgb(247, 252, 253); }
+.BuPu .q1-9 { fill: rgb(224, 236, 244); }
+.BuPu .q2-9 { fill: rgb(191, 211, 230); }
+.BuPu .q3-9 { fill: rgb(158, 188, 218); }
+.BuPu .q4-9 { fill: rgb(140, 150, 198); }
+.BuPu .q5-9 { fill: rgb(140, 107, 177); }
+.BuPu .q6-9 { fill: rgb(136, 65, 157); }
+.BuPu .q7-9 { fill: rgb(129, 15, 124); }
+.BuPu .q8-9 { fill: rgb(77, 0, 75); }
+.RdPu .q0-3 { fill: rgb(253, 224, 221); }
+.RdPu .q1-3 { fill: rgb(250, 159, 181); }
+.RdPu .q2-3 { fill: rgb(197, 27, 138); }
+.RdPu .q0-4 { fill: rgb(254, 235, 226); }
+.RdPu .q1-4 { fill: rgb(251, 180, 185); }
+.RdPu .q2-4 { fill: rgb(247, 104, 161); }
+.RdPu .q3-4 { fill: rgb(174, 1, 126); }
+.RdPu .q0-5 { fill: rgb(254, 235, 226); }
+.RdPu .q1-5 { fill: rgb(251, 180, 185); }
+.RdPu .q2-5 { fill: rgb(247, 104, 161); }
+.RdPu .q3-5 { fill: rgb(197, 27, 138); }
+.RdPu .q4-5 { fill: rgb(122, 1, 119); }
+.RdPu .q0-6 { fill: rgb(254, 235, 226); }
+.RdPu .q1-6 { fill: rgb(252, 197, 192); }
+.RdPu .q2-6 { fill: rgb(250, 159, 181); }
+.RdPu .q3-6 { fill: rgb(247, 104, 161); }
+.RdPu .q4-6 { fill: rgb(197, 27, 138); }
+.RdPu .q5-6 { fill: rgb(122, 1, 119); }
+.RdPu .q0-7 { fill: rgb(254, 235, 226); }
+.RdPu .q1-7 { fill: rgb(252, 197, 192); }
+.RdPu .q2-7 { fill: rgb(250, 159, 181); }
+.RdPu .q3-7 { fill: rgb(247, 104, 161); }
+.RdPu .q4-7 { fill: rgb(221, 52, 151); }
+.RdPu .q5-7 { fill: rgb(174, 1, 126); }
+.RdPu .q6-7 { fill: rgb(122, 1, 119); }
+.RdPu .q0-8 { fill: rgb(255, 247, 243); }
+.RdPu .q1-8 { fill: rgb(253, 224, 221); }
+.RdPu .q2-8 { fill: rgb(252, 197, 192); }
+.RdPu .q3-8 { fill: rgb(250, 159, 181); }
+.RdPu .q4-8 { fill: rgb(247, 104, 161); }
+.RdPu .q5-8 { fill: rgb(221, 52, 151); }
+.RdPu .q6-8 { fill: rgb(174, 1, 126); }
+.RdPu .q7-8 { fill: rgb(122, 1, 119); }
+.RdPu .q0-9 { fill: rgb(255, 247, 243); }
+.RdPu .q1-9 { fill: rgb(253, 224, 221); }
+.RdPu .q2-9 { fill: rgb(252, 197, 192); }
+.RdPu .q3-9 { fill: rgb(250, 159, 181); }
+.RdPu .q4-9 { fill: rgb(247, 104, 161); }
+.RdPu .q5-9 { fill: rgb(221, 52, 151); }
+.RdPu .q6-9 { fill: rgb(174, 1, 126); }
+.RdPu .q7-9 { fill: rgb(122, 1, 119); }
+.RdPu .q8-9 { fill: rgb(73, 0, 106); }
+.PuRd .q0-3 { fill: rgb(231, 225, 239); }
+.PuRd .q1-3 { fill: rgb(201, 148, 199); }
+.PuRd .q2-3 { fill: rgb(221, 28, 119); }
+.PuRd .q0-4 { fill: rgb(241, 238, 246); }
+.PuRd .q1-4 { fill: rgb(215, 181, 216); }
+.PuRd .q2-4 { fill: rgb(223, 101, 176); }
+.PuRd .q3-4 { fill: rgb(206, 18, 86); }
+.PuRd .q0-5 { fill: rgb(241, 238, 246); }
+.PuRd .q1-5 { fill: rgb(215, 181, 216); }
+.PuRd .q2-5 { fill: rgb(223, 101, 176); }
+.PuRd .q3-5 { fill: rgb(221, 28, 119); }
+.PuRd .q4-5 { fill: rgb(152, 0, 67); }
+.PuRd .q0-6 { fill: rgb(241, 238, 246); }
+.PuRd .q1-6 { fill: rgb(212, 185, 218); }
+.PuRd .q2-6 { fill: rgb(201, 148, 199); }
+.PuRd .q3-6 { fill: rgb(223, 101, 176); }
+.PuRd .q4-6 { fill: rgb(221, 28, 119); }
+.PuRd .q5-6 { fill: rgb(152, 0, 67); }
+.PuRd .q0-7 { fill: rgb(241, 238, 246); }
+.PuRd .q1-7 { fill: rgb(212, 185, 218); }
+.PuRd .q2-7 { fill: rgb(201, 148, 199); }
+.PuRd .q3-7 { fill: rgb(223, 101, 176); }
+.PuRd .q4-7 { fill: rgb(231, 41, 138); }
+.PuRd .q5-7 { fill: rgb(206, 18, 86); }
+.PuRd .q6-7 { fill: rgb(145, 0, 63); }
+.PuRd .q0-8 { fill: rgb(247, 244, 249); }
+.PuRd .q1-8 { fill: rgb(231, 225, 239); }
+.PuRd .q2-8 { fill: rgb(212, 185, 218); }
+.PuRd .q3-8 { fill: rgb(201, 148, 199); }
+.PuRd .q4-8 { fill: rgb(223, 101, 176); }
+.PuRd .q5-8 { fill: rgb(231, 41, 138); }
+.PuRd .q6-8 { fill: rgb(206, 18, 86); }
+.PuRd .q7-8 { fill: rgb(145, 0, 63); }
+.PuRd .q0-9 { fill: rgb(247, 244, 249); }
+.PuRd .q1-9 { fill: rgb(231, 225, 239); }
+.PuRd .q2-9 { fill: rgb(212, 185, 218); }
+.PuRd .q3-9 { fill: rgb(201, 148, 199); }
+.PuRd .q4-9 { fill: rgb(223, 101, 176); }
+.PuRd .q5-9 { fill: rgb(231, 41, 138); }
+.PuRd .q6-9 { fill: rgb(206, 18, 86); }
+.PuRd .q7-9 { fill: rgb(152, 0, 67); }
+.PuRd .q8-9 { fill: rgb(103, 0, 31); }
+.OrRd .q0-3 { fill: rgb(254, 232, 200); }
+.OrRd .q1-3 { fill: rgb(253, 187, 132); }
+.OrRd .q2-3 { fill: rgb(227, 74, 51); }
+.OrRd .q0-4 { fill: rgb(254, 240, 217); }
+.OrRd .q1-4 { fill: rgb(253, 204, 138); }
+.OrRd .q2-4 { fill: rgb(252, 141, 89); }
+.OrRd .q3-4 { fill: rgb(215, 48, 31); }
+.OrRd .q0-5 { fill: rgb(254, 240, 217); }
+.OrRd .q1-5 { fill: rgb(253, 204, 138); }
+.OrRd .q2-5 { fill: rgb(252, 141, 89); }
+.OrRd .q3-5 { fill: rgb(227, 74, 51); }
+.OrRd .q4-5 { fill: rgb(179, 0, 0); }
+.OrRd .q0-6 { fill: rgb(254, 240, 217); }
+.OrRd .q1-6 { fill: rgb(253, 212, 158); }
+.OrRd .q2-6 { fill: rgb(253, 187, 132); }
+.OrRd .q3-6 { fill: rgb(252, 141, 89); }
+.OrRd .q4-6 { fill: rgb(227, 74, 51); }
+.OrRd .q5-6 { fill: rgb(179, 0, 0); }
+.OrRd .q0-7 { fill: rgb(254, 240, 217); }
+.OrRd .q1-7 { fill: rgb(253, 212, 158); }
+.OrRd .q2-7 { fill: rgb(253, 187, 132); }
+.OrRd .q3-7 { fill: rgb(252, 141, 89); }
+.OrRd .q4-7 { fill: rgb(239, 101, 72); }
+.OrRd .q5-7 { fill: rgb(215, 48, 31); }
+.OrRd .q6-7 { fill: rgb(153, 0, 0); }
+.OrRd .q0-8 { fill: rgb(255, 247, 236); }
+.OrRd .q1-8 { fill: rgb(254, 232, 200); }
+.OrRd .q2-8 { fill: rgb(253, 212, 158); }
+.OrRd .q3-8 { fill: rgb(253, 187, 132); }
+.OrRd .q4-8 { fill: rgb(252, 141, 89); }
+.OrRd .q5-8 { fill: rgb(239, 101, 72); }
+.OrRd .q6-8 { fill: rgb(215, 48, 31); }
+.OrRd .q7-8 { fill: rgb(153, 0, 0); }
+.OrRd .q0-9 { fill: rgb(255, 247, 236); }
+.OrRd .q1-9 { fill: rgb(254, 232, 200); }
+.OrRd .q2-9 { fill: rgb(253, 212, 158); }
+.OrRd .q3-9 { fill: rgb(253, 187, 132); }
+.OrRd .q4-9 { fill: rgb(252, 141, 89); }
+.OrRd .q5-9 { fill: rgb(239, 101, 72); }
+.OrRd .q6-9 { fill: rgb(215, 48, 31); }
+.OrRd .q7-9 { fill: rgb(179, 0, 0); }
+.OrRd .q8-9 { fill: rgb(127, 0, 0); }
+.YlOrRd .q0-3 { fill: rgb(255, 237, 160); }
+.YlOrRd .q1-3 { fill: rgb(254, 178, 76); }
+.YlOrRd .q2-3 { fill: rgb(240, 59, 32); }
+.YlOrRd .q0-4 { fill: rgb(255, 255, 178); }
+.YlOrRd .q1-4 { fill: rgb(254, 204, 92); }
+.YlOrRd .q2-4 { fill: rgb(253, 141, 60); }
+.YlOrRd .q3-4 { fill: rgb(227, 26, 28); }
+.YlOrRd .q0-5 { fill: rgb(255, 255, 178); }
+.YlOrRd .q1-5 { fill: rgb(254, 204, 92); }
+.YlOrRd .q2-5 { fill: rgb(253, 141, 60); }
+.YlOrRd .q3-5 { fill: rgb(240, 59, 32); }
+.YlOrRd .q4-5 { fill: rgb(189, 0, 38); }
+.YlOrRd .q0-6 { fill: rgb(255, 255, 178); }
+.YlOrRd .q1-6 { fill: rgb(254, 217, 118); }
+.YlOrRd .q2-6 { fill: rgb(254, 178, 76); }
+.YlOrRd .q3-6 { fill: rgb(253, 141, 60); }
+.YlOrRd .q4-6 { fill: rgb(240, 59, 32); }
+.YlOrRd .q5-6 { fill: rgb(189, 0, 38); }
+.YlOrRd .q0-7 { fill: rgb(255, 255, 178); }
+.YlOrRd .q1-7 { fill: rgb(254, 217, 118); }
+.YlOrRd .q2-7 { fill: rgb(254, 178, 76); }
+.YlOrRd .q3-7 { fill: rgb(253, 141, 60); }
+.YlOrRd .q4-7 { fill: rgb(252, 78, 42); }
+.YlOrRd .q5-7 { fill: rgb(227, 26, 28); }
+.YlOrRd .q6-7 { fill: rgb(177, 0, 38); }
+.YlOrRd .q0-8 { fill: rgb(255, 255, 204); }
+.YlOrRd .q1-8 { fill: rgb(255, 237, 160); }
+.YlOrRd .q2-8 { fill: rgb(254, 217, 118); }
+.YlOrRd .q3-8 { fill: rgb(254, 178, 76); }
+.YlOrRd .q4-8 { fill: rgb(253, 141, 60); }
+.YlOrRd .q5-8 { fill: rgb(252, 78, 42); }
+.YlOrRd .q6-8 { fill: rgb(227, 26, 28); }
+.YlOrRd .q7-8 { fill: rgb(177, 0, 38); }
+.YlOrRd .q0-9 { fill: rgb(255, 255, 204); }
+.YlOrRd .q1-9 { fill: rgb(255, 237, 160); }
+.YlOrRd .q2-9 { fill: rgb(254, 217, 118); }
+.YlOrRd .q3-9 { fill: rgb(254, 178, 76); }
+.YlOrRd .q4-9 { fill: rgb(253, 141, 60); }
+.YlOrRd .q5-9 { fill: rgb(252, 78, 42); }
+.YlOrRd .q6-9 { fill: rgb(227, 26, 28); }
+.YlOrRd .q7-9 { fill: rgb(189, 0, 38); }
+.YlOrRd .q8-9 { fill: rgb(128, 0, 38); }
+.YlOrBr .q0-3 { fill: rgb(255, 247, 188); }
+.YlOrBr .q1-3 { fill: rgb(254, 196, 79); }
+.YlOrBr .q2-3 { fill: rgb(217, 95, 14); }
+.YlOrBr .q0-4 { fill: rgb(255, 255, 212); }
+.YlOrBr .q1-4 { fill: rgb(254, 217, 142); }
+.YlOrBr .q2-4 { fill: rgb(254, 153, 41); }
+.YlOrBr .q3-4 { fill: rgb(204, 76, 2); }
+.YlOrBr .q0-5 { fill: rgb(255, 255, 212); }
+.YlOrBr .q1-5 { fill: rgb(254, 217, 142); }
+.YlOrBr .q2-5 { fill: rgb(254, 153, 41); }
+.YlOrBr .q3-5 { fill: rgb(217, 95, 14); }
+.YlOrBr .q4-5 { fill: rgb(153, 52, 4); }
+.YlOrBr .q0-6 { fill: rgb(255, 255, 212); }
+.YlOrBr .q1-6 { fill: rgb(254, 227, 145); }
+.YlOrBr .q2-6 { fill: rgb(254, 196, 79); }
+.YlOrBr .q3-6 { fill: rgb(254, 153, 41); }
+.YlOrBr .q4-6 { fill: rgb(217, 95, 14); }
+.YlOrBr .q5-6 { fill: rgb(153, 52, 4); }
+.YlOrBr .q0-7 { fill: rgb(255, 255, 212); }
+.YlOrBr .q1-7 { fill: rgb(254, 227, 145); }
+.YlOrBr .q2-7 { fill: rgb(254, 196, 79); }
+.YlOrBr .q3-7 { fill: rgb(254, 153, 41); }
+.YlOrBr .q4-7 { fill: rgb(236, 112, 20); }
+.YlOrBr .q5-7 { fill: rgb(204, 76, 2); }
+.YlOrBr .q6-7 { fill: rgb(140, 45, 4); }
+.YlOrBr .q0-8 { fill: rgb(255, 255, 229); }
+.YlOrBr .q1-8 { fill: rgb(255, 247, 188); }
+.YlOrBr .q2-8 { fill: rgb(254, 227, 145); }
+.YlOrBr .q3-8 { fill: rgb(254, 196, 79); }
+.YlOrBr .q4-8 { fill: rgb(254, 153, 41); }
+.YlOrBr .q5-8 { fill: rgb(236, 112, 20); }
+.YlOrBr .q6-8 { fill: rgb(204, 76, 2); }
+.YlOrBr .q7-8 { fill: rgb(140, 45, 4); }
+.YlOrBr .q0-9 { fill: rgb(255, 255, 229); }
+.YlOrBr .q1-9 { fill: rgb(255, 247, 188); }
+.YlOrBr .q2-9 { fill: rgb(254, 227, 145); }
+.YlOrBr .q3-9 { fill: rgb(254, 196, 79); }
+.YlOrBr .q4-9 { fill: rgb(254, 153, 41); }
+.YlOrBr .q5-9 { fill: rgb(236, 112, 20); }
+.YlOrBr .q6-9 { fill: rgb(204, 76, 2); }
+.YlOrBr .q7-9 { fill: rgb(153, 52, 4); }
+.YlOrBr .q8-9 { fill: rgb(102, 37, 6); }
+.Purples .q0-3 { fill: rgb(239, 237, 245); }
+.Purples .q1-3 { fill: rgb(188, 189, 220); }
+.Purples .q2-3 { fill: rgb(117, 107, 177); }
+.Purples .q0-4 { fill: rgb(242, 240, 247); }
+.Purples .q1-4 { fill: rgb(203, 201, 226); }
+.Purples .q2-4 { fill: rgb(158, 154, 200); }
+.Purples .q3-4 { fill: rgb(106, 81, 163); }
+.Purples .q0-5 { fill: rgb(242, 240, 247); }
+.Purples .q1-5 { fill: rgb(203, 201, 226); }
+.Purples .q2-5 { fill: rgb(158, 154, 200); }
+.Purples .q3-5 { fill: rgb(117, 107, 177); }
+.Purples .q4-5 { fill: rgb(84, 39, 143); }
+.Purples .q0-6 { fill: rgb(242, 240, 247); }
+.Purples .q1-6 { fill: rgb(218, 218, 235); }
+.Purples .q2-6 { fill: rgb(188, 189, 220); }
+.Purples .q3-6 { fill: rgb(158, 154, 200); }
+.Purples .q4-6 { fill: rgb(117, 107, 177); }
+.Purples .q5-6 { fill: rgb(84, 39, 143); }
+.Purples .q0-7 { fill: rgb(242, 240, 247); }
+.Purples .q1-7 { fill: rgb(218, 218, 235); }
+.Purples .q2-7 { fill: rgb(188, 189, 220); }
+.Purples .q3-7 { fill: rgb(158, 154, 200); }
+.Purples .q4-7 { fill: rgb(128, 125, 186); }
+.Purples .q5-7 { fill: rgb(106, 81, 163); }
+.Purples .q6-7 { fill: rgb(74, 20, 134); }
+.Purples .q0-8 { fill: rgb(252, 251, 253); }
+.Purples .q1-8 { fill: rgb(239, 237, 245); }
+.Purples .q2-8 { fill: rgb(218, 218, 235); }
+.Purples .q3-8 { fill: rgb(188, 189, 220); }
+.Purples .q4-8 { fill: rgb(158, 154, 200); }
+.Purples .q5-8 { fill: rgb(128, 125, 186); }
+.Purples .q6-8 { fill: rgb(106, 81, 163); }
+.Purples .q7-8 { fill: rgb(74, 20, 134); }
+.Purples .q0-9 { fill: rgb(252, 251, 253); }
+.Purples .q1-9 { fill: rgb(239, 237, 245); }
+.Purples .q2-9 { fill: rgb(218, 218, 235); }
+.Purples .q3-9 { fill: rgb(188, 189, 220); }
+.Purples .q4-9 { fill: rgb(158, 154, 200); }
+.Purples .q5-9 { fill: rgb(128, 125, 186); }
+.Purples .q6-9 { fill: rgb(106, 81, 163); }
+.Purples .q7-9 { fill: rgb(84, 39, 143); }
+.Purples .q8-9 { fill: rgb(63, 0, 125); }
+.Blues .q0-3 { fill: rgb(222, 235, 247); }
+.Blues .q1-3 { fill: rgb(158, 202, 225); }
+.Blues .q2-3 { fill: rgb(49, 130, 189); }
+.Blues .q0-4 { fill: rgb(239, 243, 255); }
+.Blues .q1-4 { fill: rgb(189, 215, 231); }
+.Blues .q2-4 { fill: rgb(107, 174, 214); }
+.Blues .q3-4 { fill: rgb(33, 113, 181); }
+.Blues .q0-5 { fill: rgb(239, 243, 255); }
+.Blues .q1-5 { fill: rgb(189, 215, 231); }
+.Blues .q2-5 { fill: rgb(107, 174, 214); }
+.Blues .q3-5 { fill: rgb(49, 130, 189); }
+.Blues .q4-5 { fill: rgb(8, 81, 156); }
+.Blues .q0-6 { fill: rgb(239, 243, 255); }
+.Blues .q1-6 { fill: rgb(198, 219, 239); }
+.Blues .q2-6 { fill: rgb(158, 202, 225); }
+.Blues .q3-6 { fill: rgb(107, 174, 214); }
+.Blues .q4-6 { fill: rgb(49, 130, 189); }
+.Blues .q5-6 { fill: rgb(8, 81, 156); }
+.Blues .q0-7 { fill: rgb(239, 243, 255); }
+.Blues .q1-7 { fill: rgb(198, 219, 239); }
+.Blues .q2-7 { fill: rgb(158, 202, 225); }
+.Blues .q3-7 { fill: rgb(107, 174, 214); }
+.Blues .q4-7 { fill: rgb(66, 146, 198); }
+.Blues .q5-7 { fill: rgb(33, 113, 181); }
+.Blues .q6-7 { fill: rgb(8, 69, 148); }
+.Blues .q0-8 { fill: rgb(247, 251, 255); }
+.Blues .q1-8 { fill: rgb(222, 235, 247); }
+.Blues .q2-8 { fill: rgb(198, 219, 239); }
+.Blues .q3-8 { fill: rgb(158, 202, 225); }
+.Blues .q4-8 { fill: rgb(107, 174, 214); }
+.Blues .q5-8 { fill: rgb(66, 146, 198); }
+.Blues .q6-8 { fill: rgb(33, 113, 181); }
+.Blues .q7-8 { fill: rgb(8, 69, 148); }
+.Blues .q0-9 { fill: rgb(247, 251, 255); }
+.Blues .q1-9 { fill: rgb(222, 235, 247); }
+.Blues .q2-9 { fill: rgb(198, 219, 239); }
+.Blues .q3-9 { fill: rgb(158, 202, 225); }
+.Blues .q4-9 { fill: rgb(107, 174, 214); }
+.Blues .q5-9 { fill: rgb(66, 146, 198); }
+.Blues .q6-9 { fill: rgb(33, 113, 181); }
+.Blues .q7-9 { fill: rgb(8, 81, 156); }
+.Blues .q8-9 { fill: rgb(8, 48, 107); }
+.Greens .q0-3 { fill: rgb(229, 245, 224); }
+.Greens .q1-3 { fill: rgb(161, 217, 155); }
+.Greens .q2-3 { fill: rgb(49, 163, 84); }
+.Greens .q0-4 { fill: rgb(237, 248, 233); }
+.Greens .q1-4 { fill: rgb(186, 228, 179); }
+.Greens .q2-4 { fill: rgb(116, 196, 118); }
+.Greens .q3-4 { fill: rgb(35, 139, 69); }
+.Greens .q0-5 { fill: rgb(237, 248, 233); }
+.Greens .q1-5 { fill: rgb(186, 228, 179); }
+.Greens .q2-5 { fill: rgb(116, 196, 118); }
+.Greens .q3-5 { fill: rgb(49, 163, 84); }
+.Greens .q4-5 { fill: rgb(0, 109, 44); }
+.Greens .q0-6 { fill: rgb(237, 248, 233); }
+.Greens .q1-6 { fill: rgb(199, 233, 192); }
+.Greens .q2-6 { fill: rgb(161, 217, 155); }
+.Greens .q3-6 { fill: rgb(116, 196, 118); }
+.Greens .q4-6 { fill: rgb(49, 163, 84); }
+.Greens .q5-6 { fill: rgb(0, 109, 44); }
+.Greens .q0-7 { fill: rgb(237, 248, 233); }
+.Greens .q1-7 { fill: rgb(199, 233, 192); }
+.Greens .q2-7 { fill: rgb(161, 217, 155); }
+.Greens .q3-7 { fill: rgb(116, 196, 118); }
+.Greens .q4-7 { fill: rgb(65, 171, 93); }
+.Greens .q5-7 { fill: rgb(35, 139, 69); }
+.Greens .q6-7 { fill: rgb(0, 90, 50); }
+.Greens .q0-8 { fill: rgb(247, 252, 245); }
+.Greens .q1-8 { fill: rgb(229, 245, 224); }
+.Greens .q2-8 { fill: rgb(199, 233, 192); }
+.Greens .q3-8 { fill: rgb(161, 217, 155); }
+.Greens .q4-8 { fill: rgb(116, 196, 118); }
+.Greens .q5-8 { fill: rgb(65, 171, 93); }
+.Greens .q6-8 { fill: rgb(35, 139, 69); }
+.Greens .q7-8 { fill: rgb(0, 90, 50); }
+.Greens .q0-9 { fill: rgb(247, 252, 245); }
+.Greens .q1-9 { fill: rgb(229, 245, 224); }
+.Greens .q2-9 { fill: rgb(199, 233, 192); }
+.Greens .q3-9 { fill: rgb(161, 217, 155); }
+.Greens .q4-9 { fill: rgb(116, 196, 118); }
+.Greens .q5-9 { fill: rgb(65, 171, 93); }
+.Greens .q6-9 { fill: rgb(35, 139, 69); }
+.Greens .q7-9 { fill: rgb(0, 109, 44); }
+.Greens .q8-9 { fill: rgb(0, 68, 27); }
+.Oranges .q0-3 { fill: rgb(254, 230, 206); }
+.Oranges .q1-3 { fill: rgb(253, 174, 107); }
+.Oranges .q2-3 { fill: rgb(230, 85, 13); }
+.Oranges .q0-4 { fill: rgb(254, 237, 222); }
+.Oranges .q1-4 { fill: rgb(253, 190, 133); }
+.Oranges .q2-4 { fill: rgb(253, 141, 60); }
+.Oranges .q3-4 { fill: rgb(217, 71, 1); }
+.Oranges .q0-5 { fill: rgb(254, 237, 222); }
+.Oranges .q1-5 { fill: rgb(253, 190, 133); }
+.Oranges .q2-5 { fill: rgb(253, 141, 60); }
+.Oranges .q3-5 { fill: rgb(230, 85, 13); }
+.Oranges .q4-5 { fill: rgb(166, 54, 3); }
+.Oranges .q0-6 { fill: rgb(254, 237, 222); }
+.Oranges .q1-6 { fill: rgb(253, 208, 162); }
+.Oranges .q2-6 { fill: rgb(253, 174, 107); }
+.Oranges .q3-6 { fill: rgb(253, 141, 60); }
+.Oranges .q4-6 { fill: rgb(230, 85, 13); }
+.Oranges .q5-6 { fill: rgb(166, 54, 3); }
+.Oranges .q0-7 { fill: rgb(254, 237, 222); }
+.Oranges .q1-7 { fill: rgb(253, 208, 162); }
+.Oranges .q2-7 { fill: rgb(253, 174, 107); }
+.Oranges .q3-7 { fill: rgb(253, 141, 60); }
+.Oranges .q4-7 { fill: rgb(241, 105, 19); }
+.Oranges .q5-7 { fill: rgb(217, 72, 1); }
+.Oranges .q6-7 { fill: rgb(140, 45, 4); }
+.Oranges .q0-8 { fill: rgb(255, 245, 235); }
+.Oranges .q1-8 { fill: rgb(254, 230, 206); }
+.Oranges .q2-8 { fill: rgb(253, 208, 162); }
+.Oranges .q3-8 { fill: rgb(253, 174, 107); }
+.Oranges .q4-8 { fill: rgb(253, 141, 60); }
+.Oranges .q5-8 { fill: rgb(241, 105, 19); }
+.Oranges .q6-8 { fill: rgb(217, 72, 1); }
+.Oranges .q7-8 { fill: rgb(140, 45, 4); }
+.Oranges .q0-9 { fill: rgb(255, 245, 235); }
+.Oranges .q1-9 { fill: rgb(254, 230, 206); }
+.Oranges .q2-9 { fill: rgb(253, 208, 162); }
+.Oranges .q3-9 { fill: rgb(253, 174, 107); }
+.Oranges .q4-9 { fill: rgb(253, 141, 60); }
+.Oranges .q5-9 { fill: rgb(241, 105, 19); }
+.Oranges .q6-9 { fill: rgb(217, 72, 1); }
+.Oranges .q7-9 { fill: rgb(166, 54, 3); }
+.Oranges .q8-9 { fill: rgb(127, 39, 4); }
+.Reds .q0-3 { fill: rgb(254, 224, 210); }
+.Reds .q1-3 { fill: rgb(252, 146, 114); }
+.Reds .q2-3 { fill: rgb(222, 45, 38); }
+.Reds .q0-4 { fill: rgb(254, 229, 217); }
+.Reds .q1-4 { fill: rgb(252, 174, 145); }
+.Reds .q2-4 { fill: rgb(251, 106, 74); }
+.Reds .q3-4 { fill: rgb(203, 24, 29); }
+.Reds .q0-5 { fill: rgb(254, 229, 217); }
+.Reds .q1-5 { fill: rgb(252, 174, 145); }
+.Reds .q2-5 { fill: rgb(251, 106, 74); }
+.Reds .q3-5 { fill: rgb(222, 45, 38); }
+.Reds .q4-5 { fill: rgb(165, 15, 21); }
+.Reds .q0-6 { fill: rgb(254, 229, 217); }
+.Reds .q1-6 { fill: rgb(252, 187, 161); }
+.Reds .q2-6 { fill: rgb(252, 146, 114); }
+.Reds .q3-6 { fill: rgb(251, 106, 74); }
+.Reds .q4-6 { fill: rgb(222, 45, 38); }
+.Reds .q5-6 { fill: rgb(165, 15, 21); }
+.Reds .q0-7 { fill: rgb(254, 229, 217); }
+.Reds .q1-7 { fill: rgb(252, 187, 161); }
+.Reds .q2-7 { fill: rgb(252, 146, 114); }
+.Reds .q3-7 { fill: rgb(251, 106, 74); }
+.Reds .q4-7 { fill: rgb(239, 59, 44); }
+.Reds .q5-7 { fill: rgb(203, 24, 29); }
+.Reds .q6-7 { fill: rgb(153, 0, 13); }
+.Reds .q0-8 { fill: rgb(255, 245, 240); }
+.Reds .q1-8 { fill: rgb(254, 224, 210); }
+.Reds .q2-8 { fill: rgb(252, 187, 161); }
+.Reds .q3-8 { fill: rgb(252, 146, 114); }
+.Reds .q4-8 { fill: rgb(251, 106, 74); }
+.Reds .q5-8 { fill: rgb(239, 59, 44); }
+.Reds .q6-8 { fill: rgb(203, 24, 29); }
+.Reds .q7-8 { fill: rgb(153, 0, 13); }
+.Reds .q0-9 { fill: rgb(255, 245, 240); }
+.Reds .q1-9 { fill: rgb(254, 224, 210); }
+.Reds .q2-9 { fill: rgb(252, 187, 161); }
+.Reds .q3-9 { fill: rgb(252, 146, 114); }
+.Reds .q4-9 { fill: rgb(251, 106, 74); }
+.Reds .q5-9 { fill: rgb(239, 59, 44); }
+.Reds .q6-9 { fill: rgb(203, 24, 29); }
+.Reds .q7-9 { fill: rgb(165, 15, 21); }
+.Reds .q8-9 { fill: rgb(103, 0, 13); }
+.Greys .q0-3 { fill: rgb(240, 240, 240); }
+.Greys .q1-3 { fill: rgb(189, 189, 189); }
+.Greys .q2-3 { fill: rgb(99, 99, 99); }
+.Greys .q0-4 { fill: rgb(247, 247, 247); }
+.Greys .q1-4 { fill: rgb(204, 204, 204); }
+.Greys .q2-4 { fill: rgb(150, 150, 150); }
+.Greys .q3-4 { fill: rgb(82, 82, 82); }
+.Greys .q0-5 { fill: rgb(247, 247, 247); }
+.Greys .q1-5 { fill: rgb(204, 204, 204); }
+.Greys .q2-5 { fill: rgb(150, 150, 150); }
+.Greys .q3-5 { fill: rgb(99, 99, 99); }
+.Greys .q4-5 { fill: rgb(37, 37, 37); }
+.Greys .q0-6 { fill: rgb(247, 247, 247); }
+.Greys .q1-6 { fill: rgb(217, 217, 217); }
+.Greys .q2-6 { fill: rgb(189, 189, 189); }
+.Greys .q3-6 { fill: rgb(150, 150, 150); }
+.Greys .q4-6 { fill: rgb(99, 99, 99); }
+.Greys .q5-6 { fill: rgb(37, 37, 37); }
+.Greys .q0-7 { fill: rgb(247, 247, 247); }
+.Greys .q1-7 { fill: rgb(217, 217, 217); }
+.Greys .q2-7 { fill: rgb(189, 189, 189); }
+.Greys .q3-7 { fill: rgb(150, 150, 150); }
+.Greys .q4-7 { fill: rgb(115, 115, 115); }
+.Greys .q5-7 { fill: rgb(82, 82, 82); }
+.Greys .q6-7 { fill: rgb(37, 37, 37); }
+.Greys .q0-8 { fill: rgb(255, 255, 255); }
+.Greys .q1-8 { fill: rgb(240, 240, 240); }
+.Greys .q2-8 { fill: rgb(217, 217, 217); }
+.Greys .q3-8 { fill: rgb(189, 189, 189); }
+.Greys .q4-8 { fill: rgb(150, 150, 150); }
+.Greys .q5-8 { fill: rgb(115, 115, 115); }
+.Greys .q6-8 { fill: rgb(82, 82, 82); }
+.Greys .q7-8 { fill: rgb(37, 37, 37); }
+.Greys .q0-9 { fill: rgb(255, 255, 255); }
+.Greys .q1-9 { fill: rgb(240, 240, 240); }
+.Greys .q2-9 { fill: rgb(217, 217, 217); }
+.Greys .q3-9 { fill: rgb(189, 189, 189); }
+.Greys .q4-9 { fill: rgb(150, 150, 150); }
+.Greys .q5-9 { fill: rgb(115, 115, 115); }
+.Greys .q6-9 { fill: rgb(82, 82, 82); }
+.Greys .q7-9 { fill: rgb(37, 37, 37); }
+.Greys .q8-9 { fill: rgb(0, 0, 0); }
+.PuOr .q0-3 { fill: rgb(241, 163, 64); }
+.PuOr .q1-3 { fill: rgb(247, 247, 247); }
+.PuOr .q2-3 { fill: rgb(153, 142, 195); }
+.PuOr .q0-4 { fill: rgb(230, 97, 1); }
+.PuOr .q1-4 { fill: rgb(253, 184, 99); }
+.PuOr .q2-4 { fill: rgb(178, 171, 210); }
+.PuOr .q3-4 { fill: rgb(94, 60, 153); }
+.PuOr .q0-5 { fill: rgb(230, 97, 1); }
+.PuOr .q1-5 { fill: rgb(253, 184, 99); }
+.PuOr .q2-5 { fill: rgb(247, 247, 247); }
+.PuOr .q3-5 { fill: rgb(178, 171, 210); }
+.PuOr .q4-5 { fill: rgb(94, 60, 153); }
+.PuOr .q0-6 { fill: rgb(179, 88, 6); }
+.PuOr .q1-6 { fill: rgb(241, 163, 64); }
+.PuOr .q2-6 { fill: rgb(254, 224, 182); }
+.PuOr .q3-6 { fill: rgb(216, 218, 235); }
+.PuOr .q4-6 { fill: rgb(153, 142, 195); }
+.PuOr .q5-6 { fill: rgb(84, 39, 136); }
+.PuOr .q0-7 { fill: rgb(179, 88, 6); }
+.PuOr .q1-7 { fill: rgb(241, 163, 64); }
+.PuOr .q2-7 { fill: rgb(254, 224, 182); }
+.PuOr .q3-7 { fill: rgb(247, 247, 247); }
+.PuOr .q4-7 { fill: rgb(216, 218, 235); }
+.PuOr .q5-7 { fill: rgb(153, 142, 195); }
+.PuOr .q6-7 { fill: rgb(84, 39, 136); }
+.PuOr .q0-8 { fill: rgb(179, 88, 6); }
+.PuOr .q1-8 { fill: rgb(224, 130, 20); }
+.PuOr .q2-8 { fill: rgb(253, 184, 99); }
+.PuOr .q3-8 { fill: rgb(254, 224, 182); }
+.PuOr .q4-8 { fill: rgb(216, 218, 235); }
+.PuOr .q5-8 { fill: rgb(178, 171, 210); }
+.PuOr .q6-8 { fill: rgb(128, 115, 172); }
+.PuOr .q7-8 { fill: rgb(84, 39, 136); }
+.PuOr .q0-9 { fill: rgb(179, 88, 6); }
+.PuOr .q1-9 { fill: rgb(224, 130, 20); }
+.PuOr .q2-9 { fill: rgb(253, 184, 99); }
+.PuOr .q3-9 { fill: rgb(254, 224, 182); }
+.PuOr .q4-9 { fill: rgb(247, 247, 247); }
+.PuOr .q5-9 { fill: rgb(216, 218, 235); }
+.PuOr .q6-9 { fill: rgb(178, 171, 210); }
+.PuOr .q7-9 { fill: rgb(128, 115, 172); }
+.PuOr .q8-9 { fill: rgb(84, 39, 136); }
+.PuOr .q0-10 { fill: rgb(127, 59, 8); }
+.PuOr .q1-10 { fill: rgb(179, 88, 6); }
+.PuOr .q2-10 { fill: rgb(224, 130, 20); }
+.PuOr .q3-10 { fill: rgb(253, 184, 99); }
+.PuOr .q4-10 { fill: rgb(254, 224, 182); }
+.PuOr .q5-10 { fill: rgb(216, 218, 235); }
+.PuOr .q6-10 { fill: rgb(178, 171, 210); }
+.PuOr .q7-10 { fill: rgb(128, 115, 172); }
+.PuOr .q8-10 { fill: rgb(84, 39, 136); }
+.PuOr .q9-10 { fill: rgb(45, 0, 75); }
+.PuOr .q0-11 { fill: rgb(127, 59, 8); }
+.PuOr .q1-11 { fill: rgb(179, 88, 6); }
+.PuOr .q2-11 { fill: rgb(224, 130, 20); }
+.PuOr .q3-11 { fill: rgb(253, 184, 99); }
+.PuOr .q4-11 { fill: rgb(254, 224, 182); }
+.PuOr .q5-11 { fill: rgb(247, 247, 247); }
+.PuOr .q6-11 { fill: rgb(216, 218, 235); }
+.PuOr .q7-11 { fill: rgb(178, 171, 210); }
+.PuOr .q8-11 { fill: rgb(128, 115, 172); }
+.PuOr .q9-11 { fill: rgb(84, 39, 136); }
+.PuOr .q10-11 { fill: rgb(45, 0, 75); }
+.BrBG .q0-3 { fill: rgb(216, 179, 101); }
+.BrBG .q1-3 { fill: rgb(245, 245, 245); }
+.BrBG .q2-3 { fill: rgb(90, 180, 172); }
+.BrBG .q0-4 { fill: rgb(166, 97, 26); }
+.BrBG .q1-4 { fill: rgb(223, 194, 125); }
+.BrBG .q2-4 { fill: rgb(128, 205, 193); }
+.BrBG .q3-4 { fill: rgb(1, 133, 113); }
+.BrBG .q0-5 { fill: rgb(166, 97, 26); }
+.BrBG .q1-5 { fill: rgb(223, 194, 125); }
+.BrBG .q2-5 { fill: rgb(245, 245, 245); }
+.BrBG .q3-5 { fill: rgb(128, 205, 193); }
+.BrBG .q4-5 { fill: rgb(1, 133, 113); }
+.BrBG .q0-6 { fill: rgb(140, 81, 10); }
+.BrBG .q1-6 { fill: rgb(216, 179, 101); }
+.BrBG .q2-6 { fill: rgb(246, 232, 195); }
+.BrBG .q3-6 { fill: rgb(199, 234, 229); }
+.BrBG .q4-6 { fill: rgb(90, 180, 172); }
+.BrBG .q5-6 { fill: rgb(1, 102, 94); }
+.BrBG .q0-7 { fill: rgb(140, 81, 10); }
+.BrBG .q1-7 { fill: rgb(216, 179, 101); }
+.BrBG .q2-7 { fill: rgb(246, 232, 195); }
+.BrBG .q3-7 { fill: rgb(245, 245, 245); }
+.BrBG .q4-7 { fill: rgb(199, 234, 229); }
+.BrBG .q5-7 { fill: rgb(90, 180, 172); }
+.BrBG .q6-7 { fill: rgb(1, 102, 94); }
+.BrBG .q0-8 { fill: rgb(140, 81, 10); }
+.BrBG .q1-8 { fill: rgb(191, 129, 45); }
+.BrBG .q2-8 { fill: rgb(223, 194, 125); }
+.BrBG .q3-8 { fill: rgb(246, 232, 195); }
+.BrBG .q4-8 { fill: rgb(199, 234, 229); }
+.BrBG .q5-8 { fill: rgb(128, 205, 193); }
+.BrBG .q6-8 { fill: rgb(53, 151, 143); }
+.BrBG .q7-8 { fill: rgb(1, 102, 94); }
+.BrBG .q0-9 { fill: rgb(140, 81, 10); }
+.BrBG .q1-9 { fill: rgb(191, 129, 45); }
+.BrBG .q2-9 { fill: rgb(223, 194, 125); }
+.BrBG .q3-9 { fill: rgb(246, 232, 195); }
+.BrBG .q4-9 { fill: rgb(245, 245, 245); }
+.BrBG .q5-9 { fill: rgb(199, 234, 229); }
+.BrBG .q6-9 { fill: rgb(128, 205, 193); }
+.BrBG .q7-9 { fill: rgb(53, 151, 143); }
+.BrBG .q8-9 { fill: rgb(1, 102, 94); }
+.BrBG .q0-10 { fill: rgb(84, 48, 5); }
+.BrBG .q1-10 { fill: rgb(140, 81, 10); }
+.BrBG .q2-10 { fill: rgb(191, 129, 45); }
+.BrBG .q3-10 { fill: rgb(223, 194, 125); }
+.BrBG .q4-10 { fill: rgb(246, 232, 195); }
+.BrBG .q5-10 { fill: rgb(199, 234, 229); }
+.BrBG .q6-10 { fill: rgb(128, 205, 193); }
+.BrBG .q7-10 { fill: rgb(53, 151, 143); }
+.BrBG .q8-10 { fill: rgb(1, 102, 94); }
+.BrBG .q9-10 { fill: rgb(0, 60, 48); }
+.BrBG .q0-11 { fill: rgb(84, 48, 5); }
+.BrBG .q1-11 { fill: rgb(140, 81, 10); }
+.BrBG .q2-11 { fill: rgb(191, 129, 45); }
+.BrBG .q3-11 { fill: rgb(223, 194, 125); }
+.BrBG .q4-11 { fill: rgb(246, 232, 195); }
+.BrBG .q5-11 { fill: rgb(245, 245, 245); }
+.BrBG .q6-11 { fill: rgb(199, 234, 229); }
+.BrBG .q7-11 { fill: rgb(128, 205, 193); }
+.BrBG .q8-11 { fill: rgb(53, 151, 143); }
+.BrBG .q9-11 { fill: rgb(1, 102, 94); }
+.BrBG .q10-11 { fill: rgb(0, 60, 48); }
+.PRGn .q0-3 { fill: rgb(175, 141, 195); }
+.PRGn .q1-3 { fill: rgb(247, 247, 247); }
+.PRGn .q2-3 { fill: rgb(127, 191, 123); }
+.PRGn .q0-4 { fill: rgb(123, 50, 148); }
+.PRGn .q1-4 { fill: rgb(194, 165, 207); }
+.PRGn .q2-4 { fill: rgb(166, 219, 160); }
+.PRGn .q3-4 { fill: rgb(0, 136, 55); }
+.PRGn .q0-5 { fill: rgb(123, 50, 148); }
+.PRGn .q1-5 { fill: rgb(194, 165, 207); }
+.PRGn .q2-5 { fill: rgb(247, 247, 247); }
+.PRGn .q3-5 { fill: rgb(166, 219, 160); }
+.PRGn .q4-5 { fill: rgb(0, 136, 55); }
+.PRGn .q0-6 { fill: rgb(118, 42, 131); }
+.PRGn .q1-6 { fill: rgb(175, 141, 195); }
+.PRGn .q2-6 { fill: rgb(231, 212, 232); }
+.PRGn .q3-6 { fill: rgb(217, 240, 211); }
+.PRGn .q4-6 { fill: rgb(127, 191, 123); }
+.PRGn .q5-6 { fill: rgb(27, 120, 55); }
+.PRGn .q0-7 { fill: rgb(118, 42, 131); }
+.PRGn .q1-7 { fill: rgb(175, 141, 195); }
+.PRGn .q2-7 { fill: rgb(231, 212, 232); }
+.PRGn .q3-7 { fill: rgb(247, 247, 247); }
+.PRGn .q4-7 { fill: rgb(217, 240, 211); }
+.PRGn .q5-7 { fill: rgb(127, 191, 123); }
+.PRGn .q6-7 { fill: rgb(27, 120, 55); }
+.PRGn .q0-8 { fill: rgb(118, 42, 131); }
+.PRGn .q1-8 { fill: rgb(153, 112, 171); }
+.PRGn .q2-8 { fill: rgb(194, 165, 207); }
+.PRGn .q3-8 { fill: rgb(231, 212, 232); }
+.PRGn .q4-8 { fill: rgb(217, 240, 211); }
+.PRGn .q5-8 { fill: rgb(166, 219, 160); }
+.PRGn .q6-8 { fill: rgb(90, 174, 97); }
+.PRGn .q7-8 { fill: rgb(27, 120, 55); }
+.PRGn .q0-9 { fill: rgb(118, 42, 131); }
+.PRGn .q1-9 { fill: rgb(153, 112, 171); }
+.PRGn .q2-9 { fill: rgb(194, 165, 207); }
+.PRGn .q3-9 { fill: rgb(231, 212, 232); }
+.PRGn .q4-9 { fill: rgb(247, 247, 247); }
+.PRGn .q5-9 { fill: rgb(217, 240, 211); }
+.PRGn .q6-9 { fill: rgb(166, 219, 160); }
+.PRGn .q7-9 { fill: rgb(90, 174, 97); }
+.PRGn .q8-9 { fill: rgb(27, 120, 55); }
+.PRGn .q0-10 { fill: rgb(64, 0, 75); }
+.PRGn .q1-10 { fill: rgb(118, 42, 131); }
+.PRGn .q2-10 { fill: rgb(153, 112, 171); }
+.PRGn .q3-10 { fill: rgb(194, 165, 207); }
+.PRGn .q4-10 { fill: rgb(231, 212, 232); }
+.PRGn .q5-10 { fill: rgb(217, 240, 211); }
+.PRGn .q6-10 { fill: rgb(166, 219, 160); }
+.PRGn .q7-10 { fill: rgb(90, 174, 97); }
+.PRGn .q8-10 { fill: rgb(27, 120, 55); }
+.PRGn .q9-10 { fill: rgb(0, 68, 27); }
+.PRGn .q0-11 { fill: rgb(64, 0, 75); }
+.PRGn .q1-11 { fill: rgb(118, 42, 131); }
+.PRGn .q2-11 { fill: rgb(153, 112, 171); }
+.PRGn .q3-11 { fill: rgb(194, 165, 207); }
+.PRGn .q4-11 { fill: rgb(231, 212, 232); }
+.PRGn .q5-11 { fill: rgb(247, 247, 247); }
+.PRGn .q6-11 { fill: rgb(217, 240, 211); }
+.PRGn .q7-11 { fill: rgb(166, 219, 160); }
+.PRGn .q8-11 { fill: rgb(90, 174, 97); }
+.PRGn .q9-11 { fill: rgb(27, 120, 55); }
+.PRGn .q10-11 { fill: rgb(0, 68, 27); }
+.PiYG .q0-3 { fill: rgb(233, 163, 201); }
+.PiYG .q1-3 { fill: rgb(247, 247, 247); }
+.PiYG .q2-3 { fill: rgb(161, 215, 106); }
+.PiYG .q0-4 { fill: rgb(208, 28, 139); }
+.PiYG .q1-4 { fill: rgb(241, 182, 218); }
+.PiYG .q2-4 { fill: rgb(184, 225, 134); }
+.PiYG .q3-4 { fill: rgb(77, 172, 38); }
+.PiYG .q0-5 { fill: rgb(208, 28, 139); }
+.PiYG .q1-5 { fill: rgb(241, 182, 218); }
+.PiYG .q2-5 { fill: rgb(247, 247, 247); }
+.PiYG .q3-5 { fill: rgb(184, 225, 134); }
+.PiYG .q4-5 { fill: rgb(77, 172, 38); }
+.PiYG .q0-6 { fill: rgb(197, 27, 125); }
+.PiYG .q1-6 { fill: rgb(233, 163, 201); }
+.PiYG .q2-6 { fill: rgb(253, 224, 239); }
+.PiYG .q3-6 { fill: rgb(230, 245, 208); }
+.PiYG .q4-6 { fill: rgb(161, 215, 106); }
+.PiYG .q5-6 { fill: rgb(77, 146, 33); }
+.PiYG .q0-7 { fill: rgb(197, 27, 125); }
+.PiYG .q1-7 { fill: rgb(233, 163, 201); }
+.PiYG .q2-7 { fill: rgb(253, 224, 239); }
+.PiYG .q3-7 { fill: rgb(247, 247, 247); }
+.PiYG .q4-7 { fill: rgb(230, 245, 208); }
+.PiYG .q5-7 { fill: rgb(161, 215, 106); }
+.PiYG .q6-7 { fill: rgb(77, 146, 33); }
+.PiYG .q0-8 { fill: rgb(197, 27, 125); }
+.PiYG .q1-8 { fill: rgb(222, 119, 174); }
+.PiYG .q2-8 { fill: rgb(241, 182, 218); }
+.PiYG .q3-8 { fill: rgb(253, 224, 239); }
+.PiYG .q4-8 { fill: rgb(230, 245, 208); }
+.PiYG .q5-8 { fill: rgb(184, 225, 134); }
+.PiYG .q6-8 { fill: rgb(127, 188, 65); }
+.PiYG .q7-8 { fill: rgb(77, 146, 33); }
+.PiYG .q0-9 { fill: rgb(197, 27, 125); }
+.PiYG .q1-9 { fill: rgb(222, 119, 174); }
+.PiYG .q2-9 { fill: rgb(241, 182, 218); }
+.PiYG .q3-9 { fill: rgb(253, 224, 239); }
+.PiYG .q4-9 { fill: rgb(247, 247, 247); }
+.PiYG .q5-9 { fill: rgb(230, 245, 208); }
+.PiYG .q6-9 { fill: rgb(184, 225, 134); }
+.PiYG .q7-9 { fill: rgb(127, 188, 65); }
+.PiYG .q8-9 { fill: rgb(77, 146, 33); }
+.PiYG .q0-10 { fill: rgb(142, 1, 82); }
+.PiYG .q1-10 { fill: rgb(197, 27, 125); }
+.PiYG .q2-10 { fill: rgb(222, 119, 174); }
+.PiYG .q3-10 { fill: rgb(241, 182, 218); }
+.PiYG .q4-10 { fill: rgb(253, 224, 239); }
+.PiYG .q5-10 { fill: rgb(230, 245, 208); }
+.PiYG .q6-10 { fill: rgb(184, 225, 134); }
+.PiYG .q7-10 { fill: rgb(127, 188, 65); }
+.PiYG .q8-10 { fill: rgb(77, 146, 33); }
+.PiYG .q9-10 { fill: rgb(39, 100, 25); }
+.PiYG .q0-11 { fill: rgb(142, 1, 82); }
+.PiYG .q1-11 { fill: rgb(197, 27, 125); }
+.PiYG .q2-11 { fill: rgb(222, 119, 174); }
+.PiYG .q3-11 { fill: rgb(241, 182, 218); }
+.PiYG .q4-11 { fill: rgb(253, 224, 239); }
+.PiYG .q5-11 { fill: rgb(247, 247, 247); }
+.PiYG .q6-11 { fill: rgb(230, 245, 208); }
+.PiYG .q7-11 { fill: rgb(184, 225, 134); }
+.PiYG .q8-11 { fill: rgb(127, 188, 65); }
+.PiYG .q9-11 { fill: rgb(77, 146, 33); }
+.PiYG .q10-11 { fill: rgb(39, 100, 25); }
+.RdBu .q0-3 { fill: rgb(239, 138, 98); }
+.RdBu .q1-3 { fill: rgb(247, 247, 247); }
+.RdBu .q2-3 { fill: rgb(103, 169, 207); }
+.RdBu .q0-4 { fill: rgb(202, 0, 32); }
+.RdBu .q1-4 { fill: rgb(244, 165, 130); }
+.RdBu .q2-4 { fill: rgb(146, 197, 222); }
+.RdBu .q3-4 { fill: rgb(5, 113, 176); }
+.RdBu .q0-5 { fill: rgb(202, 0, 32); }
+.RdBu .q1-5 { fill: rgb(244, 165, 130); }
+.RdBu .q2-5 { fill: rgb(247, 247, 247); }
+.RdBu .q3-5 { fill: rgb(146, 197, 222); }
+.RdBu .q4-5 { fill: rgb(5, 113, 176); }
+.RdBu .q0-6 { fill: rgb(178, 24, 43); }
+.RdBu .q1-6 { fill: rgb(239, 138, 98); }
+.RdBu .q2-6 { fill: rgb(253, 219, 199); }
+.RdBu .q3-6 { fill: rgb(209, 229, 240); }
+.RdBu .q4-6 { fill: rgb(103, 169, 207); }
+.RdBu .q5-6 { fill: rgb(33, 102, 172); }
+.RdBu .q0-7 { fill: rgb(178, 24, 43); }
+.RdBu .q1-7 { fill: rgb(239, 138, 98); }
+.RdBu .q2-7 { fill: rgb(253, 219, 199); }
+.RdBu .q3-7 { fill: rgb(247, 247, 247); }
+.RdBu .q4-7 { fill: rgb(209, 229, 240); }
+.RdBu .q5-7 { fill: rgb(103, 169, 207); }
+.RdBu .q6-7 { fill: rgb(33, 102, 172); }
+.RdBu .q0-8 { fill: rgb(178, 24, 43); }
+.RdBu .q1-8 { fill: rgb(214, 96, 77); }
+.RdBu .q2-8 { fill: rgb(244, 165, 130); }
+.RdBu .q3-8 { fill: rgb(253, 219, 199); }
+.RdBu .q4-8 { fill: rgb(209, 229, 240); }
+.RdBu .q5-8 { fill: rgb(146, 197, 222); }
+.RdBu .q6-8 { fill: rgb(67, 147, 195); }
+.RdBu .q7-8 { fill: rgb(33, 102, 172); }
+.RdBu .q0-9 { fill: rgb(178, 24, 43); }
+.RdBu .q1-9 { fill: rgb(214, 96, 77); }
+.RdBu .q2-9 { fill: rgb(244, 165, 130); }
+.RdBu .q3-9 { fill: rgb(253, 219, 199); }
+.RdBu .q4-9 { fill: rgb(247, 247, 247); }
+.RdBu .q5-9 { fill: rgb(209, 229, 240); }
+.RdBu .q6-9 { fill: rgb(146, 197, 222); }
+.RdBu .q7-9 { fill: rgb(67, 147, 195); }
+.RdBu .q8-9 { fill: rgb(33, 102, 172); }
+.RdBu .q0-10 { fill: rgb(103, 0, 31); }
+.RdBu .q1-10 { fill: rgb(178, 24, 43); }
+.RdBu .q2-10 { fill: rgb(214, 96, 77); }
+.RdBu .q3-10 { fill: rgb(244, 165, 130); }
+.RdBu .q4-10 { fill: rgb(253, 219, 199); }
+.RdBu .q5-10 { fill: rgb(209, 229, 240); }
+.RdBu .q6-10 { fill: rgb(146, 197, 222); }
+.RdBu .q7-10 { fill: rgb(67, 147, 195); }
+.RdBu .q8-10 { fill: rgb(33, 102, 172); }
+.RdBu .q9-10 { fill: rgb(5, 48, 97); }
+.RdBu .q0-11 { fill: rgb(103, 0, 31); }
+.RdBu .q1-11 { fill: rgb(178, 24, 43); }
+.RdBu .q2-11 { fill: rgb(214, 96, 77); }
+.RdBu .q3-11 { fill: rgb(244, 165, 130); }
+.RdBu .q4-11 { fill: rgb(253, 219, 199); }
+.RdBu .q5-11 { fill: rgb(247, 247, 247); }
+.RdBu .q6-11 { fill: rgb(209, 229, 240); }
+.RdBu .q7-11 { fill: rgb(146, 197, 222); }
+.RdBu .q8-11 { fill: rgb(67, 147, 195); }
+.RdBu .q9-11 { fill: rgb(33, 102, 172); }
+.RdBu .q10-11 { fill: rgb(5, 48, 97); }
+.RdGy .q0-3 { fill: rgb(239, 138, 98); }
+.RdGy .q1-3 { fill: rgb(255, 255, 255); }
+.RdGy .q2-3 { fill: rgb(153, 153, 153); }
+.RdGy .q0-4 { fill: rgb(202, 0, 32); }
+.RdGy .q1-4 { fill: rgb(244, 165, 130); }
+.RdGy .q2-4 { fill: rgb(186, 186, 186); }
+.RdGy .q3-4 { fill: rgb(64, 64, 64); }
+.RdGy .q0-5 { fill: rgb(202, 0, 32); }
+.RdGy .q1-5 { fill: rgb(244, 165, 130); }
+.RdGy .q2-5 { fill: rgb(255, 255, 255); }
+.RdGy .q3-5 { fill: rgb(186, 186, 186); }
+.RdGy .q4-5 { fill: rgb(64, 64, 64); }
+.RdGy .q0-6 { fill: rgb(178, 24, 43); }
+.RdGy .q1-6 { fill: rgb(239, 138, 98); }
+.RdGy .q2-6 { fill: rgb(253, 219, 199); }
+.RdGy .q3-6 { fill: rgb(224, 224, 224); }
+.RdGy .q4-6 { fill: rgb(153, 153, 153); }
+.RdGy .q5-6 { fill: rgb(77, 77, 77); }
+.RdGy .q0-7 { fill: rgb(178, 24, 43); }
+.RdGy .q1-7 { fill: rgb(239, 138, 98); }
+.RdGy .q2-7 { fill: rgb(253, 219, 199); }
+.RdGy .q3-7 { fill: rgb(255, 255, 255); }
+.RdGy .q4-7 { fill: rgb(224, 224, 224); }
+.RdGy .q5-7 { fill: rgb(153, 153, 153); }
+.RdGy .q6-7 { fill: rgb(77, 77, 77); }
+.RdGy .q0-8 { fill: rgb(178, 24, 43); }
+.RdGy .q1-8 { fill: rgb(214, 96, 77); }
+.RdGy .q2-8 { fill: rgb(244, 165, 130); }
+.RdGy .q3-8 { fill: rgb(253, 219, 199); }
+.RdGy .q4-8 { fill: rgb(224, 224, 224); }
+.RdGy .q5-8 { fill: rgb(186, 186, 186); }
+.RdGy .q6-8 { fill: rgb(135, 135, 135); }
+.RdGy .q7-8 { fill: rgb(77, 77, 77); }
+.RdGy .q0-9 { fill: rgb(178, 24, 43); }
+.RdGy .q1-9 { fill: rgb(214, 96, 77); }
+.RdGy .q2-9 { fill: rgb(244, 165, 130); }
+.RdGy .q3-9 { fill: rgb(253, 219, 199); }
+.RdGy .q4-9 { fill: rgb(255, 255, 255); }
+.RdGy .q5-9 { fill: rgb(224, 224, 224); }
+.RdGy .q6-9 { fill: rgb(186, 186, 186); }
+.RdGy .q7-9 { fill: rgb(135, 135, 135); }
+.RdGy .q8-9 { fill: rgb(77, 77, 77); }
+.RdGy .q0-10 { fill: rgb(103, 0, 31); }
+.RdGy .q1-10 { fill: rgb(178, 24, 43); }
+.RdGy .q2-10 { fill: rgb(214, 96, 77); }
+.RdGy .q3-10 { fill: rgb(244, 165, 130); }
+.RdGy .q4-10 { fill: rgb(253, 219, 199); }
+.RdGy .q5-10 { fill: rgb(224, 224, 224); }
+.RdGy .q6-10 { fill: rgb(186, 186, 186); }
+.RdGy .q7-10 { fill: rgb(135, 135, 135); }
+.RdGy .q8-10 { fill: rgb(77, 77, 77); }
+.RdGy .q9-10 { fill: rgb(26, 26, 26); }
+.RdGy .q0-11 { fill: rgb(103, 0, 31); }
+.RdGy .q1-11 { fill: rgb(178, 24, 43); }
+.RdGy .q2-11 { fill: rgb(214, 96, 77); }
+.RdGy .q3-11 { fill: rgb(244, 165, 130); }
+.RdGy .q4-11 { fill: rgb(253, 219, 199); }
+.RdGy .q5-11 { fill: rgb(255, 255, 255); }
+.RdGy .q6-11 { fill: rgb(224, 224, 224); }
+.RdGy .q7-11 { fill: rgb(186, 186, 186); }
+.RdGy .q8-11 { fill: rgb(135, 135, 135); }
+.RdGy .q9-11 { fill: rgb(77, 77, 77); }
+.RdGy .q10-11 { fill: rgb(26, 26, 26); }
+.RdYlBu .q0-3 { fill: rgb(252, 141, 89); }
+.RdYlBu .q1-3 { fill: rgb(255, 255, 191); }
+.RdYlBu .q2-3 { fill: rgb(145, 191, 219); }
+.RdYlBu .q0-4 { fill: rgb(215, 25, 28); }
+.RdYlBu .q1-4 { fill: rgb(253, 174, 97); }
+.RdYlBu .q2-4 { fill: rgb(171, 217, 233); }
+.RdYlBu .q3-4 { fill: rgb(44, 123, 182); }
+.RdYlBu .q0-5 { fill: rgb(215, 25, 28); }
+.RdYlBu .q1-5 { fill: rgb(253, 174, 97); }
+.RdYlBu .q2-5 { fill: rgb(255, 255, 191); }
+.RdYlBu .q3-5 { fill: rgb(171, 217, 233); }
+.RdYlBu .q4-5 { fill: rgb(44, 123, 182); }
+.RdYlBu .q0-6 { fill: rgb(215, 48, 39); }
+.RdYlBu .q1-6 { fill: rgb(252, 141, 89); }
+.RdYlBu .q2-6 { fill: rgb(254, 224, 144); }
+.RdYlBu .q3-6 { fill: rgb(224, 243, 248); }
+.RdYlBu .q4-6 { fill: rgb(145, 191, 219); }
+.RdYlBu .q5-6 { fill: rgb(69, 117, 180); }
+.RdYlBu .q0-7 { fill: rgb(215, 48, 39); }
+.RdYlBu .q1-7 { fill: rgb(252, 141, 89); }
+.RdYlBu .q2-7 { fill: rgb(254, 224, 144); }
+.RdYlBu .q3-7 { fill: rgb(255, 255, 191); }
+.RdYlBu .q4-7 { fill: rgb(224, 243, 248); }
+.RdYlBu .q5-7 { fill: rgb(145, 191, 219); }
+.RdYlBu .q6-7 { fill: rgb(69, 117, 180); }
+.RdYlBu .q0-8 { fill: rgb(215, 48, 39); }
+.RdYlBu .q1-8 { fill: rgb(244, 109, 67); }
+.RdYlBu .q2-8 { fill: rgb(253, 174, 97); }
+.RdYlBu .q3-8 { fill: rgb(254, 224, 144); }
+.RdYlBu .q4-8 { fill: rgb(224, 243, 248); }
+.RdYlBu .q5-8 { fill: rgb(171, 217, 233); }
+.RdYlBu .q6-8 { fill: rgb(116, 173, 209); }
+.RdYlBu .q7-8 { fill: rgb(69, 117, 180); }
+.RdYlBu .q0-9 { fill: rgb(215, 48, 39); }
+.RdYlBu .q1-9 { fill: rgb(244, 109, 67); }
+.RdYlBu .q2-9 { fill: rgb(253, 174, 97); }
+.RdYlBu .q3-9 { fill: rgb(254, 224, 144); }
+.RdYlBu .q4-9 { fill: rgb(255, 255, 191); }
+.RdYlBu .q5-9 { fill: rgb(224, 243, 248); }
+.RdYlBu .q6-9 { fill: rgb(171, 217, 233); }
+.RdYlBu .q7-9 { fill: rgb(116, 173, 209); }
+.RdYlBu .q8-9 { fill: rgb(69, 117, 180); }
+.RdYlBu .q0-10 { fill: rgb(165, 0, 38); }
+.RdYlBu .q1-10 { fill: rgb(215, 48, 39); }
+.RdYlBu .q2-10 { fill: rgb(244, 109, 67); }
+.RdYlBu .q3-10 { fill: rgb(253, 174, 97); }
+.RdYlBu .q4-10 { fill: rgb(254, 224, 144); }
+.RdYlBu .q5-10 { fill: rgb(224, 243, 248); }
+.RdYlBu .q6-10 { fill: rgb(171, 217, 233); }
+.RdYlBu .q7-10 { fill: rgb(116, 173, 209); }
+.RdYlBu .q8-10 { fill: rgb(69, 117, 180); }
+.RdYlBu .q9-10 { fill: rgb(49, 54, 149); }
+.RdYlBu .q0-11 { fill: rgb(165, 0, 38); }
+.RdYlBu .q1-11 { fill: rgb(215, 48, 39); }
+.RdYlBu .q2-11 { fill: rgb(244, 109, 67); }
+.RdYlBu .q3-11 { fill: rgb(253, 174, 97); }
+.RdYlBu .q4-11 { fill: rgb(254, 224, 144); }
+.RdYlBu .q5-11 { fill: rgb(255, 255, 191); }
+.RdYlBu .q6-11 { fill: rgb(224, 243, 248); }
+.RdYlBu .q7-11 { fill: rgb(171, 217, 233); }
+.RdYlBu .q8-11 { fill: rgb(116, 173, 209); }
+.RdYlBu .q9-11 { fill: rgb(69, 117, 180); }
+.RdYlBu .q10-11 { fill: rgb(49, 54, 149); }
+.Spectral .q0-3 { fill: rgb(252, 141, 89); }
+.Spectral .q1-3 { fill: rgb(255, 255, 191); }
+.Spectral .q2-3 { fill: rgb(153, 213, 148); }
+.Spectral .q0-4 { fill: rgb(215, 25, 28); }
+.Spectral .q1-4 { fill: rgb(253, 174, 97); }
+.Spectral .q2-4 { fill: rgb(171, 221, 164); }
+.Spectral .q3-4 { fill: rgb(43, 131, 186); }
+.Spectral .q0-5 { fill: rgb(215, 25, 28); }
+.Spectral .q1-5 { fill: rgb(253, 174, 97); }
+.Spectral .q2-5 { fill: rgb(255, 255, 191); }
+.Spectral .q3-5 { fill: rgb(171, 221, 164); }
+.Spectral .q4-5 { fill: rgb(43, 131, 186); }
+.Spectral .q0-6 { fill: rgb(213, 62, 79); }
+.Spectral .q1-6 { fill: rgb(252, 141, 89); }
+.Spectral .q2-6 { fill: rgb(254, 224, 139); }
+.Spectral .q3-6 { fill: rgb(230, 245, 152); }
+.Spectral .q4-6 { fill: rgb(153, 213, 148); }
+.Spectral .q5-6 { fill: rgb(50, 136, 189); }
+.Spectral .q0-7 { fill: rgb(213, 62, 79); }
+.Spectral .q1-7 { fill: rgb(252, 141, 89); }
+.Spectral .q2-7 { fill: rgb(254, 224, 139); }
+.Spectral .q3-7 { fill: rgb(255, 255, 191); }
+.Spectral .q4-7 { fill: rgb(230, 245, 152); }
+.Spectral .q5-7 { fill: rgb(153, 213, 148); }
+.Spectral .q6-7 { fill: rgb(50, 136, 189); }
+.Spectral .q0-8 { fill: rgb(213, 62, 79); }
+.Spectral .q1-8 { fill: rgb(244, 109, 67); }
+.Spectral .q2-8 { fill: rgb(253, 174, 97); }
+.Spectral .q3-8 { fill: rgb(254, 224, 139); }
+.Spectral .q4-8 { fill: rgb(230, 245, 152); }
+.Spectral .q5-8 { fill: rgb(171, 221, 164); }
+.Spectral .q6-8 { fill: rgb(102, 194, 165); }
+.Spectral .q7-8 { fill: rgb(50, 136, 189); }
+.Spectral .q0-9 { fill: rgb(213, 62, 79); }
+.Spectral .q1-9 { fill: rgb(244, 109, 67); }
+.Spectral .q2-9 { fill: rgb(253, 174, 97); }
+.Spectral .q3-9 { fill: rgb(254, 224, 139); }
+.Spectral .q4-9 { fill: rgb(255, 255, 191); }
+.Spectral .q5-9 { fill: rgb(230, 245, 152); }
+.Spectral .q6-9 { fill: rgb(171, 221, 164); }
+.Spectral .q7-9 { fill: rgb(102, 194, 165); }
+.Spectral .q8-9 { fill: rgb(50, 136, 189); }
+.Spectral .q0-10 { fill: rgb(158, 1, 66); }
+.Spectral .q1-10 { fill: rgb(213, 62, 79); }
+.Spectral .q2-10 { fill: rgb(244, 109, 67); }
+.Spectral .q3-10 { fill: rgb(253, 174, 97); }
+.Spectral .q4-10 { fill: rgb(254, 224, 139); }
+.Spectral .q5-10 { fill: rgb(230, 245, 152); }
+.Spectral .q6-10 { fill: rgb(171, 221, 164); }
+.Spectral .q7-10 { fill: rgb(102, 194, 165); }
+.Spectral .q8-10 { fill: rgb(50, 136, 189); }
+.Spectral .q9-10 { fill: rgb(94, 79, 162); }
+.Spectral .q0-11 { fill: rgb(158, 1, 66); }
+.Spectral .q1-11 { fill: rgb(213, 62, 79); }
+.Spectral .q2-11 { fill: rgb(244, 109, 67); }
+.Spectral .q3-11 { fill: rgb(253, 174, 97); }
+.Spectral .q4-11 { fill: rgb(254, 224, 139); }
+.Spectral .q5-11 { fill: rgb(255, 255, 191); }
+.Spectral .q6-11 { fill: rgb(230, 245, 152); }
+.Spectral .q7-11 { fill: rgb(171, 221, 164); }
+.Spectral .q8-11 { fill: rgb(102, 194, 165); }
+.Spectral .q9-11 { fill: rgb(50, 136, 189); }
+.Spectral .q10-11 { fill: rgb(94, 79, 162); }
+.RdYlGn .q0-3 { fill: rgb(252, 141, 89); }
+.RdYlGn .q1-3 { fill: rgb(255, 255, 191); }
+.RdYlGn .q2-3 { fill: rgb(145, 207, 96); }
+.RdYlGn .q0-4 { fill: rgb(215, 25, 28); }
+.RdYlGn .q1-4 { fill: rgb(253, 174, 97); }
+.RdYlGn .q2-4 { fill: rgb(166, 217, 106); }
+.RdYlGn .q3-4 { fill: rgb(26, 150, 65); }
+.RdYlGn .q0-5 { fill: rgb(215, 25, 28); }
+.RdYlGn .q1-5 { fill: rgb(253, 174, 97); }
+.RdYlGn .q2-5 { fill: rgb(255, 255, 191); }
+.RdYlGn .q3-5 { fill: rgb(166, 217, 106); }
+.RdYlGn .q4-5 { fill: rgb(26, 150, 65); }
+.RdYlGn .q0-6 { fill: rgb(215, 48, 39); }
+.RdYlGn .q1-6 { fill: rgb(252, 141, 89); }
+.RdYlGn .q2-6 { fill: rgb(254, 224, 139); }
+.RdYlGn .q3-6 { fill: rgb(217, 239, 139); }
+.RdYlGn .q4-6 { fill: rgb(145, 207, 96); }
+.RdYlGn .q5-6 { fill: rgb(26, 152, 80); }
+.RdYlGn .q0-7 { fill: rgb(215, 48, 39); }
+.RdYlGn .q1-7 { fill: rgb(252, 141, 89); }
+.RdYlGn .q2-7 { fill: rgb(254, 224, 139); }
+.RdYlGn .q3-7 { fill: rgb(255, 255, 191); }
+.RdYlGn .q4-7 { fill: rgb(217, 239, 139); }
+.RdYlGn .q5-7 { fill: rgb(145, 207, 96); }
+.RdYlGn .q6-7 { fill: rgb(26, 152, 80); }
+.RdYlGn .q0-8 { fill: rgb(215, 48, 39); }
+.RdYlGn .q1-8 { fill: rgb(244, 109, 67); }
+.RdYlGn .q2-8 { fill: rgb(253, 174, 97); }
+.RdYlGn .q3-8 { fill: rgb(254, 224, 139); }
+.RdYlGn .q4-8 { fill: rgb(217, 239, 139); }
+.RdYlGn .q5-8 { fill: rgb(166, 217, 106); }
+.RdYlGn .q6-8 { fill: rgb(102, 189, 99); }
+.RdYlGn .q7-8 { fill: rgb(26, 152, 80); }
+.RdYlGn .q0-9 { fill: rgb(215, 48, 39); }
+.RdYlGn .q1-9 { fill: rgb(244, 109, 67); }
+.RdYlGn .q2-9 { fill: rgb(253, 174, 97); }
+.RdYlGn .q3-9 { fill: rgb(254, 224, 139); }
+.RdYlGn .q4-9 { fill: rgb(255, 255, 191); }
+.RdYlGn .q5-9 { fill: rgb(217, 239, 139); }
+.RdYlGn .q6-9 { fill: rgb(166, 217, 106); }
+.RdYlGn .q7-9 { fill: rgb(102, 189, 99); }
+.RdYlGn .q8-9 { fill: rgb(26, 152, 80); }
+.RdYlGn .q0-10 { fill: rgb(165, 0, 38); }
+.RdYlGn .q1-10 { fill: rgb(215, 48, 39); }
+.RdYlGn .q2-10 { fill: rgb(244, 109, 67); }
+.RdYlGn .q3-10 { fill: rgb(253, 174, 97); }
+.RdYlGn .q4-10 { fill: rgb(254, 224, 139); }
+.RdYlGn .q5-10 { fill: rgb(217, 239, 139); }
+.RdYlGn .q6-10 { fill: rgb(166, 217, 106); }
+.RdYlGn .q7-10 { fill: rgb(102, 189, 99); }
+.RdYlGn .q8-10 { fill: rgb(26, 152, 80); }
+.RdYlGn .q9-10 { fill: rgb(0, 104, 55); }
+.RdYlGn .q0-11 { fill: rgb(165, 0, 38); }
+.RdYlGn .q1-11 { fill: rgb(215, 48, 39); }
+.RdYlGn .q2-11 { fill: rgb(244, 109, 67); }
+.RdYlGn .q3-11 { fill: rgb(253, 174, 97); }
+.RdYlGn .q4-11 { fill: rgb(254, 224, 139); }
+.RdYlGn .q5-11 { fill: rgb(255, 255, 191); }
+.RdYlGn .q6-11 { fill: rgb(217, 239, 139); }
+.RdYlGn .q7-11 { fill: rgb(166, 217, 106); }
+.RdYlGn .q8-11 { fill: rgb(102, 189, 99); }
+.RdYlGn .q9-11 { fill: rgb(26, 152, 80); }
+.RdYlGn .q10-11 { fill: rgb(0, 104, 55); }</xhtml:style>
+  </xhtml:defs>
+  <g
+     transform="matrix(0.1074758,0,0,0.10553854,210.89308,203.5473)"
+     id="iconTitle"
+     style="fill:#535353;fill-opacity:1">
+    <path
+       inkscape:connector-curvature="0"
+       id="path6"
+       class="iconTitle"
+       d="M 379.95249,287.45712 186.329,287.45712 C 177.99696,287.45712 170.85396,290.40706 164.92053,296.34048 158.98711,302.2739 156.03718,309.41692 156.03718,317.74895 L 156.03718,451.06243 C 156.03718,459.3945 158.98711,466.51654 164.92053,472.44985 170.85396,478.38329 177.99696,481.35429 186.329,481.35429 L 327.81013,481.35429 327.81013,457.12501 186.329,457.12501 C 184.68784,457.12501 183.25504,456.51404 182.05573,455.31472 180.85642,454.11534 180.26643,452.70371 180.26643,451.06243 L 180.26643,317.74895 C 180.26643,316.10779 180.85642,314.67498 182.05573,313.47568 183.25504,312.27636 184.68784,311.68638 186.329,311.68638 L 379.34202,311.68638 379.34202,293.70916 C 379.34202,291.62615 379.5181,289.62077 379.88934,287.68868 379.90464,287.60908 379.93654,287.53651 379.95244,287.45712 z"
+       style="fill:#535353;fill-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path8"
+       class="iconTitle"
+       d="M 408.56218,262.34689 C 400.23014,262.34689 393.10818,265.31788 387.17476,271.2513 381.24134,277.18472 378.27035,284.30668 378.27035,292.63872 L 378.27035,318.0047 402.52065,318.0047 402.52065,292.63872 C 402.52065,290.99756 403.11065,289.5858 404.30996,288.3865 405.50927,287.18719 406.92102,286.57615 408.56218,286.57615 L 566.12604,286.57615 C 567.76718,286.57615 569.17895,287.18719 570.37826,288.3865 571.57757,289.5858 572.18861,290.99756 572.18861,292.63872 L 572.18861,474.43177 C 572.18861,476.07293 571.57757,477.50574 570.37826,478.70505 569.17895,479.90435 567.76718,480.49435 566.12604,480.49435 L 453.33683,480.49435 453.33683,507.79699 C 453.33683,509.22476 453.21876,510.61229 452.95791,511.94396 452.69707,513.27563 452.30077,514.5396 451.77908,515.77517 451.2574,517.01074 450.6039,518.2143 449.82137,519.35377 449.03884,520.49325 448.12817,521.57324 447.08479,522.61662 446.04142,523.65999 444.94037,524.57066 443.8009,525.3532 442.66143,526.13573 441.47892,526.78921 440.24335,527.3109 439.00777,527.83259 437.72276,528.22889 436.39109,528.48974 435.05941,528.75058 433.69294,528.8897 432.26517,528.8897 L 407.67805,528.8897 C 407.98074,528.8977 408.25626,528.9739 408.56218,528.9739 L 566.12604,528.9739 C 574.45811,528.9739 581.58002,526.00292 587.51346,520.06949 593.4469,514.13607 596.41783,507.01412 596.41783,498.68208 L 596.41783,292.63872 C 596.41783,284.30668 593.4469,277.18472 587.51346,271.2513 581.58002,265.31788 574.45811,262.34689 566.12604,262.34689 L 408.56218,262.34689 z M 487.3546,492.6195 C 490.63694,492.6195 493.46048,493.82054 495.85904,496.21915 498.25767,498.61777 499.45873,501.44128 499.45873,504.7236 499.45873,508.00592 498.25767,510.85048 495.85904,513.2491 493.46048,515.64771 490.63694,516.84875 487.3546,516.84875 484.07232,516.84875 481.22776,515.64771 478.82913,513.2491 476.43051,510.85048 475.22946,508.00592 475.22946,504.7236 475.22946,501.44128 476.43051,498.61777 478.82913,496.21915 481.22776,493.82054 484.07232,492.6195 487.3546,492.6195 z"
+       style="fill:#535353;fill-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path10"
+       class="iconTitle"
+       d="M 326.73889,492.41836 136.7782,492.41836 106.48637,492.41836 106.48637,510.58504 C 106.48637,515.63476 109.43631,519.93321 115.36973,523.46801 121.30315,527.00282 128.44616,528.77277 136.7782,528.77277 L 347.57899,528.77277 C 346.23068,528.76017 344.92547,528.64103 343.66358,528.39385 342.33382,528.13339 341.04511,527.73596 339.81132,527.21502 338.57752,526.69408 337.3916,526.05977 336.25376,525.27836 335.11593,524.49696 334.03279,523.58366 332.99092,522.54179 331.94905,521.49991 331.03575,520.39573 330.25434,519.25789 329.47293,518.12005 328.81757,516.93413 328.29663,515.70034 327.7757,514.46654 327.39932,513.19889 327.13885,511.86913 326.87838,510.53937 326.73889,509.14788 326.73889,507.72216 L 326.73889,492.41836 z M 273.12299,504.54351 303.41481,504.54351 C 305.4347,504.54351 306.4461,505.53386 306.4461,507.55375 306.4461,509.57364 305.4347,510.58504 303.41481,510.58504 L 273.12299,510.58504 C 271.1031,510.58504 270.0917,509.57364 270.0917,507.55375 270.0917,505.53386 271.1031,504.54351 273.12299,504.54351 z"
+       style="fill:#535353;fill-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path12"
+       class="iconTitle"
+       d="M 377.05839,507.60649 Q 377.05839,502.11008 380.9725,498.19599 384.8866,494.28188 390.383,494.28188 395.87941,494.28188 399.79351,498.19599 403.70761,502.11008 403.70761,507.60649 403.70761,513.10289 399.79351,517.017 395.87941,520.93111 390.383,520.93111 384.8866,520.93111 380.9725,517.017 377.05839,513.10289 377.05839,507.60649 z M 342.41441,480.95727 342.41441,363.7007 Q 342.41441,361.53546 343.9967,359.95317 345.579,358.37087 347.74425,358.37087 H 433.02176 Q 435.187,358.37087 436.7693,359.95317 438.3516,361.53546 438.3516,363.7007 L 438.3516,480.95727 Q 438.3516,483.12253 436.7693,484.70482 435.187,486.28711 433.02176,486.28711 H 347.74425 Q 345.579,486.28711 343.9967,484.70482 342.41441,483.12253 342.41441,480.95727 z M 374.39346,339.71642 Q 374.39346,337.0515 377.05839,337.0515 H 403.70761 Q 406.37254,337.0515 406.37254,339.71642 406.37254,342.38133 403.70761,342.38133 H 377.05839 Q 374.39346,342.38133 374.39346,339.71642 z M 326.42488,337.0515 326.42488,507.60649 Q 326.42488,516.26749 332.75407,522.59669 339.08325,528.92587 347.74425,528.92587 H 433.02176 Q 441.68275,528.92587 448.01194,522.59669 454.34113,516.26749 454.34113,507.60649 L 454.34113,337.0515 Q 454.34113,328.39049 448.01194,322.06131 441.68275,315.73212 433.02176,315.73212 H 347.74425 Q 339.08325,315.73212 332.75407,322.06131 326.42488,328.39049 326.42488,337.0515 z"
+       style="fill:#535353;fill-opacity:1" />
+  </g>
+  <g
+     id="g14"
+     class="slices"
+     transform="matrix(0.71650535,0,0,0.70359023,252.45039,245.76271)">
+    <path
+       inkscape:connector-curvature="0"
+       id="path16"
+       style="fill:#fdd259"
+       d="M 0,-120 A 120,120 0 1 1 -103.92305,-60 L -64.951905,-37.5 A 75,75 0 1 0 0,-75 z"
+       class="slice" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path18"
+       style="fill:#fd7102"
+       d="M -103.92305,-60 A 0,0 0 0 0 -103.92305,-60 L -64.951905,-37.5 A 0,0 0 0 0 -64.951905,-37.5 z"
+       class="slice" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path20"
+       style="fill:#4ca8fc"
+       d="M -103.92305,-60 A 120,120 0 0 1 0,-120 L 0,-75 A 75,75 0 0 0 -64.951905,-37.5 z"
+       class="slice" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path22"
+       style="fill:#eeeeee"
+       d="M 0,-120 A 0,0 0 0 0 0,-120 L 0,-75 A 0,0 0 0 0 0,-75 z"
+       class="slice" />
+  </g>
+  <path
+     inkscape:connector-curvature="0"
+     id="path28"
+     d="M 287.38003,305.1721 294.54508,312.208 294.54508,333.31571 351.86551,333.31571 351.86551,277.02849 294.54508,277.02849 294.54508,298.13619 z"
+     class="box"
+     style="fill:#ffffff;fill-opacity:0.69199997;stroke:#535353;stroke-width:0.93917781000000000;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
+     inkscape:connector-curvature="0"
+     d="M 321.19908,303.37091 Q 321.19908,303.00504 321.47135,302.73767 321.74363,302.47031 322.11621,302.47031 322.48879,302.47031 322.76106,302.73767 323.03334,303.00504 323.03334,303.37091 323.03334,303.73677 322.76106,304.00414 322.48879,304.2715 322.11621,304.2715 321.74363,304.2715 321.47135,304.00414 321.19908,303.73677 321.19908,303.37091 z M 315.69632,301.11942 V 287.61048 Q 315.69632,287.42755 315.83246,287.29387 315.96859,287.16019 316.15488,287.16019 H 328.07753 Q 328.26383,287.16019 328.39996,287.29387 328.5361,287.42755 328.5361,287.61048 V 301.11942 Q 328.5361,301.30235 328.39996,301.43603 328.26383,301.56971 328.07753,301.56971 H 316.15488 Q 315.96859,301.56971 315.83246,301.43603 315.69632,301.30235 315.69632,301.11942 z M 313.86207,287.61048 V 302.92061 Q 313.86207,303.84935 314.53558,304.51072 315.2091,305.1721 316.15488,305.1721 H 328.07753 Q 329.02332,305.1721 329.69684,304.51072 330.37035,303.84935 330.37035,302.92061 V 287.61048 Q 330.37035,286.68174 329.69684,286.02037 329.02332,285.359 328.07753,285.359 H 316.15488 Q 315.2091,285.359 314.53558,286.02037 313.86207,286.68174 313.86207,287.61048 z"
+     id="tablet-icon"
+     class="icon"
+     style="fill:#535353;fill-opacity:1" />
+  <text
+     id="text31"
+     class="perc"
+     dy="17.750462"
+     x="306.74966"
+     y="307.58417"
+     style="font-size:8.52022076px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato Bold"
+     transform="scale(1.0091363,0.99094643)">
+    <tspan
+       style="font-size:8.76566029px"
+       id="tspan3871">83.33%</tspan>
+  </text>
+  <g
+     class="tooltip"
+     transform="matrix(0.71650535,0,0,0.70359023,191.95049,211.46269)"
+     style="opacity:0;display:inline"
+     id="g33">
+    <path
+       class="box"
+       transform="scale(-10,-10)"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       id="path35"
+       inkscape:connector-curvature="0" />
+    <path
+       class="icon"
+       id="mobile-icon"
+       d="M 464,128 Q 464,161 440.5,184.5 417,208 384,208 351,208 327.5,184.5 304,161 304,128 304,95 327.5,71.5 351,48 384,48 417,48 440.5,71.5 464,95 464,128 z M 672,288 V 992 Q 672,1005 662.5,1014.5 653,1024 640,1024 H 128 Q 115,1024 105.5,1014.5 96,1005 96,992 V 288 Q 96,275 105.5,265.5 115,256 128,256 H 640 Q 653,256 662.5,265.5 672,275 672,288 z M 480,1136 Q 480,1152 464,1152 H 304 Q 288,1152 288,1136 288,1120 304,1120 H 464 Q 480,1120 480,1136 z M 768,1152 V 128 Q 768,76 730,38 692,0 640,0 H 128 Q 76,0 38,38 0,76 0,128 V 1152 Q 0,1204 38,1242 76,1280 128,1280 H 640 Q 692,1280 730,1242 768,1204 768,1152 z"
+       transform="matrix(-0.02,0,0,-0.02,-42,0)"
+       inkscape:connector-curvature="0" />
+    <text
+       dy="25"
+       class="perc"
+       transform="translate(-77,0)"
+       id="text38">0.00%</text>
+  </g>
+  <path
+     style="fill:#ffffff;fill-opacity:0.69199997;stroke:#535353;stroke-width:0.93917781000000000;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:connector-curvature="0"
+     id="path42"
+     d="M 217.52076,186.35332 210.3557,179.31742 210.3557,158.20971 153.03528,158.20971 153.03528,214.49693 210.3557,214.49693 210.3557,193.38923 z"
+     class="box" />
+  <path
+     style="fill:#535353;fill-opacity:1"
+     inkscape:connector-curvature="0"
+     d="M 190.06427,182.75094 Q 191.01006,182.75094 191.68357,182.08957 192.35709,181.42819 192.35709,180.49945 V 170.5929 Q 192.35709,169.66416 191.68357,169.00279 191.01006,168.34141 190.06427,168.34141 H 174.47312 Q 173.52733,168.34141 172.85381,169.00279 172.1803,169.66416 172.1803,170.5929 V 180.49945 Q 172.1803,181.42819 172.85381,182.08957 173.52733,182.75094 174.47312,182.75094 H 190.06427 z M 190.52284,170.5929 V 180.49945 Q 190.52284,180.68239 190.3867,180.81607 190.25056,180.94975 190.06427,180.94975 H 174.47312 Q 174.28682,180.94975 174.15069,180.81607 174.01455,180.68239 174.01455,180.49945 V 170.5929 Q 174.01455,170.40997 174.15069,170.27629 174.28682,170.1426 174.47312,170.1426 H 190.06427 Q 190.25056,170.1426 190.3867,170.27629 190.52284,170.40997 190.52284,170.5929 z M 170.80461,183.65154 H 168.51179 V 185.00243 Q 168.51179,185.5653 169.18531,185.95931 169.85882,186.35332 170.80461,186.35332 H 193.73278 Q 194.67857,186.35332 195.35208,185.95931 196.0256,185.5653 196.0256,185.00243 V 183.65154 H 193.73278 170.80461 z M 181.12229,185.00243 Q 180.893,185.00243 180.893,184.77728 180.893,184.55213 181.12229,184.55213 H 183.4151 Q 183.64438,184.55213 183.64438,184.77728 183.64438,185.00243 183.4151,185.00243 H 181.12229 z"
+     id="desktop-icon"
+     class="icon" />
+  <g
+     id="text45"
+     style="fill:#535353;fill-opacity:1"
+     transform="translate(124.25,165.56252)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3873"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Ubuntu;font-style:normal;font-weight:normal;font-size:14px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Ubuntu;font-stretch:normal;font-variant:normal"><flowRegion
+         id="flowRegion3875"><rect
+           id="rect3877"
+           width="64.268005"
+           height="23.424788"
+           x="128.53601"
+           y="201.81355" /></flowRegion><flowPara
+         id="flowPara3879" /></flowRoot>  </g>
+  <g
+     class="tooltip"
+     transform="translate(250,152.5)"
+     style="opacity:0;display:none"
+     id="g47">
+    <path
+       class="box"
+       transform="scale(-10,-10)"
+       d="M 0,0 1,1 1,4 9,4 9,-4 1,-4 1,-1 z"
+       id="path49"
+       inkscape:connector-curvature="0" />
+    <path
+       class="icon"
+       id="unknown-icon"
+       d="M 0,0"
+       transform="matrix(-0.02,0,0,-0.02,-30,0)"
+       inkscape:connector-curvature="0" />
+    <text
+       dy="25"
+       class="perc"
+       transform="translate(-77,0)"
+       id="text52">0.00%</text>
+  </g>
+  <text
+     id="text31-6"
+     class="perc"
+     x="165.88141"
+     y="204.46469"
+     style="font-size:8.52022076px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#535353;fill-opacity:1;font-family:Lato;-inkscape-font-specification:Lato Bold"
+     transform="scale(1.0091363,0.99094643)">
+    <tspan
+       style="font-size:8.76566029px"
+       id="tspan3871-5">16.67%</tspan>
+  </text>
+</svg>
