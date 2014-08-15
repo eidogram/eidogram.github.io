@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TUXTAX</title>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link href='./css/style.css' rel='stylesheet' />
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <!--<script type="text/javascript" src="./js/lib/fade.js"></script>-->
+  <script charset="UTF-8" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.1.6/d3.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Intro -->
+  <section>
+    <header>
+      <h1>
+        Hello World! We are <b>Tuxtax</b> and we create graphical representations of data.
+      </h1>
+      <figure id="intro"></figure>
+      <p>
+        Tuxtax operates on the <em>research activities</em> within private and
+        public institutions, giving support to the visualization of patterns
+        emerging from complex phenomena and to the interaction with
+        highly organized dataset.</br></br>
+        Our approach to the data visualization has its roots on the
+        crossroad between the abstract mathematical thinking and the
+        guidelines drawn by the semiotic of graphics. We therefore offer
+        a peculiar expertise on the creation of
+        expressive graphical representations of complex scenarios.
+      </p>
+    </header>
+  </section>
+
+  <!-- News -->
+  <section>
+  </section>
+
+  <!-- Case of Studies -->
+  <section>
+
+    <article>
+      <h1>
+        Case of Study
+        <a href="">
+          <i class="fa fa-external-link"></i>
+        </a>
+      </h1>
+      <h2>Network Meta Analysis Data</h2>
+      <h3>
+        Project financed by the <em>Piedmont Health care system</em> in relation with the <a href="http://www.marionegri.it/mn/en/index.html?l=en"><strong>Mario Negri Institute for Pharmacological Research</strong></a>. The project is currently under development.
+      </h3>
+      <p>
+        Network Meta Analysis, also called Mixed treatment comparison or Multiple treatments meta-analysis, is a clinical analysis that syntheses information over a network of drug to drug (or drug to placebo) comparisons to assess the comparative effects of more than two alternative interventions for the same condition.
+      </p>
+      <figure id="case4">
+      </figure>
+      <figcaption>
+        <i class="fa fa-paperclip"></i> The above figures represent a loop of three node on a network of treatments. Corners and sides on the triangle represent treatments (A,B,C) and trials (A vs B, B vs C and A vs C) respectively. Dark areas show the ratio of success for that treatment on the trial conditions. On the figure at the bottom ratios are not normalized.
+      </figcaption>
+      <p>
+        A network meta-analysis synthesizes direct and indirect evidence over the entire network, so that estimates of intervention effect are based on all available evidence for that comparisons. This evidence may be direct evidence, indirect evidence or mixed evidence.
+      </p>
+      <!--
+      <figure>
+        <pre><code>
+    [
+      {
+        "trial_id":"3536",
+        "treatment_1":"A",
+        "treatment_2":"B",
+        "total_treatment_1":100,
+        "total_treatment_2":110,
+        "events_treatment_1":50,
+        "events_treatment_2":70
+      },
+      {
+        "trial_id":"203",
+        "treatment_1":"B",
+        "treatment_2":"C",
+        "total_treatment_1":50,
+        "total_treatment_2":70,
+        "events_treatment_1":45,
+        "events_treatment_2":21
+      },
+      {
+        "trial_id":"1432",
+        "treatment_1":"C",
+        "treatment_2":"A",
+        "total_treatment_1":90,
+        "total_treatment_2":130,
+        "events_treatment_1":72,
+        "events_treatment_2":117
+      }
+    ]
+        </code></pre>
+      </figure>
+      -->
+    </article>
+
+    <article>
+      <h1>
+        Case of Study
+        <a href="http://eidogram.com/projects/piemVisCont/">
+          <i class="fa fa-external-link"></i>
+        </a>
+      </h1>
+      <h2>Uncertainty on Voter Elections</h2>
+      <h3>Project developed on the occasion of the <em>Piemonte Visual Contest</em>, it is a case example of use of <em>Open Data</em> for analysis of social interest.</h3>
+      <p>
+        The voter turnout, i.e. the percentage of eligible voters who cast a ballot in an election, has been related with the population density of the 1206 municipalities of the italian region Piedmont.</br></br>
+
+        Municipalities with higher population size have an higher uncertainty on electoral preferences.
+      </p>
+      <figure id="case1"></figure>
+      <figcaption>
+        <i class="fa fa-paperclip"></i> The spots on the scatter plot above represent the 1206 municipalities, the x and y coordinates refer respectively to the logarithm of the population density (people/km^2) and to the voter turnout during the italian 2013 general election of the Chamber of Deputies.
+        Legend is interactive, explore data clicking on it. Moreover, click on the circles to discover further information on single municipalities.
+      </figcaption>
+      <p>
+        The uncertainty is calculated by means of the Shannon entropy on
+        the number of votes assigned to every delegate.
+
+        For example, given the municipality \(x\) let's suppose that the three delegates \(a\),
+        \(b\) and \(c\) obtained \(v_a^x\), \(v_b^x\) and \(v_c^x\) votes, and define \(v^x\) as the sum of them.
+        Then the uncertainty \(\mathcal{H}(x)\) is calculated as the Shannon entropy
+        $$
+        \mathcal{H}(x) = -\sum_{p\in(a,b,c)} \frac{v_p^x}{v^x}\ln\frac{v_p^x}{v^x}
+        $$
+      </p>
+      <p>
+        The straight line shows a linear regression analysis on the set of points, the 95% confidence intervals on the y-intercept and slope are drawn on demand.</br></br><a href="http://eidogram.com/projects/piemVisCont/"><i class="fa fa-link"></i> Read more...</a>
+      </p>
+    </article>
+
+    <article>
+      <h1>
+        Case of Study
+        <a href="http://seremi.stage-zadig2.it/">
+          <i class="fa fa-external-link"></i>
+        </a>
+      </h1>
+      <h2>HIV/AIDS Medical Diagnosis</h2>
+      <h3>Project financed by the <a href="http://seremi.stage-zadig2.it/"><strong>SSepi-SeREMI</strong></a> epidemiology service on monitoring and prevention of infectious deseases, in collaboration with the <a href="http://en.zadig.it/"><strong>Zadig</strong></a> editorial company.</h3>
+      <p>
+        Thanks to the introduction of new antiretroviral treatments, HIV circulation registers a small decrease on the number of new HIV diagnosis and a constant reduction on new AIDS diagnosis. Nevertheless, the number of people living with HIV/AIDS is still increasing.
+      </p>
+      <figure id="case2"></figure>
+      <figcaption>
+        <i class="fa fa-paperclip"></i> The figure is a case example of a highly customized dashboard, the visualization has been created from scratch according to the customer needs. On the example a couple of dataset with different scales on the y-axis are shown one above the other in order to highlight emerging patterns on the time series.
+      </figcaption>
+      <p>
+        SSepi-SeREMI is part the italian healthcare network and represents a reference for information exchange between epidemiological survey services and the population. Moreover it provides
+        consulting and education activities in order to organize local prevention strategies and to realize quantitative epidemiological studies.
+      </p>
+    </article>
+
+    <article>
+      <h1>
+        Case of Study
+        <a href="http://eidogram.com/projects/tdc/">
+          <i class="fa fa-external-link"></i>
+        </a>
+      </h1>
+      <h2>Telecom Call Detail Records</h2>
+      <h3>Analysis performed on the occasion of the <em>Telecom Big Data Challenge</em>. A sample of <em>53 millions of strings of data</em> have been analyzed by means of a normalization mechanism targeted to find space-time patterns on the user behaviour throughout the working-day in the city of Milan.</h3>
+      <p>
+        The following is a mathematical analysis of about 53,280,000 Telecom CDRs records collected on the Milan grid during November and December 2013. The main goal is the creation of a data model that can provide richer information on basic trends on customer usage, by means of a cost-effective mechanism that normalize the data according to relevant space and time dependences of the service consumption.
+      </p>
+      <div class="abs">
+        <img class="case3" src="./imgs/map11.png">
+        <figure id="case3"></figure>
+      </div>
+      <figcaption>
+        <i class="fa fa-paperclip"></i> The figure represents the average dynamics of user activity during a typical working day in the city of Milan. Grid sectors are highlighted when the users activity belongs to a certain range of values, changing the range the resulting dynamics will change.
+      </figcaption>
+      <p>
+        Let \(c(i,t)\) the CDRs data associated to cell \(i\) at time \(t\). Then we define \(C(i,t)\) as the mean of the \(c(i,t)\) values calculated over the 37 working days considered. In other words
+
+        $$
+        C(i,t) = \frac{1}{n+1}\sum_r c(i,r)
+        $$
+        
+        where \(r = t, t + 144, t + 2 \times 144, ... , t + n \times 144\) and \(n+1\) are the number of working days taken into account (144 are the number of 10 minutes intervals in a day).
+      </p>
+      <p>
+        The observables \(C(i,t)\) describe the average dynamics of user activity during a typical working day and they depends mostly on spatial factors (as the population density) and on temporal factors (awakening and lunchtime for example). Then we formulate a simplified model with a spatial factor constant on time and a temporal factor constant over space, in formula we write \(C(i,t)\) as
+        $$
+        C(i,t) = A(t) D(i)
+        $$
+        where \(A(t)\) and \(D(i)\) are the temporal and spatial factors aforementioned. Note that \(A(t)\) does not depend on the spatial variable \(i\) and \(D(i)\) does not depend on the temporal variable \(t\).</br></br><a href="http://eidogram.com/projects/tdc/"><i class="fa fa-link"></i> Continue to read...</a>
+      </p>
+
+    </article>
+
+    <article>
+      <h1>
+        Case of Study
+        <a href="">
+          <i class="fa fa-external-link"></i>
+        </a>
+      </h1>
+      <h2>Influenza Virus Evolution</h2>
+      <h3>Project started in collaboration with the <a href="http://www.difest.unipr.it/en"><strong>Department of Physics at the University of Parma</strong></a>. The project is under development and its goal is the creation af a <em>visualization tool</em> for the <a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0027924"><strong>research activities</strong></a> on the <em>time evolution of Influenza viruses</em>.</h3>
+      <p>
+A deep understanding of the role played by genetic mutation patterns in the
+variant-specificity of humoral protective response is of primary importance on
+the development of vaccines against the most widespread viral pathogens, like
+Influenza, HIV and HCV.
+The discovery of a relation between genetic dynamics and antigenic
+evolution is the main goal of the project and it is pursued by means of a
+comparison between
+empirical results on antigenic classification and a new theoretical distance
+between genome sequences. 
+The proposed distance is based on an informational metrics
+sensitive to the global dispositions and correlations of the amino acids along the
+chain, it is therefore expected to take into account the modularity of the
+information stored on the sequences, which is a key feature of biological evolution.
+      </p>
+      <figure id="case5"></figure>
+      <figcaption>
+        <i class="fa fa-paperclip"></i> The figure shows the temporal evolution of influenza virus H1N1 in the last years.
+        Viruses belonging to the same family are positioned at the same y position, in other words, a virus family is identifying by an horizontal sequence of segments (each segment
+        identifies the hemagglutinin of an isolate, isolates are full lenght
+        and come from all over the world). Note that virus strains do not appear suddenly, 
+        early signals are present even one year before in some cases.
+      </figcaption>
+      <p>
+More precisely, the proposed metric was originally introduced by Rohlin for
+partitions in abstract probabilities space.
+It is founded on the mutual conditional Shannon
+entropy among two partitions and it summarizes the information required to
+distinguish them.     
+      </p>
+      <p>
+If two partitions are given, \(\alpha\) and \(\beta\), their product \(\alpha\beta\)
+is defined as the minimal partition refining both atoms of \(\alpha\) and
+\(\beta\).
+The Rohlin distance among two partitions is 
+$$
+d_R(\alpha,\beta) = H(\alpha\beta) - H(\alpha) - H(\beta).
+$$
+\(d_R(\alpha,\beta)\) is a measure of the overall non-similarity between
+\(\alpha\) and  \(\beta\), therefore it is supposed to capture the information
+dissimilarities carried by evolution.
+      </p>
+    </article>
+
+  </section>
+
+  <!-- Who we are -->
+  <section>
+  </section>
+
+
+
+
+  <footer>Contact us via <a href="mailto:info@tuxtax.ch">email</a>
+    or follow us via <a href="https://twitter.com/thetuxtax">twitter</a> :)
+  </footer>
+
+</body>
+
+
+
+</body>
+  <script type="text/javascript" src="./js/intro.js"></script>
+  <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/javascript" src="./js/case4.js"></script>
+  <script type="text/javascript" src="./js/case1.js"></script>
+  <script type="text/javascript" src="./js/case2.js"></script>
+  <script type="text/javascript" src="./js/case3.js"></script>
+  <script type="text/javascript" src="./js/case5.js"></script>
+</html>

@@ -1,0 +1,223 @@
+body {
+  width: 100%;
+  font-family: "Droid Sans Mono", "monospace";
+}
+
+article, #intro {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 50px;
+  /*font-family: "Droid Sans Mono", "monospace";*/
+  color: #131313;
+}
+
+footer {
+  max-width: 320px;
+  margin: auto;
+  margin-top: 50px;
+  /*font-family: "Droid Sans Mono", "monospace";*/
+  color: #666;
+}
+
+h1, h2, h3 {
+  max-width: 320px;
+  margin: auto;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 10px 10px 10px;
+}
+
+h1 {
+  background-color: #D8A800;
+  color: #fff;
+}
+
+h2 {
+  color: #D8A800;
+  border-bottom: 2px solid #D8A800;
+}
+
+h3 {
+  color: #666;
+  font-size: 11px;
+  /*background-color: rgba(216, 168, 0, 0.2);*/
+  background-color: #eee;
+  border-bottom: 2px solid #ddd;
+}
+
+h3::before {
+  content: "> ";
+}
+
+h1 .fa {
+  padding-top: 4px;
+  float: right;
+  color: #fff;
+}
+
+p {
+  max-width: 320px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+figcaption {
+  max-width: 280px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #6c6c6c;
+  font-size: 11px;
+  font-weight: 400;
+  padding: 10px 10px 10px 10px;
+  border-left: 2px solid #ddd;
+}
+
+pre {
+  max-width: 400px;
+  background-color: #eee;
+  border-left: 3px solid #ccc;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+code {
+  font-family: "Droid Sans Mono", monospace;
+  font-size: 11px;
+  color: #666;
+  border-bottom: 1px solid #ddd;
+}
+
+b {
+  font-weight: 400;
+  color: #D8A800;
+}
+
+a {
+  color: #666;
+  /*color: #861B1B;*/
+  text-decoration: none;
+}
+
+strong {
+  color: rgb(134, 18, 0);
+  font-weight: 700;
+}
+
+a:hover {
+  background-color: #ddd;
+  /*text-decoration: underline;*/
+}
+
+::selection {
+  background: #D8A800;
+  color: #111;
+}
+
+::-moz-selection {
+  background: #D8A800;
+  color: #111;       
+}
+
+.abs {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  min-height: 500px;
+}
+
+
+/* CASE 1 */
+#case1 {
+  z-index: 0;
+  top: 50px;
+  margin-top: 0px;
+  margin: 0 auto;
+  width: 500px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: #515151;
+  max-width: 500px;
+  /*font-family: "Droid Sans Mono", "monospace";*/
+}
+
+
+#case1 circle {
+  opacity: 1;
+  fill: #131313;
+}
+
+
+#case1 .linreg {
+  stroke-width: 2px;
+  stroke: #D8A800;
+  /*stroke: #e1e1e1;*/
+}
+
+/*.inter-line {
+  stroke: #D8A800;
+  opacity: 0.2;
+}*/
+
+
+
+#case1 .text {
+  font-size: 13px;
+  font-weight: bold;
+  fill: #111;
+}
+
+/*.on-year {
+  color: #D8A800;
+}
+
+.on-data {
+  color: #D8A800;
+}
+
+.on-conf {
+  color: #D8A800;
+}      
+
+.arc {
+  fill: #D8A800;
+  opacity: 0.2;
+}*/
+
+#case1 .on {
+  fill: #D8A800;
+}
+
+
+
+/* CASE 3 */
+
+#case3 {
+  position: absolute;
+}
+
+img.case3 {
+  position:absolute;
+  width: 500px;
+  opacity: 1;
+}
+
+/* CASE 4 */
+
+.nma-back {
+  stroke-opacity: 1;
+  fill-opacity: 0.5;
+  stroke-width: 2px;
+  stroke: #fff;
+}
+
+.nma-front {
+  fill-opacity: 0.7;
+  stroke-width: 2px;
+  stroke: #fff;
+}
