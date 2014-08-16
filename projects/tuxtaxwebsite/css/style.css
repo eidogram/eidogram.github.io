@@ -187,12 +187,12 @@ a:hover {
 }
 
 
-/* Medium screens (640px) */
+/* Medium screens (640px) 
 @media (min-width: 40rem) { 
 
 }
  
-/* Large screens (1024px) */
+ Large screens (1024px) 
 @media (min-width: 64rem) { 
   article, #intro, header {
     max-width: 500px;
@@ -203,7 +203,7 @@ a:hover {
   figcaption {
     max-width: 280px; 
   }
-}
+}*/
 
 
 /* CASE 1 */
