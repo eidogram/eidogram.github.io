@@ -25,7 +25,7 @@
         .attr('stroke-width', 1);
 
   var svg = mainsvg.append("g")
-      .attr("transform","translate(100,120) scale(1.1)");
+      .attr("transform","translate(85,120) scale(1.1)");
 
   var labels = svg.append("g")
       .style({
