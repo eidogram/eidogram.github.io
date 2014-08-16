@@ -8,13 +8,6 @@ article, #intro, header {
   max-width: 95%;
 }
 
-/* Large screens (1366px) */
-@media (min-width: 1366px) {
-  article, #intro, header {
-    max-width: 500px;
-  }
-}
-
 article, #intro {
   margin: auto;
   margin-top: 50px;
@@ -49,13 +42,6 @@ header p {
 
 footer, h1, h2, h3, p {
   max-width: 90%;  
-}
-
-/* Large screens (1366px) */
-@media (min-width: 1366px) {
-  footer, h1, h2, h3, p {
-    max-width: 320px;  
-  }
 }
 
 footer {
@@ -134,13 +120,6 @@ figcaption {
   max-width: 80%; 
 }
 
-/* Large screens (1366px) */
-@media (min-width: 1366px) {
-  figcaption {
-    max-width: 280px; 
-  }
-}
-
 figcaption {
   margin: auto;
   margin-top: 20px;
@@ -204,6 +183,25 @@ a:hover {
   padding-bottom: 20px;
   position: relative;
   min-height: 500px;
+}
+
+
+/* Medium screens (640px) */
+@media (min-width: 40rem) { 
+
+}
+ 
+/* Large screens (1024px) */
+@media (min-width: 64rem) { 
+  article, #intro, header {
+    max-width: 500px;
+  }
+  footer, h1, h2, h3, p {
+    max-width: 320px;  
+  }
+  figcaption {
+    max-width: 280px; 
+  }
 }
 
 
