@@ -183,6 +183,7 @@
     var chart = $("#"+id),
         aspect = chart.width() / chart.height(),
         container = chart.parent();
+    console.log(aspect);
     var resize = function() {
         var targetWidth = container.width();
         chart.attr("width", targetWidth);
@@ -193,6 +194,7 @@
   }
 
   // Responsiveness
+  $("#case3Div").height($("#case3Div").width());
   resize("chartCase3");
 
 })()
