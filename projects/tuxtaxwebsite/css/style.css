@@ -4,7 +4,7 @@ body {
 }
 
 article, #intro, header {
-  max-width: 90%;
+  max-width: 95%;
 }
 
 /* Large screens (1366px) */
@@ -47,7 +47,7 @@ header p {
 }
 
 footer, h1, h2, h3, p {
-  max-width: 75%;  
+  max-width: 90%;  
 }
 
 /* Large screens (1366px) */
@@ -130,7 +130,7 @@ p {
 }
 
 figcaption {
-  max-width: 60%; 
+  max-width: 80%; 
 }
 
 /* Large screens (1366px) */
