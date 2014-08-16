@@ -465,6 +465,20 @@
 
   });
 
+  function resize(id) {
+    var chart = $("#"+id),
+        aspect = chart.width() / chart.height(),
+        container = chart.parent();
+    var resize = function() {
+        var targetWidth = container.width();
+        chart.attr("width", targetWidth);
+        chart.attr("height", Math.round(targetWidth / aspect));
+    };
+    $(window).on("resize", resize).trigger("resize");
+    $(window).on("ready", resize).trigger("resize");
+  }
+
   // Responsiveness
-  //resize(idDiv);
+  resize("case2SVG");
+
 })()

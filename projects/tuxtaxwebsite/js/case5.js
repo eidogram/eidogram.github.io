@@ -1098,7 +1098,7 @@
       height = 550 - margin.top - margin.bottom;
 
   var svg = d3.select("#case5").append("svg")
-      .attr("id","case4SVG")
+      .attr("id","case5SVG")
       .attr("viewBox", "0 0 500 550")          // make it
       .attr("preserveAspectRatio", "xMidYMid")  // responsive
       .attr("width", width + margin.left + margin.right)
@@ -1243,5 +1243,21 @@
     var color = colors[getRandomInt(0,colors.length-1)];
     return color !== last ? color : randomColor(colors, last);
   }
+
+  function resize(id) {
+    var chart = $("#"+id),
+        aspect = chart.width() / chart.height(),
+        container = chart.parent();
+    var resize = function() {
+        var targetWidth = container.width();
+        chart.attr("width", targetWidth);
+        chart.attr("height", Math.round(targetWidth / aspect));
+    };
+    $(window).on("resize", resize).trigger("resize");
+    $(window).on("ready", resize).trigger("resize");
+  }
+
+  // Responsiveness
+  resize("case5SVG");
 
 })()

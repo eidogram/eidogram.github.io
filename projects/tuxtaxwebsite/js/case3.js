@@ -4,7 +4,7 @@
   var height = 500;
 
   var svg = d3.select("#case3").append("svg")
-      .attr("id", "chart")
+      .attr("id", "chartCase3")
       .attr("viewBox", "0 0 100 100")          // make it
       .attr("preserveAspectRatio", "xMidYMid") // responsive
       .attr("width", width)
@@ -177,5 +177,22 @@
   function conv(i) {
     return i < 10 ? "0"+i : +i;
   }
+
+
+  function resize(id) {
+    var chart = $("#"+id),
+        aspect = chart.width() / chart.height(),
+        container = chart.parent();
+    var resize = function() {
+        var targetWidth = container.width();
+        chart.attr("width", targetWidth);
+        chart.attr("height", Math.round(targetWidth / aspect));
+    };
+    $(window).on("resize", resize).trigger("resize");
+    $(window).on("ready", resize).trigger("resize");
+  }
+
+  // Responsiveness
+  resize("chartCase3");
 
 })()
