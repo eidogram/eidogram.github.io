@@ -187,7 +187,7 @@ a:hover {
 }
 
 .MathJax {
-  font-size: 1em;
+  font-size: 1em !important;
 }
 
 
