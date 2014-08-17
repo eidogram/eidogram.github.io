@@ -709,7 +709,7 @@
       .attr("transform","translate(-44,-15)")
       .attr("d","M 60 22 L 70 22 L 70 32 L 60 32 Z");
     entrop.append("path")
-      .style({"fill-opacity":"0", "stroke-opacity":"1", "stroke-width":"1px", "fill":"#D8A800"})
+      .style({"fill-opacity":"0", "stroke-opacity":"1", "stroke-width":"1px", "fill":"#ea5818"})
       .attr("d","M 60 22 L 70 22 L 70 32 L 60 32 Z")
       .attr("transform","translate(-44,-15)")
       .on("click", function () {
@@ -814,7 +814,7 @@
         var item = d3.select(this);
         itemOn.transition().style({"fill":"#626262", "opacity":"0.1"});
         itemOn.classed("on",0);
-        item.transition().style({"fill":"#D8A800", "opacity":"0.4"});
+        item.transition().style({"fill":"#ea5818", "opacity":"0.4"});
         item.classed("on",1);
         change("dens","y06");
       });
@@ -828,7 +828,7 @@
         var item = d3.select(this);
         itemOn.transition().style({"fill":"#626262", "opacity":"0.1"});
         itemOn.classed("on",0);
-        item.transition().style({"fill":"#D8A800", "opacity":"0.4"});
+        item.transition().style({"fill":"#ea5818", "opacity":"0.4"});
         item.classed("on",1);
         change("dens","y08");
       });
@@ -837,13 +837,13 @@
       .attr("class","on")
       .attr("transform","translate(40,0)")
       .attr({"cx":"10", "cy":"10", "r":"7"})
-      .style({"fill":"#D8A800", "opacity":"0.4"})
+      .style({"fill":"#ea5818", "opacity":"0.4"})
       .on("click",function() {
         var itemOn = d3.select(".on");
         var item = d3.select(this);
         itemOn.transition().style({"fill":"#626262", "opacity":"0.1"});
         itemOn.classed("on",0);
-        item.transition().style({"fill":"#D8A800", "opacity":"0.4"});
+        item.transition().style({"fill":"#ea5818", "opacity":"0.4"});
         item.classed("on",1);
         change("dens","y13");
       });
@@ -857,7 +857,7 @@
         var item = d3.select(this);
         itemOn.transition().style({"fill":"#626262", "opacity":"0.1"});
         itemOn.classed("on",0);
-        item.transition().style({"fill":"#D8A800", "opacity":"0.4"});
+        item.transition().style({"fill":"#ea5818", "opacity":"0.4"});
         item.classed("on",1);
         change("pop","y06");
       });
@@ -871,7 +871,7 @@
         var item = d3.select(this);
         itemOn.transition().style({"fill":"#626262", "opacity":"0.1"});
         itemOn.classed("on",0);
-        item.transition().style({"fill":"#D8A800", "opacity":"0.4"});
+        item.transition().style({"fill":"#ea5818", "opacity":"0.4"});
         item.classed("on",1);
         change("pop","y08");
       });
@@ -885,7 +885,7 @@
         var item = d3.select(this);
         itemOn.transition().style({"fill":"#626262", "opacity":"0.1"});
         itemOn.classed("on",0);
-        item.transition().style({"fill":"#D8A800", "opacity":"0.4"});
+        item.transition().style({"fill":"#ea5818", "opacity":"0.4"});
         item.classed("on",1);
         change("pop","y13");
       });
@@ -997,7 +997,7 @@
       .style({"fill-opacity":"0.5", "stroke-opacity":"1", "stroke-width":"1px", "fill":"url(#diagonalHatchCase1)"})
       .attr("d","M 60 22 L 70 22 L 70 32 L 60 32 Z");
     lrLeg.append("path")
-      .style({"fill-opacity":"0", "stroke-opacity":"1", "stroke-width":"1px", "fill":"#D8A800"})
+      .style({"fill-opacity":"0", "stroke-opacity":"1", "stroke-width":"1px", "fill":"#ea5818"})
       .attr("d","M 60 22 L 70 22 L 70 32 L 60 32 Z")
       .attr("id","inclConf")
       .on("click", function() {
@@ -1014,7 +1014,7 @@
       .attr({"transform":"translate(0,12)"})
       .attr("d","M 60 22 L 70 22 L 70 32 L 60 32 Z");
     lrLeg.append("path")
-      .style({"fill-opacity":"0", "stroke-opacity":"1", "stroke-width":"1px", "fill":"#D8A800"})
+      .style({"fill-opacity":"0", "stroke-opacity":"1", "stroke-width":"1px", "fill":"#ea5818"})
       .attr({"transform":"translate(0,12)"})
       .attr("d","M 60 22 L 70 22 L 70 32 L 60 32 Z")
       .on("click", function() {

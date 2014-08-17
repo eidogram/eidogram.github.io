@@ -54,7 +54,8 @@
   var w = 300;
   var h = 260;
   var m = 0;
-  var colors = ["#313131", "#323232", "#333333", "#343434", "#353535", "#363636"];
+  //var colors = ["#313131", "#323232", "#333333", "#343434", "#353535", "#363636"];
+  var colors = ["#ea5818","#602917","#a4330e","#e2b03a","#4f2b17","#b24c18","#e59523","#fcd24d"];
 
   var corners = [[m,h+m], [w+m,h+m], [(w/2)+m,m]]
 
@@ -192,32 +193,34 @@
       .attr("d", arc);
 
   var dots = svg.selectAll(".dots")
-      .data([
-        coord(10, 20, 70),
-        coord(20, 30, 50),
-        coord(40, 20, 40),
-        coord(20, 70, 10)
+      .data([ //Analysis, Development, Design
+        coord(50, 30, 20), //scatterPlot
+        coord(10, 20, 70), //NMA
+        coord(10, 50, 40), //Seremi
+        coord(90, 5, 5), //Telecom
+        coord(40,40,20) //Virus
       ]);
   var dotg = dots.enter().append("g")
       .attr("transform",function(d){ return "translate("+d[0]+","+d[1]+") rotate("+(Math.random()*360)+") scale(0.7)"; });
   var dotgg = dotg.append("g");
-  var dotb = dotgg.append("path")
+  /*var dotb = dotgg.append("path")
       .attr("d",path)
       .attr("id",function(d,i){ return "dotb"+i; })
       .style("fill", "url(#diagonalHatchIntro)")
       .style({
         "stroke-width":"0px",
       })
-      .attr("transform","scale(0)");  
+      .attr("transform","scale(0)");*/ 
   var dot = dotgg.append("path")
       .attr("d",path)
       .attr("id",function(d,i){ return "dot"+i; })
-      .style("fill", function() { return colors[Math.floor(Math.random() * colors.length)]; })
+      //.style("fill", function() { return colors[Math.floor(Math.random() * colors.length)]; })
+      .style("fill", function(d,i){ return colors[i]; })
       .style({
         "stroke-width":"0px",
-      })
+      });
       //.attr("transform",function(d){ return "translate("+d[0]+","+d[1]+") scale(0.7)"; })
-      .on("mouseover",function(d,i){
+      /*.on("mouseover",function(d,i){
         d3.select("#dotb"+i).attr("transform","scale(2)");
         var doc = document.getElementById("introSVG");
         doc.pauseAnimations();
@@ -228,7 +231,7 @@
         var doc = document.getElementById("introSVG");
         doc.unpauseAnimations();
         //var self =  d3.select(this);
-      });
+      });*/
     dotgg.append("animateTransform")
         .attr("class","animate")
         .attr({

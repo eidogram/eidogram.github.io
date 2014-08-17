@@ -37,7 +37,7 @@ header h1 {
   /*font-size: 20px;*/
   font-style: italic;
   text-align: center;
-  border-top: 3px solid #D8A800;
+  border-top: 3px solid rgb(164, 51, 14);
 }
 
 header p {
@@ -57,7 +57,7 @@ footer {
   font-size: 14px;
   font-style: italic;
   text-align: center;
-  border-bottom: 3px solid #D8A800;
+  border-bottom: 3px solid rgb(164, 51, 14);
 }
 
 footer a {
@@ -257,7 +257,7 @@ a:hover {
 
 #case1 .linreg {
   stroke-width: 2px;
-  stroke: #D8A800;
+  stroke: #ea5818;
   /*stroke: #e1e1e1;*/
 }
 
