@@ -17,6 +17,7 @@ article, #intro {
 
 #intro {
   margin-top: 0px; 
+  margin-bottom: 100px;
 }
 
 header {
@@ -32,11 +33,11 @@ header h1 {
   background-color: #1e1e1e;*/
   color: #666;
   background-color: #fff;
-  padding: 60px 20px 40px 20px;
+  padding: 60px 20px 20px 20px;
   /*font-size: 20px;*/
   font-style: italic;
   text-align: center;
-  border-top: 3px solid #D8A800;
+  border-top: 5px solid #D8A800;
 }
 
 header p {
