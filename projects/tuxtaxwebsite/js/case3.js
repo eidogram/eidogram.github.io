@@ -183,18 +183,18 @@
     var chart = $("#"+id),
         aspect = chart.width() / chart.height(),
         container = chart.parent();
-    console.log(aspect);
     var resize = function() {
+        $("#case3Div").height($("#case3Div").width());
         var targetWidth = container.width();
         chart.attr("width", targetWidth);
         chart.attr("height", Math.round(targetWidth / aspect));
     };
+    $("#case3Div").height($("#case3Div").width());
     $(window).on("resize", resize).trigger("resize");
     $(window).on("ready", resize).trigger("resize");
   }
 
   // Responsiveness
-  $("#case3Div").height($("#case3Div").width());
   resize("chartCase3");
 
 })()
