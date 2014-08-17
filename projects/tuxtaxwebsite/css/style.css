@@ -17,6 +17,13 @@ article, #intro {
 
 #intro {
   margin-top: 0px; 
+  margin-bottom: 0px;
+}
+
+#capIntro {
+  text-align: center;
+  border-left: 0px;
+  font-size: 14px;
   margin-bottom: 100px;
 }
 
@@ -37,7 +44,7 @@ header h1 {
   /*font-size: 20px;*/
   font-style: italic;
   text-align: center;
-  border-top: 3px solid rgb(164, 51, 14);
+  border-top: 3px solid #D8A800;
 }
 
 header p {
@@ -57,7 +64,7 @@ footer {
   font-size: 14px;
   font-style: italic;
   text-align: center;
-  border-bottom: 3px solid rgb(164, 51, 14);
+  border-bottom: 3px solid #D8A800;
 }
 
 footer a {
