@@ -23,17 +23,21 @@ header {
   margin: auto;
   margin-top: 0px;
   font-family: "Vollkorn", "monospace";
-  color: #131313;
+  /*color: #131313;*/
+  color: #333;
 }
 
 header h1 {
-  color: #fff;
-  background-color: #333;
-  padding: 40px 20px 40px 20px;
+  /*color: #fff;
+  background-color: #1e1e1e;*/
+  color: #666;
+  background-color: #fff;
+  padding: 80px 20px 40px 20px;
   /*font-size: 20px;*/
   font-style: italic;
   text-align: center;
   border-top: 3px solid #D8A800;
+  font-size: 20px;
 }
 
 header p {
@@ -46,10 +50,10 @@ footer, h1, h2, h3, p {
 
 footer {
   margin: auto;
-  margin-top: 150px;
+  margin-top: 10px;
   font-family: "Vollkorn", "monospace";
   color: #fff;
-  background-color: #333;
+  background-color: #1e1e1e;
   padding: 20px 20px 20px 20px;
   font-size: 14px;
   font-style: italic;
@@ -65,7 +69,21 @@ footer a {
 footer a:hover {
   color: #D8A800;
   text-decoration: underline;
-  background-color: #333;
+  background-color: #1e1e1e;
+}
+
+.activity {
+  background-color: #fff;
+  font-style: normal;
+  text-align: left;
+  margin-top: 150px;
+  border-top: 3px solid #D8A800;
+  border-bottom: 0px;
+}
+
+.activity p {
+  color: #666;
+  font-size: 17px;
 }
 
 

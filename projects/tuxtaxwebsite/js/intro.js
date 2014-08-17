@@ -191,7 +191,13 @@
       })
       .attr("d", arc);
 
-  var dots = svg.selectAll(".dots").data([coord(10, 20, 70), coord(20, 30, 50), coord(40, 20, 40), coord(20, 70, 10)]);
+  var dots = svg.selectAll(".dots")
+      .data([
+        coord(10, 20, 70),
+        coord(20, 30, 50),
+        coord(40, 20, 40),
+        coord(20, 70, 10)
+      ]);
   var dotg = dots.enter().append("g")
       .attr("transform",function(d){ return "translate("+d[0]+","+d[1]+") rotate("+(Math.random()*360)+") scale(0.7)"; });
   var dotgg = dotg.append("g");
