@@ -190,7 +190,15 @@ a:hover {
 
 /* Medium screens (640px) */
 @media (min-width: 40rem) { 
-
+  article, #intro, header {
+    max-width: 90%;
+  }
+  footer, h1, h2, h3, p {
+    max-width: 80%;  
+  }
+  figcaption {
+    max-width: 70%; 
+  }
 }
  
 /* Large screens (1024px) */
