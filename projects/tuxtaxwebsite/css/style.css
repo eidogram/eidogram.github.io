@@ -54,6 +54,7 @@ footer {
   font-size: 14px;
   font-style: italic;
   text-align: center;
+  border-bottom: 3px solid #D8A800;
 }
 
 footer a {
