@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:xhtml="http://www.w3.org/1999/xhtml"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="454"
+   height="500"
+   viewBox="0 0 454 500"
+   id="case4SVG">
+  <metadata
+     id="metadata101">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <xhtml:defs>
+    <xhtml:style
+       type="text/css">
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
+audio, canvas, video { display: inline-block; }
+audio:not([controls]) { display: none; height: 0px; }
+[hidden] { display: none; }
+html { font-size: 100%; }
+html, button, input, select, textarea { font-family: sans-serif; }
+body { margin: 0px; }
+a:focus { outline: dotted thin; }
+a:hover, a:active { outline: 0px; }
+h1 { margin: 1em 0px; }
+h2 { margin: 0px; }
+h3 { margin: 1em 0px 0px; }
+h4 { margin: 1.33em 0px; }
+h5 { margin: 1.67em 0px; }
+h6 { margin: 2.33em 0px; }
+abbr[title] { border-bottom-width: 1px; border-bottom-style: dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+mark { color: rgb(0, 0, 0); background: rgb(255, 255, 0); }
+p, pre { margin: 1em 0px; }
+pre, code, kbd, samp { font-family: monospace, serif; font-size: 1em; }
+pre { white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q::before, q::after { content: none; }
+small { font-size: 75%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+dl, menu, ol, ul { margin: 1em 0px; }
+dd { margin: 0px 0px 0px 40px; }
+menu, ol, ul { padding: 0px 0px 0px 40px; }
+nav ul, nav ol { list-style: none none; }
+img { border: 0px; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0px; }
+form { margin: 0px; }
+fieldset { border: 1px solid rgb(192, 192, 192); margin: 0px 2px; padding: 0.35em 0.625em 0.75em; }
+legend { border: 0px; padding: 0px; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0px; vertical-align: baseline; }
+button, input { line-height: normal; }
+button, input[type=&quot;button&quot;], input[type=&quot;reset&quot;], input[type=&quot;submit&quot;] { cursor: pointer; -webkit-appearance: button; }
+button[disabled], input[disabled] { cursor: default; }
+input[type=&quot;checkbox&quot;], input[type=&quot;radio&quot;] { box-sizing: border-box; padding: 0px; }
+input[type=&quot;search&quot;] { -webkit-appearance: textfield; box-sizing: content-box; }
+input[type=&quot;search&quot;]::-webkit-search-decoration, input[type=&quot;search&quot;]::-webkit-search-cancel-button { -webkit-appearance: none; }
+textarea { overflow: auto; vertical-align: top; }
+table { border-collapse: collapse; border-spacing: 0px; }
+body { width: 100%; font-family: Vollkorn, monospace; font-size: 100%; }
+article, #intro, header { max-width: 95%; }
+article, #intro { margin: 50px auto auto; font-family: Vollkorn, monospace; color: rgb(19, 19, 19); }
+#intro { margin-top: 0px; margin-bottom: 0px; }
+#capIntro { text-align: center; border-left-width: 0px; font-size: 14px; margin-bottom: 100px; }
+header { margin: 0px auto auto; font-family: Vollkorn, monospace; color: rgb(51, 51, 51); }
+header h1 { color: rgb(102, 102, 102); padding: 60px 20px 20px; font-style: italic; text-align: center; border-top-width: 3px; border-top-style: solid; border-top-color: rgb(216, 168, 0); background-color: rgb(255, 255, 255); }
+header p { font-size: 16px; }
+footer, h1, h2, h3, p { max-width: 90%; }
+footer { margin: auto; font-family: Vollkorn, monospace; color: rgb(255, 255, 255); padding: 20px; font-size: 14px; font-style: italic; text-align: center; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: rgb(216, 168, 0); background-color: rgb(30, 30, 30); }
+footer a { color: rgb(216, 168, 0); text-decoration: none; }
+footer a:hover { color: rgb(216, 168, 0); text-decoration: underline; background-color: rgb(30, 30, 30); }
+.activity { font-style: normal; text-align: left; margin-top: 50px; border-top-width: 3px; border-top-style: solid; border-top-color: rgb(216, 168, 0); border-bottom-width: 0px; background-color: rgb(238, 238, 238); }
+.activity p { margin-top: 0px; margin-bottom: 0px; color: rgb(102, 102, 102); font-size: 15px; padding: 20px 30px; }
+h1, h2, h3 { margin: auto; font-size: 17px; font-weight: 400; padding: 10px; }
+h1 { color: rgb(255, 255, 255); background-color: rgb(216, 168, 0); }
+h2 { color: rgb(216, 168, 0); border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: rgb(216, 168, 0); }
+h3 { color: rgb(102, 102, 102); font-size: 12px; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221); background-color: rgb(238, 238, 238); }
+h3::before { content: '# '; }
+h1 .fa-external-link { padding-top: 4px; float: right; color: rgb(255, 255, 255); }
+em { font-style: italic; }
+p { margin: 20px auto; color: rgb(102, 102, 102); font-size: 14px; font-weight: 400; }
+figcaption { max-width: 80%; }
+figcaption { margin: 20px auto 40px; color: rgb(108, 108, 108); font-size: 12px; font-weight: 400; padding: 10px; border-left-width: 2px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
+pre { max-width: 320px; border-left-width: 3px; border-left-style: solid; border-left-color: rgb(204, 204, 204); margin: 40px auto; background-color: rgb(238, 238, 238); }
+code { font-family: 'Droid Sans Mono', monospace; font-size: 11px; color: rgb(102, 102, 102); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221); }
+b { font-weight: 400; color: rgb(216, 168, 0); }
+a { color: rgb(102, 102, 102); text-decoration: none; }
+strong { color: rgb(134, 18, 0); font-weight: 400; }
+a:hover { background-color: rgb(221, 221, 221); }
+::selection { color: rgb(17, 17, 17); background: rgb(216, 168, 0); }
+.abs { padding-top: 20px; padding-bottom: 20px; position: relative; width: 100%; }
+#case1 { z-index: 0; top: 50px; margin: 0px auto; font-family: Lato, sans-serif; font-size: 18px; color: rgb(81, 81, 81); }
+#case1 circle { opacity: 1; fill: rgb(19, 19, 19); }
+#case1 .linreg { stroke-width: 2px; stroke: rgb(234, 88, 24); }
+#case1 .text { font-size: 13px; font-weight: bold; fill: rgb(17, 17, 17); }
+#case1 .on { fill: rgb(216, 168, 0); }
+#case3 { position: absolute; width: 100%; }
+img.case3 { position: absolute; width: 100%; opacity: 1; }
+.nma-back { stroke-opacity: 1; fill-opacity: 0.5; stroke-width: 2px; stroke: rgb(255, 255, 255); }
+.nma-front { fill-opacity: 0.7; stroke-width: 2px; stroke: rgb(255, 255, 255); }
+.MathJax_Hover_Frame { border-top-left-radius: 0.25em; border-top-right-radius: 0.25em; border-bottom-right-radius: 0.25em; border-bottom-left-radius: 0.25em; box-shadow: rgb(136, 51, 170) 0px 0px 15px; -webkit-box-shadow: rgb(136, 51, 170) 0px 0px 15px; display: inline-block; position: absolute; border: 1px solid rgb(170, 102, 221) !important; }
+.MathJax_Hover_Arrow { position: absolute; width: 15px; height: 11px; cursor: pointer; }
+#MathJax_About { position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; box-shadow: rgb(128, 128, 128) 0px 10px 20px; -webkit-box-shadow: rgb(128, 128, 128) 0px 10px 20px; background-color: rgb(221, 221, 221); }
+.MathJax_Menu { position: absolute; color: black; width: auto; padding: 5px 0px; border: 1px solid rgb(204, 204, 204); margin: 0px; cursor: default; font: menu; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; box-shadow: rgb(128, 128, 128) 0px 10px 20px; -webkit-box-shadow: rgb(128, 128, 128) 0px 10px 20px; background-color: white; }
+.MathJax_MenuItem { padding: 1px 2em; background: transparent; }
+.MathJax_MenuArrow { position: absolute; right: 0.5em; color: rgb(102, 102, 102); }
+.MathJax_MenuActive .MathJax_MenuArrow { color: white; }
+.MathJax_MenuArrow.RTL { left: 0.5em; right: auto; }
+.MathJax_MenuCheck { position: absolute; left: 0.7em; }
+.MathJax_MenuCheck.RTL { right: 0.7em; left: auto; }
+.MathJax_MenuRadioCheck { position: absolute; left: 0.7em; }
+.MathJax_MenuRadioCheck.RTL { right: 0.7em; left: auto; }
+.MathJax_MenuLabel { padding: 1px 2em 3px 1.33em; font-style: italic; }
+.MathJax_MenuRule { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); margin: 4px 3px; }
+.MathJax_MenuDisabled { color: graytext; }
+.MathJax_MenuActive { color: white; background-color: rgb(96, 104, 114); }
+.MathJax_Menu_Close { position: absolute; width: 31px; height: 31px; top: -15px; left: -15px; }
+#MathJax_Zoom { position: absolute; overflow: auto; display: block; z-index: 301; padding: 0.5em; border: 1px solid black; margin: 0px; font-weight: normal; font-style: normal; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: rgb(170, 170, 170) 5px 5px 15px; -webkit-box-shadow: rgb(170, 170, 170) 5px 5px 15px; background-color: rgb(240, 240, 240); }
+#MathJax_ZoomOverlay { position: absolute; left: 0px; top: 0px; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0px; padding: 0px; margin: 0px; opacity: 0; background-color: white; }
+#MathJax_ZoomFrame { position: relative; display: inline-block; height: 0px; width: 0px; }
+#MathJax_ZoomEventTrap { position: absolute; left: 0px; top: 0px; z-index: 302; display: inline-block; border: 0px; padding: 0px; margin: 0px; opacity: 0; background-color: white; }
+.MathJax_Preview { color: rgb(136, 136, 136); }
+#MathJax_Message { position: fixed; left: 1em; bottom: 1.5em; border: 1px solid rgb(149, 149, 149); margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap; background-color: rgb(230, 230, 230); }
+#MathJax_MSIE_Frame { position: absolute; top: 0px; left: 0px; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px; }
+.MathJax_Error { color: rgb(204, 0, 0); font-style: italic; }
+.MathJax_Display { text-align: center; margin: 1em 0em; position: relative; text-indent: 0px; max-width: none; max-height: none; min-width: 0px; min-height: 0px; width: 100%; display: block !important; }
+.MathJax .merror { color: rgb(204, 0, 0); border: 1px solid rgb(204, 0, 0); padding: 1px 3px; font-style: normal; font-size: 90%; background-color: rgb(255, 255, 136); }
+.MathJax .MJX-monospace { font-family: monospace; }
+.MathJax .MJX-sans-serif { font-family: sans-serif; }
+#MathJax_Tooltip { color: infotext; border: 1px solid black; box-shadow: rgb(170, 170, 170) 2px 2px 5px; -webkit-box-shadow: rgb(170, 170, 170) 2px 2px 5px; padding: 3px 4px; z-index: 401; position: absolute; left: 0px; top: 0px; width: auto; height: auto; display: none; background-color: infobackground; }
+.MathJax { display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax img, .MathJax nobr, .MathJax a { border: 0px; padding: 0px; margin: 0px; max-width: none; max-height: none; min-width: 0px; min-height: 0px; vertical-align: 0px; line-height: normal; text-decoration: none; }
+img.MathJax_strut { border: 0px !important; padding: 0px !important; margin: 0px !important; vertical-align: 0px !important; }
+.MathJax span { display: inline; position: static; border: 0px; padding: 0px; margin: 0px; vertical-align: 0px; line-height: normal; text-decoration: none; }
+.MathJax nobr { white-space: nowrap !important; }
+.MathJax img { display: inline !important; float: none !important; }
+.MathJax * { -webkit-transition: none; transition: none; }
+.MathJax_Processing { visibility: hidden; position: fixed; width: 0px; height: 0px; overflow: hidden; }
+.MathJax_Processed { display: none !important; }
+.MathJax_ExBox { overflow: hidden; width: 1px; height: 60ex; min-height: 0px; max-height: none; display: block !important; }
+.MathJax .MathJax_EmBox { overflow: hidden; width: 1px; height: 60em; min-height: 0px; max-height: none; display: block !important; }
+.MathJax .MathJax_HitBox { cursor: text; opacity: 0; background: white; }
+.MathJax .MathJax_HitBox * { filter: none; opacity: 1; background: transparent; }
+#MathJax_Tooltip * { filter: none; opacity: 1; background: transparent; }
+.MathJax .noError { font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid; }</xhtml:style>
+  </xhtml:defs>
+  <defs
+     id="defs3">
+    <pattern
+       height="4"
+       width="4"
+       patternUnits="userSpaceOnUse"
+       id="diagonalHatchCase4">
+      <path
+         id="path6"
+         stroke-width="1"
+         stroke="#fff"
+         d="M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2" />
+    </pattern>
+  </defs>
+  <g
+     transform="matrix(0.77541053,0,0,0.77541053,227.49233,155.33783)"
+     id="g15"
+     style="stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none">
+    <path
+       d="M 0,0 0,57.735027 -100,57.735027 z"
+       id="path17"
+       style="fill:#cb8c1f;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,57.735027 100,57.735027 z"
+       id="path19"
+       style="fill:#b84100;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,57.735027 -100,57.735027 z"
+       transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,0,0)"
+       id="path21"
+       style="fill:#861200;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,57.735027 100,57.735027 z"
+       transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,0,0)"
+       id="path23"
+       style="fill:#cb8c1f;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,57.735027 -100,57.735027 z"
+       transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,0,0)"
+       id="path25"
+       style="fill:#b84100;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,57.735027 100,57.735027 z"
+       transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,0,0)"
+       id="path27"
+       style="fill:#861200;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  </g>
+  <g
+     transform="matrix(0.77541053,0,0,0.77541053,227.49233,155.33783)"
+     id="g29"
+     style="stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none">
+    <path
+       d="M 0,0 0,57.735027 -100,57.735027 z"
+       id="path31"
+       style="fill:url(#diagonalHatchCase4);stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,57.735027 100,57.735027 z"
+       id="path33"
+       style="fill:url(#diagonalHatchCase4);stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,57.735027 -100,57.735027 z"
+       transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,0,0)"
+       id="path35"
+       style="fill:url(#diagonalHatchCase4);stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,57.735027 100,57.735027 z"
+       transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,0,0)"
+       id="path37"
+       style="fill:url(#diagonalHatchCase4);stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,57.735027 -100,57.735027 z"
+       transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,0,0)"
+       id="path39"
+       style="fill:url(#diagonalHatchCase4);stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,57.735027 100,57.735027 z"
+       transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,0,0)"
+       id="path41"
+       style="fill:url(#diagonalHatchCase4);stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  </g>
+  <g
+     transform="matrix(0.77541053,0,0,0.77541053,227.49233,155.33783)"
+     id="g43"
+     style="stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none">
+    <path
+       d="M 0,0 0,18.094976 -31.341418,18.094976 z"
+       id="path45"
+       style="fill:#cb8c1f;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,31.877227 55.212977,31.877227 z"
+       id="path47"
+       style="fill:#b84100;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,17.979347 -31.141142,17.979347 z"
+       transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,0,0)"
+       id="path49"
+       style="fill:#861200;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,36.616396 63.421458,36.616396 z"
+       transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,0,0)"
+       id="path51"
+       style="fill:#cb8c1f;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,42.198569 -73.090065,42.198569 z"
+       transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,0,0)"
+       id="path53"
+       style="fill:#b84100;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,23.498932 40.701344,23.498932 z"
+       transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,0,0)"
+       id="path55"
+       style="fill:#861200;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  </g>
+  <g
+     transform="matrix(0.77541053,0,0,0.77541053,227.49233,364.69867)"
+     id="g57"
+     style="stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none">
+    <path
+       d="M 0,0 0,64.745709 -112.14286,64.745709 z"
+       id="path59"
+       style="fill:#cb8c1f;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,70.931605 122.85714,70.931605 z"
+       id="path61"
+       style="fill:#b84100;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,75.055535 -130,75.055535 z"
+       transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,0,0)"
+       id="path63"
+       style="fill:#861200;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,70.931605 122.85714,70.931605 z"
+       transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,0,0)"
+       id="path65"
+       style="fill:#cb8c1f;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,72.99357 -126.42857,72.99357 z"
+       transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,0,0)"
+       id="path67"
+       style="fill:#b84100;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,46.188022 80,46.188022 z"
+       transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,0,0)"
+       id="path69"
+       style="fill:#861200;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  </g>
+  <g
+     transform="matrix(0.77541053,0,0,0.77541053,227.49233,364.69867)"
+     id="g71"
+     style="stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none">
+    <path
+       d="M 0,0 0,64.745709 -112.14286,64.745709 z"
+       id="path73"
+       style="fill:url(#diagonalHatchCase4);stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,70.931605 122.85714,70.931605 z"
+       id="path75"
+       style="fill:url(#diagonalHatchCase4);stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,75.055535 -130,75.055535 z"
+       transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,0,0)"
+       id="path77"
+       style="fill:url(#diagonalHatchCase4);stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,70.931605 122.85714,70.931605 z"
+       transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,0,0)"
+       id="path79"
+       style="fill:url(#diagonalHatchCase4);stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,72.99357 -126.42857,72.99357 z"
+       transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,0,0)"
+       id="path81"
+       style="fill:url(#diagonalHatchCase4);stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,46.188022 80,46.188022 z"
+       transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,0,0)"
+       id="path83"
+       style="fill:url(#diagonalHatchCase4);stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  </g>
+  <g
+     transform="matrix(0.77541053,0,0,0.77541053,227.49233,364.69867)"
+     id="g85"
+     style="stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none">
+    <path
+       d="M 0,0 0,20.292223 -35.147162,20.292223 z"
+       id="path87"
+       style="fill:#cb8c1f;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,39.163451 67.833087,39.163451 z"
+       id="path89"
+       style="fill:#b84100;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,23.373151 -40.483485,23.373151 z"
+       transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,0,0)"
+       id="path91"
+       style="fill:#861200;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,44.985858 77.917791,44.985858 z"
+       transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,0,0)"
+       id="path93"
+       style="fill:#cb8c1f;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,53.351048 -92.406725,53.351048 z"
+       transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,0,0)"
+       id="path95"
+       style="fill:#b84100;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 0,0 0,18.799145 32.561075,18.799145 z"
+       transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,0,0)"
+       id="path97"
+       style="fill:#861200;stroke:#f5f5f5;stroke-width:2.57927895;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  </g>
+</svg>
