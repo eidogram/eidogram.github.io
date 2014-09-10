@@ -338,6 +338,6 @@ Waypoints
 #envelope:hover {color: rgb(103, 132, 156);}
 
 #imac {background-color: rgb(103, 132, 156);}
-#imac img {width: 90%; max-width: 900px;}
+#imac img {width: 90%; max-width: 900px; padding: 60px 0 60px;}
 #loghi {width: 300px;}
 #contact {background-color: #313843; padding: 40px 0 40px;}
