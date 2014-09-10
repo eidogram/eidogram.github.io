@@ -17,13 +17,6 @@
      id="metadata45"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata>
-    <font>
-      <font-face font-family="Super Sans">
-        <font-face-src>
-          <font-face-uri xlink:href="http://fonts.googleapis.com/css?family=Lato:400,700" />
-        </font-face-src>
-      </font-face>
-    </font>
     <defs id="defs43"><pattern
        patternTransform="matrix(0.98164471,0,0,0.98164471,90.561479,112.53339)"
        id="pattern3648"
@@ -246,7 +239,7 @@
        dx="0"
        dy="0"
        id="text3036"
-       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:Lato">1999</text>
+       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:sans-serif">1999</text>
 </g><g
      transform="matrix(0.98164471,0,0,0.98164471,178.95075,311.21794)"
      id="g3038"><line
@@ -261,7 +254,7 @@
        dx="0"
        dy="0"
        id="text3042"
-       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:Lato">2000</text>
+       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:sans-serif">2000</text>
 </g><g
      transform="matrix(0.98164471,0,0,0.98164471,231.68772,311.21794)"
      id="g3044"><line
@@ -276,7 +269,7 @@
        dx="0"
        dy="0"
        id="text3048"
-       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:Lato">2001</text>
+       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:sans-serif">2001</text>
 </g><g
      transform="matrix(0.98164471,0,0,0.98164471,284.4247,311.21794)"
      id="g3050"><line
@@ -291,7 +284,7 @@
        dx="0"
        dy="0"
        id="text3054"
-       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:Lato">2002</text>
+       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:sans-serif">2002</text>
 </g><g
      transform="matrix(0.98164471,0,0,0.98164471,337.16168,311.21794)"
      id="g3056"><line
@@ -306,7 +299,7 @@
        dx="0"
        dy="0"
        id="text3060"
-       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:Lato">2003</text>
+       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:sans-serif">2003</text>
 </g><g
      transform="matrix(0.98164471,0,0,0.98164471,389.89865,311.21794)"
      id="g3062"><line
@@ -321,7 +314,7 @@
        dx="0"
        dy="0"
        id="text3066"
-       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:Lato">2004</text>
+       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:sans-serif">2004</text>
 </g><g
      transform="matrix(0.98164471,0,0,0.98164471,442.63562,311.21794)"
      id="g3068"><line
@@ -336,7 +329,7 @@
        dx="0"
        dy="0"
        id="text3072"
-       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:Lato">2005</text>
+       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:sans-serif">2005</text>
 </g><g
      transform="matrix(0.98164471,0,0,0.98164471,495.3726,311.21794)"
      id="g3074"><line
@@ -351,7 +344,7 @@
        dx="0"
        dy="0"
        id="text3078"
-       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:Lato">2006</text>
+       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:sans-serif">2006</text>
 </g><g
      transform="matrix(0.98164471,0,0,0.98164471,548.10957,311.21794)"
      id="g3080"><line
@@ -366,7 +359,7 @@
        dx="0"
        dy="0"
        id="text3084"
-       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:Lato">2007</text>
+       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:sans-serif">2007</text>
 </g><g
      transform="matrix(0.98164471,0,0,0.98164471,600.84655,311.21794)"
      id="g3086"><line
@@ -381,7 +374,7 @@
        dx="0"
        dy="0"
        id="text3090"
-       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:Lato">2008</text>
+       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:sans-serif">2008</text>
 </g><g
      transform="matrix(0.98164471,0,0,0.98164471,653.58352,311.21794)"
      id="g3092"><line
@@ -396,7 +389,7 @@
        dx="0"
        dy="0"
        id="text3096"
-       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:Lato">2009</text>
+       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:sans-serif">2009</text>
 </g><g
      transform="matrix(0.98164471,0,0,0.98164471,706.32049,311.21794)"
      id="g3098"><line
@@ -411,7 +404,7 @@
        dx="0"
        dy="0"
        id="text3102"
-       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:Lato">2010</text>
+       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:sans-serif">2010</text>
 </g><g
      transform="matrix(0.98164471,0,0,0.98164471,759.05747,311.21794)"
      id="g3104"><line
@@ -426,7 +419,7 @@
        dx="0"
        dy="0"
        id="text3108"
-       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:Lato">2011</text>
+       style="font-size:11px;font-weight:bold;text-anchor:middle;fill:#535353;font-family:sans-serif">2011</text>
 </g><path
      d="M 99.845294,317.1078 V 311.21794 H 785.42596 V 317.1078"
      id="path3110"
@@ -442,7 +435,7 @@
      dx="0"
      dy="0"
      id="text3116"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:Lato">321</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:sans-serif">321</text>
 <rect
      width="13.592004"
      height="108.81268"
@@ -455,7 +448,7 @@
      dx="0"
      dy="0"
      id="text3122"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:Lato">301</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:sans-serif">301</text>
 <rect
      width="13.592004"
      height="119.65779"
@@ -468,7 +461,7 @@
      dx="0"
      dy="0"
      id="text3128"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:Lato">331</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:sans-serif">331</text>
 <rect
      width="13.592004"
      height="111.7047"
@@ -481,7 +474,7 @@
      dx="0"
      dy="0"
      id="text3134"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:Lato">309</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:sans-serif">309</text>
 <rect
      width="13.592004"
      height="117.12727"
@@ -494,7 +487,7 @@
      dx="0"
      dy="0"
      id="text3140"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:Lato">324</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:sans-serif">324</text>
 <rect
      width="13.592004"
      height="100.85958"
@@ -507,7 +500,7 @@
      dx="0"
      dy="0"
      id="text3146"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:Lato">279</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:sans-serif">279</text>
 <rect
      width="13.592004"
      height="107.00515"
@@ -520,7 +513,7 @@
      dx="0"
      dy="0"
      id="text3152"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:Lato">296</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:sans-serif">296</text>
 <rect
      width="13.592004"
      height="104.47462"
@@ -533,7 +526,7 @@
      dx="0"
      dy="0"
      id="text3158"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:Lato">289</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:sans-serif">289</text>
 <rect
      width="13.592004"
      height="116.76575"
@@ -546,7 +539,7 @@
      dx="0"
      dy="0"
      id="text3164"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:Lato">323</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:sans-serif">323</text>
 <rect
      width="13.592004"
      height="120.7423"
@@ -559,7 +552,7 @@
      dx="0"
      dy="0"
      id="text3170"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:Lato">334</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:sans-serif">334</text>
 <rect
      width="13.592004"
      height="114.95824"
@@ -572,7 +565,7 @@
      dx="0"
      dy="0"
      id="text3176"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:Lato">318</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:sans-serif">318</text>
 <rect
      width="13.592004"
      height="108.08966"
@@ -585,7 +578,7 @@
      dx="0"
      dy="0"
      id="text3182"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:Lato">299</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:sans-serif">299</text>
 <rect
      width="13.592004"
      height="94.71402"
@@ -598,7 +591,7 @@
      dx="0"
      dy="0"
      id="text3188"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:Lato">262</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#a6c0d6;font-family:sans-serif">262</text>
 <rect
      width="13.592004"
      height="53.864079"
@@ -611,7 +604,7 @@
      dx="0"
      dy="0"
      id="text3194"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">149</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">149</text>
 <rect
      width="13.592004"
      height="50.610542"
@@ -624,7 +617,7 @@
      dx="0"
      dy="0"
      id="text3200"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">140</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">140</text>
 <rect
      width="13.592004"
      height="49.164528"
@@ -637,7 +630,7 @@
      dx="0"
      dy="0"
      id="text3206"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">136</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">136</text>
 <rect
      width="13.592004"
      height="45.910995"
@@ -650,7 +643,7 @@
      dx="0"
      dy="0"
      id="text3212"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">127</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">127</text>
 <rect
      width="13.592004"
      height="32.896851"
@@ -663,7 +656,7 @@
      dx="0"
      dy="0"
      id="text3218"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">91</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">91</text>
 <rect
      width="13.592004"
      height="37.234901"
@@ -676,7 +669,7 @@
      dx="0"
      dy="0"
      id="text3224"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">103</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">103</text>
 <rect
      width="13.592004"
      height="35.788887"
@@ -689,7 +682,7 @@
      dx="0"
      dy="0"
      id="text3230"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">99</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">99</text>
 <rect
      width="13.592004"
      height="37.234901"
@@ -702,7 +695,7 @@
      dx="0"
      dy="0"
      id="text3236"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">103</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">103</text>
 <rect
      width="13.592004"
      height="24.22076"
@@ -715,7 +708,7 @@
      dx="0"
      dy="0"
      id="text3242"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">67</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">67</text>
 <rect
      width="13.592004"
      height="29.281816"
@@ -728,7 +721,7 @@
      dx="0"
      dy="0"
      id="text3248"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">81</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">81</text>
 <rect
      width="13.592004"
      height="24.582264"
@@ -741,7 +734,7 @@
      dx="0"
      dy="0"
      id="text3254"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">68</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">68</text>
 <rect
      width="13.592004"
      height="27.112791"
@@ -754,7 +747,7 @@
      dx="0"
      dy="0"
      id="text3260"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">75</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">75</text>
 <rect
      width="13.592004"
      height="22.41324"
@@ -767,7 +760,7 @@
      dx="0"
      dy="0"
      id="text3266"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">62</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">62</text>
 <rect
      width="27.184008"
      height="123.68723"
@@ -873,7 +866,7 @@
          y="0"
          dy="0"
          id="text3310"
-         style="font-size:10px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">0</text>
+         style="font-size:10px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">0</text>
 </g><g
        transform="translate(0,108.63147)"
        id="g3312"><line
@@ -887,7 +880,7 @@
          y="0"
          dy="0"
          id="text3316"
-         style="font-size:10px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">1,000</text>
+         style="font-size:10px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">1,000</text>
 </g><g
        transform="translate(0,91.26294)"
        id="g3318"><line
@@ -901,7 +894,7 @@
          y="0"
          dy="0"
          id="text3322"
-         style="font-size:10px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">2,000</text>
+         style="font-size:10px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">2,000</text>
 </g><g
        transform="translate(0,73.89441)"
        id="g3324"><line
@@ -915,7 +908,7 @@
          y="0"
          dy="0"
          id="text3328"
-         style="font-size:10px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">3,000</text>
+         style="font-size:10px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">3,000</text>
 </g><g
        transform="translate(0,56.52588)"
        id="g3330"><line
@@ -929,7 +922,7 @@
          y="0"
          dy="0"
          id="text3334"
-         style="font-size:10px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">4,000</text>
+         style="font-size:10px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">4,000</text>
 </g><g
        transform="translate(0,39.157351)"
        id="g3336"><line
@@ -943,7 +936,7 @@
          y="0"
          dy="0"
          id="text3340"
-         style="font-size:10px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">5,000</text>
+         style="font-size:10px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">5,000</text>
 </g><g
        transform="translate(0,21.788821)"
        id="g3342"><line
@@ -957,7 +950,7 @@
          y="0"
          dy="0"
          id="text3346"
-         style="font-size:10px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">6,000</text>
+         style="font-size:10px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">6,000</text>
 </g><g
        transform="translate(0,4.4202909)"
        id="g3348"><line
@@ -971,7 +964,7 @@
          y="0"
          dy="0"
          id="text3352"
-         style="font-size:10px;font-weight:bold;text-anchor:start;fill:#535353;font-family:Lato">7,000</text>
+         style="font-size:10px;font-weight:bold;text-anchor:start;fill:#535353;font-family:sans-serif">7,000</text>
 </g></g><rect
      width="27.184008"
      height="333.75922"
@@ -1061,7 +1054,7 @@
      y="101.61031"
      dy="0"
      id="text3410"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#535353;font-family:Lato">Nuove diagnosi di infezione da HIV</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#535353;font-family:sans-serif">Nuove diagnosi di infezione da HIV</text>
 <rect
      width="17.669605"
      height="17.669605"
@@ -1073,7 +1066,7 @@
      y="121.24322"
      dy="0"
      id="text3416"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#535353;font-family:Lato">Nuove diagnosi di AIDS</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#535353;font-family:sans-serif">Nuove diagnosi di AIDS</text>
 <rect
      width="17.669605"
      height="17.669605"
@@ -1085,7 +1078,7 @@
      y="101.73531"
      dy="0"
      id="text3424"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#535353;font-family:Lato">Casi prevalenti di infezione da HIV/AIDS</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#535353;font-family:sans-serif">Casi prevalenti di infezione da HIV/AIDS</text>
 <rect
      width="17.669605"
      height="17.669605"
@@ -1097,7 +1090,7 @@
      y="121.3682"
      dy="0"
      id="text3432"
-     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#535353;font-family:Lato">Casi prevalenti con diagnosi di AIDS</text>
+     style="font-size:10.79809189px;font-weight:bold;text-anchor:end;fill:#535353;font-family:sans-serif">Casi prevalenti con diagnosi di AIDS</text>
 <rect
      width="15.171885"
      height="3.5158591"
