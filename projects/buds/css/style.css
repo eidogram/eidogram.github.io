@@ -1,5 +1,11 @@
 #graph {
-  width: 40%;
+  max-width: 800px;
   margin: auto;
   min-height: 200px;
+}
+
+section {
+  font-family: "Lato";
+  margin: auto;
+  max-width: 800px;
 }

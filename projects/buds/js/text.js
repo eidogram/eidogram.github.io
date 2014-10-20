@@ -254,6 +254,7 @@
     }).style("stroke", function(d) {
       return colorScale(d[2]);
     }).style({
+      "shape-rendering": "crispEdges",
       "stroke-width": "1px",
       "stroke-opacity": "1"
     }).on("mouseover", function(d) {
@@ -283,12 +284,11 @@
 
   fileInput.addEventListener('change', function(e) {
     var file, reader;
-    NProgress.start();
     d3.select("#graphSVG").remove();
     file = fileInput.files[0];
     reader = new FileReader();
     reader.onload = function(e) {
-      var clust, clustTree, ec, infos, iteration, merge, partitions, pos, s, sequences, setEqCl, tree, unPack, _ref;
+      var ec, infos, iteration, merge, partitions, s, sequences, unPack, _ref;
       _ref = manipulate(reader.result), infos = _ref[0], sequences = _ref[1];
       partitions = (function() {
         var _i, _len, _results;
@@ -300,15 +300,8 @@
         return _results;
       })();
       ec = d3.values(eqClasses(partitions)).filter(function(e) {
-        return e.length > 10;
+        return e.length > 5;
       });
-      setEqCl = ec.map(function(e) {
-        return partitions[e[0]];
-      });
-      pos = setEqCl.reduce((function(obj, x, i) {
-        obj[x] = i;
-        return obj;
-      }), {});
       iteration = 0;
       merge = function(tree, level) {
         if (tree.left && tree.right) {
@@ -330,14 +323,9 @@
           return clust.push(clustTree);
         }
       };
-      tree = clusterfck.hcluster(setEqCl, rohlin, "complete");
-      clust = [];
-      clustTree = merge(tree, 8);
-      unPack(clustTree);
       return drawGraph(ec, infos, sequences);
     };
-    reader.readAsText(file);
-    return NProgress.done();
+    return reader.readAsText(file);
   });
 
 }).call(this);

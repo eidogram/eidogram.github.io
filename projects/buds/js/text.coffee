@@ -219,6 +219,7 @@ drawGraph = (equivClasses, infos, sequences) ->
       .attr("y2",(d) -> yScale(d[2]) + band)
       .style("stroke",(d) -> colorScale(d[2]))
       .style({
+        "shape-rendering":"crispEdges"
         "stroke-width":"1px"
         "stroke-opacity":"1"
       })
@@ -247,7 +248,7 @@ drawGraph = (equivClasses, infos, sequences) ->
 
 # main
 fileInput.addEventListener('change', (e) ->
-  NProgress.start()
+  #NProgress.start()
   d3.select("#graphSVG").remove()
   file = fileInput.files[0]
   reader = new FileReader()
@@ -259,16 +260,16 @@ fileInput.addEventListener('change', (e) ->
     # list of partitions
     partitions = (mkPart(s) for s in sequences)
 
-    # select only equivalence classes with more than 5 elements
-    ec = d3.values(eqClasses partitions).filter((e) -> e.length > 10)
+    # select only equivalence classes with more than n elements
+    ec = d3.values(eqClasses partitions).filter((e) -> e.length > 5)
 
     # set of equivalence classes
-    setEqCl = ec.map((e) -> partitions[e[0]])
+    #setEqCl = ec.map((e) -> partitions[e[0]])
 
-    pos = setEqCl.reduce(((obj, x, i) -> 
-      obj[x] = i
-      obj
-      ), {})
+    #pos = setEqCl.reduce(((obj, x, i) -> 
+    #  obj[x] = i
+    #  obj
+    #  ), {})
     
     # -----
     # function useful to extract information from the tree returned by clusterfck.hcluster
@@ -293,16 +294,16 @@ fileInput.addEventListener('change', (e) ->
 
 
     # Hierarchical clustering, complete linkage
-    tree = clusterfck.hcluster(setEqCl, rohlin, "complete")
+    #tree = clusterfck.hcluster(setEqCl, rohlin, "complete")
     
-    clust = []
-    clustTree = merge(tree, 8)
-    unPack(clustTree)
+    #clust = []
+    #clustTree = merge(tree, 8)
+    #unPack(clustTree)
 
     drawGraph(ec, infos, sequences)
 
   reader.readAsText(file) 
-  NProgress.done()
+  #NProgress.done()
 )
 
 
