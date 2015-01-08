@@ -283,7 +283,7 @@
   
   c1.title
     .append("text")
-    .text("Projects started each year")
+    .text("Projects started")
     .attr({ "x": 0, "y": -45 })
 
   c1.title.append("rect")
@@ -1148,11 +1148,7 @@
           "height": hh - 1,
           "width": 25  
         })
-        .style({
-          "fill": "orange",
-          "stroke": "none",
-          "shape-rendering": "crispEdges"
-        });
+        .attr("class","project-partners");
 
     title.append("text")
       .text("Number of Partners")
@@ -1180,23 +1176,27 @@
     
     title
       .append("text")
-      .text("Projects on Time")
+      .text("Project Duration and number of Partners")
       .attr({ "x": 0, "y": -45 })
 
-    var details = svg4.append("g")
-        .attr("class","legend");
+    title
+      .append("line")
+        .attr("class","sub-line")
+        .attr({ "x1": 0, "y1": -12, "x2": width, "y2": -12 });
 
-    var detailsTitle = details.append("text")
-        .text("prova");
+    var details = svg4.append("g")
+        .attr("class","legend")
+        .attr("transform","translate(0,5)");
+
+    var detailsTitle = details.append("text");
 
     var detailsInfo = details.append("text")
-        .attr("dy","15")
-        .text("info"); 
+        .attr("dy","15"); 
 
     // var toolTip = svg4.append("g");
 
     var pRectsg = svg4.append("g")
-        .attr("transform","translate(0,25)");
+        .attr("transform","translate(0,28)");
 
     var pRects = pRectsg.selectAll(".project")
         .data(data)
@@ -1207,7 +1207,7 @@
             detailsTitle.text(
               d.project.length > 70 ? d.project.slice(0, 70) + "..." : d.project);
             detailsInfo.text(d["Start Date"]+" - "+d["End Date"] + 
-              " | " + d.partners.length + " Parteners");
+              " | " + (d.partners.length-1) + " Partners");
          })
          .on("mouseout", function(){
             d3.select(this)
@@ -1231,13 +1231,13 @@
     pRects.append("rect")
         .attr("x", function(d) {
           return tScale(format.parse(d["Start Date"])) -
-            pScale(d["partners"].length);
+            pScale(d["partners"].length-1);
         })
         .attr("y", function(d,i) {
           return i * hh;
         })
         .attr("width", function(d) {
-          return pScale(d["partners"].length);
+          return pScale(d["partners"].length-1);
         })
         .attr("height", hh - 1)
         .attr("class","project-partners");

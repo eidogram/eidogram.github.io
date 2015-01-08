@@ -82,6 +82,7 @@ svg {
 }
 
 .title-list-projs {
+  width: 480px;
   margin: 30px 30px 0px 30px;
   border-bottom: 2px solid #333;
   font-size: 17px;
@@ -92,6 +93,7 @@ svg {
 }
 
 .subtitle-list-projs {
+  width: 480px;
   margin: 0px 30px 10px 30px;
   padding: 0px 0px 1px 1px;
   font-size: 10px;
@@ -136,7 +138,8 @@ svg {
 }
 
 .project-partners {
-  fill: orange;
+  fill: #96281B;
+  /*fill: orange;*/
   stroke: none;
   shape-rendering: crispEdges;
 }
