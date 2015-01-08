@@ -171,8 +171,8 @@
   var div0 = d3.select("#box0").append("div")
       .attr("class","projects-info");
   
-  d3.select("#box0").append("div")
-      .attr("id","gradient");
+  /*d3.select("#box0").append("div")
+      .attr("id","gradient");*/
 
   // CHARTS ////////////////////////////////////////////////////////////
   
