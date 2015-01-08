@@ -83,7 +83,7 @@ svg {
 
 .title-list-projs {
   width: 480px;
-  margin: 30px 30px 0px 30px;
+  margin: 38px 30px 0px 30px;
   border-bottom: 2px solid #333;
   font-size: 17px;
   font-weight: bold;
@@ -145,14 +145,14 @@ svg {
 }
 
 .projects-info {
-  margin: 0px 30px 0px 30px;
+  margin: 10px 30px 0px 30px;
   overflow-y:scroll;
   overflow-x:hidden;
   width: 480px;
   height: 150px;
   padding: 5px 0px 5px 0px;
-  border-bottom: 1px solid #333;
-  border-top: 1px solid #333;
+  /*border-bottom: 1px solid #333;
+  border-top: 1px solid #333;*/
 }
 
 .projects-info span {

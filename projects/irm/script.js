@@ -385,7 +385,8 @@
       .attr("viewBox", "0 0 540 540")           // make it
       .attr("preserveAspectRatio", "xMidYMid")  // responsive
       .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
+      .attr("height",540)
+      //.attr("height", height + margin.top + margin.bottom)
     .append("g")
       .attr("transform", "translate(" + margin.left +
         "," + (margin.top) + ")");
@@ -1131,7 +1132,7 @@
         .attr("height", height4 + margin4.top + margin4.bottom)
       .append("g")
         .attr("transform", "translate(" + margin4.left +
-        "," + (margin4.top) + ")");
+        "," + (margin4.top + 15) + ")");
     
     var title = svg4.append("g")
         .attr("class","title");
