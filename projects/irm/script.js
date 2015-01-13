@@ -473,7 +473,7 @@
 
   var svg3 = d3.select("#box3").append("svg")
       .attr("id","box3SVG")
-      .attr("viewBox", "0 0 540 540")           // make it
+      .attr("viewBox", "0 0 " + wwidth + " 540")           // make it
       .attr("preserveAspectRatio", "xMidYMid")  // responsive
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
@@ -860,7 +860,12 @@
         .enter();
       
       c3.partners.append("text")
-          .text(function(d) { return d.partner; })
+          .text(function(d) {
+            var n = Math.floor(70 * wwidth / 540);
+            return d.partner.length < n
+              ? d.partner
+              : d.partner.slice(0, -10 + +n + 1 || 9e9) + "..."
+          })
           .attr({ "x": 0, "y": 0 })
           .attr("transform", function(d,i) {
             return "translate(0," + ( i * 25 ) + ")";
