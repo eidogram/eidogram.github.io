@@ -157,7 +157,8 @@
     });
   };
   
-  // var wwidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  var wwidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  wwidth = wwidth > 540 ? 540 : wwidth
 
   // Session variable storing the selections
   sel = {}
@@ -179,14 +180,14 @@
   // CHARTS ////////////////////////////////////////////////////////////
   
   var margin = {top: 30, right: 30, bottom: 30, left: 30},
-      width = 540 - margin.left - margin.right,
+      width = wwidth - margin.left - margin.right,
       height = 540 - margin.top - margin.bottom;
   
   // box 1
   
   var svg1 = d3.select("#box1").append("svg")
       .attr("id","box1SVG")
-      .attr("viewBox", "0 0 540 300")           // make it
+      .attr("viewBox", "0 0 " + wwidth + " 300")           // make it
       .attr("preserveAspectRatio", "xMidYMid")  // responsive
       .attr("width", width + margin.left + margin.right)
       .attr("height", 300 + margin.top + margin.bottom)
@@ -216,19 +217,19 @@
     })()).join('');
   };
 
-  svg1
-    .append('defs')
-    .append('pattern')
-      .attr('id', 'diagonalHatchCase4')
-      .attr('patternUnits', 'userSpaceOnUse')
-      .attr('width', 100)
-      .attr('height', 100)
-    .append('path')
-      .attr('d',pattern(3000,100,1))
-      // .attr('d', 'M0,4l4,-4')
-      .attr('stroke', '#000')
-      //.attr('stroke', 'rgb(83, 83, 83)')
-      .attr('stroke-width', 1);
+  // svg1
+  //   .append('defs')
+  //   .append('pattern')
+  //     .attr('id', 'diagonalHatchCase4')
+  //     .attr('patternUnits', 'userSpaceOnUse')
+  //     .attr('width', 100)
+  //     .attr('height', 100)
+  //   .append('path')
+  //     .attr('d',pattern(3000,100,1))
+  //     // .attr('d', 'M0,4l4,-4')
+  //     .attr('stroke', '#000')
+  //     //.attr('stroke', 'rgb(83, 83, 83)')
+  //     .attr('stroke-width', 1);
   
   var c1 = {};
   var g1 = svg1.append("g")
@@ -1300,22 +1301,22 @@
   }
 
   
-  function resize(id) {
-    console.log("res");
-    var chart = $("#"+id),
-        aspect = chart.width() / chart.height(),
-        container = chart.parent();
-    var resize = function() {
-        var targetWidth = container.width();
-        chart.attr("width", targetWidth);
-        chart.attr("height", Math.round(targetWidth / aspect));
-    };
-    $(window).on("resize", resize).trigger("resize");
-    $(window).on("ready", resize).trigger("resize");
-  }
+  // function resize(id) {
+  //   console.log("res");
+  //   var chart = $("#"+id),
+  //       aspect = chart.width() / chart.height(),
+  //       container = chart.parent();
+  //   var resize = function() {
+  //       var targetWidth = container.width();
+  //       chart.attr("width", targetWidth);
+  //       chart.attr("height", Math.round(targetWidth / aspect));
+  //   };
+  //   $(window).on("resize", resize).trigger("resize");
+  //   $(window).on("ready", resize).trigger("resize");
+  // }
 
   // Responsiveness
-   resize("box1SVG");
+  //resize("box1SVG");
   
 
 })()
