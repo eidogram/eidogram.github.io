@@ -749,7 +749,11 @@
             "x2": c2.side * 0.85, "y2": c2.side * 0.75 });
       
       c2.squares.append("text")
-          .text(function(d) { return d.theme; })
+          .text(function(d) {
+            return wwidth < 540 && d.theme.length > 10
+              ? d.theme.slice(0,10) + ".."
+              : d.theme;
+          })
           .attr({ "x": 0, "y": c2.side * 0.75 })
           .attr("dy", -3)
           .attr("class", "legend");
