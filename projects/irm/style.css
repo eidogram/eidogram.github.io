@@ -82,7 +82,7 @@ svg {
 }
 
 .title-list-projs {
-  width: 480px;
+  max-width: 480px;
   margin: 38px 30px 0px 30px;
   border-bottom: 2px solid #333;
   font-size: 17px;
@@ -93,7 +93,7 @@ svg {
 }
 
 .subtitle-list-projs {
-  width: 480px;
+  max-width: 480px;
   margin: 0px 30px 0px 30px;
   padding: 0px 0px 1px 1px;
   font-size: 10px;
@@ -148,7 +148,7 @@ svg {
   margin: 10px 30px 0px 30px;
   overflow-y:scroll;
   overflow-x:hidden;
-  width: 480px;
+  max-width: 480px;
   height: 150px;
   padding: 5px 0px 5px 0px;
   /*border-bottom: 1px solid #333;
@@ -203,3 +203,7 @@ svg {
 }
 
 .item-viz { width: 49%; }
+
+@media (max-width: 640px) {
+  .item-viz { width: 100%; }
+}

@@ -383,12 +383,15 @@
   
   // box 2 /////////////////////////////////////////////////////////////
   
+  var hheight = Math.floor(wwidth * 1.07);
+  hheight = hheight < 540 ? hheight : 540;
+
   var svg2 = d3.select("#box2").append("svg")
       .attr("id","box2SVG")
-      .attr("viewBox", "0 0 " + wwidth + " 540")           // make it
+      .attr("viewBox", "0 0 " + wwidth + " " + hheight)           // make it
       .attr("preserveAspectRatio", "xMidYMid")  // responsive
       .attr("width", width + margin.left + margin.right)
-      .attr("height",540)
+      .attr("height", hheight)
       //.attr("height", height + margin.top + margin.bottom)
     .append("g")
       .attr("transform", "translate(" + margin.left +
@@ -861,10 +864,10 @@
       
       c3.partners.append("text")
           .text(function(d) {
-            var n = Math.floor(70 * wwidth / 540);
+            var n = Math.floor(60 * wwidth / 540);
             return d.partner.length < n
               ? d.partner
-              : d.partner.slice(0, -10 + +n + 1 || 9e9) + "..."
+              : d.partner.slice(0, -5 + +n + 1 || 9e9) + "..."
           })
           .attr({ "x": 0, "y": 0 })
           .attr("transform", function(d,i) {
@@ -1119,7 +1122,7 @@
     var hTooltip = 100;
   
     var margin4 = {top: 30, right: 10, bottom: 30, left: 30},
-        width4 = 540 - margin4.left - margin4.right,
+        width4 = wwidth - margin4.left - margin4.right,
         height4 = hTooltip + n * hh;
 
     var tScale = d3.time.scale()
@@ -1134,7 +1137,7 @@
 
     var svg4 = d3.select("#box4").append("svg")
         .attr("id","box4SVG")
-        .attr("viewBox", "0 0 540 " + (hTooltip + n * hh)) // make it
+        .attr("viewBox", "0 0 " + wwidth + " " + (hTooltip + n * hh)) // make it
         .attr("preserveAspectRatio", "xMidYMid")  // responsive
         .attr("width", width4 + margin4.left + margin4.right)
         .attr("height", height4 + margin4.top + margin4.bottom)
@@ -1185,7 +1188,7 @@
     
     title
       .append("text")
-      .text("Project Duration and number of Partners")
+      .text(wwidth < 540 ? "Project Duration" : "Project Duration and number of Partners")
       .attr({ "x": 0, "y": -45 })
 
     title
@@ -1229,7 +1232,9 @@
             details.style("display",null);
             details.attr("transform", "translate(0," + (i * hh - 18) + ")")
             detailsTitle.text(
-              d.project.length > 70 ? d.project.slice(0, 70) + "..." : d.project);
+              d.project.length > (wwidth * 70 / 540)
+                ? d.project.slice(0, wwidth * 70 / 540) + "..."
+                : d.project);
             detailsInfo.text(d["Start Date"]+" - "+d["End Date"] + 
               " | " + (d.partners.length-1) + " Partners");
          })
