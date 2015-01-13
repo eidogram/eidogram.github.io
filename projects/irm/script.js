@@ -1185,9 +1185,25 @@
         .attr("class","sub-line")
         .attr({ "x1": 0, "y1": -12, "x2": width, "y2": -12 });
 
-    var details = svg4.append("g")
-        .attr("class","legend")
+    var pRectsg = svg4.append("g")
         .attr("transform","translate(0,5)");
+
+    var details = svg4.append("g")
+        .style("display","none")
+        .attr("class","legend");
+        /*.attr("transform","translate(0,5)");*/
+
+    var detailsBackground = details.append("rect")
+        .attr({
+          "y": -10,
+          "width": width,
+          "height": 28
+        })
+        .style({
+          "fill": "#fff",
+          "fill-opacity": 0.7,
+          "stroke-width": "0px"
+        })
 
     var detailsTitle = details.append("text");
 
@@ -1196,21 +1212,21 @@
 
     // var toolTip = svg4.append("g");
 
-    var pRectsg = svg4.append("g")
-        .attr("transform","translate(0,28)");
-
     var pRects = pRectsg.selectAll(".project")
         .data(data)
       .enter().append("g")
-        .on("mouseover", function(d) {
+        .on("mouseover", function(d,i) {
             d3.select(this)
               .style("fill-opacity", 0.7);
+            details.style("display",null);
+            details.attr("transform", "translate(0," + (i * hh - 18) + ")")
             detailsTitle.text(
               d.project.length > 70 ? d.project.slice(0, 70) + "..." : d.project);
             detailsInfo.text(d["Start Date"]+" - "+d["End Date"] + 
               " | " + (d.partners.length-1) + " Partners");
          })
          .on("mouseout", function(){
+            details.style("display","none");
             d3.select(this)
               .style("fill-opacity", 1);
          })
