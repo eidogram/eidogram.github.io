@@ -169,6 +169,12 @@ svg {
   position:relative;
 }
 
+#box1 {
+  width: 100%;
+  max-width: 540px;
+
+}
+
 /*#box4 {
   max-height: 600px;
   overflow:scroll;

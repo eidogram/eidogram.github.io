@@ -156,6 +156,8 @@
       return (k.year ? k.year === year : 1) && (k.theme ? k.theme === theme : 1) && (k.partner ? (_ref = k.partner, __indexOf.call(p.partners, _ref) >= 0) : 1);
     });
   };
+  
+  // var wwidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
   // Session variable storing the selections
   sel = {}
@@ -1297,8 +1299,9 @@
       return Math.random() * (max - min) + min;
   }
 
-  /*
+  
   function resize(id) {
+    console.log("res");
     var chart = $("#"+id),
         aspect = chart.width() / chart.height(),
         container = chart.parent();
@@ -1309,10 +1312,10 @@
     };
     $(window).on("resize", resize).trigger("resize");
     $(window).on("ready", resize).trigger("resize");
-  }*/
+  }
 
   // Responsiveness
-  // resize("case4SVG");
+   resize("box1SVG");
   
 
 })()
