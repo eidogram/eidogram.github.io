@@ -157,7 +157,7 @@
     });
   };
   
-  var wwidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  var wwidth = (window.innerWidth > 0) ? window.innerWidth-10 : screen.width-10;
   wwidth = wwidth > 540 ? 540 : wwidth
 
   // Session variable storing the selections
