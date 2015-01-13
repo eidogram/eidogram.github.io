@@ -195,27 +195,27 @@
       .attr("transform", "translate(" + margin.left + "," +
         (margin.top + 40) + ")");
   
-  var line = function(L,m) {
-    var m, x0, x1, y0, y1, a;
-    x0 = getRandomInt(0, L);
-    y0 = getRandomInt(0, L);
-    a = getRandomInt(0, 360);
-    x1 = m * Math.sin(a);
-    y1 = m * Math.cos(a);
-    return "M" + x0 + "," + y0 + "l" + x1 + "," + y1;
-  };
+  // var line = function(L,m) {
+  //   var m, x0, x1, y0, y1, a;
+  //   x0 = getRandomInt(0, L);
+  //   y0 = getRandomInt(0, L);
+  //   a = getRandomInt(0, 360);
+  //   x1 = m * Math.sin(a);
+  //   y1 = m * Math.cos(a);
+  //   return "M" + x0 + "," + y0 + "l" + x1 + "," + y1;
+  // };
   
-  var pattern = function(n, L, m) {
-    var i;
-    return ((function() {
-      var _i, _results;
-      _results = [];
-      for (i = _i = 1; 1 <= n ? _i <= n : _i >= n; i = 1 <= n ? ++_i : --_i) {
-        _results.push(line(L,m));
-      }
-      return _results;
-    })()).join('');
-  };
+  // var pattern = function(n, L, m) {
+  //   var i;
+  //   return ((function() {
+  //     var _i, _results;
+  //     _results = [];
+  //     for (i = _i = 1; 1 <= n ? _i <= n : _i >= n; i = 1 <= n ? ++_i : --_i) {
+  //       _results.push(line(L,m));
+  //     }
+  //     return _results;
+  //   })()).join('');
+  // };
 
   // svg1
   //   .append('defs')
@@ -385,7 +385,7 @@
   
   var svg2 = d3.select("#box2").append("svg")
       .attr("id","box2SVG")
-      .attr("viewBox", "0 0 540 540")           // make it
+      .attr("viewBox", "0 0 " + wwidth + " 540")           // make it
       .attr("preserveAspectRatio", "xMidYMid")  // responsive
       .attr("width", width + margin.left + margin.right)
       .attr("height",540)
@@ -396,7 +396,7 @@
   
   var c2 = {};
   
-  c2.side = 140;
+  c2.side = Math.floor(140 * wwidth / 540);
   
   c2.scale = d3.scale.linear()
         .range([0, c2.side * 0.6]);
@@ -650,7 +650,7 @@
           .text(function(d) { return d.value })
           .attr("y", height/2 + 42)
           .attr("x", function(d) { return c1.xScale(d.year) })
-          .attr("dx",38);
+          .attr("dx",c1.xScale.rangeBand()/2 + 11);
 
       c1.selection = c1.legend.selectAll(".selection")
           .data(data.years, function(d) { return d.year; });
@@ -662,7 +662,7 @@
           .text(function(d) { return Math.floor(d.value) })
           .attr("y", height/2 + 69)
           .attr("x", function(d) { return c1.xScale(d.year) })
-          .attr("dx",38);
+          .attr("dx",c1.xScale.rangeBand()/2 + 11);
       
       // box 2 ///////////////////////////////////////////////////////////
       
@@ -671,13 +671,13 @@
       if (nT < 4) {
 
         d3.select("#box2").select("svg")
-            .attr("viewBox", "0 0 540 240")           // make it
+            .attr("viewBox", "0 0 " + wwidth + " 240")           // make it
             .attr("height", 240);
 
       } else if (nT < 7) {
 
         d3.select("#box2").select("svg")
-            .attr("viewBox", "0 0 540 390")           // make it
+            .attr("viewBox", "0 0 " + wwidth + " 390")           // make it
             .attr("height", 390);
 
       }
