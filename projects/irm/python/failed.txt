@@ -1,0 +1,301 @@
+Villeurbanne Cedex,FR
+Compton Near Newbury,GB
+Cuilles Monells I Sant Sadur Girona,ES
+Gif Sur Yvette Cedex,FR
+Zur Hadasah - Doar Haela,IL
+Canberra City Act,AU
+7003 Ouagadougou 03,BF
+Waginengen,NL
+Biassono Milano,IT
+Rosiere Pres Troyes,FR
+Denbigshire,GB
+Coltodino Fara In Sabina,IT
+Culemberg,NL
+Aretxablaeta,ES
+Lodumlu/ankara,TR
+Lia√™ge,BE
+Northhampton,GB
+Puerto Lumbrera,ES
+Saint-denis Cedex 02,FR
+Greiz-gommia,DE
+Karski Nuia,EE
+M'xlokk,MT
+Auer Pfatten,IT
+Goranja Vas,SI
+Orleans Cedex 2,FR
+Cergy Cedex,FR
+Klesterbach,DE
+Peania Attica,GR
+Granarolo Dell Emilia,IT
+Toleegno,IT
+Sj Rijswijk,NL
+Werneuchen / Ot Seefeld,DE
+Kiyv,UA
+Potsdam Ot Satzkorn,DE
+Gentilly Cedex,FR
+Zevgolatio Corinthias,GR
+Sant Agata Bolognese Bo,IT
+Ponte Dell Olio Piacenza,IT
+Nusbaumen,CH
+Birzeit, West Bank,PS
+Friesach Ktn,AT
+Vestenbergsreuth,DE
+Warzawa,PL
+Vandoeuvre Les Nancy Cedex,FR
+Oosterhout Nb,NL
+Yverdo-les-bains,CH
+Harmondsworth Middlesex,GB
+Budakalasz Lenfonopark,HU
+Baullers,BE
+Issy-Les-Mulineaux,FR
+Paris Rp,FR
+Botzen,IT
+Amman / Al-jubaiha,JO
+Psahna,GR
+,
+Leobersdrof,AT
+Klong 1 Klongluang, Pathumthani,TH
+Arcueil Cedex,FR
+Metamorphosi, Athens,GR
+St Cyr L Ecole,FR
+Ramoth Menashe,IL
+Limoges Cedex,FR
+Pessac Cedex,FR
+St Cristobal De Las Casas,MX
+Hengelo Ov,NL
+Masies De Roda Barcelona,ES
+Pilaia - Thessaloniki,GR
+Saint Etienne Cedex 2,FR
+Talinn,EE
+Saint-medard-en-jalles Cedex,FR
+Cividale Del Friulli,IT
+Beni-brak,IL
+Marseille Cedex 9,FR
+Saint Jean D Illac,FR
+Glyka Nera Attikis,GR
+Rennes Cedex,FR
+Figeac Cedex,FR
+Irakleio Kriti,GR
+Saint Martin D Heres Cedex,FR
+Tor San Lorenzo Ardea Rm,IT
+Qis Do Bairro,PT
+Palaio Psychico,GR
+Villa Nova De Gaia,PT
+Chrsitiansfeld,DK
+Saint Pol De Leaon,FR
+Clichy Cedex,FR
+Niederwiesa Ot Lichtenwalde,DE
+Hong Kong Sar, Kawloon,CN
+Mumbia,IN
+Al-jubaiha/amman,JO
+Tavullia Ps,IT
+Amfikleia,GR
+Lowel Ma,US
+Addleston,GB
+Keratsini / Pireas,GR
+Le Chesnay Cedex,FR
+Lengnau Bei Biel,CH
+Cordoba, Vera Cruz,MX
+Shah Alam Selangor Darul Ehsan,MY
+Westdrayton,GB
+Tours Cedex 1,FR
+Syorugota,FO
+Uppo Di Calderara Di Reno,IT
+Meylan Cedex,FR
+Tootuse,EE
+La Bisbal D Emporda Girona,ES
+Bila Tserkva Kievska Oblast,UA
+Kibutz Einat,IL
+Kayaklidere/ankara,TR
+Kifissia Athina,GR
+Acharnae,GR
+Kedainiu Raj,LT
+Widness,GB
+La Garde Cedex,FR
+Costamasnaga,IT
+Prieviddza,SK
+Ssaint Pal De Chalencon,FR
+Selangor Darul Ehsan,MY
+Antony Cedex,FR
+Beetzsee Ot Brielow,DE
+Yatekey,GB
+Saint Maurice Cedex,FR
+Aghia Paraskevi Athina,GR
+Wellingborough, Northants,GB
+Pristina,KO
+Canneto Sull Oglio,IT
+Rijswijk Zh,NL
+San Mauro Pascoli Fo,IT
+Strasbourg Cedex,FR
+Umranyie,TR
+Menoufiya,EG
+Eastleigh Uk So50 4sr,GB
+Baden Bei Wien,AT
+Halsbruecke,DE
+Nice Cedex 1,FR
+Aci Sant Antonio Ct,IT
+Brest Cedex 3,FR
+Polygono Athina,GR
+Sommmacampagna,IT
+Dijon Cedex,FR
+Rignano Sull/arno,IT
+Asmterdam,NL
+Neukirchen Erzgeb,DE
+Hovic,NO
+Pomerol, Libourne Cedex,FR
+Alderney, Channel Islands,GB
+K&#65533;enhavn K,DK
+Archaracle,GB
+Jablonec Nad Nisuo,CZ
+Themistokli Rhodes Island,GR
+Osteraas,NO
+Villenave D Ornon,FR
+Vincios,ES
+Cambrdge,GB
+Cocquio-Trevisag,IT
+Champigny Sur Marne Cedex,FR
+Silvano D Orba Al,IT
+Anzola Dell Emilia Bo,IT
+Pa Borculo,NL
+Senlis Cedex,FR
+St John's Nf,CA
+Emeg Hefer,IL
+Kafar Saba,IL
+Greifswald-insel Riems,DE
+Fondotoce Vb,IT
+Paris La Defense Cedex,FR
+Hayes, Middlesex,GB
+Pomigliano D Arco,IT
+Riba Roja Del Turia,ES
+Le Haillan Cedex,FR
+Halandri,GR
+Horta Ilha Do Falal,PT
+Troitsk, Moscow Region,RU
+Bergen-wolde,DE
+Bruay La Bruyere,FR
+Rokkasho Mura,JP
+Stoke D Abernon,GB
+Mylopotamos Rethymnon,GR
+Aghia Paraskevi Attikis,GR
+Bucurest,RO
+Blagnac Cedex,FR
+Mmenstaad,DE
+Alobolote,ES
+Saint Etienne Cedex,FR
+Hatsola,FI
+La Defense Cedex,FR
+Crolles Cedex,FR
+Nisantasi - Instanbul,TR
+Amyndeon,GR
+Valbonne,GB
+Grimancelos,PT
+Pokfulam,HK
+Angers Cedex 01,FR
+Ko'ice,SK
+Komaron,HU
+Pudong New Distrcit, Shanghai,CN
+Attiki Agia Paraskevi Athina,GR
+Tulkarm West Bank,PS
+Reuil Malmaison,FR
+Montpellier Cedex 4,FR
+Ampelakia Salamis Island,GR
+Torrelavaga,ES
+Sukkarieta (bizkaia),ES
+Villagarcia De Arousa,ES
+Fontaniebleau,FR
+Ramnicu Valcea Jud Valcea,RO
+San Bagio Di Callalta,IT
+Ramonville St Agne Cedex,FR
+Speen, Newbury, Berks,GB
+Sacuieni,RO
+Lille Cedex,FR
+Buea Southwest Region,CM
+Champagne Au Mont D Or,FR
+Nice - Cedex 2,FR
+Brettevile L Orgueilleuse,FR
+Pantelimon, Judet Ilfov,RO
+Langabnk,GB
+Helev,DK
+Ankra,TR
+Torhshavn,FO
+Koropi Athina,GR
+Futuroscope Cedex,FR
+San Paolo D Argon,IT
+Atalanti Ethiotida,GR
+Moscva,RU
+Nantes Cedex 04,FR
+Avignon Cedex 1,FR
+Anavissos Attiki,GR
+Laon Cedex,FR
+Doordrecht,NL
+Varesse,IT
+Serock K. Warszawy,PL
+Sant Albano Stura Cn,IT
+Karaagag, Edirne,TR
+Noordwijk Zh,NL
+Seongnam-si, Gyeonggi-do,KR
+Saint Martin Du Fresne,FR
+Safat,KW
+Moscow Region, Rhavki Vill., Gu Vniipp,RU
+Ljubjana,SI
+Walyham,US
+Saint Denis Cedex,FR
+Neuengoena,DE
+Palaiou Falirou,GR
+Dagneux Montluel,FR
+Pointe A Pitre Cedex,GF
+Wrocaaw,PL
+Zaporozhye,UA
+Siggiewl,MT
+Bajo Derecha, Madrid,ES
+Santa Maria D Olo,ES
+Borovsk Kaluga Region,RU
+Ellon, Abberdeenshire,GB
+Nizhniy Arkhyz Zelenchukskaya,RU
+Petersberg Ot Teicha,DE
+Uelzen Ot Oldenstadt,DE
+Prishtina,KO
+Sam Marzano Oliveto,IT
+Sepins,PT
+Naxar,MT
+Nea Smyrnh,GR
+Aigueblanche Cedex,FR
+Scandiano (reggio Emillia),IT
+Puccheim,DE
+Marcy L Etoile,FR
+Mandra Attikis,GR
+Zactenco, Mexico D.F.,MX
+Petah Tiqwa,IL
+Bourges Cedex,FR
+Cayenne,GF
+Mulhouse Cedex,FR
+Konstancin Jerziorna,PL
+Nurtigen,DE
+Pokfulam Hong Kong,HK
+Bolechowo-osiedle, Owicska,PL
+Vialdecavalls Barcelona,ES
+Anoixi Attikis,GR
+Wad Medni,SD
+Piareus,GR
+Arceuil Cedex,FR
+Downholland Ormskirk,GB
+Livingstone, Kirkton North, West Lothien,GB
+Alcantaria (murcia),ES
+Labege Cedex,FR
+Abassyia Cairo,EG
+Massy Cedex,FR
+Orl&#65533;ns,FR
+Umeaa,SE
+Anetra Di Cahttps:/stel Sant'angelo (ri),IT
+Lefcosia,CY
+Hartley Wintney Hants,GB
+Trejouls Lauzerte,FR
+Logro?o,ES
+Swavesey, Cambridge,GB
+Ja?nka?ping,SE
+Nanterre Cedex,FR
+Orsay Cedex,FR
+La Defence (courbevoie),FR
+Rhyl Denbigshire,GB
+Ede Gld,NL
+Eclubens - Vd,CH
