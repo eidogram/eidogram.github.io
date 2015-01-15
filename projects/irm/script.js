@@ -1133,15 +1133,15 @@
         //.slice(0, 500);
 
     var margin = {top: 40, right: 40, bottom: 40, left: 40},
-        width = 540 - margin.left - margin.right,
-        height = 540 - margin.top - margin.bottom;
+        width = wwidth - margin.left - margin.right,
+        height = width + 20 - margin.top - margin.bottom;
 
     var svg = d3.select("#box5").append("svg")
         .attr("id", "map")
-        .attr("viewBox", "0 0 540 560")          // make it
+        .attr("viewBox", "0 0 " + wwidth + " " + (wwidth+20))          // make it
         .attr("preserveAspectRatio", "xMidYMid") // responsive
-        .attr("width", 540)
-        .attr("height", 560);
+        .attr("width", wwidth)
+        .attr("height", wwidth + 20);
 
     var map = svg.append("g")
         .attr("class","wmap")
@@ -1154,7 +1154,7 @@
     title
       .append("line")
         .attr("class","main-line")
-        .attr({ "x1": 0, "y1": -35, "x2": 480, "y2": -35 });
+        .attr({ "x1": 0, "y1": -35, "x2": (width+20), "y2": -35 });
 
     title.append("rect")
       .attr({
@@ -1208,7 +1208,7 @@
           .clipExtent([[0,0],[width,width]])
           .rotate([0,0,0])
           .translate([width/2,width/2])
-          .scale(500);
+          .scale(Math.floor(500*wwidth/540));
 
     var path = d3.geo.path()
         .projection(projection);
