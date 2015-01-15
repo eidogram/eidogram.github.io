@@ -1119,6 +1119,169 @@
 
   }
 
+  var drawMap = function(data, topology, coordinates) {
+    
+    var cities = getPartners(data)
+        .map(function(el){
+          return {
+            "partner": el.partner,
+            "coords": coordinates[el.partner]
+          }; 
+        })
+        .filter(function(el) { 
+          return el.coords != undefined && el.coords.length == 2; });
+        //.slice(0, 500);
+
+    var margin = {top: 40, right: 40, bottom: 40, left: 40},
+        width = 540 - margin.left - margin.right,
+        height = 540 - margin.top - margin.bottom;
+
+    var svg = d3.select("#box5").append("svg")
+        .attr("id", "map")
+        .attr("viewBox", "0 0 540 560")          // make it
+        .attr("preserveAspectRatio", "xMidYMid") // responsive
+        .attr("width", 540)
+        .attr("height", 560);
+
+    var map = svg.append("g")
+        .attr("class","wmap")
+        .attr("transform","translate(40,57)");
+
+    var title = svg.append("g")
+        .attr("class","title")
+        .attr("transform","translate(30,90)");
+  
+    title
+      .append("line")
+        .attr("class","main-line")
+        .attr({ "x1": 0, "y1": -35, "x2": 480, "y2": -35 });
+
+    title.append("rect")
+      .attr({
+        "x": 0,
+        "y": -33,
+        "height": 28,
+        "width": 250  
+      })
+      .style({
+        "fill": "#fff",
+        "stroke": "none",
+        "shape-rendering": "crispEdges"
+      });
+
+    title
+      .append("text")
+      .text("Partners in Europe")
+      .attr({ "x": 0, "y": -45 })
+
+    title.append("rect")
+      .attr({
+        "x": 0,
+        "y": -25,
+        "height": 3,
+        "width": 3  
+      })
+      .style({
+        "fill": "transparent",
+        "stroke": "#96281B",
+        "stroke-width": "1px",
+        "shape-rendering": "crispEdges"
+      });
+
+    title.append("text")
+      .text("Location of one or more partners")
+      .attr({ "x": 8, "y": -20 })
+      .attr("class","legend");
+
+    //var projection = d3.geo.azimuthalEquidistant()  // projection
+    var projection = d3.geo.azimuthalEqualArea()
+    //var projection = d3.geo.conicEqualArea()
+    //var projection = d3.geo.conicConformal()
+    //var projection = d3.geo.stereographic()
+    //var projection = d3.geo.mercator()
+    //var projection = d3.geo.conicEquidistant()
+    //var projection = d3.geo.equirectangular()
+          .center([17.25,52.3]) // europe
+          //.center([-73.98, 40.77]) // NY
+          //.center([144.96, -27.81])
+          //.rotate([-11,0,0])
+          .clipExtent([[0,0],[width,width]])
+          .rotate([0,0,0])
+          .translate([width/2,width/2])
+          .scale(500);
+
+    var path = d3.geo.path()
+        .projection(projection);
+
+    var features = topojson
+        .feature(topology, topology.objects.land);
+
+    map.selectAll(".city-dot")
+        .data(cities)
+      .enter()
+        .append("rect")
+        .attr("class","city-dot")
+        .attr({
+          "x": 0,
+          "y": 0,
+          "width": 3,
+          "height": 3
+        })
+        .attr("transform", function(d) {
+          return "translate (" +
+            projection([d.coords[1],d.coords[0]]) + ")";
+        });
+
+    map.append("path")
+      .datum(features)
+      .attr("d", path);
+      // .style({
+      //   "stroke": "#828282",
+      //   "stroke-width": "1px",
+      //   "fill": "#fff"
+      // });
+
+    map.append("rect")
+      .attr({
+        "x": 0,
+        "y": 0,
+        "width": width,
+        "height": width
+      })
+      .style({
+        "fill": "transparent",
+        "stroke": "#fff",
+        "stroke-width": "2px",
+      })
+
+    // var name = data[0]["Organization Name"].toLowerCase();
+    // var coordsOrg = coordinates[name];
+
+    // map.append("rect")
+    //     .datum(coordsOrg)
+    //     .attr({
+    //       "x": 0,
+    //       "y": 0,
+    //       "width": 10,
+    //       "height": 10
+    //     })
+    //     .attr("transform", function(d) {
+    //       return "translate (" +
+    //         projection([d[1],d[0]]) + ")";
+    //     })
+    //     .style({
+    //       "fill": "gold",
+    //       "stroke": "#666",
+    //       "stroke-width": "1px"
+    //     })
+
+
+
+
+
+
+  }
+
   var drawProjects = function(data) {
     
     var n = data.length;
@@ -1278,7 +1441,14 @@
 
   };
 
-  d3.json("data.json", function(error, data) {
+  queue()
+    .defer(d3.json, "./js/data.json")
+    .defer(d3.json, "./js/world.json")
+    .defer(d3.json, "./js/coords.json")
+    .await(ready);
+
+  //d3.json("data.json", function(error, data) {
+  function ready(error, data, topology, coordinates) {
     
     // Fix data
     var data = fixData(data);
@@ -1293,6 +1463,9 @@
     // Draw Projects
     drawProjects(data);
 
+    // Draw Map
+    drawMap(data, topology, coordinates);
+
     listProjs(data);
 
     var container = document.querySelector('#container-viz');
@@ -1302,7 +1475,7 @@
       itemSelector: '.item-viz'
     });
 
-  })
+  }
   
   //update(getRandomData());
 

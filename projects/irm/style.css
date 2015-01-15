@@ -209,3 +209,16 @@ svg {
 @media (max-width: 640px) {
   .item-viz { width: 100%; }
 }
+
+.wmap {
+  stroke: #333;
+  stroke-width: 1px;
+  fill: none;
+}
+
+.city-dot {
+  stroke: #96281B;
+  stroke-width: 1px;
+  fill: none;
+  shape-rendering: crispEdges;
+}

@@ -62,7 +62,7 @@ def createJson():
   with open("data.csv", newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
     for row in reader:
-      res[row[1]] = helper(coords, row[-2], row[-1])
+      res[row[1].lower()] = helper(coords, row[-2], row[-1])
       # res[row[1]] = {
       #   #"city": row[-2],
       #   #"country": row[-1],
