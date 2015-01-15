@@ -1285,12 +1285,12 @@
   var drawProjects = function(data) {
     
     var n = data.length;
-    var hh = n > 500 ? 3 : 4;
+    var hh = n > 200 ? 3 : 4;
     var hTooltip = 100;
   
     var margin4 = {top: 30, right: 10, bottom: 30, left: 30},
         width4 = wwidth - margin4.left - margin4.right,
-        height4 = hTooltip + n * hh;
+        height4 = hTooltip + n * hh - 15;
 
     var tScale = d3.time.scale()
         .range([150, width4 - margin4.left - margin4.right])
@@ -1304,13 +1304,13 @@
 
     var svg4 = d3.select("#box4").append("svg")
         .attr("id","box4SVG")
-        .attr("viewBox", "0 0 " + wwidth + " " + (hTooltip + n * hh)) // make it
+        .attr("viewBox", "0 0 " + wwidth + " " + (hTooltip + n * hh - 15)) // make it
         .attr("preserveAspectRatio", "xMidYMid")  // responsive
         .attr("width", width4 + margin4.left + margin4.right)
-        .attr("height", height4 + margin4.top + margin4.bottom)
+        .attr("height", height4)
       .append("g")
         .attr("transform", "translate(" + margin4.left +
-        "," + (margin4.top + 15) + ")");
+        "," + (margin4.top + 40) + ")");
     
     var title = svg4.append("g")
         .attr("class","title");
