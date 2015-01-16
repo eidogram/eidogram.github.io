@@ -1475,7 +1475,14 @@
       itemSelector: '.item-viz'
     });
 
-    d3.selectAll(".item-viz").transition().duration(1000).style("opacity", 1);
+    d3.selectAll(".item-viz")
+      .data([0,1,2,3,4,5])
+      .transition()
+        .delay(function(i){
+          console.log(i);
+          return i * 100;})
+        .duration(1000)
+        .style("opacity", 1);
 
   }
   
