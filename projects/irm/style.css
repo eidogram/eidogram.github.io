@@ -206,9 +206,17 @@ svg {
   width: 49%;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1100px) {
   .item-viz { width: 100%; }
 }
+
+/*@media (max-width: 640px) {
+  .item-viz { width: 100%; }
+}*/
+
+/*#box0 {
+  width: 540px;
+}*/
 
 .wmap {
   stroke: #333;
