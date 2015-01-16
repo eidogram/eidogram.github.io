@@ -1475,6 +1475,8 @@
       itemSelector: '.item-viz'
     });
 
+    d3.selectAll(".item-viz").transition().duration(1000).style("opacity", 1);
+
   }
   
   //update(getRandomData());
