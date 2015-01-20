@@ -621,7 +621,7 @@
           .on("mouseover", function(d,i) {
               var sel = c1.bb.select(".bb" + i);
               console.log(sel.style("fill"));
-              if (sel.style("fill") === "rgb(255, 215, 0)") {
+              if (sel.style("fill") !== "none") {
                 sel.style("opacity", "0.3");
               } else {
                 sel.style("fill", "gold");
