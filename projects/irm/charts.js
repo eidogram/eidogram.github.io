@@ -833,7 +833,7 @@
           .style("shape-rendering", okCrisp())
           .on("mouseover", function(d,i) {
               var sel = g2.select(".bs" + i);
-              if (sel.style("fill") === "rgb(255, 215, 0)") {
+              if (sel.style("fill") !== "none") {
                 sel.style("opacity", "0.3");
               } else {
                 sel.style("fill", "gold");
@@ -963,7 +963,7 @@
           .attr("class",function(d,i) { return "fr " + "fr" + i  })
           .on("mouseover", function(d,i) {
               var sel = g3.select(".br" + i);
-              if (sel.style("fill") === "rgb(255, 215, 0)") {
+              if (sel.style("fill") !== "none") {
                 sel.style("opacity", "0.3");
               } else {
                 sel.style("fill", "gold");
