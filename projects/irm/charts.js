@@ -620,6 +620,7 @@
           .style("shape-rendering", okCrisp())
           .on("mouseover", function(d,i) {
               var sel = c1.bb.select(".bb" + i);
+              console.log(sel.style("fill"));
               if (sel.style("fill") === "rgb(255, 215, 0)") {
                 sel.style("opacity", "0.3");
               } else {
@@ -1235,12 +1236,11 @@
         "width": 3  
       })
       .style({
-        //"fill": "transparent",
-        "opacity": 0,
+        "fill-opacity": 0,
         "stroke": "#96281B",
-        "stroke-width": "1px",
-        "shape-rendering": "crispEdges"
-      });
+        "stroke-width": "1px"
+      })
+      .style("shape-rendering", okCrisp());
 
     title.append("text")
       .text("Location of one or more partners")
@@ -1305,9 +1305,8 @@
       })
       .style({
         //"fill": "transparent",
-
         "stroke": "#fff",
-        "stroke-width": "2px",
+        "stroke-width": "2px"
       })
       .style("shape-rendering", okCrisp());
 
