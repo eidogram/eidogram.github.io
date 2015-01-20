@@ -298,7 +298,7 @@
     })
     .style({
       //"fill": "transparent",
-      "fill-opacity": 0,
+      "opacity": 0,
       "stroke": "#828282",
       "stroke-width": "1px",
       "shape-rendering": "crispEdges"
@@ -431,7 +431,7 @@
     })
     .style({
       //"fill": "transparent",
-      "fill-opacity": 0,
+      "opacity": 0,
       "stroke": "#828282",
       "stroke-width": "1px",
       "shape-rendering": "crispEdges"
@@ -518,7 +518,7 @@
     })
     .style({
       //"fill": "transparent",
-      "fill-opacity": 0,
+      "opacity": 0,
       "stroke": "#828282",
       "stroke-width": "1px",
       "shape-rendering": "crispEdges"
@@ -598,14 +598,14 @@
           .on("mouseover", function(d,i) {
               var sel = c1.bb.select(".bb" + i);
               if (sel.style("fill") === "rgb(255, 215, 0)") {
-                sel.style("fill-opacity", "0.3");
+                sel.style("opacity", "0.3");
               } else {
                 sel.style("fill", "gold");
               }
            })
            .on("mouseout", function(d,i){
               self = c1.bb.select(".bb" + i)
-              self.style("fill-opacity", "1");
+              self.style("opacity", "1");
               self.style("fill", self.classed("selected") ? "gold" : "none");
            })
           .on("click", function(d,i) {
@@ -803,14 +803,14 @@
           .on("mouseover", function(d,i) {
               var sel = g2.select(".bs" + i);
               if (sel.style("fill") === "rgb(255, 215, 0)") {
-                sel.style("fill-opacity", "0.3");
+                sel.style("opacity", "0.3");
               } else {
                 sel.style("fill", "gold");
               }
           })
           .on("mouseout", function(d,i){
               self = g2.select(".bs" + i);
-              self.style("fill-opacity",1);
+              self.style("opacity",1);
               self.style("fill", self.classed("selected") ? "gold" : "none");
           })
           .on("click", function(d,i) {
@@ -929,14 +929,14 @@
           .on("mouseover", function(d,i) {
               var sel = g3.select(".br" + i);
               if (sel.style("fill") === "rgb(255, 215, 0)") {
-                sel.style("fill-opacity", "0.3");
+                sel.style("opacity", "0.3");
               } else {
                 sel.style("fill", "gold");
               }
           })
           .on("mouseout", function(d,i){
               self = g3.select(".br" + i)
-              self.style("fill-opacity", "1");
+              self.style("opacity", "1");
               self.style("fill", self.classed("selected") ? "gold" : "none");
           })
           .on("click", function(d,i) {
@@ -1201,7 +1201,7 @@
       })
       .style({
         //"fill": "transparent",
-        "fill-opacity": 0,
+        "opacity": 0,
         "stroke": "#96281B",
         "stroke-width": "1px",
         "shape-rendering": "crispEdges"
@@ -1399,7 +1399,7 @@
         })
         .style({
           "fill": "#fff",
-          "fill-opacity": 0.7,
+          "opacity": 0.7,
           "stroke-width": "0px"
         })
 
@@ -1415,7 +1415,7 @@
       .enter().append("g")
         .on("mouseover", function(d,i) {
             d3.select(this)
-              .style("fill-opacity", 0.7);
+              .style("opacity", 0.7);
             details.style("display",null);
             details.attr("transform", "translate(0," + (i * hh - 18) + ")")
             detailsTitle.text(
@@ -1428,7 +1428,7 @@
          .on("mouseout", function(){
             details.style("display","none");
             d3.select(this)
-              .style("fill-opacity", 1);
+              .style("opacity", 1);
          })
     
     pRects.append("rect")
