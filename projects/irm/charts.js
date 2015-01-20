@@ -620,7 +620,6 @@
           .style("shape-rendering", okCrisp())
           .on("mouseover", function(d,i) {
               var sel = c1.bb.select(".bb" + i);
-              console.log(sel.style("fill"));
               if (sel.style("fill") !== "none") {
                 sel.style("opacity", "0.3");
               } else {
