@@ -25,13 +25,13 @@ div {
   fill: none;
   stroke: #828282;
   stroke-width: 1px;
-  shape-rendering: crispEdges;
+  /*shape-rendering: crispEdges;*/
 }
 
 rect {
   stroke-width: 0px;
   stroke: #fff;
-  shape-rendering: crispEdges;
+  /*shape-rendering: crispEdges;*/
 }
 
 svg {
@@ -41,7 +41,7 @@ svg {
 .main-line, .sub-line {
   fill: none;
   stroke: #333;
-  shape-rendering: crispEdges; 
+  /*shape-rendering: crispEdges; */
 }
 
 .legend1, .legend {
@@ -118,7 +118,7 @@ svg {
   fill: none;
   stroke-width: 1px;
   stroke: #828282;
-  shape-rendering: crispEdges;
+  /*shape-rendering: crispEdges;*/
 }
 
 .squares-ratio {
@@ -135,14 +135,14 @@ svg {
 .project {
   fill: #828282;
   stroke: none;
-  shape-rendering: crispEdges;
+  /*shape-rendering: crispEdges;*/
 }
 
 .project-partners {
   fill: #96281B;
   /*fill: orange;*/
   stroke: none;
-  shape-rendering: crispEdges;
+  /*shape-rendering: crispEdges;*/
 }
 
 .projects-info {
@@ -230,5 +230,5 @@ svg {
   stroke: #96281B;
   stroke-width: 1px;
   fill: none;
-  shape-rendering: crispEdges;
+  /*shape-rendering: crispEdges;*/
 }

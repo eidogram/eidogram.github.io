@@ -1,5 +1,20 @@
 (function () {
 
+  // DETECT BROWSER
+
+  var isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+      // Opera 8.0+ (UA detection to detect Blink/v8-powered Opera)
+  var isFirefox = typeof InstallTrigger !== 'undefined';   // Firefox 1.0+
+  var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+      // At least Safari 3+: "[object HTMLElementConstructor]"
+  var isChrome = !!window.chrome && !isOpera;              // Chrome 1+
+  var isIE = /*@cc_on!@*/false || !!document.documentMode;   // At least IE6
+
+  var okCrisp = function() {
+    return isSafari ? null : "crispEdges";
+  };
+
+
   // HELPER FUNCTIONS //////////////////////////////////////////////////
 
   Array.prototype.unique = function() {
@@ -260,7 +275,8 @@
   c1.path = g1.append("path")
       .attr("transform","translate(1,0)")
       /*.style("fill","url(#diagonalHatchCase4)")*/
-      .attr("class","line");
+      .attr("class","line")
+      .style("shape-rendering", okCrisp());
   
   c1.bars = g1.append("g");
       //.attr("transform", "translate(-3,0)");
@@ -282,6 +298,7 @@
   c1.title
     .append("line")
       .attr("class","main-line")
+      .style("shape-rendering", okCrisp())
       .attr({ "x1": 0, "y1": -35, "x2": width, "y2": -35 });
   
   c1.title
@@ -347,12 +364,14 @@
   c1.legend
     .append("line")
       .attr("class","main-line")
+      .style("shape-rendering", okCrisp())
       .attr({ "x1": 0, "y1": height/2 + 25, 
         "x2": width, "y2": height/2 + 25 });
   
   c1.legend
     .append("line")
       .attr("class","sub-line")
+      .style("shape-rendering", okCrisp())
       .attr({ "x1": 0, "y1": height/2 + 50,
         "x2": width, "y2": height/2 + 50 });
 
@@ -415,6 +434,7 @@
   c2.title
     .append("line")
       .attr("class","main-line")
+      .style("shape-rendering", okCrisp())
       .attr({ "x1": 0, "y1": -35, "x2": width, "y2": -35 });
   
   c2.title
@@ -502,6 +522,7 @@
   c3.title
     .append("line")
       .attr("class","main-line")
+      .style("shape-rendering", okCrisp())
       .attr({ "x1": 0, "y1": -35, "x2": width, "y2": -35 });
   
   c3.title
@@ -584,7 +605,8 @@
           .attr("width", (c1.xScale.range()[1] - c1.xScale.range()[0]) + "px")
           .attr("height", height / 3 + 87)
           .attr("class",function(d,i) { return "bb " + "bb" + i  })
-          .style("fill", "none");
+          .style("fill", "none")
+          .style("shape-rendering", okCrisp());
       
       c1.fb.selectAll(".fb")
           .data(data.years)
@@ -595,6 +617,7 @@
           .attr("width", (c1.xScale.range()[1] - c1.xScale.range()[0]) + "px")
           .attr("height", height / 3 + 87)
           .attr("class","fb")
+          .style("shape-rendering", okCrisp())
           .on("mouseover", function(d,i) {
               var sel = c1.bb.select(".bb" + i);
               if (sel.style("fill") === "rgb(255, 215, 0)") {
@@ -635,6 +658,7 @@
       c1.path
           .datum(c1.dataLine(data.years,c1.xScale,c1.yScale))
           .attr("d", function(d) { return c1.line(d) + "Z"; })
+          .style("shape-rendering", okCrisp())
           .attr("transform", "translate(" +
             c1.xScale(data.years[0].year) + ",0)");
 
@@ -646,6 +670,7 @@
           .append("rect")
           .attr("x", function(d) { return c1.xScale(d.year); })
           .attr("y", function(d) { return c1.yScale(d.value); })
+          .style("shape-rendering", okCrisp())
           .attr("width", (c1.xScale.range()[1] - c1.xScale.range()[0]) + "px")
           .attr("height", function(d) {
             return height / 3 - c1.yScale(d.value);
@@ -704,6 +729,7 @@
           .attr({ "x": 0, "y": 0, "width": c2.side, "height": c2.side })
           .attr("class",function(d,i) { return "bs " + "bs" + i  })
           .style("fill", "none")
+          .style("shape-rendering", okCrisp())
           .attr("transform", function(d,i) {
             return "translate(" + 
               ( c2.side * (i % 3) ) + "," + ( c2.side * Math.floor(i / 3) ) + ")";
@@ -730,6 +756,7 @@
           .attr("x", 0)
           .attr("y", function(d) { return c2.side * 0.6 - c2.scale(Math.sqrt(d.value)); })
           .attr("class", "squares-ratio")
+          .style("shape-rendering", okCrisp())
           .attr("width", function(d) {
             return c2.scale(Math.sqrt(d.value));
           })
@@ -744,6 +771,7 @@
             return c2.side * 0.6 - c2.scale(Math.sqrt(d.value));
           })
           .attr("class", "squares-total")
+          .style("shape-rendering", okCrisp())
           .attr("width", function(d) {
             return c2.scale(Math.sqrt(d.value));
           })
@@ -753,6 +781,7 @@
       
       c2.squares.append("line")
           .attr("class","sub-line")
+          .style("shape-rendering", okCrisp())
           .attr({ "x1": 0, "y1": c2.side * 0.75,
             "x2": c2.side * 0.85, "y2": c2.side * 0.75 });
       
@@ -800,6 +829,7 @@
           })
           .attr({ "x": 0, "y": 0, "width": c2.side, "height": c2.side })
           .attr("class",function(d,i) { return "fs " + "fs" + i  })
+          .style("shape-rendering", okCrisp())
           .on("mouseover", function(d,i) {
               var sel = g2.select(".bs" + i);
               if (sel.style("fill") === "rgb(255, 215, 0)") {
@@ -845,6 +875,7 @@
           .attr({ "x": 0, "y": -4, "width": width, "height": 25 })
           .attr("class",function(d,i) { return "br " + "br" + i  })
           .style("fill", "none")
+          .style("shape-rendering", okCrisp())
           .attr("transform", function(d,i) {
             return "translate(0," + ( i * 25 ) + ")";
           });
@@ -859,6 +890,7 @@
           .attr("x", 0)
           .attr("y", 5)
           .attr("class", "rects")
+          .style("shape-rendering", okCrisp())
           .attr("width", function(d) { return c3.scale(d.value); })
           .attr("height", 3);
 
@@ -872,6 +904,7 @@
           .attr("x", 0)
           .attr("y", 5)
           .attr("class", "rects-ratio")
+          .style("shape-rendering", okCrisp())
           .attr("width", function(d) { return c3.scale(d.value); })
           .attr("height", 3);
 
@@ -921,6 +954,7 @@
           .data(data.partners)
         .enter()
           .append("rect")
+          .style("shape-rendering", okCrisp())
           .attr("transform", function(d,i) {
             return "translate(0," + ( i * 25 ) + ")";
           })
@@ -1172,6 +1206,7 @@
     title
       .append("line")
         .attr("class","main-line")
+        .style("shape-rendering", okCrisp())
         .attr({ "x1": 0, "y1": -35, "x2": (width+20), "y2": -35 });
 
     title.append("rect")
@@ -1240,6 +1275,7 @@
       .enter()
         .append("rect")
         .attr("class","city-dot")
+        .style("shape-rendering", okCrisp())
         .attr({
           "x": 0,
           "y": 0,
@@ -1273,6 +1309,7 @@
         "stroke": "#fff",
         "stroke-width": "2px",
       })
+      .style("shape-rendering", okCrisp());
 
     // var name = data[0]["Organization Name"].toLowerCase();
     // var coordsOrg = coordinates[name];
@@ -1338,6 +1375,7 @@
     title
       .append("line")
         .attr("class","main-line")
+        .style("shape-rendering", okCrisp())
         .attr({ "x1": 0, "y1": -35, "x2": width, "y2": -35 });
 
     title.append("rect")
@@ -1347,7 +1385,8 @@
           "height": hh - 1,
           "width": 25  
         })
-        .attr("class","project-partners");
+        .attr("class","project-partners")
+        .style("shape-rendering", okCrisp());
 
     title.append("text")
       .text("Number of Partners")
@@ -1381,6 +1420,7 @@
     title
       .append("line")
         .attr("class","sub-line")
+        .style("shape-rendering", okCrisp())
         .attr({ "x1": 0, "y1": -12, "x2": width, "y2": -12 });
 
     var pRectsg = svg4.append("g")
@@ -1402,6 +1442,7 @@
           "opacity": 0.7,
           "stroke-width": "0px"
         })
+        .style("shape-rendering", okCrisp());
 
     var detailsTitle = details.append("text");
 
@@ -1443,7 +1484,8 @@
             tScale(format.parse(d["Start Date"]));
         })
         .attr("height", hh - 1)
-        .attr("class","project");
+        .attr("class","project")
+        .style("shape-rendering", okCrisp());
 
     pRects.append("rect")
         .attr("x", function(d) {
@@ -1457,7 +1499,8 @@
           return pScale(d["partners"].length-1);
         })
         .attr("height", hh - 1)
-        .attr("class","project-partners");
+        .attr("class","project-partners")
+        .style("shape-rendering", okCrisp());
 
   };
 
