@@ -105,7 +105,8 @@ svg {
 
 
 .fr, .fs, .fb {
-  fill: transparent;
+  fill-opacity: 0;
+  /*fill: transparent;*/
   stroke: none;
 }
 
