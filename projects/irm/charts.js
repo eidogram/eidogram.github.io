@@ -596,11 +596,16 @@
           .attr("height", height / 3 + 87)
           .attr("class","fb")
           .on("mouseover", function(d,i) {
-              c1.bb.select(".bb" + i)
-                  .style("fill", "gold");
+              var sel = c1.bb.select(".bb" + i);
+              if (sel.style("fill") === "rgb(255, 215, 0)") {
+                sel.style("fill-opacity", "0.3");
+              } else {
+                sel.style("fill", "gold");
+              }
            })
            .on("mouseout", function(d,i){
               self = c1.bb.select(".bb" + i)
+              self.style("fill-opacity", "1");
               self.style("fill", self.classed("selected") ? "gold" : "none");
            })
           .on("click", function(d,i) {
@@ -796,11 +801,16 @@
           .attr({ "x": 0, "y": 0, "width": c2.side, "height": c2.side })
           .attr("class",function(d,i) { return "fs " + "fs" + i  })
           .on("mouseover", function(d,i) {
-              g2.select(".bs" + i)
-                  .style("fill", "gold");
+              var sel = g2.select(".bs" + i);
+              if (sel.style("fill") === "rgb(255, 215, 0)") {
+                sel.style("fill-opacity", "0.3");
+              } else {
+                sel.style("fill", "gold");
+              }
           })
           .on("mouseout", function(d,i){
-              self = g2.select(".bs" + i)
+              self = g2.select(".bs" + i);
+              self.style("fill-opacity",1);
               self.style("fill", self.classed("selected") ? "gold" : "none");
           })
           .on("click", function(d,i) {
@@ -917,11 +927,16 @@
           .attr({ "x": 0, "y": -4, "width": width, "height": 25 })
           .attr("class",function(d,i) { return "fr " + "fr" + i  })
           .on("mouseover", function(d,i) {
-              g3.select(".br" + i)
-                  .style("fill", "gold");
+              var sel = g3.select(".br" + i);
+              if (sel.style("fill") === "rgb(255, 215, 0)") {
+                sel.style("fill-opacity", "0.3");
+              } else {
+                sel.style("fill", "gold");
+              }
           })
           .on("mouseout", function(d,i){
               self = g3.select(".br" + i)
+              self.style("fill-opacity", "1");
               self.style("fill", self.classed("selected") ? "gold" : "none");
           })
           .on("click", function(d,i) {
@@ -1484,7 +1499,6 @@
       .data([0,1,2,3,4,5])
       .transition()
         .delay(function(i){
-          console.log(i);
           return i * 100;})
         .duration(1000)
         .style("opacity", 1);
