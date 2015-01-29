@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<?xml-stylesheet type="text/css" href="../style.css" ?>
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" preserveAspectRatio="xMinYMin meet"
+ viewBox="0 0 1280 552" enable-background="new 0 0 1280 552" xml:space="preserve">
+<rect y="0.7" fill="#FCEE21" width="1280" height="551"/>
+<rect x="-1" y="334.9" width="1281" height="216.9"/>
+<rect x="74.6" y="60.7" fill="none" width="310.4" height="235.2"/>
+<text transform="matrix(1 0 0 1 74.5595 93.1576)"><tspan x="0" y="0" font-family="'FedraSerifAStd-Book'" font-size="15">If you are a developer, a deisgner, a DJ, a </tspan><tspan x="0" y="21" font-family="'FedraSerifAStd-Book'" font-size="15">producer, a samples digger or simply </tspan><tspan x="0" y="42" font-family="'FedraSerifAStd-Book'" font-size="15">have a really good taste in music, don’t </tspan><tspan x="0" y="63" font-family="'FedraSerifAStd-Book'" font-size="15">forget to download the full dataset. </tspan><tspan x="0" y="84" font-family="'FedraSerifAStd-Book'" font-size="15">Informations was collected from </tspan><tspan x="0" y="105" font-family="'FedraSerifAStd-Medium'" font-size="15">WhoSampled.com</tspan><tspan x="143.2" y="105" font-family="'FedraSerifAStd-Book'" font-size="15">, refined and </tspan><tspan x="0" y="126" font-family="'FedraSerifAStd-Book'" font-size="15">organized into a single file.</tspan><tspan x="0" y="152" font-family="'FedraSerifAStd-Bold'" font-size="14">YOU CAN DOWNLOAD THE DATASET </tspan><tspan x="0" y="173" font-family="'FedraSerifAStd-Bold'" font-size="14">FROM THE FOLLOWING LINK.</tspan></text>
+<rect y="-14.1" width="1280" height="14.8"/>
+<polygon fill="none" points="385,389.7 74.6,389.7 74.6,373.1 74.6,370.3 385,370.3 "/>
+<text transform="matrix(1 0 0 1 74.5595 380.8978)" fill="#FCEE21" font-family="'FedraSerifAStd-MediumItalic'" font-size="14">CREDITS:</text>
+<line fill="none" stroke="#FCEE21" stroke-miterlimit="10" x1="260" y1="389.7" x2="75" y2="389.7"/>
+<a xlink:href="http://www.tuxtax.ch/behind_the_beats" >
+	<rect x="682.5" y="116.1" width="518.6" height="115.6"/>
+</a>
+<g>
+	<rect x="813.3" y="145.9" fill="none" width="644" height="184"/>
+	<text transform="matrix(1 0 0 1 813.2614 168.7958)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'FedraSerifAStd-Bold'" font-size="30">DOWNLOAD DATASET </tspan><tspan x="0" y="36" fill="#FFFFFF" font-family="'FedraSerifAStd-DemiItalic'" font-size="30">(csv format)</tspan></text>
+</g>
+<g>
+	<polygon fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="779.1,208 728.3,208 728.3,138.3 
+		766.2,138.3 772.6,144.1 779.1,149.9 	"/>
+	<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="728" y1="159.7" x2="759" y2="159.7"/>
+	<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="728" y1="174.7" x2="759" y2="174.7"/>
+	<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="728" y1="188.7" x2="759" y2="188.7"/>
+</g>
+<g>
+	<g>
+		<path fill="#FCEE21" d="M1210.3,505.3h-91.5c-1.2,0-2.1-1-2.1-2.1v-91.5c0-1.2,1-2.1,2.1-2.1h91.5c1.2,0,2.1,1,2.1,2.1v91.5
+			C1212.5,504.3,1211.5,505.3,1210.3,505.3L1210.3,505.3z M1121,501h87.2v-87.2H1121V501L1121,501z"/>
+	</g>
+	<path fill="#FCEE21" d="M1146.8,434.4h-10.2c-0.9,0-1.6,0.7-1.6,1.6c0,0.9,0.7,1.6,1.6,1.6h3.5v12.5c0,0.9,0.7,1.6,1.6,1.6
+		c0.9,0,1.6-0.7,1.6-1.6v-12.5h3.5c0.9,0,1.6-0.7,1.6-1.6C1148.4,435.1,1147.7,434.4,1146.8,434.4z"/>
+	<path fill="#FCEE21" d="M1146.8,462.7h-10.2c-0.9,0-1.6,0.7-1.6,1.6c0,0.9,0.7,1.6,1.6,1.6h3.5v12.5c0,0.9,0.7,1.6,1.6,1.6
+		c0.9,0,1.6-0.7,1.6-1.6v-12.5h3.5c0.9,0,1.6-0.7,1.6-1.6C1148.4,463.4,1147.7,462.7,1146.8,462.7z"/>
+	<path fill="#FCEE21" d="M1170.2,434.4c-0.9,0-1.6,0.7-1.6,1.6v8.5c0,2.2-1.8,4-4,4c-2.2,0-4-1.8-4-4v-8.5c0-0.9-0.7-1.6-1.6-1.6
+		c-0.9,0-1.6,0.7-1.6,1.6v8.5c0,4,3.2,7.2,7.2,7.2s7.2-3.2,7.2-7.2v-8.5C1171.8,435.1,1171.1,434.4,1170.2,434.4z"/>
+	<path fill="#FCEE21" d="M1190.3,442.9l4.5-6.2c0.5-0.8,0.4-1.7-0.3-2.2c-0.7-0.5-1.7-0.4-2.3,0.4l-3.9,5.3l-3.9-5.3
+		c-0.3-0.4-0.8-0.7-1.3-0.7c-0.3,0-0.7,0.1-1,0.3c-0.7,0.5-0.9,1.5-0.4,2.2l4.5,6.2l-4.5,6.2c-0.2,0.4-0.3,0.8-0.3,1.2
+		c0.1,0.4,0.3,0.8,0.6,1c0.7,0.5,1.7,0.4,2.2-0.3l3.9-5.4l3.9,5.4c0.3,0.4,0.8,0.7,1.3,0.7c0.3,0,0.6-0.1,0.9-0.3
+		c0.3-0.2,0.6-0.6,0.6-1c0.1-0.4,0-0.9-0.3-1.2L1190.3,442.9z"/>
+	<path fill="#FCEE21" d="M1190.3,471.4l4.5-6.2c0.5-0.8,0.4-1.7-0.3-2.2c-0.7-0.5-1.7-0.4-2.3,0.3l-3.9,5.3l-3.9-5.3
+		c-0.3-0.4-0.8-0.7-1.3-0.7c-0.3,0-0.7,0.1-1,0.3c-0.7,0.5-0.9,1.5-0.4,2.2l4.5,6.2l-4.5,6.2c-0.2,0.3-0.3,0.8-0.3,1.2
+		c0.1,0.4,0.3,0.8,0.6,1c0.7,0.5,1.7,0.4,2.2-0.3l3.9-5.4l3.9,5.4c0.3,0.4,0.8,0.7,1.3,0.7c0.3,0,0.6-0.1,0.9-0.3
+		c0.3-0.2,0.6-0.6,0.6-1c0.1-0.4,0-0.9-0.3-1.2L1190.3,471.4z"/>
+	<path fill="#FCEE21" d="M1167.6,476h-6l-1.2,3.2c-0.2,0.5-0.7,0.9-1.3,0.9c-0.2,0-0.3,0-0.5-0.1c-0.7-0.3-1.1-1.1-0.8-1.8l5.4-14.5
+		c0.2-0.5,0.8-0.9,1.3-0.9c0.6,0,1.1,0.3,1.3,0.9l5.4,14.5c0.2,0.7-0.1,1.5-0.8,1.8c-0.1,0-0.3,0.1-0.5,0.1c-0.5,0-1.1-0.3-1.3-0.9
+		L1167.6,476z M1166.6,473.3l-2-5.3l-2,5.3H1166.6z"/>
+</g>
+<rect x="78" y="408.3" fill="none" width="282.7" height="154.8"/>
+<text transform="matrix(1 0 0 1 78.0002 417.4435)"><tspan x="0" y="0" fill="#FCEE21" font-family="'FedraSerifAStd-BookItalic'" font-size="12">Data source: </tspan><tspan x="64.5" y="0" fill="#FCEE21" font-family="'FedraSerifAStd-BoldItalic'" font-size="12">WhoSampled.com</tspan><tspan x="0" y="18" fill="#FCEE21" font-family="'FedraSerifAStd-BookItalic'" font-size="12">Data Scraping Tool:</tspan><tspan x="98.8" y="18" fill="#FCEE21" font-family="'ACaslonPro-Bold'" font-size="14"> </tspan><tspan x="101.6" y="18" fill="#FCEE21" font-family="'FedraSerifAStd-BoldItalic'" font-size="12">Import.io</tspan><tspan x="0" y="36" fill="#FCEE21" font-family="'FedraSerifAStd-BookItalic'" font-size="12">Visualization sketching:</tspan><tspan x="118.7" y="36" fill="#FCEE21" font-family="'FedraSerifAStd-BoldItalic'" font-size="12"> RAW by Density Design</tspan><tspan x="0" y="54" fill="#FCEE21" font-family="'FedraSerifAStd-BookItalic'" font-size="12">Network Analysis Software:</tspan><tspan x="138.6" y="54" fill="#FCEE21" font-family="'ACaslonPro-Bold'" font-size="14"> </tspan><tspan x="141.4" y="54" fill="#FCEE21" font-family="'FedraSerifAStd-BoldItalic'" font-size="12">Gephi</tspan><tspan x="0" y="90" fill="#FCEE21" font-family="'FedraSerifAStd-BookItalic'" font-size="12">Data analysis and visualization:</tspan><tspan x="158.7" y="90" fill="#FCEE21" font-family="'FedraSerifAStd-BoldItalic'" font-size="12"> Emanuele Conti</tspan></text>
+<rect x="671" y="103.9" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="541.6" height="139.8"/>
+</svg>

@@ -1,4 +1,4 @@
-(function () {
+window.viz = function (urlData) {
 
   // DETECT BROWSER
 
@@ -315,7 +315,7 @@
     })
     .style({
       //"fill": "transparent",
-      "opacity": 0,
+      "fill-opacity": 0,
       "stroke": "#828282",
       "stroke-width": "1px",
       "shape-rendering": "crispEdges"
@@ -451,7 +451,7 @@
     })
     .style({
       //"fill": "transparent",
-      "opacity": 0,
+      "fill-opacity": 0,
       "stroke": "#828282",
       "stroke-width": "1px",
       "shape-rendering": "crispEdges"
@@ -539,7 +539,7 @@
     })
     .style({
       //"fill": "transparent",
-      "opacity": 0,
+      "fill-opacity": 0,
       "stroke": "#828282",
       "stroke-width": "1px",
       "shape-rendering": "crispEdges"
@@ -1503,7 +1503,7 @@
   };
 
   queue()
-    .defer(d3.json, "./js/data.json")
+    .defer(d3.json, urlData)
     .defer(d3.json, "./js/world.json")
     .defer(d3.json, "./js/coords.json")
     .await(ready);
@@ -1575,4 +1575,4 @@
   //resize("box1SVG");
   
 
-})()
+}

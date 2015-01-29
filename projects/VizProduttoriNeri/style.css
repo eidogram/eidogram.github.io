@@ -1,0 +1,92 @@
+body {
+  background-color: #000;
+}
+
+#wrapper-viz {
+  width: 1280px;
+  margin: auto;
+}
+
+iframe {
+  padding: 0px;
+  margin: 0px;
+  margin-top: -6px;
+  border: 0px;  
+}
+
+object {
+  padding: 0px;
+  margin: 0px;
+  margin-top: -6px;
+  border: 0px; 
+}
+
+@font-face {
+  font-family: 'FedraSerifAStd-BookItalic';
+  src: url('./fonts/FedraSerifStd_A_BookItalic.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FedraSerifAStd-MediumItalic';
+  src: url('./fonts/FedraSerifStd_A_MediumIta.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Grumpy-Black88';
+  src: url('./fonts/Suomi_Grumpy-Black88.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FedraSerifAStd-Medium';
+  src: url('./fonts/FedraSerifStd_A_Medium.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FedraSerifAStd-Bold';
+  src: url('./fonts/FedraSerifStd_A_Bold.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FedraSerifAStd-Book';
+  src: url('./fonts/FedraSerifStd_A_Book.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FedraSerifAStd-BoldItalic';
+  src: url('./fonts/FedraSerifStd_A_BoldItalic.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FedraSerifAStd-DemiItalic';
+  src: url('./fonts/FedraSerifStd_A_DemiIta.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FeSaDisHeavyCond';
+  src: url('./fonts/FeSanDisHeavy.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FeSaDisHeavy';
+  src: url('./fonts/FeSanDisHeavy.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}

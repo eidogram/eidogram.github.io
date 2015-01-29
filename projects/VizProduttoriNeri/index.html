@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "900a40ca-27cd-45ca-904e-d04f03e58890", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+  </head>
+  <body>
+    <div id="wrapper-viz">
+      <object type="image/svg+xml" data="./img/Header_BTB-01.svg" width="1280" height="636"></object>
+      <iframe id="menu" src="./img/Menu_BTB-01-01.svg" width="1280" height="55"></iframe>
+      <!--<object id="slider" type="image/svg+xml" data="./img/Slider_BTB-01.svg" width="2560" height="668"></object>-->
+      <iframe id="slider" src="./img/Slider_BTB-01.svg" width="2560" height="668"></iframe>
+      <object type="image/svg+xml" data="./img/1_TheProd_BTB-01.svg" width="1280" height="1410"></object>
+      <object type="image/svg+xml" data="./img/2_Samples_BTB-01.svg" width="1280" height="3888"></object>
+      <object type="image/svg+xml" data="./img/3_MusicGenre_BTB-01.svg" width="1280" height="1334"></object>
+      <object type="image/svg+xml" data="./img/4_Network_BTB-01.svg" width="1280" height="1906"></object>
+      <object type="image/svg+xml" data="./img/5_char_BTB-01.svg" width="1280" height="1026"></object>
+      <object type="image/svg+xml" data="./img/6_Footer_BTB-01.svg" width="1280" height="552"></object>
+      <span class='st_facebook_hcount' displayText='Facebook'></span>
+      <span class='st_twitter_hcount' displayText='Tweet'></span>
+    </div>
+  </body>
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  
+  <script type="text/javascript">
+
+    var frame = $('#slider');
+    var svg = d3.select(frame.contents().find("svg")[0]);
+    var slider = svg.select("#maing");
+
+    var position = 0;
+
+    var rightArrow = slider.selectAll(".right")
+        .on("click", function() {
+          position = position - 1280
+          slider
+            .transition()
+            .duration(1000)
+            .attr("transform", "translate(" + position + ",0)");
+        })
+
+    // menu
+    var menu = $('#menu');
+    var svgMenu = d3.select(menu.contents().find("svg")[0]);
+
+    var btn1 = svgMenu.select("#artists")
+      .style("cursor","pointer")
+      .on("click", function(){
+        $("html, body").animate({ scrollTop: "2760px" });
+      })
+
+    var btn2 = svgMenu.select("#album")
+      .style("cursor","pointer")
+      .on("click", function(){
+        $("html, body").animate({ scrollTop: "3900px" });
+      })
+
+    var btn3 = svgMenu.select("#labels")
+      .style("cursor","pointer")
+      .on("click", function(){
+        $("html, body").animate({ scrollTop: "5200px" });
+      })
+
+    var btn4 = svgMenu.select("#genre")
+      .style("cursor","pointer")
+      .on("click", function(){
+        $("html, body").animate({ scrollTop: "6650px" });
+      })
+
+    var btn5 = svgMenu.select("#network")
+      .style("cursor","pointer")
+      .on("click", function(){
+        $("html, body").animate({ scrollTop: "8000px" });
+      })
+
+    var btn6 = svgMenu.select("#charts")
+      .style("cursor","pointer")
+      .on("click", function(){
+        $("html, body").animate({ scrollTop: "9900px" });
+      })
+
+    var btn7 = svgMenu.select("#opendata")
+      .style("cursor","pointer")
+      .on("click", function(){
+        $("html, body").animate({ scrollTop: "10900px" });
+      })
+
+    var btn8 = svgMenu.select("#credits")
+      .style("cursor","pointer")
+      .on("click", function(){
+        $("html, body").animate({ scrollTop: "10900px" });
+      })
+
+  </script>
+
+</html>
