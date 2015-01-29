@@ -1,12 +1,17 @@
 html {
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 body {
   background-color: #000;
   max-width: 100%;
-  overflow-x: hidden;
+}
+
+@media (min-width: 1280px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 }
 
 #wrapper-viz {
