@@ -7,6 +7,11 @@
   /*shape-rendering: crispEdges;*/
 }
 
+.loader {
+  max-width: 40px;
+  margin: auto;
+}
+
 .nma-front {
   fill-opacity: 1;
   stroke-width: 3px;

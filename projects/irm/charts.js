@@ -1510,7 +1510,7 @@ window.viz = function (urlData) {
 
   //d3.json("data.json", function(error, data) {
   function ready(error, data, topology, coordinates) {
-    
+
     // Fix data
     var data = fixData(data);
 
@@ -1543,6 +1543,8 @@ window.viz = function (urlData) {
           return i * 100;})
         .duration(1000)
         .style("opacity", 1);
+
+    NProgress.done();
 
   }
   
