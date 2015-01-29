@@ -23,72 +23,76 @@
   <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
   <script type="text/javascript">
 
-    var frame = $('#slider');
-    var svg = d3.select(frame.contents().find("svg")[0]);
-    var slider = svg.select("#maing");
+    $( document ).ready(function() {
 
-    var position = 0;
+        var frame = $('#slider');
+        var svg = d3.select(frame.contents().find("svg")[0]);
+        var slider = svg.select("#maing");
 
-    var rightArrow = slider.selectAll(".right")
-        .on("click", function() {
-          position = position - 1280
-          slider
-            .transition()
-            .duration(1000)
-            .attr("transform", "translate(" + position + ",0)");
-        })
+        var position = 0;
 
-    // menu
-    var menu = $('#menu');
-    var svgMenu = d3.select(menu.contents().find("svg")[0]);
+        var rightArrow = slider.selectAll(".right")
+            .on("click", function() {
+              position = position - 1280
+              slider
+                .transition()
+                .duration(1000)
+                .attr("transform", "translate(" + position + ",0)");
+            })
 
-    var btn1 = svgMenu.select("#artists")
-      .style("cursor","pointer")
-      .on("click", function(){
-        $("html, body").animate({ scrollTop: "2760px" });
-      })
+        // menu
+        var menu = $('#menu');
+        var svgMenu = d3.select(menu.contents().find("svg")[0]);
 
-    var btn2 = svgMenu.select("#album")
-      .style("cursor","pointer")
-      .on("click", function(){
-        $("html, body").animate({ scrollTop: "3900px" });
-      })
+        var btn1 = svgMenu.select("#artists")
+          .style("cursor","pointer")
+          .on("click", function(){
+            $("html, body").animate({ scrollTop: "2760px" });
+          })
 
-    var btn3 = svgMenu.select("#labels")
-      .style("cursor","pointer")
-      .on("click", function(){
-        $("html, body").animate({ scrollTop: "5200px" });
-      })
+        var btn2 = svgMenu.select("#album")
+          .style("cursor","pointer")
+          .on("click", function(){
+            $("html, body").animate({ scrollTop: "3900px" });
+          })
 
-    var btn4 = svgMenu.select("#genre")
-      .style("cursor","pointer")
-      .on("click", function(){
-        $("html, body").animate({ scrollTop: "6650px" });
-      })
+        var btn3 = svgMenu.select("#labels")
+          .style("cursor","pointer")
+          .on("click", function(){
+            $("html, body").animate({ scrollTop: "5200px" });
+          })
 
-    var btn5 = svgMenu.select("#network")
-      .style("cursor","pointer")
-      .on("click", function(){
-        $("html, body").animate({ scrollTop: "8000px" });
-      })
+        var btn4 = svgMenu.select("#genre")
+          .style("cursor","pointer")
+          .on("click", function(){
+            $("html, body").animate({ scrollTop: "6650px" });
+          })
 
-    var btn6 = svgMenu.select("#charts")
-      .style("cursor","pointer")
-      .on("click", function(){
-        $("html, body").animate({ scrollTop: "9900px" });
-      })
+        var btn5 = svgMenu.select("#network")
+          .style("cursor","pointer")
+          .on("click", function(){
+            $("html, body").animate({ scrollTop: "8000px" });
+          })
 
-    var btn7 = svgMenu.select("#opendata")
-      .style("cursor","pointer")
-      .on("click", function(){
-        $("html, body").animate({ scrollTop: "10900px" });
-      })
+        var btn6 = svgMenu.select("#charts")
+          .style("cursor","pointer")
+          .on("click", function(){
+            $("html, body").animate({ scrollTop: "9900px" });
+          })
 
-    var btn8 = svgMenu.select("#credits")
-      .style("cursor","pointer")
-      .on("click", function(){
-        $("html, body").animate({ scrollTop: "10900px" });
-      })
+        var btn7 = svgMenu.select("#opendata")
+          .style("cursor","pointer")
+          .on("click", function(){
+            $("html, body").animate({ scrollTop: "10900px" });
+          })
+
+        var btn8 = svgMenu.select("#credits")
+          .style("cursor","pointer")
+          .on("click", function(){
+            $("html, body").animate({ scrollTop: "10900px" });
+          })
+
+    });
 
   </script>
 
