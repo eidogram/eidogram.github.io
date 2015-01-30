@@ -14,12 +14,12 @@
       <object type="image/svg+xml" data="./img/Header_BTB-01.svg" width="1280" height="636"></object>
       <iframe id="menu" src="./img/Menu_BTB-01-01.svg" width="1280" height="55"></iframe>
       <!--<object id="slider" type="image/svg+xml" data="./img/Slider_BTB-01.svg" width="2560" height="668"></object>-->
-      <iframe id="slider" src="./img/Slider_BTB-01.svg" width="2560" height="668"></iframe>
-      <object type="image/svg+xml" data="./img/1_TheProd_BTB-01.svg" width="1280" height="1410"></object>
-      <object type="image/svg+xml" data="./img/2_Samples_BTB-01.svg" width="1280" height="3888"></object>
+      <iframe id="slider" src="./img/Slider_BTB-01b.svg" width="8960" height="668"></iframe>
+      <object type="image/svg+xml" data="./img/1_TheProd_BTB-01b.svg" width="1280" height="1410"></object>
+      <object type="image/svg+xml" data="./img/2_Samples_BTB-01b.svg" width="1280" height="3888"></object>
       <object type="image/svg+xml" data="./img/3_MusicGenre_BTB-01.svg" width="1280" height="1334"></object>
       <object type="image/svg+xml" data="./img/4_Network_BTB-01.svg" width="1280" height="1906"></object>
-      <object type="image/svg+xml" data="./img/5_char_BTB-01.svg" width="1280" height="1026"></object>
+      <object type="image/svg+xml" data="./img/5_char_BTB-01b.svg" width="1280" height="1026"></object>
       <object type="image/svg+xml" data="./img/6_Footer_BTB-01.svg" width="1280" height="552"></object>
       <span class='st_facebook_hcount' displayText='Facebook'></span>
       <span class='st_twitter_hcount' displayText='Tweet'></span>
@@ -40,6 +40,15 @@
         var rightArrow = slider.selectAll(".right")
             .on("click", function() {
               position = position - 1280
+              slider
+                .transition()
+                .duration(1000)
+                .attr("transform", "translate(" + position + ",0)");
+            })
+
+        var leftArrow = slider.selectAll(".left")
+            .on("click", function() {
+              position = position + 1280
               slider
                 .transition()
                 .duration(1000)
