@@ -1,5 +1,7 @@
 window.viz = function (urlData) {
 
+  NProgress.start();
+
   // DETECT BROWSER
 
   var isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
@@ -280,8 +282,52 @@ window.viz = function (urlData) {
   
   c1.bars = g1.append("g");
       //.attr("transform", "translate(-3,0)");
-  
+
+  var fixYears,
+    __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
+
+  fixYears = function(data) {
+    var firstYear, item, lastYear, year, years, yearsList, _i, _j, _len, _results, _results1;
+    //firstYear = +data[0].year;
+    //lastYear = +data[data.length - 1].year;
+    firstYear = 2006;
+    lastYear = 2014;
+    yearsList = (function() {
+      _results = [];
+      for (var _i = firstYear; firstYear <= lastYear ? _i <= lastYear : _i >= lastYear; firstYear <= lastYear ? _i++ : _i--){ _results.push(_i); }
+      return _results;
+    }).apply(this);
+    years = (function() {
+      var _j, _len, _results1;
+      _results1 = [];
+      for (_j = 0, _len = data.length; _j < _len; _j++) {
+        item = data[_j];
+        _results1.push(+item.year);
+      }
+      return _results1;
+    })();
+    _results1 = [];
+    for (_j = 0, _len = yearsList.length; _j < _len; _j++) {
+      year = yearsList[_j];
+      if (__indexOf.call(years, year) < 0) {
+        _results1.push(data.push({
+          "year": "" + year,
+          "value": 0
+        }));
+      } else {
+        _results1.push(void 0);
+      }
+    }
+    return _results1;
+  };
+
   c1.dataLine = function(data, x, y) {
+
+    fixYears(data);
+    data = data.sort(function(a, b) {
+      return (+a.year) - (+b.year);
+    });
+
     var h, new_data, s;
     s = x.range()[1] - x.range()[0];
     h = y.range()[0];

@@ -7,11 +7,6 @@
   /*shape-rendering: crispEdges;*/
 }
 
-.loader {
-  max-width: 40px;
-  margin: auto;
-}
-
 .nma-front {
   fill-opacity: 1;
   stroke-width: 3px;
@@ -90,6 +85,7 @@ svg {
   max-width: 480px;
   margin: 38px 30px 0px 30px;
   border-bottom: 2px solid #333;
+  font-family: 'Lato';
   font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
@@ -101,6 +97,7 @@ svg {
   max-width: 480px;
   margin: 0px 30px 0px 30px;
   padding: 0px 0px 1px 1px;
+  font-family: 'Lato';
   font-size: 10px;
   font-weight: normal;
   text-transform: uppercase;
@@ -202,6 +199,7 @@ svg {
 
 #wrapper-viz {
   max-width: 1100px;
+  margin: auto;
 }
 
 #container-viz {

@@ -65,130 +65,135 @@
                 .attr("transform", "translate(" + position + ",0)");
             })
 
+        var levels = [2760, 3900, 5200, 6650, 8000, 9900, 10900, 10900];
+
+        var setButtons = function() {
+
+          var cw = $("#wrapper-viz").width()
+          var cw = cw < 1280 ? cw : 1280;
+
+          // buttons
+          var menu = $('#menu');
+          var svgMenu = d3.select(menu.contents().find("svg")[0]);
+
+          var btn1 = svgMenu.select("#artists")
+            .style("cursor","pointer")
+            .on("click", function(){
+              $("html, body").animate({ scrollTop: (levels[0]*cw/1280)+"px" });
+            })
+
+          var btn2 = svgMenu.select("#album")
+            .style("cursor","pointer")
+            .on("click", function(){
+              $("html, body").animate({ scrollTop: (levels[1]*cw/1280)+"px" });
+            })
+
+          var btn3 = svgMenu.select("#labels")
+            .style("cursor","pointer")
+            .on("click", function(){
+              $("html, body").animate({ scrollTop: (levels[2]*cw/1280)+"px" });
+            })
+
+          var btn4 = svgMenu.select("#genre")
+            .style("cursor","pointer")
+            .on("click", function(){
+              $("html, body").animate({ scrollTop: (levels[3]*cw/1280)+"px" });
+            })
+
+          var btn5 = svgMenu.select("#network")
+            .style("cursor","pointer")
+            .on("click", function(){
+              $("html, body").animate({ scrollTop: (levels[4]*cw/1280)+"px" });
+            })
+
+          var btn6 = svgMenu.select("#charts")
+            .style("cursor","pointer")
+            .on("click", function(){
+              $("html, body").animate({ scrollTop: (levels[5]*cw/1280)+"px" });
+            })
+
+          var btn7 = svgMenu.select("#opendata")
+            .style("cursor","pointer")
+            .on("click", function(){
+              $("html, body").animate({ scrollTop: (levels[6]*cw/1280)+"px" });
+            })
+
+          var btn8 = svgMenu.select("#credits")
+            .style("cursor","pointer")
+            .on("click", function(){
+              $("html, body").animate({ scrollTop: (levels[7]*cw/1280)+"px" });
+            })
+
+        }
+
+        setButtons();
+
+        // header
+        var frame1 = $('#header');
+        var aspect1 = frame1.width() / frame1.height();
         // menu
-        var menu = $('#menu');
-        var svgMenu = d3.select(menu.contents().find("svg")[0]);
+        var frame2 = $('#menu');
+        var aspect2 = frame2.width() / frame2.height();
+        // slider
+        var frame3 = $('#slider');
+        var aspect3 = frame3.width() / frame3.height();
+        // im1
+        var frame4 = $('#im1');
+        var aspect4 = frame4.width() / frame4.height();
+        // im2
+        var frame5 = $('#im2');
+        var aspect5 = frame5.width() / frame5.height();
+        // im3
+        var frame6 = $('#im3');
+        var aspect6 = frame6.width() / frame6.height();
+        // im4
+        var frame7 = $('#im4');
+        var aspect7 = frame7.width() / frame7.height();
+        // im5
+        var frame8 = $('#im5');
+        var aspect8 = frame8.width() / frame8.height();
+        // im6
+        var frame9 = $('#im6');
+        var aspect9 = frame9.width() / frame9.height();
 
-        var btn1 = svgMenu.select("#artists")
-          .style("cursor","pointer")
-          .on("click", function(){
-            $("html, body").animate({ scrollTop: "2760px" });
-          })
+        var container = $("#wrapper-viz");
+        var resize = function() {
 
-        var btn2 = svgMenu.select("#album")
-          .style("cursor","pointer")
-          .on("click", function(){
-            $("html, body").animate({ scrollTop: "3900px" });
-          })
+            setButtons();
 
-        var btn3 = svgMenu.select("#labels")
-          .style("cursor","pointer")
-          .on("click", function(){
-            $("html, body").animate({ scrollTop: "5200px" });
-          })
+            var targetWidth = container.width();
 
-        var btn4 = svgMenu.select("#genre")
-          .style("cursor","pointer")
-          .on("click", function(){
-            $("html, body").animate({ scrollTop: "6650px" });
-          })
+            frame1.attr("width", targetWidth);
+            frame1.attr("height", Math.round(targetWidth / aspect1));
 
-        var btn5 = svgMenu.select("#network")
-          .style("cursor","pointer")
-          .on("click", function(){
-            $("html, body").animate({ scrollTop: "8000px" });
-          })
+            frame2.attr("width", targetWidth);
+            frame2.attr("height", Math.round(targetWidth / aspect2));
 
-        var btn6 = svgMenu.select("#charts")
-          .style("cursor","pointer")
-          .on("click", function(){
-            $("html, body").animate({ scrollTop: "9900px" });
-          })
+            frame3.attr("width", targetWidth*7);
+            frame3.attr("height", Math.round(targetWidth*7 / aspect3));
 
-        var btn7 = svgMenu.select("#opendata")
-          .style("cursor","pointer")
-          .on("click", function(){
-            $("html, body").animate({ scrollTop: "10900px" });
-          })
+            frame4.attr("width", targetWidth);
+            frame4.attr("height", Math.round(targetWidth / aspect4));
 
-        var btn8 = svgMenu.select("#credits")
-          .style("cursor","pointer")
-          .on("click", function(){
-            $("html, body").animate({ scrollTop: "10900px" });
-          })
+            frame5.attr("width", targetWidth);
+            frame5.attr("height", Math.round(targetWidth / aspect5));
 
-    });
+            frame6.attr("width", targetWidth);
+            frame6.attr("height", Math.round(targetWidth / aspect6));
 
-  </script>
+            frame7.attr("width", targetWidth);
+            frame7.attr("height", Math.round(targetWidth / aspect7));
 
-    <!-- Make it responsive -->
-  <script>
+            frame8.attr("width", targetWidth);
+            frame8.attr("height", Math.round(targetWidth / aspect8));
 
-    $( window ).load(function() {
+            frame9.attr("width", targetWidth);
+            frame9.attr("height", Math.round(targetWidth / aspect9));
 
-      // header
-      var frame1 = $('#header');
-      var aspect1 = frame1.width() / frame1.height();
-      // menu
-      var frame2 = $('#menu');
-      var aspect2 = frame2.width() / frame2.height();
-      // slider
-      var frame3 = $('#slider');
-      var aspect3 = frame3.width() / frame3.height();
-      // im1
-      var frame4 = $('#im1');
-      var aspect4 = frame4.width() / frame4.height();
-      // im2
-      var frame5 = $('#im2');
-      var aspect5 = frame5.width() / frame5.height();
-      // im3
-      var frame6 = $('#im3');
-      var aspect6 = frame6.width() / frame6.height();
-      // im4
-      var frame7 = $('#im4');
-      var aspect7 = frame7.width() / frame7.height();
-      // im5
-      var frame8 = $('#im5');
-      var aspect8 = frame8.width() / frame8.height();
-      // im6
-      var frame9 = $('#im6');
-      var aspect9 = frame9.width() / frame9.height();
+        };
 
-      var container = $("#wrapper-viz");
-      var resize = function() {
-          var targetWidth = container.width();
-
-          frame1.attr("width", targetWidth);
-          frame1.attr("height", Math.round(targetWidth / aspect1));
-
-          frame2.attr("width", targetWidth);
-          frame2.attr("height", Math.round(targetWidth / aspect2));
-
-          frame3.attr("width", targetWidth*7);
-          frame3.attr("height", Math.round(targetWidth*7 / aspect3));
-
-          frame4.attr("width", targetWidth);
-          frame4.attr("height", Math.round(targetWidth / aspect4));
-
-          frame5.attr("width", targetWidth);
-          frame5.attr("height", Math.round(targetWidth / aspect5));
-
-          frame6.attr("width", targetWidth);
-          frame6.attr("height", Math.round(targetWidth / aspect6));
-
-          frame7.attr("width", targetWidth);
-          frame7.attr("height", Math.round(targetWidth / aspect7));
-
-          frame8.attr("width", targetWidth);
-          frame8.attr("height", Math.round(targetWidth / aspect8));
-
-          frame9.attr("width", targetWidth);
-          frame9.attr("height", Math.round(targetWidth / aspect9));
-
-      };
-
-      $(window).on("resize", resize).trigger("resize");
-      $(window).on("ready", resize).trigger("resize");
+        $(window).on("resize", resize).trigger("resize");
+        $(window).on("ready", resize).trigger("resize");
 
     });
 
