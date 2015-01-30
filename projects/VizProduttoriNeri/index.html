@@ -11,18 +11,28 @@
   </head>
   <body>
     <div id="wrapper-viz">
-      <object type="image/svg+xml" data="./img/Header_BTB-01.svg" width="1280" height="636"></object>
+
+      <iframe id="header" src="./img/Header_BTB-01.svg" width="1280" height="636"></iframe>
+
       <iframe id="menu" src="./img/Menu_BTB-01-01.svg" width="1280" height="55"></iframe>
-      <!--<object id="slider" type="image/svg+xml" data="./img/Slider_BTB-01.svg" width="2560" height="668"></object>-->
+
       <iframe id="slider" src="./img/Slider_BTB-01b.svg" width="8960" height="668"></iframe>
-      <object type="image/svg+xml" data="./img/1_TheProd_BTB-01b.svg" width="1280" height="1410"></object>
-      <object type="image/svg+xml" data="./img/2_Samples_BTB-01b.svg" width="1280" height="3888"></object>
-      <object type="image/svg+xml" data="./img/3_MusicGenre_BTB-01.svg" width="1280" height="1334"></object>
-      <object type="image/svg+xml" data="./img/4_Network_BTB-01.svg" width="1280" height="1906"></object>
-      <object type="image/svg+xml" data="./img/5_char_BTB-01b.svg" width="1280" height="1026"></object>
-      <object type="image/svg+xml" data="./img/6_Footer_BTB-01.svg" width="1280" height="552"></object>
+
+      <iframe id="im1" src="./img/1_TheProd_BTB-01b.svg" width="1280" height="1410"></iframe>
+
+      <iframe id="im2" src="./img/2_Samples_BTB-01b.svg" width="1280" height="3888"></iframe>
+
+      <iframe id="im3" src="./img/3_MusicGenre_BTB-01.svg" width="1280" height="1334"></iframe>
+
+      <iframe id="im4" src="./img/4_Network_BTB-01.svg" width="1280" height="1906"></iframe>
+
+      <iframe id="im5" src="./img/5_char_BTB-01b.svg" width="1280" height="1026"></iframe>
+
+      <iframe id="im6" src="./img/6_Footer_BTB-01.svg" width="1280" height="552"></iframe>
+
       <span class='st_facebook_hcount' displayText='Facebook'></span>
       <span class='st_twitter_hcount' displayText='Tweet'></span>
+
     </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -106,6 +116,79 @@
           .on("click", function(){
             $("html, body").animate({ scrollTop: "10900px" });
           })
+
+    });
+
+  </script>
+
+    <!-- Make it responsive -->
+  <script>
+
+    $( window ).load(function() {
+
+      // header
+      var frame1 = $('#header');
+      var aspect1 = frame1.width() / frame1.height();
+      // menu
+      var frame2 = $('#menu');
+      var aspect2 = frame2.width() / frame2.height();
+      // slider
+      var frame3 = $('#slider');
+      var aspect3 = frame3.width() / frame3.height();
+      // im1
+      var frame4 = $('#im1');
+      var aspect4 = frame4.width() / frame4.height();
+      // im2
+      var frame5 = $('#im2');
+      var aspect5 = frame5.width() / frame5.height();
+      // im3
+      var frame6 = $('#im3');
+      var aspect6 = frame6.width() / frame6.height();
+      // im4
+      var frame7 = $('#im4');
+      var aspect7 = frame7.width() / frame7.height();
+      // im5
+      var frame8 = $('#im5');
+      var aspect8 = frame8.width() / frame8.height();
+      // im6
+      var frame9 = $('#im6');
+      var aspect9 = frame9.width() / frame9.height();
+
+      var container = $("#wrapper-viz");
+      var resize = function() {
+          var targetWidth = container.width();
+
+          frame1.attr("width", targetWidth);
+          frame1.attr("height", Math.round(targetWidth / aspect1));
+
+          frame2.attr("width", targetWidth);
+          frame2.attr("height", Math.round(targetWidth / aspect2));
+
+          frame3.attr("width", targetWidth*7);
+          frame3.attr("height", Math.round(targetWidth*7 / aspect3));
+
+          frame4.attr("width", targetWidth);
+          frame4.attr("height", Math.round(targetWidth / aspect4));
+
+          frame5.attr("width", targetWidth);
+          frame5.attr("height", Math.round(targetWidth / aspect5));
+
+          frame6.attr("width", targetWidth);
+          frame6.attr("height", Math.round(targetWidth / aspect6));
+
+          frame7.attr("width", targetWidth);
+          frame7.attr("height", Math.round(targetWidth / aspect7));
+
+          frame8.attr("width", targetWidth);
+          frame8.attr("height", Math.round(targetWidth / aspect8));
+
+          frame9.attr("width", targetWidth);
+          frame9.attr("height", Math.round(targetWidth / aspect9));
+
+      };
+
+      $(window).on("resize", resize).trigger("resize");
+      $(window).on("ready", resize).trigger("resize");
 
     });
 
