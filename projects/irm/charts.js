@@ -72,7 +72,8 @@ window.viz = function (urlData) {
     _results = [];
     for (k in _ref) {
       v = _ref[k];
-      if (v["progetto"]["Start Date"].length === 10) {
+      var sd = v["progetto"]["Start Date"];
+      if (sd.length === 10 && +sd.slice(6)>=2006) {
         _results.push(fixElement(v.progetto));
       }
     }
@@ -260,6 +261,9 @@ window.viz = function (urlData) {
           "2011","2012","2013","2014"])
         .rangeRoundBands([0, width],0,0);
 
+  // c1.xScale = d3.scale.ordinal()
+  //       .rangeRoundBands([0, width],0,0);
+
   c1.yScale = d3.scale.linear()
         .range([height / 3, 0]);
   
@@ -287,6 +291,7 @@ window.viz = function (urlData) {
     __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
   fixYears = function(data) {
+
     var firstYear, item, lastYear, year, years, yearsList, _i, _j, _len, _results, _results1;
     //firstYear = +data[0].year;
     //lastYear = +data[data.length - 1].year;
@@ -294,9 +299,13 @@ window.viz = function (urlData) {
     lastYear = 2014;
     yearsList = (function() {
       _results = [];
-      for (var _i = firstYear; firstYear <= lastYear ? _i <= lastYear : _i >= lastYear; firstYear <= lastYear ? _i++ : _i--){ _results.push(_i); }
+      for (var _i = firstYear; firstYear <= lastYear ? _i <= lastYear : _i >= lastYear; firstYear <= lastYear ? _i++ : _i--){
+        _results.push(_i);
+      }
       return _results;
     }).apply(this);
+
+
     years = (function() {
       var _j, _len, _results1;
       _results1 = [];
@@ -306,6 +315,7 @@ window.viz = function (urlData) {
       }
       return _results1;
     })();
+
     _results1 = [];
     for (_j = 0, _len = yearsList.length; _j < _len; _j++) {
       year = yearsList[_j];
@@ -350,6 +360,7 @@ window.viz = function (urlData) {
   c1.title
     .append("text")
     .text("Projects started")
+    .attr("class","thetitle")
     .attr({ "x": 0, "y": -45 })
 
   c1.title.append("rect")
@@ -380,7 +391,7 @@ window.viz = function (urlData) {
       "width": 81 
     })
     .style({
-      "fill": "gold",
+      "fill": "#d4ef4c",
       "stroke": "none",
       "shape-rendering": "crispEdges"
     });
@@ -486,6 +497,7 @@ window.viz = function (urlData) {
   c2.title
     .append("text")
     .text("Main themes")
+    .attr("class","thetitle")
     .attr({ "x": 0, "y": -45 })
 
   c2.title.append("rect")
@@ -516,7 +528,7 @@ window.viz = function (urlData) {
       "width": 81 
     })
     .style({
-      "fill": "gold",
+      "fill": "#d4ef4c",
       "stroke": "none",
       "shape-rendering": "crispEdges"
     });
@@ -574,6 +586,7 @@ window.viz = function (urlData) {
   c3.title
     .append("text")
     .text("Main partners")
+    .attr("class","thetitle")
     .attr({ "x": 0, "y": -45 })
 
   c3.title.append("rect")
@@ -604,7 +617,7 @@ window.viz = function (urlData) {
       "width": 81  
     })
     .style({
-      "fill": "gold",
+      "fill": "#d4ef4c",
       "stroke": "none",
       "shape-rendering": "crispEdges"
     });
@@ -640,6 +653,9 @@ window.viz = function (urlData) {
         "partners" : getPartners(data).slice(0, 17),
         "themes": getThemes(data).slice(0, 9)
       }
+
+      // c1.xScale
+      //     .domain(data.years.map(function(el){return el.year;}));
       
       // box 1
       c1.bb.selectAll(".bb")
@@ -669,13 +685,13 @@ window.viz = function (urlData) {
               if (sel.style("fill") !== "none") {
                 sel.style("opacity", "0.3");
               } else {
-                sel.style("fill", "gold");
+                sel.style("fill", "#d4ef4c");
               }
            })
            .on("mouseout", function(d,i){
               self = c1.bb.select(".bb" + i)
               self.style("opacity", "1");
-              self.style("fill", self.classed("selected") ? "gold" : "none");
+              self.style("fill", self.classed("selected") ? "#d4ef4c" : "none");
            })
           .on("click", function(d,i) {
               if ( c1.bb.select(".bb" + i).classed("selected") ) {
@@ -881,13 +897,13 @@ window.viz = function (urlData) {
               if (sel.style("fill") !== "none") {
                 sel.style("opacity", "0.3");
               } else {
-                sel.style("fill", "gold");
+                sel.style("fill", "#d4ef4c");
               }
           })
           .on("mouseout", function(d,i){
               self = g2.select(".bs" + i);
               self.style("opacity",1);
-              self.style("fill", self.classed("selected") ? "gold" : "none");
+              self.style("fill", self.classed("selected") ? "#d4ef4c" : "none");
           })
           .on("click", function(d,i) {
               if ( g2.select(".bs" + i).classed("selected") ) {
@@ -1011,13 +1027,13 @@ window.viz = function (urlData) {
               if (sel.style("fill") !== "none") {
                 sel.style("opacity", "0.3");
               } else {
-                sel.style("fill", "gold");
+                sel.style("fill", "#d4ef4c");
               }
           })
           .on("mouseout", function(d,i){
               self = g3.select(".br" + i)
               self.style("opacity", "1");
-              self.style("fill", self.classed("selected") ? "gold" : "none");
+              self.style("fill", self.classed("selected") ? "#d4ef4c" : "none");
           })
           .on("click", function(d,i) {
               if ( g3.select(".br" + i).classed("selected") ) {
@@ -1271,6 +1287,7 @@ window.viz = function (urlData) {
     title
       .append("text")
       .text("Partners in Europe")
+      .attr("class","thetitle")
       .attr({ "x": 0, "y": -45 })
 
     title.append("rect")
@@ -1371,7 +1388,7 @@ window.viz = function (urlData) {
     //         projection([d[1],d[0]]) + ")";
     //     })
     //     .style({
-    //       "fill": "gold",
+    //       "fill": "#d4ef4c",
     //       "stroke": "#666",
     //       "stroke-width": "1px"
     //     })
@@ -1395,9 +1412,12 @@ window.viz = function (urlData) {
 
     var tScale = d3.time.scale()
         .range([150, width4 - margin4.left - margin4.right])
-        .domain([format.parse(data[0]["Start Date"]),
-          d3.max(data, function(d) {
-            return format.parse(d["End Date"])})]);
+        .domain([format.parse(data[0]["Start Date"]), (function(){
+          var endDate = d3.max(data, function(d) {
+            return format.parse(d["End Date"])});
+          var result = endDate ? endDate : format.parse("31/12/2014");
+          return result;
+        })()]);
     var pScale = d3.scale.linear()
         .domain([0, d3.max(data, function(d) {
           return d["partners"].length; })])
@@ -1458,7 +1478,8 @@ window.viz = function (urlData) {
     
     title
       .append("text")
-      .text(wwidth < 540 ? "Project Duration" : "Project Duration and number of Partners")
+      .text(wwidth < 540 ? "Projects Duration" : "Projects Duration and number of Partners")
+      .attr("class","thetitle")
       .attr({ "x": 0, "y": -45 })
 
     title
@@ -1548,6 +1569,8 @@ window.viz = function (urlData) {
 
   };
 
+  NProgress.set(0.7);
+
   queue()
     .defer(d3.json, urlData)
     .defer(d3.json, "./js/world.json")
@@ -1556,6 +1579,8 @@ window.viz = function (urlData) {
 
   //d3.json("data.json", function(error, data) {
   function ready(error, data, topology, coordinates) {
+
+    NProgress.set(0.8);
 
     // Fix data
     var data = fixData(data);
@@ -1606,7 +1631,6 @@ window.viz = function (urlData) {
 
   
   // function resize(id) {
-  //   console.log("res");
   //   var chart = $("#"+id),
   //       aspect = chart.width() / chart.height(),
   //       container = chart.parent();

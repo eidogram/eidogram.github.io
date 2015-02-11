@@ -81,6 +81,10 @@ svg {
   text-transform: uppercase;
 }
 
+.thetitle {
+  letter-spacing: 0.1em;
+}
+
 .title-list-projs {
   max-width: 480px;
   margin: 38px 30px 0px 30px;
@@ -91,6 +95,7 @@ svg {
   text-transform: uppercase;
   color: #333;
   padding-bottom: 5px;
+  letter-spacing: 0.1em;
 }
 
 .subtitle-list-projs {
@@ -102,7 +107,7 @@ svg {
   font-weight: normal;
   text-transform: uppercase;
   color: #333;
-  background-color: gold;
+  background-color: #d4ef4c;
 }
 
 
@@ -113,7 +118,7 @@ svg {
 }
 
 .selected {
-  fill: "gold";
+  fill: "#d4ef4c";
 }
 
 .rects, .squares-total {
@@ -141,7 +146,7 @@ svg {
 }
 
 .project-partners {
-  fill: #96281B;
+  fill: #ed4ba7;
   /*fill: orange;*/
   stroke: none;
   /*shape-rendering: crispEdges;*/
@@ -230,7 +235,7 @@ svg {
 }
 
 .city-dot {
-  stroke: #96281B;
+  stroke: #ed4ba7;
   stroke-width: 1px;
   fill: none;
   /*shape-rendering: crispEdges;*/
