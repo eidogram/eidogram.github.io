@@ -73,7 +73,7 @@ window.viz = function (urlData) {
     for (k in _ref) {
       v = _ref[k];
       var sd = v["progetto"]["Start Date"];
-      if (sd.length === 10 && +sd.slice(6)>=2006) {
+      if (sd.length === 10 && +sd.slice(6)>=2006 && +sd.slice(6)<=2015) {
         _results.push(fixElement(v.progetto));
       }
     }
@@ -258,7 +258,7 @@ window.viz = function (urlData) {
   
   c1.xScale = d3.scale.ordinal()
         .domain(["2006","2007","2008","2009","2010",
-          "2011","2012","2013","2014"])
+          "2011","2012","2013","2014", "2015"])
         .rangeRoundBands([0, width],0,0);
 
   // c1.xScale = d3.scale.ordinal()
@@ -1569,7 +1569,7 @@ window.viz = function (urlData) {
 
   };
 
-  NProgress.set(0.7);
+  intId = setInterval(function(){ NProgress.inc() }, 1000);
 
   queue()
     .defer(d3.json, urlData)
@@ -1580,6 +1580,7 @@ window.viz = function (urlData) {
   //d3.json("data.json", function(error, data) {
   function ready(error, data, topology, coordinates) {
 
+    clearInterval(intId);
     NProgress.set(0.8);
 
     // Fix data
