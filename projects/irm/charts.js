@@ -860,7 +860,7 @@ window.viz = function (urlData) {
       c2.squares.append("text")
           .text(function(d) { return d.value; })
           .attr({ "x": 0, "y": c2.side * 0.88 })
-          .attr("dy", "-0.5em")
+          .attr("dy", -2)
           .attr("class", "legend total")
           .style("text-anchor", "start");    
       
@@ -876,7 +876,7 @@ window.viz = function (urlData) {
           })
           .text(function(d) { return Math.floor(d.value); })
           .attr({ "x": 22, "y": c2.side * 0.88 })
-          .attr("dy", "-0.5em")
+          .attr("dy", -2)
           .style("text-anchor", "start");
       
       // front squares
@@ -1569,7 +1569,7 @@ window.viz = function (urlData) {
 
   };
 
-  intId = setInterval(function(){ NProgress.inc() }, 1000);
+  intId = setInterval(function(){ NProgress.inc() }, 200);
 
   queue()
     .defer(d3.json, urlData)
