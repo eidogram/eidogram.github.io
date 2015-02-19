@@ -1568,8 +1568,9 @@ window.viz = function (urlData) {
         .style("shape-rendering", okCrisp());
 
   };
-
-  intId = setInterval(function(){ NProgress.inc() }, 200);
+  
+  NProgress.set(0.2);
+  //var intId = setInterval(function(){ NProgress.inc(); }, 200);
 
   queue()
     .defer(d3.json, urlData)
@@ -1580,7 +1581,7 @@ window.viz = function (urlData) {
   //d3.json("data.json", function(error, data) {
   function ready(error, data, topology, coordinates) {
 
-    clearInterval(intId);
+    //clearInterval(intId);
     NProgress.set(0.8);
 
     // Fix data
