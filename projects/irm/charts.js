@@ -1403,7 +1403,8 @@ window.viz = function (urlData) {
   var drawProjects = function(data) {
     
     var n = data.length;
-    var hh = n > 200 ? 3 : 4;
+    //var hh = n > 200 ? 3 : 4;
+    var hh = 3;
     var hTooltip = 100;
   
     var margin4 = {top: 30, right: 10, bottom: 30, left: 30},
