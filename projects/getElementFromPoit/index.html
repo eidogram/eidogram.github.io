@@ -27,6 +27,7 @@
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/queue.v1.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="snap.svg-min.js"></script>
 <script>
 
 var width = 960,
@@ -55,8 +56,8 @@ queue()
     .await(ready);
 
 function ready(error, us) {
-  svg.append("g")
-      .attr("class", "counties")
+  var gpaths = svg.append("g");
+  gpaths.attr("class", "counties")
     .selectAll("path")
       .data(topojson.feature(us, us.objects.counties).features)
     .enter().append("path")
@@ -69,6 +70,13 @@ function ready(error, us) {
       .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
       .attr("class", "states")
       .attr("d", path);
+
+  // var features =  topojson.feature(us, us.objects.counties).features;
+  // centroids = [];
+  // for (p in features) {
+  //   centroids.push(path.centroid(p))
+  // }
+
   
   var i, j, k, l;
   myar = [];
@@ -79,14 +87,7 @@ function ready(error, us) {
     }
   }
 
-  alert(myar.length);
-
-  svg.on("click", function(){
-    var c = d3.mouse(this);
-    console.log(c);
-    console.log(document.elementFromPoint(c[0], c[1]).getAttribute("id"));
-    
-  })
+  alert(myar.slice(0,10));
 
 }
 
