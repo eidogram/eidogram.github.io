@@ -12,85 +12,71 @@
   stroke-linejoin: round;
 }
 
-.q0-9 { fill:rgb(247,251,255); }
-.q1-9 { fill:rgb(222,235,247); }
-.q2-9 { fill:rgb(198,219,239); }
-.q3-9 { fill:rgb(158,202,225); }
-.q4-9 { fill:rgb(107,174,214); }
-.q5-9 { fill:rgb(66,146,198); }
-.q6-9 { fill:rgb(33,113,181); }
-.q7-9 { fill:rgb(8,81,156); }
-.q8-9 { fill:rgb(8,48,107); }
+
+p { font-size: 20px; }
+
+.gridmap-container {
+}
+
+#gridmap {
+  width: 960px;
+  height: 600px;
+}
+
+@media screen and (max-width: 640px) {
+  #gridmap {
+    width: 320px;
+    height: 200px;
+  }
+}
+
 
 </style>
 <body>
+<div class="gridmap-container">
+  <div id="gridmap"></div>
+</div>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/queue.v1.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
-<script src="snap.svg-min.js"></script>
+<script src="gridmap.js"></script>
 <script>
 
-var width = 960,
-    height = 600;
-
-var rateById = d3.map();
-
-var quantize = d3.scale.quantize()
-    .domain([0, .15])
-    .range(d3.range(9).map(function(i) { return "q" + i + "-9"; }));
+width = +d3.select("#gridmap").style("width").slice(0, -2);
+height = +d3.select("#gridmap").style("height").slice(0, -2);
 
 var projection = d3.geo.albersUsa()
-    .scale(1280)
-    .translate([width / 2, height / 2]);
-
-var path = d3.geo.path()
-    .projection(projection);
-
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+    .scale(1280/960 * width);
 
 queue()
     .defer(d3.json, "us.json")
-    //.defer(d3.tsv, "unemployment.tsv", function(d) { rateById.set(d.id, +d.rate); })
     .await(ready);
 
+getRandomInt = function(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
+
 function ready(error, us) {
-  var gpaths = svg.append("g");
-  gpaths.attr("class", "counties")
-    .selectAll("path")
-      .data(topojson.feature(us, us.objects.counties).features)
-    .enter().append("path")
-      //.attr("class", function(d) { return quantize(rateById.get(d.id)); })
-      .style("fill","#000")
-      .attr("id", function(d){return d.id;})
-      .attr("d", path);
 
-  svg.append("path")
-      .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
-      .attr("class", "states")
-      .attr("d", path);
-
-  // var features =  topojson.feature(us, us.objects.counties).features;
-  // centroids = [];
-  // for (p in features) {
-  //   centroids.push(path.centroid(p))
-  // }
-
-  
-  var i, j, k, l;
-  myar = [];
-
-  for (i = k = 375; k <= 400; i = ++k) {
-    for (j = l = 390; l <= 400; j = ++l) {
-      myar.push(document.elementFromPoint(i, j).getAttribute("id"));
-    }
+  var features =  topojson.feature(us, us.objects.counties).features;
+  var data = d3.map();
+  var j;
+  for (j = 0, len = features.length; j < len; j++) {
+    data.set(features[j]["id"], getRandomInt(1,5));
   }
 
-  alert(myar.slice(0,10));
+  chart = gridmap()
+      .data(data)
+      .width(width)
+      .height(height)
+      .isabsolute(true)
+      .projection(projection)
+      .features(features);
+  
+  d3.select("#gridmap").call(chart);
 
 }
 
-d3.select(self.frameElement).style("height", height + "px");
+//d3.select(self.frameElement).style("height", height + "px");
 
 </script>
