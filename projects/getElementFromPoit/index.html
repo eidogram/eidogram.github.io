@@ -6,21 +6,26 @@
   fill: none;
 }
 
-.states {
-  fill: none;
-  stroke: #fff;
-  stroke-linejoin: round;
-}
-
-
-p { font-size: 20px; }
-
 .gridmap-container {
 }
 
 #gridmap {
   width: 960px;
   height: 600px;
+}
+
+.gridclass {
+  fill: #131313;
+  stroke-width: 0;
+}
+
+.mapclass {
+  fill-opacity: 0;
+  stroke-width: 0;
+}
+
+.gridmap-container {
+  position: relative;
 }
 
 @media screen and (max-width: 640px) {
@@ -30,12 +35,12 @@ p { font-size: 20px; }
   }
 }
 
-
 </style>
 <body>
 <div class="gridmap-container">
   <div id="gridmap"></div>
 </div>
+<button>go</button>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/queue.v1.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
@@ -46,7 +51,8 @@ width = +d3.select("#gridmap").style("width").slice(0, -2);
 height = +d3.select("#gridmap").style("height").slice(0, -2);
 
 var projection = d3.geo.albersUsa()
-    .scale(1280/960 * width);
+    .scale(1280/960 * width)
+    .translate([width / 2, height / 2]);
 
 queue()
     .defer(d3.json, "us.json")
@@ -69,9 +75,11 @@ function ready(error, us) {
       .data(data)
       .width(width)
       .height(height)
-      .isabsolute(true)
+      .isquantity(false)
       .projection(projection)
-      .features(features);
+      .features(features)
+      .mapclass("mapclass")
+      .gridclass("gridclass");
   
   d3.select("#gridmap").call(chart);
 

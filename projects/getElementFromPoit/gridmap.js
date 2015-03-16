@@ -5,16 +5,18 @@
   root = typeof exports !== "undefined" && exports !== null ? exports : this;
 
   root.gridmap = function() {
-    var chart, data, features, grid, height, isabsolute, key, projection, side, width;
+    var chart, data, features, grid, gridclass, height, isquantity, key, mapclass, projection, side, width;
     projection = void 0;
     side = 10;
     key = "id";
-    grid = d3.map();
     data = void 0;
     features = void 0;
     width = 500;
     height = 500;
-    isabsolute = void 0;
+    isquantity = void 0;
+    gridclass = "gridclass";
+    mapclass = "mapclass";
+    grid = d3.map();
     chart = function(selection) {
       var area, attr, backup, c, centroid, dataGrid, density, dots, dx, dy, element, f, h, i, j, k, map, matrix, nx, ny, path, radius, svg, value, w, x, y, _i, _j, _k, _len, _ref, _ref1;
       w = width;
@@ -31,7 +33,6 @@
         "left": 0,
         "opacity": 0
       });
-      projection.translate([w / 2, h / 2]);
       path = d3.geo.path().projection(projection);
       area = d3.map();
       centroid = d3.map();
@@ -46,7 +47,7 @@
       radius = d3.scale.linear().range([0, side / 2 * 0.9]);
       svg = selection.append("svg").attr("width", w).attr("height", h).attr("viewBox", "0 0 " + w + " " + h);
       map = svg.append("g");
-      map.attr("class", "counties").selectAll("path").data(features).enter().append("path").style("fill", "#000").style("fill-opacity", 0).attr("data-key", function(d) {
+      map.selectAll("path").data(features).enter().append("path").attr("class", mapclass).attr("data-key", function(d) {
         return d[key];
       }).attr("d", path);
       matrix = map.node().getScreenCTM();
@@ -54,29 +55,27 @@
       dx = matrix.e;
       nx = Math.floor(w / side);
       ny = Math.floor(h / side);
-      if (grid.size() === 0) {
-        for (i = _j = 0, _ref = nx - 1; 0 <= _ref ? _j <= _ref : _j >= _ref; i = 0 <= _ref ? ++_j : --_j) {
-          for (j = _k = 0, _ref1 = ny - 1; 0 <= _ref1 ? _k <= _ref1 : _k >= _ref1; j = 0 <= _ref1 ? ++_k : --_k) {
-            x = side * i + side / 2;
-            y = side * j + side / 2;
-            element = document.elementFromPoint(x + dx, y + dy);
-            if (element) {
-              attr = element.getAttribute("data-key");
-              if (attr) {
-                centroid.remove(attr);
-                value = [attr];
-              } else {
-                value = [];
-              }
+      for (i = _j = 0, _ref = nx - 1; 0 <= _ref ? _j <= _ref : _j >= _ref; i = 0 <= _ref ? ++_j : --_j) {
+        for (j = _k = 0, _ref1 = ny - 1; 0 <= _ref1 ? _k <= _ref1 : _k >= _ref1; j = 0 <= _ref1 ? ++_k : --_k) {
+          x = side * i + side / 2;
+          y = side * j + side / 2;
+          element = document.elementFromPoint(x + dx, y + dy);
+          if (element) {
+            attr = element.getAttribute("data-key");
+            if (attr) {
+              centroid.remove(attr);
+              value = [attr];
             } else {
               value = [];
             }
-            grid.set(i + "," + j, {
-              keys: value,
-              x: x,
-              y: y
-            });
+          } else {
+            value = [];
           }
+          grid.set(i + "," + j, {
+            keys: value,
+            x: x,
+            y: y
+          });
         }
       }
       centroid.forEach(function(k, v) {
@@ -88,7 +87,7 @@
       });
       density = function(a) {
         var den, num;
-        if (isabsolute) {
+        if (isquantity) {
           num = d3.sum((function() {
             var _l, _len1, _results;
             _results = [];
@@ -140,59 +139,43 @@
         }
         return _results;
       })();
-      dots = map.selectAll(".gridmap").data(dataGrid);
+      dots = map.selectAll(gridclass).data(dataGrid);
       radius.domain([
         0, d3.max(dataGrid, function(d) {
           return Math.sqrt(d.value);
         })
       ]);
-      dots.enter().append("circle").attr("class", "gridmap").attr("cx", function(d) {
+      dots.enter().append("circle").attr("cx", function(d) {
         return d.x;
       }).attr("cy", function(d) {
         return d.y;
       }).attr("r", function(d) {
         return radius(Math.sqrt(d.value));
-      }).style("fill", "#131313");
+      }).attr("class", gridclass);
       return selection.style(backup);
     };
     chart.width = function(_) {
-      if (!arguments.length) {
-        return width;
-      } else {
-        width = _;
-        return chart;
-      }
+      width = _;
+      return chart;
     };
     chart.height = function(_) {
-      if (!arguments.length) {
-        return height;
-      } else {
-        height = _;
-        return chart;
-      }
+      height = _;
+      return chart;
     };
     chart.side = function(_) {
-      if (!arguments.length) {
-        return side;
-      } else {
-        side = _;
-        return chart;
-      }
+      side = _;
+      return chart;
     };
     chart.key = function(_) {
-      if (!arguments.length) {
-        return key;
-      } else {
-        key = _;
-        return chart;
-      }
+      key = _;
+      return chart;
     };
     chart.data = function(_) {
       data = _;
       return chart;
     };
-    chart.isabsolute = function(_) {
-      isabsolute = _;
+    chart.isquantity = function(_) {
+      isquantity = _;
       return chart;
     };
     chart.features = function(_) {
@@ -201,6 +184,14 @@
     };
     chart.projection = function(_) {
       projection = _;
+      return chart;
+    };
+    chart.gridclass = function(_) {
+      gridclass = _;
+      return chart;
+    };
+    chart.mapclass = function(_) {
+      mapclass = _;
       return chart;
     };
     return chart;

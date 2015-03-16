@@ -3,15 +3,18 @@ root.gridmap = () ->
 
   # ---- Default Values ------------------------------------------------
 
-  projection = undefined
-  side = 10 #side of the cell in pixel
-  key = "id"
-  grid = d3.map()
-  data = undefined
-  features = undefined
+  projection = undefined    # d3.geo projection
+  side = 10                 # side of the cells in pixel
+  key = "id"                # name of the attribute mapping features to data          
+  data = undefined          # d3.map() mapping key to data
+  features = undefined      # array of map features
   width = 500
   height = 500
-  isabsolute = undefined
+  isquantity = undefined    # 
+  gridclass = "gridclass"
+  mapclass = "mapclass"
+
+  grid = d3.map()
 
   # --------------------------------------------------------------------
 
@@ -21,7 +24,8 @@ root.gridmap = () ->
     h = height
         
     # Using `document.elementFromPoint` the specified point must be
-    # inside the visible bounds of the document
+    # inside the visible bounds of the document.
+    # Original style will be restored after the gridmap is done.
     backup = {
       "position": selection.style("position")
       "top": selection.style("top")
@@ -35,7 +39,6 @@ root.gridmap = () ->
       "opacity": 0
     })
 
-    projection.translate([w / 2, h / 2]);
     path = d3.geo.path()
       .projection(projection)
 
@@ -55,34 +58,32 @@ root.gridmap = () ->
         .attr("viewBox", "0 0 "+w+" "+h)
 
     map = svg.append("g")
-    map.attr("class", "counties")
-      .selectAll("path")
+    map.selectAll("path")
         .data(features)
       .enter().append("path")
-        .style("fill","#000")
-        .style("fill-opacity",0)
+        .attr("class", mapclass)
         .attr("data-key", (d) -> d[key] )
-        .attr("d", path)
-
+      .attr("d", path)
+    
+    # define the grid
     matrix = map.node().getScreenCTM()
     dy = matrix.f
     dx = matrix.e
     nx = Math.floor(w / side)
     ny = Math.floor(h / side)
-    if grid.size() is 0
-      for i in [0..nx-1]
-        for j in [0..ny-1]
-          x = side * i + side / 2
-          y = side * j + side / 2
-          element = document.elementFromPoint(x + dx,y + dy)
-          if element
-            attr = element.getAttribute("data-key")
-            if attr
-              centroid.remove(attr)
-              value = [attr]
-            else value = []
+    for i in [0..nx-1]
+      for j in [0..ny-1]
+        x = side * i + side / 2
+        y = side * j + side / 2
+        element = document.elementFromPoint(x + dx,y + dy)
+        if element
+          attr = element.getAttribute("data-key")
+          if attr
+            centroid.remove(attr)
+            value = [attr]
           else value = []
-          grid.set(i+","+j, {keys: value, x: x, y: y})
+        else value = []
+        grid.set(i+","+j, {keys: value, x: x, y: y})
 
     # add not hitted features to the nearest cell
     centroid.forEach((k,v) ->
@@ -93,76 +94,64 @@ root.gridmap = () ->
     )
 
     density = (a) ->
-      if isabsolute
+      if isquantity
       then num = d3.sum((data.get(j) for j in a))
       else num = d3.sum((data.get(j) * area.get(j) for j in a))
       den = d3.sum((area.get(j) for j in a))
       if den then num / den else 0
 
     dataGrid = ( { value: density(k.keys), x: k.x, y: k.y } for k in grid.values() when k.keys.length)
-    dots = map.selectAll(".gridmap")
-        .data(dataGrid)
-    #enter
+    dots = map.selectAll(gridclass).data(dataGrid)
     radius.domain([0, d3.max(dataGrid, (d) -> Math.sqrt(d.value))])
     dots.enter().append("circle")
-        .attr("class","gridmap")
         .attr("cx", (d) -> d.x)
         .attr("cy", (d) -> d.y)
         .attr("r", (d) -> radius(Math.sqrt(d.value)))
-        .style("fill","#131313")
-
-    #update
-
+        .attr("class", gridclass)
 
     selection.style(backup)
-
-
 
   # ---- Getter/Setter Methods -----------------------------------------
 
   chart.width = (_) ->
-    if not arguments.length
-      width
-    else
-      width = _
-      chart
+    width = _
+    chart
 
   chart.height = (_) ->
-    if not arguments.length
-      height
-    else
-      height = _
-      chart
+    height = _
+    chart
 
   chart.side = (_) ->
-    if not arguments.length
-      side
-    else
-      side = _
-      chart
+    side = _
+    chart
 
   chart.key = (_) ->
-    if not arguments.length
-      key
-    else
-      key = _
-      chart
+    key = _
+    chart
 
   chart.data = (_) ->
-      data = _
-      chart
+    data = _
+    chart
 
-  chart.isabsolute = (_) ->
-      isabsolute = _
-      chart
+  chart.isquantity = (_) ->
+    isquantity = _
+    chart
 
   chart.features = (_) ->
-      features = _
-      chart
+    features = _
+    chart
 
   chart.projection = (_) ->
-      projection = _
-      chart 
+    projection = _
+    chart
+
+  chart.gridclass = (_) ->
+    gridclass = _
+    chart 
+
+  chart.mapclass = (_) ->
+    mapclass = _
+    chart 
 
   # --------------------------------------------------------------------
   

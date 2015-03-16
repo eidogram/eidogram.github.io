@@ -110,6 +110,11 @@ img.client:hover {
 
 }
 
+.main-description {
+  padding-top:25px;
+  font-size: 14px;
+}
+
 .picture {
   padding: 0px;
   margin-right: 0px;
