@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8"> 
+	<title>Information Design</title>
+    <meta name="author" content="Riccardo Scalco">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Data Journalism, Italy, Riccardo Scalco, Analytic Journalism, Data Driven Journalism,
+    Data Visualization, Data Analysis, Web Spidering, Data scientist, Data
+    artist, interactive things, web design, web developer">
+    <meta name="p:domain_verify" content="b3d94f28f62c80bf62cae5db9c620773"/>
+    <!--<meta name="description" content="">-->
+    <link rel="alternate" href="/atom.xml" type="application/atom+xml" title="eidogram">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
+    <link rel="prefetch" href="http://eidogram.com/projects/piemVisCont/"/>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic|Inconsolata:700' rel='stylesheet' type='text/css'>-->
+    <!--<link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,400,700' rel='stylesheet' type='text/css'>-->
+    <!--<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>-->
+    <!--<script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+
+    
+
+    
+
+    <!--
+    
+    -->
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script charset="UTF-8" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.1.6/d3.min.js"></script>
+    <script type="text/javascript" src="./js/case4.js"></script>-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-28849332-2', 'eidogram.com');
+      ga('send', 'pageview');
+    </script>
+    </head>
+    <body id="top">
+    <div id="info">
+<!--         <a class="logo" href="/">
+        <img class="logo" src="/logo.png" alt="eidogram">
+        </a> -->
+        <aside>
+
+        <p class="main-description">Eidogram is a Data Visualization Studio, led by <a href="http://riccardoscalco.github.io/">Riccardo Scalco</a>.
+        We turn raw data into knowledge through graphic information processing and mathematical analysis.</p>
+<!--         <p>
+            I am Riccardo Scalco, an italian independent designer and consultant in Data Analysis and Visualization.
+        </p> -->
+<!--         <p>
+          My background is in Theoretical Physics and I completed a PhD in Computational Biochemistry.
+        </p>
+        <p>
+          I operate on the research activities within private and
+          public institutions, giving support to the visualization of patterns
+          emerging from complex phenomena and to the interaction with
+          highly organized datasets.</p>
+        <p>My approach to the data visualization has its roots on the
+          crossroad between the abstract mathematical thinking and the
+          guidelines drawn by the semiotic of graphics. I therefore offer
+          a peculiar expertise on the creation of
+          expressive graphical representations of complex scenarios.
+        </p> -->
+<!--         <p>
+            Eidogram is the place where I collect projects and experiments,
+            I like to turn raw data into knowledge through the combination of advanced mathematics and beautiful visualizations,
+            please enjoy.<br><br>
+        (I’m up for some</br>collabs right now)
+        </p> -->
+
+        <ul>
+         <a href="mailto:riccardo.scalco@gmail.com"><i class="fa fa-envelope"></i></a>
+         <a href="https://github.com/riccardoscalco"><i class="fa fa-github-alt"></i></a>
+         <a href="https://twitter.com/eidogram"><i class="fa fa-twitter"></i></a>
+         <!--<a href="http://pinterest.com/riccardoscalco/"><i class="fa fa-pinterest"></i></a>-->
+         <a href="http://it.linkedin.com/pub/riccardo-scalco/88/408/98b"><i class="fa fa-linkedin"></i></a>
+         <!--<a href="/atom.xml"><i class="fa fa-rss"></i></li></a>-->
+         </ul>
+         
+         <!-- <h4>Recently I worked with</h4> -->
+         <ul>
+           <a href="http://tuxtax.ch/"><img class="client" src="/img/clients/tuxtax1.png" alt="tuxtax"></a>
+           <a href="http://etnograph.com/"><img class="client" src="/img/clients/etnograph1.png" alt="etnograph"></a>
+           <a href="http://www.difest.unipr.it/en"><img class="client" src="/img/clients/unipr.png" alt="University of Parma"></a>
+           <a href="http://www.marionegri.it/mn/en/index.html?l=en"><img class="client" src="/img/clients/marionegri1.png" alt="mario negri"></a>
+           <a href="http://seremi.stage-zadig2.it/"><img class="client" src="/img/clients/seremi1.png" alt="seremi"></a>
+           <a href="http://en.zadig.it/"><img class="client" src="/img/clients/zadig.png" alt="zadig"></a>
+           <a href="http://powerspace.com/"><img class="client" src="/img/clients/powerspace1.png" alt="powerspace"></a>
+           <a href="http://sociolus.com/"><img class="client" src="/img/clients/sociolus.png" alt="sociolus"></a>
+         </ul>
+
+        <!--<a href="articles.html">Grains of mathematics</a></li>-->
+        <!--<li><a href="articles.html">Articles</a></li>
+        <<li><a href="portfolio.html">Data Artworks</a></li>-->
+
+        <!-- <h4>News</h4> -->
+        <ul>
+
+          <p class="news">
+              <time>May 21-22 2015</time></br>
+              You can find me at the <a href="http://www.healthmap.org/ddd/">DDD3</a> 3rd International Conference on Digital Disease Detection presenting a rapid fire talk about the <em>evaluation of data streams by means of Markov Chains models</em>. 
+          </p>
+
+<!--           <p class="news">
+              <time>May 23th, 2014</time></br>
+              I presented a poster about my recent work on Network Meta Analysis data during the Alessandro Liberati association annual congress at the <a href="http://www.marionegri.it/mn/en/index.html?l=en">Mario Negri Institute</a>.
+          </p>
+          <p class="news">
+              <time>May 24-25th, 2014</time></br>
+              Let's meet at the <a href="http://tuxtax.ch/sports-hackdays-milano.html">International Sports Hackdays</a> in Milan, organized by Tuxtax and the <a href="https://okfn.org/">OKF</a>.
+          </p>
+
+          <p class="news">
+              <time>May 9th, 2014</time></br>
+              I will speak about d3.js at the <a href="http://milano2014.drupaldays.it/">DrupalDay</a> in Milan.
+              <a href="http://eidogram.com/tutorials/datajoin.html">Here</a> there is a tutorial about the data-join in d3.
+          </p> -->
+          
+          <!--
+          <p class="news">
+              <time>March 14th, 2014</time></br>
+              Recently I joined the <a href="http://etnograph.com/">Etnograph</a> team,
+              we create engaging user experience by means of an accurate use of front-end technologies, like HTML5, CSS and Javascript.
+          </p>
+
+          <p class="news">
+              <time>January 1st, 2014</time></br>
+              I am Co-founder of <a href="http://tuxtax.ch">Tuxtax</a>, an emerging laboratory on Data Visualization based in Milan and Lausanne.
+          </p>
+          -->
+        </ul>
+
+<!--         <h4>Frequently Asked Questions</h4>
+        <ul>
+          <p><em>What programming languages and software do you use?</em></br>I use mainly Web Standards (HTML-CSS-SVG), Javascript and Python.</p>
+          <p><em>Do you use charts libraries?</em></br>No. I use mainly <a href="http://d3js.org/">d3.js</a> because I usually create interactive graphs tailored to the customer needs. A good visualization is designed around data.</p>
+          <p><em>Do you need the data?</em></br>Generally not, but I need to know how data is organized. For example, a sample of real (or random) data is a good starting point.</p>
+          <p><em>Can you afford short deadlines?</em></br>Usually yes, when with "short" I mean one or two weeks.</p>
+          <p><em>Are you a data scientist?</em></br> I am at ease with (big) data, I have a background in Science and a broad experience in Python scripting. Have a look at my scientific papers [<a href="./papers/riccardos12jctc.pdf">1</a>,<a href="./papers/riccardos11.pdf">2</a>,<a href="./papers/journal.pone.0027924.pdf">3</a>], <a href="https://github.com/riccardoscalco/Pykov">my Python library</a> on <a href="http://en.wikipedia.org/wiki/Markov_chain">Markov Chains</a> and <a href="./projects/piemVisCont/">some</a> <a href="./projects/tdc/">other</a> projects.</p>
+          <p><em>How can I contact you?</em></br>Send an email to riccardo.scalco@gmail.com, I will reply shortly after.</p>
+          <p><em></em></p>
+
+        </ul> -->
+
+
+         <div id="credits">
+         <p>
+         Website powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a><br>
+         <!--CSS design inspired by <a href="http://jt.ms/">JT</a><br>-->
+         <!--Used typeface <a href="http://www.elenapapassissa.it/index.php?/typefaces/lekton/">Lekton</a><br>-->
+         <!--and <a href="http://nicinabox.github.com/superslides/">Nic Aitch</a>-->
+         Hosted on <a href="https://github.com/eidogram/eidogram.github.io">GitHub</a><br>
+         &copy Copyright 2015<br>
+         <a href="http://riccardoscalco.github.io/">Riccardo Scalco</a></br>
+         VATIN: IT 03876810247
+         <!--<a href="#top">Back to the top</a></p></br>-->
+         </div>
+         <!-- <img class="picture"> -->
+      </aside>
+      </div>
+<div id="container">
+    <section>
+   <a href="http://riccardoscalco.github.io/textures/"><img src="img/DBI8G6lC9.svg" alt="Textures.js"></a>
+   <h2># Textures.js</h2>
+   <p><a href="http://riccardoscalco.github.io/textures/">Textures.js</a> is a Javascript library for creating <em>SVG patterns</em>. Made on top of d3.js, it is designed for data visualizaton.</p>
+   <i>Tools used: <a href="http://d3js.org/">D3js</a> and <a href="http://coffeescript.org/">Coffeescript</a>.</i>
+
+<div style="clear:both;"></div>
+</section>
+
+<section>
+  <a href="http://eidogram.com/projects/piemVisCont/"><img src="img/p1fjrQJWW.png" alt="Piedmont municipalities: population density vs voter turnout"></a>
+  <h2># Uncertainty on Voter Elections</h2>
+  <p>
+    Project developed on the occasion of the <em>Piemonte Visual Contest</em>, it is a case example of use of <em>Open Data</em> for analysis of social interest.
+  </p>
+  <i>Conception, analysis, design, development. Tools used: <a href="http://d3js.org/">D3js</a> and <a href="http://www.python.org/">Python</a>. In collaboration with <a href="http://tuxtax.ch">Tuxtax</a>.</i>
+<div style="clear:both;"></div>
+</section>
+
+<section>
+   <a href="http://riccardoscalco.github.io/assets/Zadig_MarkovTwitter_research.pdf"><img src="img/horizon.svg" alt="Textures.js"></a>
+   <h2># Most influential users on Twitter</h2>
+   <p>The most influential users on Twitter have been discovered by means of regular <em>Markov chains</em>.</p>
+   <i>Conception, analysis, design, development. Tools used: <a href="http://d3js.org/">D3js</a> and <a href="http://www.python.org/">Python</a>. In collaboration with <a href="http://tuxtax.ch"><strong>Tuxtax</strong></a> and <a href="http://en.zadig.it/"><strong>Zadig</strong></a>.</i>
+
+<div style="clear:both;"></div>
+</section>
+<!-- 
+<section>
+  <img src="img/gxx1.svg" alt="Network Meta Analysis">
+  <h2># Network Meta Analysis Data</h2>
+  <p>
+    Project financed by the <em>Piedmont Health care system</em> in relation with the <a href="http://www.marionegri.it/mn/en/index.html?l=en"><strong>Mario Negri Institute for Pharmacological Research</strong></a>. The project is currently under development.
+  </p>
+  <i>Design and development of the graphical representation. Tools used: <a href="http://d3js.org/">D3js</a>. In collaboration with <a href="http://en.zadig.it/">Zadig</a> and <a href="http://tuxtax.ch">Tuxtax</a>.</i>
+<div style="clear:both;"></div>
+</section> -->
+
+<section>
+   <a href="http://riccardoscalco.github.io/Rohmetric/JIRFlYJ2N.html"><img src="img/case5SVG1.svg" alt="Influenza Virus Evolution"></a>
+   <h2># Influenza Virus Evolution</h2>
+   <p>Project started in collaboration with the <a href="http://www.difest.unipr.it/en"><strong>Department of Physics at the University of Parma</strong></a>. The project is under development and its goal is the creation af a <em>visualization tool</em> for the <a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0027924"><strong>research activities</strong></a> on the <em>time evolution of Influenza viruses</em>.
+   </p>
+   <i>Design and development of the graphical representation. Conception and analysis in collaboration with R.Burioni and M.Casartelli.
+    Tools used: <a href="http://d3js.org/">D3js</a> and <a href="http://www.python.org/">Python</a>.</i>
+
+  <!--<h2># Rohmetric: investigate Influenza virus evolution with entropic metric measures</h2>
+  <p>
+    The <a href="http://riccardoscalco.github.io/Rohmetric/index.html">project</a> aims to investigate the evolution of Influenza Virus by means of cutting edge mathematical methods. 
+    Different virus strains are identifying by horizontal colored groups, each point identifies the hemagglutinin segment of an isolate,
+    isolates are full lenght and come from all over the world.
+  </p>-->
+<!--<div class="techdet">
+<b>data source:</b>
+<a href="http://platform.gisaid.org/epi3/frontend#501af9">GISAID</a>.<br>
+<b>tools:</b>
+<a href="http://www.python.org/">Python</a>,
+<a href="http://www.numpy.org/">Numpy</a>,
+<a href="http://d3js.org/">D3js</a>,
+and <a href="https://developers.google.com/chart/interactive/docs/gallery/bubblechart">Google charts</a>.
+</div>-->
+<div style="clear:both;"></div>
+</section>
+
+<section>
+  <a href="http://seremi.it/"><img src="img/ajjvCI0Fp.svg" alt="Seremi"></a>
+  <h2># Statistics on Infectious Diseases</h2>
+  <p>
+    Project financed by the <a href="http://seremi.it/"><strong>SSepi-SeREMI</strong></a> epidemiology service on monitoring and prevention of infectious diseases, in collaboration with the <a href="http://en.zadig.it/"><strong>Zadig</strong></a> editorial company.
+  </p>
+  <i>Design and development of graphic representations. Tools used: <a href="https://developer.mozilla.org/en-US/docs/Web_Standards">Web Standards</a> and <a href="http://d3js.org/">D3js</a>.</i>
+<!--<div class="techdet">
+  <b>tools:</b>
+  <a href="https://developer.mozilla.org/en-US/docs/Web_Standards">Web Standards</a> and <a href="http://d3js.org/">D3js</a>.</br></br>
+</div>-->
+<div style="clear:both;"></div>
+</section>
+
+<section>
+  <a href="http://eidogram.com/projects/tdc/"><img src="img/tBVR0Feb1.svg" alt="Analysis on Telecom Call detail records"></a>
+  <h2># Telecom Call Detail Records</h2>
+  <p>
+    Analysis performed on the occasion of the <em>Telecom Big Data Challenge</em>. A sample of <em>53 millions of strings of data</em> have been analyzed by means of a normalization mechanism targeted to find space-time patterns on the user behaviour throughout the working-day in the city of Milan.    
+  </p>
+  <i>Conception, analysis. Tools used: <a href="http://www.python.org/">Python</a>.</i>
+<!--<div class="techdet">
+  <b>data source:</b>
+  <a href="http://www.telecomitalia.com/">telecomitalia.com</a></br>
+  <b>tools:</b>
+  <a href="http://www.python.org/">Python</a>,
+  <a href="http://d3js.org/">D3js</a>.</br></br>
+  <b class="tuxtax">by the <a href="http://tuxtax.it">Tuxtax</a> team</b>
+</div>-->
+<div style="clear:both;"></div>
+</section>
+
+<section>
+  <a href="http://eidogram.com/jDdm5nu/"><img src="img/23ddw.png" alt="Customized Data Visualization"></a>
+  <h2># Customized Data Visualization</h2>
+  <p> Here are collected some static images of dynamic visualizations created during freelance work. All of the interactive graphs are created from scratch and are highly customized according to the customer needs. Graphical representations of data are designed considering both suitability and elegance.
+  </p>
+<div class="techdet">
+  <b>tools:</b>
+  <a href="https://developer.mozilla.org/en-US/docs/Web_Standards">Web Standards</a> and <a href="http://d3js.org/">D3js</a>.</br></br>
+</div>
+<div style="clear:both;"></div>
+</section>
+
+<section>
+  <a href="http://eidogram.com/projects/disasters/"><img src="img/9Hc9B8kwO.png" alt="People displaced by disaster during 2012"></a>
+  <h2># People displaced by natural disasters during 2012</h2>
+  <p>
+    In 2012, an estimated 32.4 million people in 82 countries were newly displaced by disasters, and the vast majority of displacement is triggered by climate and weather-related hazards in north-east India and Nigeria.
+  </p>
+<div class="techdet">
+  <b>data/text source:</b>
+  <a href="http://www.internal-displacement.org/">iDMC</a></br>
+  <b>tools:</b>
+  <a href="http://d3js.org/">D3js</a>.</br></br>
+  <b class="tuxtax">by the <a href="http://tuxtax.it">Tuxtax</a> team</b>
+</div>
+<div style="clear:both;"></div>
+</section>
+
+<section>
+  <a href="./SZyMjZay"><img src="img/FZTwsLkTh.png" alt="Ruler and compass construction of a pentagon"></a>
+  <h2># Ruler and compass construction of a pentagon</h2>
+  <p>
+    A proof of concept: visually describe the construction of a pentagon
+    with the only use of ruler and compass.
+  </p>
+<div class="techdet">
+<b>tools:</b>
+<a href="http://d3js.org/">D3js</a> and <a href="http://inkscape.org/">Inkscape</a>.
+</div>
+<div style="clear:both;"></div>
+</section>
+
+<!--
+<section>
+  <a href="http://seofon.co"><img src="img/vWQAMZMK9.png" alt="Seofon.co, seven sexy links from the sea"></a>
+  <h2># Seofon: seven sexy links from the Sea</h2>
+  <p>
+    <a href="http://seofon.co">Seofon</a> is a collaborative linkblog on Web Dev and Design,
+    you have the opportunity to suggest links and to upvote links suggested by others.
+    It is powered by <a href="http://meteor.com">Meteor</a>,
+    an ultra-simple environment for building top-quality web apps.
+  </p>
+<div class="techdet">
+<b>tools:</b>
+<a href="http://meteor.com">Meteor</a>,
+<a href="http://www.mongodb.org/">Mongodb</a>.
+</div>
+<div style="clear:both;"></div>
+</section>
+-->
+
+<section>
+  <a href="https://github.com/riccardoscalco/stardust"><img src="img/stardust.png" alt="Stardust, a linkblog template powered by Meteor."></a>
+  <h2># Stardust: a linkblog template powered by Meteor</h2>
+  <p>
+    <a href="https://github.com/riccardoscalco/stardust">Stardust</a> is a collaborative linkblog,
+    you have the opportunity to suggest links and to upvote links suggested by others.
+    It is powered by <a href="http://meteor.com">Meteor</a>,
+    an ultra-simple environment for building top-quality web apps.
+  </p>
+<div class="techdet">
+<b>tools:</b>
+<a href="http://meteor.com">Meteor</a>,
+<a href="http://www.mongodb.org/">Mongodb</a>.
+</div>
+<div style="clear:both;"></div>
+</section>
+
+<section>
+  <a href="http://riccardoscalco.github.io/Pykov/"><img src="img/Lt8nPV9Uv.png" alt="Pykov, finite Markov chains with Python."></a>
+  <h2># Pykov: finite Markov chains with Python</h2>
+  <p>
+    <a href="http://riccardoscalco.github.io/Pykov/">Pykov</a> is versatile python module useful to manipulate Markov chains. It is able to calculate various kind of quantities, like steady state distribution, mean first passage times, random walks, absorbing times, and so on.
+  </p>
+<div class="techdet">
+<b>tools:</b>
+<a href="http://www.python.org/">python</a>.
+</div>
+<div style="clear:both;"></div>
+</section>
+
+<section>
+  <a href="./O9pGqCW"><img src="img/in7vgTg.png" alt="the tangram game"></a>
+  <h2># A tangram tribute</h2>
+  <p>
+  This is just a tangram tribute powered by d3.js transitions.
+  Let be captivated by one of most ancient games on the world.
+  </p>
+<div class="techdet">
+<b>tools:</b>
+<a href="http://d3js.org/">D3js</a> and <a href="http://inkscape.org/">Inkscape</a>.
+</div>
+<div style="clear:both;"></div>
+</section>
+
+<section>
+  <a href="./FzSbKVh"><img src="img/P8D4w9E.png" alt="Latest Earthquakes In Italy"></a>
+  <h2># Latest earthquakes in Italy</h2>
+  <p>This is a continuously updated webpage showing the latest earthquakes in Italy and neighboring regions. Earthquakes are classified according their place, date, magnitude and depth.</p>
+<div class="techdet">
+<b>data source:</b>
+<a href="http://cnt.rm.ingv.it/index.html">INGV</a>.<br>
+<b>tools:</b>
+<a href="http://scrapy.org/">Scrapy</a>,
+<a href="http://www.python.org/">Python</a>
+and <a href="http://kartograph.org/">Kartograph</a>.
+</div>
+  <div style="clear:both;"></div>
+</section>
+
+<!-- <section>
+  <a href="http://wwysymil.meteor.com/"><img src="img/lWafLIG.png" alt="Where would you send your mother in law?"></a>
+  <h2># Where would you send your mother-in-law?</h2>
+  <p>
+    This project is an hilarious example of collaborative dataviz: the user is asked to insert some data and, once inserted, the visualization will be synchronously updated all over the world.
+    In other words, the user interacts both with the visualization and the database.
+  </p>
+<div class="techdet">
+  <b>data source:</b>
+  You, <a href="http://stamen.com/">Stamen Design</a> and <a href="http://www.openstreetmap.org/">Openstreetmap</a>.<br>
+  <b>tools:</b>
+  <a href="http://leafletjs.com/">Leaflet</a>, <a href="http://meteor.com">Meteor</a> and <a href="http://inkscape.org/">Inkscape</a>.
+  <br>Source code on <a href="https://github.com/riccardoscalco/eidogram.projects/tree/master/mother-in-law">github</a>.
+</div>
+<div style="clear:both;"></div>
+</section> -->
+
+<!-- <section>
+  <a href="./yI40Cw5h"><img src="img/yWkk0q9.png" alt="Science, Technology and Innovation in Italy"></a>
+  <h2># Science, Technology and Innovation in Italy</h2>
+  <p>
+   The map shows the role, in terms of innovation, played by the italian administrative regions.
+   The statistics is presented by means of a cartogram, where the area of every region is proportional
+   to the corresponding innovation effort.
+  </p>
+<div class="techdet">
+<b>data source:</b>
+<a href="http://www.istat.it/">istat.it</a>.<br>
+<b>tools:</b>
+<a href="https://github.com/mbostock/topojson">topojson</a>,
+<a href="https://github.com/shawnbot/d3-cartogram/">d3-cartogram</a>,
+<a href="http://d3js.org/">D3js</a> and
+<a href="http://inkscape.org/">Inkscape</a>.
+</div>
+<div style="clear:both;"></div>
+</section>
+ -->
+
+
+<!--
+<section>
+  <a href="./0e7BMpR"><img src="img/Hihsrzx.png" alt="Italian Camera Composition"></a>
+  <h2># Discover the italian Parliament</h2>
+  <p>
+  The reader is guided smoothly to the subdivision of the set of members of parliament by party, gender, age and education.
+  The focus is to visualize the whole data complexity in a funny and interactive way.
+  </p>
+<div class="techdet">
+<b>data source:</b>
+<a href="http://www.camera.it/">camera.it</a>.<br>
+<b>tools:</b>
+<a href="http://scrapy.org/">Scrapy</a>,
+<a href="http://www.python.org/">Python</a>
+and <a href="http://d3js.org/">D3js</a>.<br>
+<a href="https://github.com/eidogram/eidogram.github.com/tree/master/0e7BMpR">Project source</a>
+
+
+</div>
+  <div style="clear:both;"></div>
+</section>
+-->
+
+
+
+<!-- <section>
+  <a href="./bQ9rSvt"><img src="img/7Fo4WzG.png" alt="Positive and negative emotions"></a>
+  <h2># Positive and negative emotions on Twitter</h2>
+  <p>
+  The italian words 'amo', odio', 'felice', 'triste' ('love', 'hate', 'happy', 'sad') and others
+  have been tracked on the public Twitter streaming during an ordinary Friday.
+  Not a news, but still it's amazing how people freely express the most private feelings on social media.
+  </p>
+<div class="techdet">
+<b>tools:</b>
+<a href="http://d3js.org/">D3js</a>, <a href="https://github.com/ryanmcgrath/twython">Twython</a>
+and <a href="http://dataset.readthedocs.org/en/latest/">Dataset</a>.
+</div>
+<div style="clear:both;"></div>
+</section> -->
+
+
+</div>
+<!--
+    <script>
+    $(document).ready(function(){
+      $('a[href=#top]').click(function() {
+        $('html, body').animate({scrollTop: 0}, 'slow');
+        return false;
+      });
+      $('a[href=#info]').click(function() {
+        $('html, body').animate({scrollTop:$(document).height()}, 'slow');
+        $('footer').css({'border-top-color': '#000', 'color': '#000'});
+        return false;
+      });
+    });
+    </script>
+-->
+    </body>
+</html>
+
