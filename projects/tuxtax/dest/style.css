@@ -1,0 +1,439 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:700|Varela+Round);
+
+body {
+  background: #fff;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  word-spacing: 1px;
+  line-height: 25px;
+  font-size: 15px;
+  color: #545454;
+}
+
+section {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ip-header */
+
+.ip-header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  min-height: 480px;
+  width: 100%;
+  height: 100%;
+  background: #131313;
+  /*background-image: url("../pics/bg1.png");*/
+}
+
+.ip-header h1 {
+  margin: 0;
+}
+
+.ip-logo,
+.ip-loader {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  cursor: default;
+  pointer-events: none;
+}
+
+.ip-logo {
+  top: 0;
+  height: 100%;
+  -webkit-transform: translate3d(0,25%,0);
+  transform: translate3d(0,25%,0);
+}
+
+.ip-loader {
+  bottom: 20%;
+}
+
+.ip-header .ip-inner {
+  display: block;
+  margin: 0 auto;
+}
+
+.ip-header .ip-logo svg {
+  min-width: 100px;
+  max-width: 150px;
+  width: 25%;
+}
+
+.ip-header .ip-logo svg path {
+  fill: #fff;
+}
+
+.ip-header .ip-loader svg path {
+  fill: none;
+  stroke-width: 6;
+}
+
+.ip-header .ip-loader svg path.ip-loader-circlebg {
+  stroke: #aaa;
+  stroke-opacity: 0;
+  stroke-width: 5px;
+}
+
+.ip-header .ip-loader svg path.ip-loader-circle {
+  transition: stroke-dashoffset 0.2s;
+  stroke: #fff;
+  stroke-width: 5px;
+}
+
+/* ip-main */
+
+.ip-main {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 160px 0 10em 0;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.ip-main h2 {
+  margin: 0;
+  padding: 0.5em 0 1.5em;
+  color: #343434;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  font-size: 3.5vw;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+img.intro {
+  display: block;
+  margin: auto;
+  width: 100%;
+  /*max-width: 960px;*/
+}
+
+/* animations loading */
+
+.loading .ip-logo,
+.loading .ip-loader {
+  opacity: 1;
+  -webkit-animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
+          animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
+}
+
+.loading .ip-loader {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+@-webkit-keyframes animInitialHeader {
+  from { 
+    opacity: 0; 
+    -webkit-transform: translate3d(0,800px,0); 
+            transform: translate3d(0,800px,0); 
+  }
+}
+
+@keyframes animInitialHeader {
+  from { 
+    opacity: 0; 
+    -webkit-transform: translate3d(0,800px,0); 
+            transform: translate3d(0,800px,0); 
+  }
+}
+
+/* Animations loaded */
+
+.loaded .ip-logo,
+.loaded .ip-loader {
+  opacity: 1;
+}
+
+.loaded .ip-logo {
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  -webkit-animation: animLoadedLogo 1s cubic-bezier(0.7,0,0.3,1) forwards;
+          animation: animLoadedLogo 1s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+@-webkit-keyframes animLoadedLogo {
+  to { 
+    -webkit-transform: translate3d(0,100%,0) translate3d(0,50px,0) scale3d(0.65,0.65,1); 
+            transform: translate3d(0,100%,0) translate3d(0,50px,0) scale3d(0.65,0.65,1); 
+  }
+}
+
+@keyframes animLoadedLogo {
+  to { 
+    -webkit-transform: translate3d(0,100%,0) translate3d(0,50px,0) scale3d(0.65,0.65,1); 
+            transform: translate3d(0,100%,0) translate3d(0,50px,0) scale3d(0.65,0.65,1); 
+  }
+}
+
+.loaded .ip-logo svg path {
+  transition: all 0.5s ease 0.3s;
+  fill: #343434;
+}
+
+.loaded .ip-loader {
+  -webkit-animation: animLoadedLoader 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
+          animation: animLoadedLoader 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+@-webkit-keyframes animLoadedLoader {
+  to { 
+    opacity: 0; 
+    -webkit-transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); 
+            transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); 
+  }
+}
+
+@keyframes animLoadedLoader {
+  to { 
+    opacity: 0; 
+    -webkit-transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); 
+            transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); 
+  }
+}
+
+.loaded .ip-header {
+  -webkit-animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+          animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+@-webkit-keyframes animLoadedHeader {
+  to { -webkit-transform: translate3d(0,-100%,0); transform: translate3d(0,-100%,0); }
+}
+
+@keyframes animLoadedHeader {
+  to { -webkit-transform: translate3d(0,-100%,0); transform: translate3d(0,-100%,0); }
+}
+
+/* Content animations */
+
+.loaded .ip-main img,
+.loaded .ip-main h2,
+.loaded .ip-main .portfolio,
+.loaded .ip-main .portfolio li {
+  -webkit-animation: animLoadedContent 1s cubic-bezier(0.7,0,0.3,1) both;
+          animation: animLoadedContent 1s cubic-bezier(0.7,0,0.3,1) both;
+}
+
+.loaded .ip-main .portfolio,
+.loaded .ip-main .portfolio li:first-child {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.loaded .ip-main .portfolio li:nth-child(2) {
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+
+.loaded .ip-main .portfolio li:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.loaded .ip-main .portfolio li:nth-child(4) {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.loaded .ip-main .portfolio li:nth-child(5) {
+  -webkit-animation-delay: 0.28s;
+          animation-delay: 0.28s;
+}
+
+.loaded .ip-main .portfolio li:nth-child(6) {
+  -webkit-animation-delay: 0.30s;
+          animation-delay: 0.30s;
+}
+
+@-webkit-keyframes animLoadedContent {
+  from { 
+    opacity: 0; 
+    -webkit-transform: translate3d(0,200px,0); 
+            transform: translate3d(0,200px,0); 
+  }
+}
+
+@keyframes animLoadedContent {
+  from { 
+    opacity: 0; 
+    -webkit-transform: translate3d(0,200px,0); 
+            transform: translate3d(0,200px,0); 
+  }
+}
+
+.layout-switch .ip-header {
+  position: absolute;
+}
+
+.no-js .ip-header {
+  position: relative;
+  min-height: 0px;
+}
+
+.no-js .ip-header .ip-logo {
+  margin-top: 20px;
+  height: 180px;
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.no-js .ip-header .ip-logo svg path {
+  fill: #fff;
+}
+
+/* flex container */
+
+.flex-container {
+  padding: 0;
+  margin: auto;
+  list-style: none;
+  max-width: 1100px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-item-portfolio,
+.flex-item-talent {
+  padding: 0px;
+  margin: auto;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.flex-item-portfolio figure,
+.flex-item-talent figure {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.flex-item-portfolio img,
+.flex-item-talent img {
+  width: 100%;
+}
+
+/* narrow */
+@media screen and (min-width: 560px) {
+  .flex-item-portfolio {
+    padding: 10px;
+    width: 50%;
+    width: calc(100% / 2);
+  }
+  .flex-item-talent {
+    padding: 10px;
+    width: 50%;
+    width: calc(100% / 2);
+  }
+  .ip-main h2 {
+    padding: 3em 0 5em;
+    font-size: 1rem;
+    /*font-size: 2vw;*/
+  }
+}
+
+/* medium */
+@media screen and (min-width: 960px) {
+  .flex-item-portfolio {
+    padding: 15px;
+    width: 33.3333%;
+    width: calc(100% / 3);
+  }
+  .flex-item-talent {
+    padding: 15px;
+    width: 25%;
+    width: calc(100% / 4);
+  }
+  .ip-main h2 {
+    font-size: 1rem;
+    /*font-size: 1.2vw;*/
+  }
+}
+
+/* wide */
+@media screen and (min-width: 1280px) {
+  .flex-item-portfolio {
+    padding: 25px;
+    width: 33.33333%;
+    width: calc(100% / 3);
+  }
+  .flex-item-talent {
+    padding: 25px;
+    width: 25%;
+    width: calc(100% / 4);
+  }
+  .ip-main h2 {
+    font-size: 1rem;
+    /*font-size: 1vw;*/
+  }
+}
+
+.description {
+  width: 80%;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  padding-right: 10px;
+  padding-left: 10px; 
+  max-width: 600px;
+  border-bottom: 1px solid #343434;
+  border-top: 1px solid #343434;
+}
+
+section.talents {
+  width: 100%;
+  max-width: 10000px;
+  background-color: #eee;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.talents figcaption {
+  border-bottom: 1px solid #343434;
+}
+
+.talents span {
+  text-align: center;
+  font-size: 30px;
+}
+
+section.social {
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+  background-color: #343434;
+  max-width: 10000px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+section.social span {
+  padding: 20px 10px;
+  color: #f5f5f5;
+}
+
+section.social p {
+  font-size: 11px;
+  color: #aaa;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
