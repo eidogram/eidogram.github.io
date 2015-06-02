@@ -1,0 +1,321 @@
+Area,Cod_reg,Regione,Popolazione >30,Numero decessi osservati,Decessi attribuilbili all'inquinante,Tasso di mortalità attribuibile all'inquinante (per 100.000),Etichetta,Inquinante,Anno,Scenario
+Nord,1,Piemonte,3.112.573,44.775,2.500,80,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Nord,2,Valle d'Aosta,86.055,1.181,0,0,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Nord,3,Lombardia,6.585.442,79.792,10.802,164,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Nord,4,Trentino-Alto Adige,658.377,7.754,24,4,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Nord,5,Veneto,3.288.117,39.875,3.647,111,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Nord,6,Friuli Venezia Giulia,882.860,12.978,853,97,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Nord,7,Liguria,1.192.075,19.858,902,76,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Nord,8,Emilia-Romagna,3.041.524,43.305,3.757,124,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Centro,9,Toscana,2.606.350,37.731,1.544,59,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Centro,10,Umbria,614.190,8.942,147,24,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Centro,11,Marche,1.050.407,14.345,477,45,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Centro,12,Lazio,3.684.035,46.385,3.141,85,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Centro,13,Abruzzo,903.549,12.354,204,23,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Sud e Isole,14,Molise,218.985,3.176,1,0,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Sud e Isole,15,Campania,3.549.631,44.873,4.675,132,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Sud e Isole,16,Puglia,2.608.398,31.354,1.106,42,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Sud e Isole,17,Basilicata,392.088,5.249,3,1,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Sud e Isole,18,Calabria,1.277.737,16.449,27,2,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Sud e Isole,19,Sicilia,3.204.855,43.906,596,19,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Sud e Isole,20,Sardegna,1.120.241,12.912,145,13,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Nord,1,Piemonte,3.112.573,44.775,1.360,44,Mortalità per cause naturali,NO2,2005,baseline
+Nord,2,Valle d'Aosta,86.055,1.181,0,0,Mortalità per cause naturali,NO2,2005,baseline
+Nord,3,Lombardia,6.585.442,79.792,8.349,127,Mortalità per cause naturali,NO2,2005,baseline
+Nord,4,Trentino-Alto Adige,658.377,7.754,44,7,Mortalità per cause naturali,NO2,2005,baseline
+Nord,5,Veneto,3.288.117,39.875,1.517,46,Mortalità per cause naturali,NO2,2005,baseline
+Nord,6,Friuli Venezia Giulia,882.860,12.978,722,82,Mortalità per cause naturali,NO2,2005,baseline
+Nord,7,Liguria,1.192.075,19.858,488,41,Mortalità per cause naturali,NO2,2005,baseline
+Nord,8,Emilia-Romagna,3.041.524,43.305,1.527,50,Mortalità per cause naturali,NO2,2005,baseline
+Centro,9,Toscana,2.606.350,37.731,799,31,Mortalità per cause naturali,NO2,2005,baseline
+Centro,10,Umbria,614.190,8.942,44,7,Mortalità per cause naturali,NO2,2005,baseline
+Centro,11,Marche,1.050.407,14.345,34,3,Mortalità per cause naturali,NO2,2005,baseline
+Centro,12,Lazio,3.684.035,46.385,3.940,107,Mortalità per cause naturali,NO2,2005,baseline
+Centro,13,Abruzzo,903.549,12.354,160,18,Mortalità per cause naturali,NO2,2005,baseline
+Sud e Isole,14,Molise,218.985,3.176,3,1,Mortalità per cause naturali,NO2,2005,baseline
+Sud e Isole,15,Campania,3.549.631,44.873,3.883,109,Mortalità per cause naturali,NO2,2005,baseline
+Sud e Isole,16,Puglia,2.608.398,31.354,301,12,Mortalità per cause naturali,NO2,2005,baseline
+Sud e Isole,17,Basilicata,392.088,5.249,0,0,Mortalità per cause naturali,NO2,2005,baseline
+Sud e Isole,18,Calabria,1.277.737,16.449,10,1,Mortalità per cause naturali,NO2,2005,baseline
+Sud e Isole,19,Sicilia,3.204.855,43.906,170,5,Mortalità per cause naturali,NO2,2005,baseline
+Sud e Isole,20,Sardegna,1.120.241,12.912,36,3,Mortalità per cause naturali,NO2,2005,baseline
+Nord,1,Piemonte,3.112.573,44.775,160,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Nord,2,Valle d'Aosta,86.055,1.181,4,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Nord,3,Lombardia,6.585.442,79.792,283,4,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Nord,4,Trentino-Alto Adige,658.377,7.754,20,3,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Nord,5,Veneto,3.288.117,39.875,144,4,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Nord,6,Friuli Venezia Giulia,882.860,12.978,34,4,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Nord,7,Liguria,1.192.075,19.858,128,11,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Nord,8,Emilia-Romagna,3.041.524,43.305,144,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Centro,9,Toscana,2.606.350,37.731,188,7,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Centro,10,Umbria,614.190,8.942,33,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Centro,11,Marche,1.050.407,14.345,62,6,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Centro,12,Lazio,3.684.035,46.385,184,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Centro,13,Abruzzo,903.549,12.354,49,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Sud e Isole,14,Molise,218.985,3.176,14,6,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Sud e Isole,15,Campania,3.549.631,44.873,174,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Sud e Isole,16,Puglia,2.608.398,31.354,162,6,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Sud e Isole,17,Basilicata,392.088,5.249,21,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Sud e Isole,18,Calabria,1.277.737,16.449,87,7,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Sud e Isole,19,Sicilia,3.204.855,43.906,266,8,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Sud e Isole,20,Sardegna,1.120.241,12.912,72,6,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Nord,1,Piemonte,3.112.573,3.314,141,5,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Nord,2,Valle d'Aosta,86.055,103,3,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Nord,3,Lombardia,6.585.442,5.490,314,5,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Nord,4,Trentino-Alto Adige,658.377,617,18,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Nord,5,Veneto,3.288.117,2.636,139,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Nord,6,Friuli Venezia Giulia,882.860,944,42,5,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Nord,7,Liguria,1.192.075,1.298,74,6,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Nord,8,Emilia-Romagna,3.041.524,2.941,151,5,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Centro,9,Toscana,2.606.350,2.588,131,5,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Centro,10,Umbria,614.190,600,23,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Centro,11,Marche,1.050.407,965,44,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Centro,12,Lazio,3.684.035,2.854,136,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Centro,13,Abruzzo,903.549,928,36,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Sud e Isole,14,Molise,218.985,202,7,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Sud e Isole,15,Campania,3.549.631,2.881,123,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Sud e Isole,16,Puglia,2.608.398,2.363,107,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Sud e Isole,17,Basilicata,392.088,365,11,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Sud e Isole,18,Calabria,1.277.737,1.136,43,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Sud e Isole,19,Sicilia,3.204.855,2.879,126,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Sud e Isole,20,Sardegna,1.120.241,939,38,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Nord,1,Piemonte,3.112.573,44.775,2.473,79,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Nord,2,Valle d'Aosta,86.055,1.181,0,0,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Nord,3,Lombardia,6.585.442,79.792,8.170,124,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Nord,4,Trentino-Alto Adige,658.377,7.754,17,3,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Nord,5,Veneto,3.288.117,39.875,1.967,60,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Nord,6,Friuli Venezia Giulia,882.860,12.978,404,46,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Nord,7,Liguria,1.192.075,19.858,465,39,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Nord,8,Emilia-Romagna,3.041.524,43.305,2.639,87,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Centro,9,Toscana,2.606.350,37.731,643,25,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Centro,10,Umbria,614.190,8.942,19,3,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Centro,11,Marche,1.050.407,14.345,183,17,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Centro,12,Lazio,3.684.035,46.385,2.288,62,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Centro,13,Abruzzo,903.549,12.354,41,5,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Sud e Isole,14,Molise,218.985,3.176,0,0,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Sud e Isole,15,Campania,3.549.631,44.873,1.819,51,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Sud e Isole,16,Puglia,2.608.398,31.354,263,10,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Sud e Isole,17,Basilicata,392.088,5.249,0,0,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Sud e Isole,18,Calabria,1.277.737,16.449,3,0,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Sud e Isole,19,Sicilia,3.204.855,43.906,105,3,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Sud e Isole,20,Sardegna,1.120.241,12.912,25,2,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Nord,1,Piemonte,3.112.573,44.775,2.303,74,Mortalità per cause naturali,"Pm2,5",2020,cle
+Nord,2,Valle d'Aosta,86.055,1.181,0,0,Mortalità per cause naturali,"Pm2,5",2020,cle
+Nord,3,Lombardia,6.585.442,79.792,8.648,131,Mortalità per cause naturali,"Pm2,5",2020,cle
+Nord,4,Trentino-Alto Adige,658.377,7.754,39,6,Mortalità per cause naturali,"Pm2,5",2020,cle
+Nord,5,Veneto,3.288.117,39.875,4.074,124,Mortalità per cause naturali,"Pm2,5",2020,cle
+Nord,6,Friuli Venezia Giulia,882.860,12.978,810,92,Mortalità per cause naturali,"Pm2,5",2020,cle
+Nord,7,Liguria,1.192.075,19.858,702,59,Mortalità per cause naturali,"Pm2,5",2020,cle
+Nord,8,Emilia-Romagna,3.041.524,43.305,2.959,97,Mortalità per cause naturali,"Pm2,5",2020,cle
+Centro,9,Toscana,2.606.350,37.731,1.262,48,Mortalità per cause naturali,"Pm2,5",2020,cle
+Centro,10,Umbria,614.190,8.942,72,12,Mortalità per cause naturali,"Pm2,5",2020,cle
+Centro,11,Marche,1.050.407,14.345,296,28,Mortalità per cause naturali,"Pm2,5",2020,cle
+Centro,12,Lazio,3.684.035,46.385,2.219,60,Mortalità per cause naturali,"Pm2,5",2020,cle
+Centro,13,Abruzzo,903.549,12.354,206,23,Mortalità per cause naturali,"Pm2,5",2020,cle
+Sud e Isole,14,Molise,218.985,3.176,1,0,Mortalità per cause naturali,"Pm2,5",2020,cle
+Sud e Isole,15,Campania,3.549.631,44.873,3.900,110,Mortalità per cause naturali,"Pm2,5",2020,cle
+Sud e Isole,16,Puglia,2.608.398,31.354,604,23,Mortalità per cause naturali,"Pm2,5",2020,cle
+Sud e Isole,17,Basilicata,392.088,5.249,2,1,Mortalità per cause naturali,"Pm2,5",2020,cle
+Sud e Isole,18,Calabria,1.277.737,16.449,29,2,Mortalità per cause naturali,"Pm2,5",2020,cle
+Sud e Isole,19,Sicilia,3.204.855,43.906,397,12,Mortalità per cause naturali,"Pm2,5",2020,cle
+Sud e Isole,20,Sardegna,1.120.241,12.912,70,6,Mortalità per cause naturali,"Pm2,5",2020,cle
+Nord,1,Piemonte,3.112.573,44.775,2.068,66,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Nord,2,Valle d'Aosta,86.055,1.181,0,0,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Nord,3,Lombardia,6.585.442,79.792,5.802,88,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Nord,4,Trentino-Alto Adige,658.377,7.754,39,6,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Nord,5,Veneto,3.288.117,39.875,3.141,96,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Nord,6,Friuli Venezia Giulia,882.860,12.978,695,79,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Nord,7,Liguria,1.192.075,19.858,679,57,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Nord,8,Emilia-Romagna,3.041.524,43.305,2.877,95,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Centro,9,Toscana,2.606.350,37.731,1.248,48,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Centro,10,Umbria,614.190,8.942,72,12,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Centro,11,Marche,1.050.407,14.345,296,28,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Centro,12,Lazio,3.684.035,46.385,2.182,59,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Centro,13,Abruzzo,903.549,12.354,206,23,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Sud e Isole,14,Molise,218.985,3.176,1,0,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Sud e Isole,15,Campania,3.549.631,44.873,2.764,78,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Sud e Isole,16,Puglia,2.608.398,31.354,604,23,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Sud e Isole,17,Basilicata,392.088,5.249,2,1,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Sud e Isole,18,Calabria,1.277.737,16.449,29,2,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Sud e Isole,19,Sicilia,3.204.855,43.906,395,12,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Sud e Isole,20,Sardegna,1.120.241,12.912,70,6,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Nord,1,Piemonte,3.112.573,44.775,1.431,46,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Nord,2,Valle d'Aosta,86.055,1.181,0,0,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Nord,3,Lombardia,6.585.442,79.792,6.147,93,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Nord,4,Trentino-Alto Adige,658.377,7.754,10,1,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Nord,5,Veneto,3.288.117,39.875,2.852,87,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Nord,6,Friuli Venezia Giulia,882.860,12.978,507,57,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Nord,7,Liguria,1.192.075,19.858,361,30,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Nord,8,Emilia-Romagna,3.041.524,43.305,1.865,61,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Centro,9,Toscana,2.606.350,37.731,672,26,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Centro,10,Umbria,614.190,8.942,16,3,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Centro,11,Marche,1.050.407,14.345,111,11,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Centro,12,Lazio,3.684.035,46.385,1.347,37,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Centro,13,Abruzzo,903.549,12.354,101,11,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Sud e Isole,14,Molise,218.985,3.176,0,0,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Sud e Isole,15,Campania,3.549.631,44.873,2.726,77,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Sud e Isole,16,Puglia,2.608.398,31.354,218,8,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Sud e Isole,17,Basilicata,392.088,5.249,0,0,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Sud e Isole,18,Calabria,1.277.737,16.449,3,0,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Sud e Isole,19,Sicilia,3.204.855,43.906,119,4,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Sud e Isole,20,Sardegna,1.120.241,12.912,26,2,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Nord,1,Piemonte,3.112.573,44.775,1.078,35,Mortalità per cause naturali,NO2,2010,baseline
+Nord,2,Valle d'Aosta,86.055,1.181,0,0,Mortalità per cause naturali,NO2,2010,baseline
+Nord,3,Lombardia,6.585.442,79.792,5.679,86,Mortalità per cause naturali,NO2,2010,baseline
+Nord,4,Trentino-Alto Adige,658.377,7.754,4,1,Mortalità per cause naturali,NO2,2010,baseline
+Nord,5,Veneto,3.288.117,39.875,571,17,Mortalità per cause naturali,NO2,2010,baseline
+Nord,6,Friuli Venezia Giulia,882.860,12.978,52,6,Mortalità per cause naturali,NO2,2010,baseline
+Nord,7,Liguria,1.192.075,19.858,207,17,Mortalità per cause naturali,NO2,2010,baseline
+Nord,8,Emilia-Romagna,3.041.524,43.305,912,30,Mortalità per cause naturali,NO2,2010,baseline
+Centro,9,Toscana,2.606.350,37.731,178,7,Mortalità per cause naturali,NO2,2010,baseline
+Centro,10,Umbria,614.190,8.942,0,0,Mortalità per cause naturali,NO2,2010,baseline
+Centro,11,Marche,1.050.407,14.345,0,0,Mortalità per cause naturali,NO2,2010,baseline
+Centro,12,Lazio,3.684.035,46.385,2.167,59,Mortalità per cause naturali,NO2,2010,baseline
+Centro,13,Abruzzo,903.549,12.354,0,0,Mortalità per cause naturali,NO2,2010,baseline
+Sud e Isole,14,Molise,218.985,3.176,0,0,Mortalità per cause naturali,NO2,2010,baseline
+Sud e Isole,15,Campania,3.549.631,44.873,1.145,32,Mortalità per cause naturali,NO2,2010,baseline
+Sud e Isole,16,Puglia,2.608.398,31.354,0,0,Mortalità per cause naturali,NO2,2010,baseline
+Sud e Isole,17,Basilicata,392.088,5.249,0,0,Mortalità per cause naturali,NO2,2010,baseline
+Sud e Isole,18,Calabria,1.277.737,16.449,0,0,Mortalità per cause naturali,NO2,2010,baseline
+Sud e Isole,19,Sicilia,3.204.855,43.906,0,0,Mortalità per cause naturali,NO2,2010,baseline
+Sud e Isole,20,Sardegna,1.120.241,12.912,0,0,Mortalità per cause naturali,NO2,2010,baseline
+Nord,1,Piemonte,3.112.573,44.775,300,10,Mortalità per cause naturali,NO2,2020,cle
+Nord,2,Valle d'Aosta,86.055,1.181,0,0,Mortalità per cause naturali,NO2,2020,cle
+Nord,3,Lombardia,6.585.442,79.792,3.738,57,Mortalità per cause naturali,NO2,2020,cle
+Nord,4,Trentino-Alto Adige,658.377,7.754,2,0,Mortalità per cause naturali,NO2,2020,cle
+Nord,5,Veneto,3.288.117,39.875,433,13,Mortalità per cause naturali,NO2,2020,cle
+Nord,6,Friuli Venezia Giulia,882.860,12.978,278,31,Mortalità per cause naturali,NO2,2020,cle
+Nord,7,Liguria,1.192.075,19.858,478,40,Mortalità per cause naturali,NO2,2020,cle
+Nord,8,Emilia-Romagna,3.041.524,43.305,387,13,Mortalità per cause naturali,NO2,2020,cle
+Centro,9,Toscana,2.606.350,37.731,280,11,Mortalità per cause naturali,NO2,2020,cle
+Centro,10,Umbria,614.190,8.942,0,0,Mortalità per cause naturali,NO2,2020,cle
+Centro,11,Marche,1.050.407,14.345,0,0,Mortalità per cause naturali,NO2,2020,cle
+Centro,12,Lazio,3.684.035,46.385,1.608,44,Mortalità per cause naturali,NO2,2020,cle
+Centro,13,Abruzzo,903.549,12.354,74,8,Mortalità per cause naturali,NO2,2020,cle
+Sud e Isole,14,Molise,218.985,3.176,0,0,Mortalità per cause naturali,NO2,2020,cle
+Sud e Isole,15,Campania,3.549.631,44.873,2.448,69,Mortalità per cause naturali,NO2,2020,cle
+Sud e Isole,16,Puglia,2.608.398,31.354,20,1,Mortalità per cause naturali,NO2,2020,cle
+Sud e Isole,17,Basilicata,392.088,5.249,0,0,Mortalità per cause naturali,NO2,2020,cle
+Sud e Isole,18,Calabria,1.277.737,16.449,7,1,Mortalità per cause naturali,NO2,2020,cle
+Sud e Isole,19,Sicilia,3.204.855,43.906,66,2,Mortalità per cause naturali,NO2,2020,cle
+Sud e Isole,20,Sardegna,1.120.241,12.912,0,0,Mortalità per cause naturali,NO2,2020,cle
+Nord,1,Piemonte,3.112.573,44.775,300,10,Mortalità per cause naturali,NO2,2020,target 1
+Nord,2,Valle d'Aosta,86.055,1.181,0,0,Mortalità per cause naturali,NO2,2020,target 1
+Nord,3,Lombardia,6.585.442,79.792,3.257,49,Mortalità per cause naturali,NO2,2020,target 1
+Nord,4,Trentino-Alto Adige,658.377,7.754,2,0,Mortalità per cause naturali,NO2,2020,target 1
+Nord,5,Veneto,3.288.117,39.875,432,13,Mortalità per cause naturali,NO2,2020,target 1
+Nord,6,Friuli Venezia Giulia,882.860,12.978,249,28,Mortalità per cause naturali,NO2,2020,target 1
+Nord,7,Liguria,1.192.075,19.858,468,39,Mortalità per cause naturali,NO2,2020,target 1
+Nord,8,Emilia-Romagna,3.041.524,43.305,387,13,Mortalità per cause naturali,NO2,2020,target 1
+Centro,9,Toscana,2.606.350,37.731,280,11,Mortalità per cause naturali,NO2,2020,target 1
+Centro,10,Umbria,614.190,8.942,0,0,Mortalità per cause naturali,NO2,2020,target 1
+Centro,11,Marche,1.050.407,14.345,0,0,Mortalità per cause naturali,NO2,2020,target 1
+Centro,12,Lazio,3.684.035,46.385,1.606,44,Mortalità per cause naturali,NO2,2020,target 1
+Centro,13,Abruzzo,903.549,12.354,74,8,Mortalità per cause naturali,NO2,2020,target 1
+Sud e Isole,14,Molise,218.985,3.176,0,0,Mortalità per cause naturali,NO2,2020,target 1
+Sud e Isole,15,Campania,3.549.631,44.873,1.876,53,Mortalità per cause naturali,NO2,2020,target 1
+Sud e Isole,16,Puglia,2.608.398,31.354,20,1,Mortalità per cause naturali,NO2,2020,target 1
+Sud e Isole,17,Basilicata,392.088,5.249,0,0,Mortalità per cause naturali,NO2,2020,target 1
+Sud e Isole,18,Calabria,1.277.737,16.449,7,1,Mortalità per cause naturali,NO2,2020,target 1
+Sud e Isole,19,Sicilia,3.204.855,43.906,66,2,Mortalità per cause naturali,NO2,2020,target 1
+Sud e Isole,20,Sardegna,1.120.241,12.912,0,0,Mortalità per cause naturali,NO2,2020,target 1
+Nord,1,Piemonte,3.112.573,44.775,75,2,Mortalità per cause naturali,NO2,2020,target 2
+Nord,2,Valle d'Aosta,86.055,1.181,0,0,Mortalità per cause naturali,NO2,2020,target 2
+Nord,3,Lombardia,6.585.442,79.792,2.132,32,Mortalità per cause naturali,NO2,2020,target 2
+Nord,4,Trentino-Alto Adige,658.377,7.754,0,0,Mortalità per cause naturali,NO2,2020,target 2
+Nord,5,Veneto,3.288.117,39.875,130,4,Mortalità per cause naturali,NO2,2020,target 2
+Nord,6,Friuli Venezia Giulia,882.860,12.978,145,16,Mortalità per cause naturali,NO2,2020,target 2
+Nord,7,Liguria,1.192.075,19.858,228,19,Mortalità per cause naturali,NO2,2020,target 2
+Nord,8,Emilia-Romagna,3.041.524,43.305,83,3,Mortalità per cause naturali,NO2,2020,target 2
+Centro,9,Toscana,2.606.350,37.731,107,4,Mortalità per cause naturali,NO2,2020,target 2
+Centro,10,Umbria,614.190,8.942,0,0,Mortalità per cause naturali,NO2,2020,target 2
+Centro,11,Marche,1.050.407,14.345,0,0,Mortalità per cause naturali,NO2,2020,target 2
+Centro,12,Lazio,3.684.035,46.385,813,22,Mortalità per cause naturali,NO2,2020,target 2
+Centro,13,Abruzzo,903.549,12.354,25,3,Mortalità per cause naturali,NO2,2020,target 2
+Sud e Isole,14,Molise,218.985,3.176,0,0,Mortalità per cause naturali,NO2,2020,target 2
+Sud e Isole,15,Campania,3.549.631,44.873,1.493,42,Mortalità per cause naturali,NO2,2020,target 2
+Sud e Isole,16,Puglia,2.608.398,31.354,5,0,Mortalità per cause naturali,NO2,2020,target 2
+Sud e Isole,17,Basilicata,392.088,5.249,0,0,Mortalità per cause naturali,NO2,2020,target 2
+Sud e Isole,18,Calabria,1.277.737,16.449,0,0,Mortalità per cause naturali,NO2,2020,target 2
+Sud e Isole,19,Sicilia,3.204.855,43.906,12,0,Mortalità per cause naturali,NO2,2020,target 2
+Sud e Isole,20,Sardegna,1.120.241,12.912,0,0,Mortalità per cause naturali,NO2,2020,target 2
+Nord,1,Piemonte,3.112.573,3.314,151,5,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Nord,2,Valle d'Aosta,86.055,103,2,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Nord,3,Lombardia,6.585.442,5.490,284,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Nord,4,Trentino-Alto Adige,658.377,617,21,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Nord,5,Veneto,3.288.117,2.636,144,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Nord,6,Friuli Venezia Giulia,882.860,944,50,6,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Nord,7,Liguria,1.192.075,1.298,85,7,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Nord,8,Emilia-Romagna,3.041.524,2.941,161,5,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Centro,9,Toscana,2.606.350,2.588,149,6,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Centro,10,Umbria,614.190,600,27,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Centro,11,Marche,1.050.407,965,51,5,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Centro,12,Lazio,3.684.035,2.854,152,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Centro,13,Abruzzo,903.549,928,42,5,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Sud e Isole,14,Molise,218.985,202,8,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Sud e Isole,15,Campania,3.549.631,2.881,153,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Sud e Isole,16,Puglia,2.608.398,2.363,118,5,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Sud e Isole,17,Basilicata,392.088,365,13,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Sud e Isole,18,Calabria,1.277.737,1.136,53,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Sud e Isole,19,Sicilia,3.204.855,2.879,148,5,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Sud e Isole,20,Sardegna,1.120.241,939,45,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Nord,1,Piemonte,3.112.573,3.314,109,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Nord,2,Valle d'Aosta,86.055,103,2,2,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Nord,3,Lombardia,6.585.442,5.490,254,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Nord,4,Trentino-Alto Adige,658.377,617,13,2,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Nord,5,Veneto,3.288.117,2.636,107,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Nord,6,Friuli Venezia Giulia,882.860,944,31,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Nord,7,Liguria,1.192.075,1.298,49,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Nord,8,Emilia-Romagna,3.041.524,2.941,120,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Centro,9,Toscana,2.606.350,2.588,100,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Centro,10,Umbria,614.190,600,17,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Centro,11,Marche,1.050.407,965,33,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Centro,12,Lazio,3.684.035,2.854,120,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Centro,13,Abruzzo,903.549,928,26,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Sud e Isole,14,Molise,218.985,202,5,2,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Sud e Isole,15,Campania,3.549.631,2.881,79,2,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Sud e Isole,16,Puglia,2.608.398,2.363,85,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Sud e Isole,17,Basilicata,392.088,365,8,2,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Sud e Isole,18,Calabria,1.277.737,1.136,33,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Sud e Isole,19,Sicilia,3.204.855,2.879,100,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Sud e Isole,20,Sardegna,1.120.241,939,30,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Nord,1,Piemonte,3.112.573,44.775,126,4,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Nord,2,Valle d'Aosta,86.055,1.181,2,2,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Nord,3,Lombardia,6.585.442,79.792,188,3,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Nord,4,Trentino-Alto Adige,658.377,7.754,24,4,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Nord,5,Veneto,3.288.117,39.875,168,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Nord,6,Friuli Venezia Giulia,882.860,12.978,63,7,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Nord,7,Liguria,1.192.075,19.858,135,11,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Nord,8,Emilia-Romagna,3.041.524,43.305,153,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Centro,9,Toscana,2.606.350,37.731,232,9,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Centro,10,Umbria,614.190,8.942,46,8,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Centro,11,Marche,1.050.407,14.345,77,7,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Centro,12,Lazio,3.684.035,46.385,250,7,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Centro,13,Abruzzo,903.549,12.354,59,7,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Sud e Isole,14,Molise,218.985,3.176,16,7,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Sud e Isole,15,Campania,3.549.631,44.873,276,8,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Sud e Isole,16,Puglia,2.608.398,31.354,198,8,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Sud e Isole,17,Basilicata,392.088,5.249,25,6,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Sud e Isole,18,Calabria,1.277.737,16.449,109,9,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Sud e Isole,19,Sicilia,3.204.855,43.906,319,10,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Sud e Isole,20,Sardegna,1.120.241,12.912,86,8,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Nord,1,Piemonte,3.112.573,44.775,144,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Nord,2,Valle d'Aosta,86.055,1.181,3,3,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Nord,3,Lombardia,6.585.442,79.792,272,4,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Nord,4,Trentino-Alto Adige,658.377,7.754,15,2,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Nord,5,Veneto,3.288.117,39.875,128,4,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Nord,6,Friuli Venezia Giulia,882.860,12.978,30,3,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Nord,7,Liguria,1.192.075,19.858,90,8,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Nord,8,Emilia-Romagna,3.041.524,43.305,134,4,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Centro,9,Toscana,2.606.350,37.731,159,6,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Centro,10,Umbria,614.190,8.942,27,4,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Centro,11,Marche,1.050.407,14.345,49,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Centro,12,Lazio,3.684.035,46.385,200,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Centro,13,Abruzzo,903.549,12.354,38,4,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Sud e Isole,14,Molise,218.985,3.176,11,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Sud e Isole,15,Campania,3.549.631,44.873,116,3,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Sud e Isole,16,Puglia,2.608.398,31.354,141,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Sud e Isole,17,Basilicata,392.088,5.249,15,4,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Sud e Isole,18,Calabria,1.277.737,16.449,70,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Sud e Isole,19,Sicilia,3.204.855,43.906,221,7,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Sud e Isole,20,Sardegna,1.120.241,12.912,61,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle

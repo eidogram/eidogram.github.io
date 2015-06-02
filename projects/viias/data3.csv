@@ -1,0 +1,109 @@
+Area,Popolazione >30,Numero decessi osservati,Decessi attribuilbili all'inquinante,Tasso di mortalità attribuibile all'inquinante (per 100.000),Etichetta,Inquinante,Anno,Scenario
+Italia,40.077.488,527.193,34.552,86,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Nord,18.847.023,249.518,22.485,119,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Centro,8.858.531,119.756,5.513,62,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Sud e Isole,12.371.934,157.918,6.554,53,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Urbano,14.251.369,182.325,19.358,136,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Non Urbano,25.826.119,344.867,15.194,59,Mortalità per cause naturali,"Pm2,5",2005,baseline
+Italia,40.077.488,527.193,23.387,58,Mortalità per cause naturali,NO2,2005,baseline
+Nord,18.847.023,249.518,14.008,74,Mortalità per cause naturali,NO2,2005,baseline
+Centro,8.858.531,119.756,4.977,56,Mortalità per cause naturali,NO2,2005,baseline
+Sud e Isole,12.371.934,157.918,4.403,36,Mortalità per cause naturali,NO2,2005,baseline
+Urbano,14.251.369,182.325,16.736,117,Mortalità per cause naturali,NO2,2005,baseline
+Non Urbano,25.826.119,344.867,6.651,26,Mortalità per cause naturali,NO2,2005,baseline
+Italia,40.077.488,527.193,2.230,6,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Nord,18.847.023,249.518,918,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Centro,8.858.531,119.756,516,6,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Sud e Isole,12.371.934,157.918,797,6,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Urbano,14.251.369,182.325,636,4,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Suburbano ad alta densità,11.050.724,144.418,646,6,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Non urbano a media densità,11.269.376,151.703,712,6,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Non Urbano,25.826.119,344.867,237,7,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Italia,40.077.488,36.041,1.707,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Nord,18.847.023,17.341,882,5,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Centro,8.858.531,7.935,368,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Sud e Isole,12.371.934,10.764,457,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Urbano,14.251.369,12.280,605,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Suburbano ad alta densità,11.050.724,9.900,475,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Non urbano a media densità,11.269.376,10.452,483,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Non Urbano,25.826.119,3.410,144,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2005,baseline
+Italia,40.077.488,527.193,21.524,54,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Nord,18.847.023,249.518,16.135,86,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Centro,8.858.531,119.756,3.174,36,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Sud e Isole,12.371.934,157.918,2.214,18,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Urbano,14.251.369,182.325,13.935,98,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Non Urbano,25.826.119,344.867,7.589,29,Mortalità per cause naturali,"Pm2,5",2010,baseline
+Italia,40.077.488,527.193,28.595,71,Mortalità per cause naturali,"Pm2,5",2020,cle
+Nord,18.847.023,249.518,19.536,104,Mortalità per cause naturali,"Pm2,5",2020,cle
+Centro,8.858.531,119.756,4.056,46,Mortalità per cause naturali,"Pm2,5",2020,cle
+Sud e Isole,12.371.934,157.918,5.004,40,Mortalità per cause naturali,"Pm2,5",2020,cle
+Urbano,14.251.369,182.325,16.940,119,Mortalità per cause naturali,"Pm2,5",2020,cle
+Non Urbano,25.826.119,344.867,11.655,45,Mortalità per cause naturali,"Pm2,5",2020,cle
+Italia,40.077.488,527.193,23.170,58,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Nord,18.847.023,249.518,15.301,81,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Centro,8.858.531,119.756,4.004,45,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Sud e Isole,12.371.934,157.918,3.865,31,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Urbano,14.251.369,182.325,182.325,1279,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Non Urbano,25.826.119,344.867,344.867,1335,Mortalità per cause naturali,"Pm2,5",2020,target 1
+Italia,40.077.488,527.193,18.511,46,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Nord,18.847.023,249.518,13.172,70,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Centro,8.858.531,119.756,2.247,25,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Sud e Isole,12.371.934,157.918,3.093,25,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Urbano,14.251.369,182.325,11.652,82,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Non Urbano,25.826.119,344.867,6.860,27,Mortalità per cause naturali,"Pm2,5",2020,target 2
+Italia,40.077.488,527.193,11.993,30,Mortalità per cause naturali,NO2,2010,baseline
+Nord,18.847.023,249.518,8.503,45,Mortalità per cause naturali,NO2,2010,baseline
+Centro,8.858.531,119.756,2.345,26,Mortalità per cause naturali,NO2,2010,baseline
+Sud e Isole,12.371.934,157.918,1.145,9,Mortalità per cause naturali,NO2,2010,baseline
+Urbano,14.251.369,182.325,9.793,69,Mortalità per cause naturali,NO2,2010,baseline
+Non Urbano,25.826.119,344.867,2.200,9,Mortalità per cause naturali,NO2,2010,baseline
+Italia,40.077.488,527.193,10.117,25,Mortalità per cause naturali,NO2,2020,cle
+Nord,18.847.023,249.518,5.615,30,Mortalità per cause naturali,NO2,2020,cle
+Centro,8.858.531,119.756,1.961,22,Mortalità per cause naturali,NO2,2020,cle
+Sud e Isole,12.371.934,157.918,2.541,21,Mortalità per cause naturali,NO2,2020,cle
+Urbano,14.251.369,182.325,7.930,56,Mortalità per cause naturali,NO2,2020,cle
+Non Urbano,25.826.119,344.867,2.187,8,Mortalità per cause naturali,NO2,2020,cle
+Italia,40.077.488,527.193,9.021,23,Mortalità per cause naturali,NO2,2020,target 1
+Nord,18.847.023,249.518,5.094,27,Mortalità per cause naturali,NO2,2020,target 1
+Centro,8.858.531,119.756,1.959,22,Mortalità per cause naturali,NO2,2020,target 1
+Sud e Isole,12.371.934,157.918,1.968,16,Mortalità per cause naturali,NO2,2020,target 1
+Urbano,14.251.369,182.325,7.081,50,Mortalità per cause naturali,NO2,2020,target 1
+Non Urbano,25.826.119,344.867,1.940,8,Mortalità per cause naturali,NO2,2020,target 1
+Italia,40.077.488,527.193,5.247,13,Mortalità per cause naturali,NO2,2020,target 2
+Nord,18.847.023,249.518,2.792,15,Mortalità per cause naturali,NO2,2020,target 2
+Centro,8.858.531,119.756,945,11,Mortalità per cause naturali,NO2,2020,target 2
+Sud e Isole,12.371.934,157.918,1.509,12,Mortalità per cause naturali,NO2,2020,target 2
+Urbano,14.251.369,182.325,4.276,30,Mortalità per cause naturali,NO2,2020,target 2
+Non Urbano,25.826.119,344.867,971,4,Mortalità per cause naturali,NO2,2020,target 2
+Italia,40.077.488,36.041,1.858,5,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Nord,18.847.023,17.341,898,5,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Centro,8.858.531,7.935,422,5,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Sud e Isole,12.371.934,10.764,538,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Urbano,14.251.369,12.280,644,5,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Suburbano ad alta densità,11.050.724,9.900,532,5,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Non urbano a media densità,11.269.376,10.452,526,5,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Non Urbano,25.826.119,3.410,157,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Italia,40.077.488,36.041,1.320,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Nord,18.847.023,17.341,686,4,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Centro,8.858.531,7.935,295,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Sud e Isole,12.371.934,10.764,339,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Urbano,14.251.369,12.280,489,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Suburbano ad alta densità,11.050.724,9.900,366,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Non urbano a media densità,11.269.376,10.452,361,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Non Urbano,25.826.119,3.410,105,3,Mortalità LONG TERM per cause RESPIRATORIE attribuibile a O3 estivo al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Italia,40.077.488,527.193,2.550,6,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Nord,18.847.023,249.518,858,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Centro,8.858.531,119.756,664,7,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Sud e Isole,12.371.934,157.918,1.028,8,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Urbano,14.251.369,182.325,740,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Suburbano ad alta densità,11.050.724,144.418,771,7,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Non urbano a media densità,11.269.376,151.703,787,7,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Non Urbano,25.826.119,344.867,252,7,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2010,baseline
+Italia,40.077.488,527.193,1.927,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Nord,18.847.023,249.518,818,4,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Centro,8.858.531,119.756,474,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Sud e Isole,12.371.934,157.918,635,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Urbano,14.251.369,182.325,604,4,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Suburbano ad alta densità,11.050.724,144.418,553,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Non urbano a media densità,11.269.376,151.703,584,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle
+Non Urbano,25.826.119,344.867,186,5,Mortalità SHORT TERM per cause naturali attribuibile a O3 annuale al di sopra della soglia di 70 µg/m3,O3,2020,cle

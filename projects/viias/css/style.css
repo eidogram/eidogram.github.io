@@ -1,0 +1,445 @@
+@import url("normalize.css");
+@import url("typography.css");
+@import url("animate.css");
+
+body, html {
+    height: 100%;
+    background-color: whitesmoke;
+    color: dimgray;
+}
+
+a {
+  color: inherit;
+  font-weight: 700;
+}
+
+a:hover {
+  color: green;
+}
+
+footer, main, header {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    height: 50%;
+    background-image: url("../bg.png");
+    border-bottom: 1px solid lightgray;
+}
+
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 4em 0 4em 0;
+    color: whitesmoke;
+    font-family: "Lato", sans-serif;
+    font-size: 0.8em;
+}
+
+footer a {
+  line-height: 3em;
+}
+
+footer a:hover {
+  color: darkorange;
+}
+
+footer img {
+  width: 100px;
+  margin: 0 0 3em 0
+}
+
+footer.credits {
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #ccc;
+}
+
+section {
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5em 0 5em 0;
+}
+
+
+figure {
+    margin: 0;
+}
+
+em {
+    font-style: italic;
+}
+
+time {
+    font-style:italic;
+    font-weight: 700;
+}
+time::before { content: "- "; }
+time::after { content: " -"; }
+
+.wrap {
+  width: 100%;
+}
+
+.bg-grey {
+  background-color: #2f2f2f;
+}
+
+.figure {
+    background-color: whitesmoke;
+}
+
+.big-title {
+    text-align: center;
+}
+
+.green {
+    background-color: seagreen;
+    color: whitesmoke;
+}
+
+.green a:hover {
+  color: darkorange;
+}
+
+.logo {
+  width: 200px;
+  position: absolute;
+  bottom: -100px;
+  right: 50%;
+  margin-right: -100px;
+}
+
+.intro {
+  position: relative;
+  padding-top: 3em;
+  /*min-height: 50vh;*/
+}
+
+.left-aligned {
+  text-align: left;
+  font-size: 1.1em;
+  padding-top: 2em;
+}
+
+/* section multiple-maps */
+
+.multiple-maps {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media  (max-width: 500px) {
+  .multiple-maps {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+}
+
+.first-section {
+  max-width: 1300px;
+  border-top: 1px solid #ddd;
+}
+
+.multiple-maps {
+  padding: 1em 0 3em 0;
+  margin: auto;
+  border-top: 1px solid #ddd;
+}
+
+.no-border {
+  border-top: 0;
+  margin-top: 3em;
+}
+
+.last {
+  margin-bottom: 3em;
+}
+
+.minimap {
+  padding: 0;
+  /*display: inline;
+  float: left;*/
+}
+
+.minimap-chart {
+  fill: red;
+  stroke: dimgrey;
+}
+
+.minimap span {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8em;
+}
+
+.minimap figcaption {
+  width: 220px;
+  padding-left: 30px;
+}
+
+.minimap span.testo {
+}
+
+.minimap span.dato {
+  font-weight: 700;
+}
+
+.minimap span.anno {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.focus {
+  fill: dimgray !important;
+}
+
+.z0-9 { fill: #1b7837; }
+.z1-9 { fill: #5aae61; }
+.z2-9 { fill: #a6dba0; }
+.z3-9 { fill: #d9f0d3; }
+.z4-9 { fill: #f7f7f7; }
+.z5-9 { fill: #e7d4e8; }
+.z6-9 { fill: #c2a5cf; }
+.z7-9 { fill: #9970ab; }
+.z8-9 { fill: #762a83; }
+
+.q0-9 { fill: #f7fcf5; }
+.q1-9 { fill: #e5f5e0; }
+.q2-9 { fill: #c7e9c0; }
+.q3-9 { fill: #a1d99b; }
+.q4-9 { fill: #74c476; }
+.q5-9 { fill: #41ab5d; }
+.q6-9 { fill: #238b45; }
+.q7-9 { fill: #006d2c; }
+.q8-9 { fill: #00441b; }
+
+.p0-9 { fill: #fff5f0; }
+.p1-9 { fill: #fee0d2; }
+.p2-9 { fill: #fcbba1; }
+.p3-9 { fill: #fc9272; }
+.p4-9 { fill: #fb6a4a; }
+.p5-9 { fill: #ef3b2c; }
+.p6-9 { fill: #cb181d; }
+.p7-9 { fill: #a50f15; }
+.p8-9 { fill: #67000d; }
+
+.r0-9 { fill: #f7fbff; }
+.r1-9 { fill: #deebf7; }
+.r2-9 { fill: #c6dbef; }
+.r3-9 { fill: #9ecae1; }
+.r4-9 { fill: #6baed6; }
+.r5-9 { fill: #4292c6; }
+.r6-9 { fill: #2171b5; }
+.r7-9 { fill: #08519c; }
+.r8-9 { fill: #08306b; }
+
+/* SINGLE CIRCLE */
+
+.pm25-circles {
+  max-width: 750px;
+  color: #ccc;
+}
+
+.pm25-circles > .multiple-maps {
+  padding: 2em 0 3em 0;
+}
+
+.single-circle {
+  /*stroke: #2f2f2f;*/
+  stroke-width: 0px;
+}
+
+.cle {
+  fill-opacity: 0.3;
+}
+
+.single-circle-baseline {
+  fill-opacity: 0;
+  stroke: whitesmoke;
+  stroke-width: 1px;
+}
+
+.single-circle-line {
+  stroke: #666;
+  stroke-width: 1px;
+}
+
+.small figcaption {
+  width: 130px;
+  padding-left: 5px;
+}
+
+/* Mortality Area */
+
+.mortalit-area {
+  background-color: #eee;
+}
+
+.ma {
+  width: 300px;
+  margin: auto;
+  padding-top: 1em;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  border-top: 3px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  background-color: #e5e5e5;
+}
+
+.ma figcaption {
+  width: 300px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  padding-bottom: 1em;
+}
+
+.ma-text {
+  font-family: 'Lato', sans-serif;
+  text-anchor: middle;
+  font-size: 0.8em;
+  font-weight: 700;
+  fill: dimgrey;
+}
+
+.ma-text-bar {
+  font-family: 'Lato', sans-serif;
+  text-anchor: middle;
+  font-size: 0.8em;
+  font-weight: 700;
+  fill: dimgrey;
+  opacity: 0
+}
+
+.ma-text-y {
+  font-family: 'Lato', sans-serif;
+  text-anchor: start;
+  font-size: 0.8em;
+  font-weight: 700;
+  fill: dimgrey;
+}
+
+.bars {
+}
+
+/* Lines */
+
+.line-text {
+  font-family: "Lato", sans-serif;
+  font-size: 0.7em;
+  font-weight: 400;
+  text-anchor: middle;
+  fill: dimgrey;
+}
+
+.mortalit-regione {
+  max-width: 750px;
+}
+
+.line-pm25 {
+  fill: #41ab5d;
+  stroke: #41ab5d;
+}
+
+.line-no2 {
+  fill: #ef3b2c;
+  stroke: #ef3b2c;
+}
+
+.line-o3s {
+  fill: #4292c6;
+  stroke: #4292c6;
+}
+
+.line-o3l {
+  fill: #4292c6;
+  stroke: #4292c6;
+}
+
+.line-cle {
+  stroke-dasharray: 3, 3;
+}
+
+.line-t1 {
+  stroke-dasharray: 6, 2;
+}
+
+.line-t2 {
+  stroke-dasharray: 6, 6;
+}
+
+.mortalit-regione figcaption {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.mortalit-regione figcaption span {
+  border-top: 1px solid lightgray;
+  padding: 0.5em 1em 0 1em;
+}
+
+/* grid */
+
+.grid-chart {
+  stroke: whitesmoke;
+  stroke-opacity: 0.5;
+  stroke-width: 1px;
+  /*stroke-dasharray: 3, 3;*/
+}
+
+/* legend text */
+
+.legend {
+  font-size: 0.8em;
+}
+
+/* fix */
+
+.cap {
+  font-family: "Lato", sans-serif;
+  font-size: 0.8em;
+}
+
+.dato {
+  font-weight: 700;
+}
+
+.mw {
+  max-width: 700px;
+}
+
+.nb {
+  border-top: 0;
+}
+
+.pm25-color {
+  fill: #41ab5d;
+}
+
+.no2-color {
+  fill: #ef3b2c;
+}
+
+.o3-color {
+  fill: #4292c6;
+}
