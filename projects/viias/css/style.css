@@ -24,7 +24,8 @@ footer, main, header {
 
 header {
     position: relative;
-    height: 50%;
+    /*height: 50%;*/
+    height: 300px;
     background-image: url("../bg.png");
     border-bottom: 1px solid lightgray;
 }
